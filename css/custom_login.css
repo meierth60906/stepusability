@@ -11,3 +11,7 @@
 .white {
     background-color: white;
 }
+.form-group{
+    background-color: white;
+    border-color: darkgray;
+}
