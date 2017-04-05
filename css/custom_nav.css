@@ -1,4 +1,5 @@
 #sidebar-wrapper {
+    /*background-color: #10364f;*/
     background-color: #133E5C;
     height: 100%;
     width: 120px;
@@ -22,11 +23,25 @@
     text-align: center;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
+    border-top: solid 1px #0d2b40;
+    /*background-color: #133E5C;*/
+    transition: background-color .2s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
+    -moz-transition: background-color .2s ease-in; /* firefox */
+    -o-transition: background-color .2s ease-in; /* opera */
+}
+
+#sidebar-wrapper ul li:last-child {
+    border-bottom: solid 1px #0d2b40;
 }
 
 
 #sidebar-wrapper ul li:hover {
-    background-color: #0d2b40;
+    background-color: #185077;
+    transition: background-color .2s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
+    -moz-transition: background-color .2s ease-in; /* firefox */
+    -o-transition: background-color .2s ease-in; /* opera */
 }
 
 
