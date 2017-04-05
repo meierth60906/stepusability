@@ -7,21 +7,28 @@
 }
 
 .sidebar-nav {
-    position: absolute;
+/*    position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 }
 
 #sidebar-brand {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 #sidebar-wrapper ul li {
     list-style: none;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
 }
+
+
+#sidebar-wrapper ul li:hover {
+    background-color: #0d2b40;
+}
+
 
 #sidebar-wrapper ul li a {
     text-decoration: none;
@@ -34,6 +41,7 @@
 
 .nav-icon {
     line-height: 0.8;
+    padding-bottom: 0.2rem;
 }
 
 .icon-home {
