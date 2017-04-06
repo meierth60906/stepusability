@@ -1,42 +1,43 @@
-#sidebar-wrapper {
+.sidebar-wrapper {
     /*background-color: #10364f;*/
     background-color: #133E5C;
     height: 100%;
-    width: 120px;
+    width: 60px;
     padding: 0;
     position:fixed;
 }
 
-.sidebar-nav {
-/*    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
+.sidebar-brand {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
 }
 
-#sidebar-brand {
-    padding-bottom: 2rem;
-}
-
-#sidebar-wrapper ul li {
+.sidebar-wrapper ul li {
+    height: 60px;
     list-style: none;
     text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-top: solid 1px #0d2b40;
-    /*background-color: #133E5C;*/
-    transition: background-color .2s ease-in; /* explorer 10 */
-    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
-    -moz-transition: background-color .2s ease-in; /* firefox */
-    -o-transition: background-color .2s ease-in; /* opera */
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
 }
 
-#sidebar-wrapper ul li:last-child {
+.sidebar-wrapper ul li:last-child {
     border-bottom: solid 1px #0d2b40;
 }
 
+.nav-icon {
+    padding-top: 0.5rem;
+}
 
-#sidebar-wrapper ul li:hover {
+.nav-text {
+    display: none;
+}
+
+.sidebar-wrapper ul li:hover {
     background-color: #185077;
     transition: background-color .2s ease-in; /* explorer 10 */
     -webkit-transition: background-color .2s ease-in; /* chrome & safari */
@@ -44,37 +45,83 @@
     -o-transition: background-color .2s ease-in; /* opera */
 }
 
-
-#sidebar-wrapper ul li a {
+.sidebar-wrapper ul li a {
     text-decoration: none;
     color: white;
 }
 
 #dashboard {
-    margin-left: 120px;
-}
-
-.nav-icon {
-    line-height: 0.8;
-    padding-bottom: 0.2rem;
+    margin-left: 60px;
 }
 
 .icon-home {
-    font-size: 65px;
+    margin-top: -4px;
+    font-size: 25px;
 }
 
 .icon-folder {
-    font-size: 55px;
+    font-size: 20px;
 }
 
 .icon-file-text {
-    font-size: 50px;
+    font-size: 19px;
 }
 
 .icon-users {
-    font-size: 45px;
+    font-size: 18px;
 }
 
 .icon-calendar-1 {
-    font-size: 50px;
+    font-size: 20px;
+}
+
+
+@media (min-height: 720px) {
+    .sidebar-wrapper {
+        width: 120px;
+    }
+
+    .sidebar-brand {
+        padding: 1.5rem;
+    }
+
+    .sidebar-wrapper ul li {
+        height: 120px;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .nav-text {
+        display: block;
+    }
+
+    #dashboard {
+        margin-left: 120px;
+    }
+
+    .nav-icon {
+        padding-top:0;
+        line-height: 0.8;
+    }
+
+    .icon-home {
+        font-size: 65px;
+        margin-top: -9px;
+    }
+
+    .icon-folder {
+        font-size: 55px;
+    }
+
+    .icon-file-text {
+        font-size: 50px;
+    }
+
+    .icon-users {
+        font-size: 45px;
+    }
+
+    .icon-calendar-1 {
+        font-size: 50px;
+    }
 }
