@@ -1,0 +1,17 @@
+#settings {
+    background: #EFEFEF;
+    height:100%;
+    min-height: 100%;
+}
+
+#login .container-fluid {
+    height: 100%;
+}
+
+.white {
+    background-color: white;
+}
+.form-group{
+    background-color: white;
+    border-color: darkgray;
+}
