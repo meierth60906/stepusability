@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
     <title>Dashboard | step</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <?php include ('head.html'); ?>
 </head>
 <body>
 
@@ -100,8 +97,12 @@
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="col-7">
-                                    <div class="icon-file-text d-inline"></div> Dokument 1
+                                <div class="card-item-icon col-1">
+                                    <div class="icon-file-text"></div>
+                                </div>
+                                <div class="col-6">
+                                    Dokument 1
+                                    <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-5 text-right">
                                     07.04.2017
@@ -162,14 +163,7 @@
     </div>
 </section>
 
-<script src="js/jquery-3.2.0.min.js"></script>
-<script src="js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
+<?php include ('scripts.html'); ?>
 </body>
 
 </html>
