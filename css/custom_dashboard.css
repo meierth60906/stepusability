@@ -4,18 +4,67 @@
     overflow-x: hidden;
 }
 
+.card {
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
 .card:hover {
     border-color: #999;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card .card-header {
+    background-color: #e84a29;
+    color: white;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
 }
 
 .card:hover .card-header {
     background-color: #ff512d;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card-item {
+    background-color: white;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
 }
 
 .card-item:hover {
     background-color: #eaeaea;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.card-item-link {
+    color: black;
+}
+
+.card-item-link:hover {
+    text-decoration: none;
+    color: black;
 }
 
 hr {
     margin: 0;
+}
+
+.pre-scrollable {
+    overflow-y: visible;
 }
