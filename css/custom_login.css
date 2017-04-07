@@ -12,11 +12,17 @@
     background-color: white;
 }
 .form-group{
+    color: gray;
     background-color: white;
-    border-color: darkgray;
+    border-color: gray;
 }
 
-.links{
+.login-hyperlink {
+    color: #103e5c !important;
+}
+
+.login-hyperlink:hover {
     color: #103e5c;
+    text-decoration: underline;
 }
 
