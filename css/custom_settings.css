@@ -1,17 +1,14 @@
-#settings {
-    background: #EFEFEF;
-    height:100%;
-    min-height: 100%;
-}
-
-#login .container-fluid {
+#secondSidebar {
+    background-color: #EFEFEF;
     height: 100%;
+    width: 25%;
+    padding: 0;
+    position: fixed;
 }
 
-.white {
-    background-color: white;
-}
-.form-group{
-    background-color: white;
-    border-color: darkgray;
-}
+a.nav-link {
+    color: BLACK;
+    }
+
+
+
