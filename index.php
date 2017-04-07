@@ -53,7 +53,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="loginHelp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center" id="loginHelp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content py-3">
             <div class="modal-header">
@@ -81,7 +81,7 @@
 </div>
 
 
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content py-3">
             <div class="modal-header">
@@ -112,7 +112,7 @@
             </div>
             <!-- Nachricht -->
             <div class="form-group col-12 text-center px-5 py-2">
-                <input id="input9" type="text" class="form-control text-center" placeholder="Nachricht">
+                <textarea class="form-control text-center" id="message-text" placeholder="Nachricht"></textarea>
             </div>
             <div class="modal-footer text-center">
                 <button type="button" class="btn btn-submit-orange btn-lg">Senden</button>
