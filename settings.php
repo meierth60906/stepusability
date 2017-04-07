@@ -10,9 +10,10 @@
 <body>
 <!-- Sidebar -->
 <?php include ('navigation.html'); ?>
-    <section id="login">
-        <div class="container">
-            <div class="row">
+<section id="settings" class="page-content">
+    <div class="container-fluid">
+        <div class="row titlebar px-5 py-3">
+            <div class="col-9 align-self-center">
                 <h1>Einstellungen</h1>
             </div>
         </div>
