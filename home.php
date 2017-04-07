@@ -15,13 +15,13 @@
 <section id="dashboard" class="page-content">
     <div class="container-fluid">
         <div class="row titlebar px-5 py-3">
-            <div class="col-9 align-self-center">
+            <div class="col-8 align-self-center">
                 <h1>Home</h1>
 
                 <!--            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
             </div>
-            <div class="col-3 text-right align-self-center">
-                <div class="icon-cog d-inline"></div> Einstellungen
+            <div class="col-4 text-right align-self-center ">
+                <a href="settings.php"><span class="icon-cog d-inline"></span> Einstellungen</a>
             </div>
         </div>
     </div>
