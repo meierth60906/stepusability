@@ -1,0 +1,21 @@
+.card-block {
+    height: 15rem;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.card:hover {
+    border-color: #999;
+}
+
+.card:hover .card-header {
+    background-color: #ff512d;
+}
+
+.card-item:hover {
+    background-color: #eaeaea;
+}
+
+hr {
+    margin: 0;
+}
