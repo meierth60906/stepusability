@@ -1,0 +1,11 @@
+.btn-submit-orange{
+    color: #fff;
+    background-color: #e84a29;
+    border-color: #e84a29;
+}
+
+.btn-submit-orange:hover{
+    color: #fff;
+    background-color: #ff512d;
+    border-color: #ff512d;
+}
