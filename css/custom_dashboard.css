@@ -4,6 +4,10 @@
     overflow-x: hidden;
 }
 
+.card-header {
+    font-weight: 700;
+}
+
 .card {
     z-index: 10;
     transition: all .1s ease-in; /* explorer 10 */
@@ -58,7 +62,8 @@
     color: black;
 }
 
-.card-item-link:hover {
+.card-item-link:hover,
+.card-item-link:focus {
     text-decoration: none;
     color: black;
 }
@@ -67,6 +72,32 @@
     line-height: 1em;
     vertical-align: middle;
 }
+
+.titlebar-link {
+    color: #666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.titlebar-link .icon-cog {
+    font-size: 20px;
+    vertical-align: -4px;
+}
+
+.titlebar-link:hover {
+    color: #e84a29;
+    text-decoration: none;
+}
+
+.card-item-icon .icon-file-text,
+.doc-date {
+    line-height: 2.9em;
+}
+
+.card-item-icon .icon-folder {
+    line-height: 1.7em;
+}
+
 
 hr {
     margin: 0;
