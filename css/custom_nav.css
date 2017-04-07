@@ -50,31 +50,85 @@
     color: white;
 }
 
-#dashboard {
+.page-content {
     margin-left: 60px;
 }
 
-.icon-home {
+.sidebar-nav .icon-home {
     margin-top: -4px;
     font-size: 25px;
 }
 
-.icon-folder {
+.sidebar-nav .icon-folder {
     font-size: 20px;
 }
 
-.icon-file-text {
+.sidebar-nav .icon-file-text {
     font-size: 19px;
 }
 
-.icon-users {
+.sidebar-nav .icon-users {
     font-size: 18px;
 }
 
-.icon-calendar-1 {
+.sidebar-nav .icon-calendar-1 {
     font-size: 20px;
 }
 
+
+@media (min-height: 600px) {
+    .sidebar-wrapper {
+        width: 100px;
+    }
+
+    .sidebar-brand {
+        padding: 1.5rem;
+    }
+
+    .sidebar-wrapper ul li {
+        height: 100px;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .nav-text {
+        display: block;
+    }
+
+    .page-content {
+        margin-left: 100px;
+    }
+
+    .nav-icon {
+        padding-top:0;
+        line-height: 0.8;
+    }
+
+    .sidebar-nav .icon-home {
+        font-size: 40px;
+        margin-top: -3px;
+    }
+
+    .sidebar-nav .icon-folder {
+        font-size: 35px;
+    }
+
+    .sidebar-nav .icon-file-text {
+        font-size: 40px;
+    }
+
+    .sidebar-nav .icon-users {
+        font-size: 35px;
+    }
+
+    .sidebar-nav .icon-calendar-1 {
+        font-size: 40px;
+    }
+
+    .tooltip {
+        display: none !important;
+    }
+}
 
 @media (min-height: 720px) {
     .sidebar-wrapper {
@@ -95,7 +149,7 @@
         display: block;
     }
 
-    #dashboard {
+    .page-content {
         margin-left: 120px;
     }
 
@@ -104,24 +158,28 @@
         line-height: 0.8;
     }
 
-    .icon-home {
+    .sidebar-nav .icon-home {
         font-size: 65px;
         margin-top: -9px;
     }
 
-    .icon-folder {
+    .sidebar-nav .icon-folder {
         font-size: 55px;
     }
 
-    .icon-file-text {
+    .sidebar-nav .icon-file-text {
         font-size: 50px;
     }
 
-    .icon-users {
+    .sidebar-nav .icon-users {
         font-size: 45px;
     }
 
-    .icon-calendar-1 {
+    .sidebar-nav .icon-calendar-1 {
         font-size: 50px;
+    }
+
+    .tooltip {
+        display: none !important;
     }
 }

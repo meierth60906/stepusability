@@ -12,7 +12,7 @@
 
 <?php include ('navigation.html'); ?>
 
-<section id="dashboard">
+<section id="dashboard" class="page-content">
 <div class="container-fluid">
     <div class="row titlebar px-5 py-3">
         <div class="col-lg-10 align-self-center">
@@ -74,9 +74,13 @@
 </section>
 
 <script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-
+<script>
+    $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 </body>
 
 </html>
