@@ -1,3 +1,19 @@
 html, body {
     height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.titlebar {
+    background-color: #eaeaea;
+    border-bottom: solid 1px #ccc;
+}
+
+.red {
+    background-color: #e84a29;
+    color: white;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
 }
