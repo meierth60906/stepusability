@@ -2,12 +2,20 @@
     color:#133e5c
 }
 
-.dashboard_button_orange{
+.dashboard_button_orange {
     color:#e84a29
 }
 
-.grey{
-    color:#eaeaea
+.step-orange-bg {
+    background-color: #e84a29;
+}
+
+.grey {
+    color:#eaeaea;
+}
+
+.darkgrey-bg {
+    background-color:#636c72;
 }
 
 .c-einverst {
@@ -19,7 +27,7 @@
 }
 
 .c-bericht {
-    color: #d86e60;
+    color: #d87f8c;
 }
 
 .c-plan {

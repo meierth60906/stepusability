@@ -89,8 +89,10 @@
     text-decoration: none;
 }
 
-.card-item-icon .icon-file-text,
-.doc-date {
+/*.card-item-icon .icon-file-text,
+.card-item-icon .icon-calendar-1,
+.doc-date,*/
+.middle-two-line {
     line-height: 2.9em;
 }
 
@@ -105,4 +107,21 @@ hr {
 
 .pre-scrollable {
     overflow-y: visible;
+}
+
+.flash {
+    animation-duration: 3s !important;
+    -webkit-animation-duration: 3s !important;
+}
+
+.img-placeholder {
+    display:inline-block;
+    font-size:1em;
+    width:2.5em;
+    height:2.5em;
+    line-height:2.5em;
+    text-align:center;
+    border-radius:50%;
+    vertical-align:middle;
+    color:white;
 }

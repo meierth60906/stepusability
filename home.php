@@ -18,27 +18,31 @@
                 <!--            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="settings.php"><div class="icon-cog d-inline-block px-2"></div>Einstellungen</a>
+                <a class="titlebar-link" href="settings.php">
+                    <div class="icon-cog d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Einstellungen</span></a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
+            <!-- Projekte -->
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header red">
-                        Projekte
+                        Aktuelle Projekte
                     </div>
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
                                 </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
                                     Projekt 1
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -46,13 +50,14 @@
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
                                 </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
                                     Projekt 2
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -60,13 +65,14 @@
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
                                 </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
                                     Projekt 3
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -74,13 +80,14 @@
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
                                 </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
                                     Projekt 4
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -88,13 +95,14 @@
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
                                 </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
                                     Projekt 5
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -104,6 +112,8 @@
 
                 </div>
             </div>
+
+            <!-- Dokumente -->
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header red">
@@ -112,7 +122,7 @@
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-file-text d-inline c-bericht"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
@@ -120,14 +130,15 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="doc-date text-muted">07.04.2017</div>
+                                    <div class="text-muted small">Letzte Änderung am</div>
+                                    <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
                         </a>
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-file-text d-inline c-plan"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
@@ -135,14 +146,15 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="doc-date text-muted">07.04.2017</div>
+                                    <div class="text-muted small">Letzte Änderung am</div>
+                                    <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
                         </a>
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-file-text d-inline c-skript"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
@@ -150,14 +162,15 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="doc-date text-muted">07.04.2017</div>
+                                    <div class="text-muted small">Letzte Änderung am</div>
+                                    <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
                         </a>
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-file-text d-inline c-einverst"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
@@ -165,14 +178,15 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="doc-date text-muted">07.04.2017</div>
+                                    <div class="text-muted small">Letzte Änderung am</div>
+                                    <div class="text-muted">07.04.2017</div>
                                 </div>
                             </div>
                         </a>
                         <hr>
                         <a class="card-item-link" href="home.php">
                             <div class="row card-item p-3">
-                                <div class="card-item-icon col-1">
+                                <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-file-text d-inline c-protokoll"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
@@ -180,6 +194,7 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted small">Letzte Änderung am</div>
                                     <div class="doc-date text-muted">07.04.2017</div>
                                 </div>
                             </div>
@@ -189,24 +204,137 @@
 
                 </div>
             </div>
+
+            <!-- Termine -->
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header red">
-                        <div class="icon-calendar-1 d-inline"></div> Termine
+                        Bevorstehende Termine
                     </div>
-                    <div class="card-block text-center">
-                        <div class="icon-folder"></div> Projekt 1
+                    <div class="card-block pre-scrollable pt-0">
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-calendar-1 d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Testdurchlauf
+                                    <div class="text-muted small">Projekt 1</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted animated infinite flash">Morgen</div>
+                                    <div class="text-muted small">14:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-calendar-1 d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Testdurchlauf
+                                    <div class="text-muted small">Projekt 3</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted">Sa, 08. April 2017</div>
+                                    <div class="text-muted small">14:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-calendar-1 d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Testdurchlauf
+                                    <div class="text-muted small">Projekt 2</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted">Sa, 15. April 2017</div>
+                                    <div class="text-muted small">14:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-calendar-1 d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Testdurchlauf
+                                    <div class="text-muted small">Projekt 1</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted">Di, 18. April 2017</div>
+                                    <div class="text-muted small">14:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-calendar-1 d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Testdurchlauf
+                                    <div class="text-muted small">Projekt 1</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right">
+                                    <div class="text-muted">Do, 20. April 2017</div>
+                                    <div class="text-muted small">14:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
 
                 </div>
             </div>
+
+            <!-- Favoriten -->
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header red">
-                        <div class="icon-star d-inline"></div> Favoriten
+                        Favoriten
                     </div>
-                    <div class="card-block text-center">
-                        <div class="icon-folder"></div> Projekt 1
+                    <div class="card-block pre-scrollable pt-0">
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-star d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Anna Apfel
+                                    <div class="text-muted small">Siemens AG</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right middle-two-line">
+                                    <div class="img-placeholder darkgrey-bg">AA</div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a class="card-item-link" href="home.php">
+                            <div class="row card-item p-3">
+                                <div class="card-item-icon col-1 middle-two-line">
+                                    <div class="icon-star d-inline text-muted"></div>
+                                </div>
+                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
+                                    Bernd Bogner
+                                    <div class="text-muted small">Muster GmbH</div>
+                                </div>
+                                <div class="col-4 hidden-xs-down text-right middle-two-line">
+                                    <!--<div class="img-placeholder darkgrey-bg">BB</div>-->
+                                    <img class="img-fluid img-placeholder rounded-circle" src="img/user.jpg">
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
                     </div>
 
                 </div>
