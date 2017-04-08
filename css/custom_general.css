@@ -6,6 +6,7 @@ html, body {
 }
 
 .titlebar {
+    z-index: 1000;
     background-color: #eaeaea;
     border-bottom: solid 1px #ccc;
 }

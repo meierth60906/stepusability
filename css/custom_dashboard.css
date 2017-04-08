@@ -17,8 +17,10 @@
 }
 
 .card:hover {
-    z-index: 10;
     border-color: #999;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
     transition: all .1s ease-in; /* explorer 10 */
     -webkit-transition: all .1s ease-in; /* chrome & safari */
     -moz-transition: all .1s ease-in; /* firefox */
