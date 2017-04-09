@@ -3,11 +3,11 @@
 <head>
     <title>Projekte | step</title>
 
-    <?php include ('../head.html'); ?>
+    <?php include ('head.html'); ?>
 </head>
 <body>
 
-<?php include ('../navigation.html'); ?>
+<?php include ('navigation.html'); ?>
 
 <section id="projects" class="page-content">
     <div class="container-fluid">
@@ -27,7 +27,7 @@
 
 </section>
 
-<?php include ('../scripts.html'); ?>
+<?php include ('scripts.html'); ?>
 </body>
 
 </html>
