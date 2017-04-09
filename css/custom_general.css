@@ -1,3 +1,18 @@
 html, body {
     height: 100%;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.titlebar {
+    z-index: 1000;
+    background-color: #eaeaea;
+    border-bottom: solid 1px #ccc;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 0;
 }

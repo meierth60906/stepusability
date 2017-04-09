@@ -1,0 +1,14 @@
+#secondSidebar {
+    background-color: #EFEFEF;
+    height: 100%;
+    width: 25%;
+    padding: 0;
+    position: fixed;
+}
+
+a.nav-link {
+    color: BLACK;
+    }
+
+
+

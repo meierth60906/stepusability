@@ -1,0 +1,129 @@
+.card-block {
+    height: 15rem;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.card-header {
+    font-weight: 700;
+}
+
+.card {
+    z-index: 10;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card:hover {
+    border-color: #999;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card .card-header {
+    background-color: #e84a29;
+    color: white;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card:hover .card-header {
+    background-color: #ff512d;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.card-item {
+    z-index: 1;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.card-item:hover {
+    background-color: #eaeaea;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.card-item-link {
+    color: black;
+}
+
+.card-item-link:hover,
+.card-item-link:focus {
+    text-decoration: none;
+    color: black;
+}
+
+.card-item-icon {
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.titlebar-link {
+    color: #666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.titlebar-link .icon-cog {
+    font-size: 20px;
+    vertical-align: -4px;
+}
+
+.titlebar-link:hover {
+    color: #e84a29;
+    text-decoration: none;
+}
+
+/*.card-item-icon .icon-file-text,
+.card-item-icon .icon-calendar-1,
+.doc-date,*/
+.middle-two-line {
+    line-height: 2.9em;
+}
+
+.card-item-icon .icon-folder {
+    line-height: 1.7em;
+}
+
+
+hr {
+    margin: 0;
+}
+
+.pre-scrollable {
+    overflow-y: visible;
+}
+
+.flash {
+    animation-duration: 3s !important;
+    -webkit-animation-duration: 3s !important;
+}
+
+.img-placeholder {
+    display:inline-block;
+    font-size:1em;
+    width:2.5em;
+    height:2.5em;
+    line-height:2.5em;
+    text-align:center;
+    border-radius:50%;
+    vertical-align:middle;
+    color:white;
+}
