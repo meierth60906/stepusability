@@ -1,14 +1,22 @@
+
 #secondSidebar {
     background-color: #EFEFEF;
     height: 100%;
     width: 25%;
-    padding: 0;
     position: fixed;
+    padding: 15px;
+    margin-left: -15px;
 }
 
+/*2 second navbar text color*/
 a.nav-link {
     color: BLACK;
-    }
+}
+
+/* second navbar hover color*/
+.card-item:hover {
+    background-color: #e84a29;
+}
 
 
 
