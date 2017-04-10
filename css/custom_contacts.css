@@ -21,9 +21,14 @@
 #secondSidebar a.nav-link {
     color: BLACK;
 }
+/* second navbar color */
 
+#secondSidebar .list-group-item {
+    background-color: #EFEFEF;
+
+}
 /* second navbar hover color*/
-#secondSidebar .card-item:hover {
+#secondSidebar .list-group-item:hover {
     background-color: #ccd9e4;
 }
 .mac-style {
@@ -40,11 +45,6 @@
 .white {
     background-color: white;
 }
-.form-group{
-    color: gray;
-    background-color: #EFEFEF;
-    border-color: gray;
-}
 
 .img-placeholder {
     display:inline-block;
@@ -57,4 +57,21 @@
     vertical-align:middle;
     color:white;
 }
+.dateneingabe{
+    color: white;
+    background-color: white;
+}
+.form-group input{
+    background-color: #EFEFEF;
 
+}
+
+.contact label{
+    padding-right: 20px;
+
+}
+
+.anschrift label{
+    padding-right: 110px;
+
+}

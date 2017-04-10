@@ -18,9 +18,9 @@
                 <!--            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="settings.php">
-                    <div class="icon-cog d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Einstellungen</span></a>
+                <a class="titlebar-link" href="#">
+                    <div class="icon-check d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Speichern</span></a>
             </div>
         </div>
 
@@ -34,62 +34,61 @@
                     </form>
 
                     <!-- Kontaktliste -->
-                    <a class="row card-item p-3 nav-link" href="#">Alena Ahorn</a>
-                    <a class="row card-item p-3 nav-link" href="#">Alessa Albert</a>
-                    <a class="row card-item p-3 nav-link" href="#">Anna Apfel</a>
-                    <a class="row card-item p-3 nav-link" href="#">Benjamin Berger</a>
-                    <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
+                    <div class="list-group pt-5">
+                    <a class="list-group-item p-3 nav-link" href="#">Alena Ahorn</a>
+                    <a class="list-group-item p-3 nav-link" href="#">Alessa Albert</a>
+                    <a class="list-group-item p-3 nav-link" href="#">Anna Apfel</a>
+                    <a class="list-group-item p-3 nav-link" href="#">Benjamin Berger</a>
+                    <a class="list-group-item p-3 nav-link" href="#">Bernd Bogner</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form-group col-lg-9 offset-lg-4">
-                <div class="row col-lg-6 pt-5">
+                </div>
+            <div class="dateneingabe form-group col-lg-9 pt-5 offset-lg-4">
                     <form action="new_contact.php">
-                            <div class="img-placeholder darkgrey-bg">AA</div> Anna Apfel
+                        <!--<div class="img-placeholder darkgrey-bg">AA</div> Anna Apfel
 
-                        <div class="col-lg-9">
-                            <div class="text-muted small">Siemens AG</div>
-                            <div class="icon-star d-inline text-muted"></div>
+                    <div class="col-lg-9">
 
+                        <div class="text-muted small">Siemens AG</div>
+                        <div class="icon-star d-inline text-muted"></div>
+                         -->
+                            <div class="details py-2 px-2 pr-2">
                             <div class="form-group">
                                 <input type="text" id="fname" name="firstname" placeholder="Vorname">
-                            </div>
-                            <div class="form-group">
                                 <input type="text" id="lname" name="lastname" placeholder="Nachname">
                             </div>
                             <div class="form-group">
+                                <input type="text" id="company" name="firma" placeholder="Firma">
+                            </div>
+
+                                <div class="contact form-group">
+                                    <label for="mobil">Kontaktmöglichkeiten</label>
                                 <input type="text" id="mobil" name="handynummer" placeholder="Mobil">
-                            </div>
-                            <div class="form-group">
                                 <input type="text" id="phone" name="telefonnummer" placeholder="Telefonnummer">
-                            </div>
-                            <div class="form-group">
                                 <input type="text" id="mail" name="email" placeholder="E-Mail">
                             </div>
-                            <div class="form-group">
+
+                            <div class="anschrift form-group">
+                                <label for="address">Anschrift</label>
                                 <input type="text" id="address" name="addresse" placeholder="Straße und Hausnummer">
-                            </div>
-                            <div class="form-group">
                                 <input type="text" id="plz" name="postleitzahl" placeholder="PLZ">
-                            </div>
-                            <div class="form-group">
                                 <input type="text" id="ort" name="wohnort" placeholder="Wohnort">
 
-                            <label for="country">Land</label>
+                            <!-- Auswahlfeld Land Combobox <label for="country">Land</label>
                             <select id="country" name="country">
                                 <option value="australia">Deutschland</option>
                                 <option value="canada">Schweiz</option>
                                 <option value="usa">Österreich</option>
-                            </select>
-                            </div>
-                            <div class="bfh-datepicker">
+                            </select> -->
                             </div>
 
-                            <input type="submit" value="Submit">
                         </div>
-                    </form>
-                </div>
-            </div>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-submit-orange btn-lg">Senden</button>
+                        </div>
+                        </div>
+
+
     </section>
 
 <?php include ('scripts.html'); ?>
