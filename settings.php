@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<!-- Sidebar -->
+<!-- Sidebar und Header-->
 <?php include ('navigation.html'); ?>
 <section id="settings" class="page-content">
     <form class="container-fluid">
@@ -17,43 +17,38 @@
                 <h1>Einstellungen</h1>
             </div>
         </div>
-        <div class="row">
-<!--            innere Navigationsleiste-->
+
+        <!--innere Navigationsleiste-->
             <div class="sidebar-wrapper" id="secondSidebar">
-            <nav class="nav flex-column">
-                <a class="nav-link active" href="#">Profil bearbeiten</a>
-                <a class="nav-link" href="#">Passwort ändern</a>
-                <a class="nav-link" href="#">Einstellungen im Testfenster</a>
-                <a class="nav-link" href="#">Seiteninformation</a>
+                <a class="row card-item p-3 nav-link active" href="#">Profil bearbeiten</a>
+                <a class="row card-item p-3 nav-link" href="#">Passwort ändern</a>
+                <a class="row card-item p-3 nav-link" href="#">Einstellungen im Testfenster</a>
+                <a class="row card-item p-3 nav-link" href="#">Seiteninformation</a>
             </nav>
             </div>
-            <div class="col-md-5 offset-md-5">
+            </div>
 
-                    <!--akutelles Passwort eingeben-->
-                    <div class="form-group">
-                        <input type="text" name="current_password" placeholder="aktuelles Passwort">
-                        </label>
-                    </div>
-
-                    <!--neues Passwort eingeben-->
+        <!--akutelles Passwort eingeben-->
+            <div class="col-md-9 offset-md-4">
                     <div class="form-group row">
                         <div class="form-group">
-                            <label for="newPassword" class="col-sm-2 form-control-label">Bitte geben Sie Ihr aktuelles Passwort ein:</label>
-                            <label for="newPassword">neues Passwort:</label>
-                            <input id="newPassword" type="text" name="newPassword" placeholder="neues Passwort">
+                            <label for="currentPassword" class="col-md-9 form-control-label">Bitte geben Sie Ihr aktuelles Passwort ein:</label>
+                            <label for="currentPassword">aktuelles Passwort:</label>
+                            <input id="currentPassword" class="form control float-right" type="text" name="currentPassword" placeholder="aktuelles Passwort">
                         </div>
                     </div>
-
+                        <!--neues Passwort eingeben-->
                     <div class="form-group row">
                         <div class="form-group">
-                            <label for="newPassword" class="col-sm-2 form-control-label">Bitte geben Sie Ihr aktuelles Passwort ein:</label>
+                            <label for="newPassword" class="col-md-9 form-control-label">Bitte geben Sie Ihr neues Passwort ein:</label>
                             <label for="newPassword">neues Passwort:</label>
-                            <input id="newPassword" type="text" name="newPassword" placeholder="neues Passwort">
+                            <input id="newPassword" class="form control float-right" type="text" name="newPassword" placeholder="neues Passwort">
                         </div>
-<!--                        Passwort wiederholen-->
+
+                        <!--Passwort wiederholen-->
                         <div class="form-group">
                             <label for="newPassword">Passwort wiederholen:</label>
-                            <input id="newPassword" type="text" name="newPassword" placeholder="Passwort wiederholen">
+                            <input id="newPassword" class="form control float-right" type="text" name="newPassword" placeholder="Passwort wiederholen">
                         </div>
                     </div>
 
@@ -66,6 +61,8 @@
                     </div>
 
             </div>
+    </form>
+</section>
 
 
 
