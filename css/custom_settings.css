@@ -14,7 +14,7 @@ a.nav-link {
 }
 
 /* second navbar hover color*/
-.card-item:hover {
+#secondSidebar .card-item:hover {
     background-color: #e84a29;
 }
 
