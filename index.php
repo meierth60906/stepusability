@@ -13,7 +13,7 @@
 <section id="login">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-4 offset-md-4 pb-4">
                 <img class="img-fluid p-5" src="img/logo-color.png" alt="" />
                 <h1 class="text-center">Login</h1>
             </div>
@@ -36,7 +36,7 @@
 
                     </div>
                 </form>
-
+                <!-- Links unter dem Login Button und Pop-up Fenster -->
                 <div class="row pt-3 text-center">
                     <div class="col-12">
                         <a class="login-hyperlink" data-toggle="modal" data-target="#loginHelp" href="#">Login-Daten vergessen?</a>
@@ -52,7 +52,7 @@
 </section>
 
 
-<!-- Modal -->
+<!-- Pop-up Fenster: Login Daten vergessen -->
 <div class="modal fade text-center" id="loginHelp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content py-3">
@@ -80,7 +80,7 @@
     </div>
 </div>
 
-
+<!-- Pop-up Fenster: Registrierung -->
 <div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content py-3">
