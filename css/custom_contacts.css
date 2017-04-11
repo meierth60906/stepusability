@@ -8,7 +8,7 @@
     height: 100%;
 }
 
-#secondSidebar {
+#secondSidebarContacts {
     background-color: transparent;
     border-color: #EFEFEF;
     height: 100%;
@@ -18,17 +18,17 @@
 }
 
 /*2 second navbar text color*/
-#secondSidebar a.nav-link {
+#secondSidebarContacts a.nav-link {
     color: BLACK;
 }
 /* second navbar color */
 
-#secondSidebar .list-group-item {
+#secondSidebarContacts .list-group-item {
     background-color: #EFEFEF;
 
 }
 /* second navbar hover color*/
-#secondSidebar .list-group-item:hover {
+#secondSidebarContacts .list-group-item:hover {
     background-color: #ccd9e4;
 }
 .mac-style {

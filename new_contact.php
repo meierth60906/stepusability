@@ -27,7 +27,7 @@
             <!-- Projekte -->
             <div class="col-lg-6">
             <!-- Kontaktliste rechts -->
-                <div class="sidebar-wrapper col-lg-6" id="secondSidebar">
+                <div class="sidebar-wrapper col-lg-6" id="secondSidebarContacts">
                     <!-- Suchleiste -->
                     <form class="navbar-form pull-right" method="post" action="#">
                         <input class="form-control mac-style" name="search" value="" placeholder="Suchen" type="text">
