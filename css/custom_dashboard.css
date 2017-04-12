@@ -1,7 +1,10 @@
 .card-block {
-    height: 15rem;
     padding: 0;
     overflow-x: hidden;
+}
+
+#dashboard .card-block {
+    height: 15rem;
 }
 
 .card-header {

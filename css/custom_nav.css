@@ -47,6 +47,11 @@
 
 .sidebar-wrapper ul li a {
     text-decoration: none;
+    /*color: #7792b2;*/
+    color: white;
+}
+
+.sidebar-wrapper ul li a .active {
     color: white;
 }
 

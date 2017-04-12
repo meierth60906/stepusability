@@ -1,0 +1,25 @@
+.p-absolute {
+    position: absolute;
+    font-size: 1.8rem;
+    top: -5px;
+}
+
+th, td {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+th:first-child{
+    -moz-border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    border: none;
+}
+th:last-child{
+    -moz-border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    border: none;
+}
+
+.clickable-row {
+    cursor: pointer;
+}

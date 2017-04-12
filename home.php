@@ -14,8 +14,6 @@
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
                 <h1>Home</h1>
-
-                <!--            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
             </div>
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="settings.php">
@@ -29,7 +27,7 @@
             <!-- Projekte -->
             <div class="col-lg-6">
                 <div class="card my-3">
-                    <div class="card-header red">
+                    <div class="card-header">
                         Aktuelle Projekte
                     </div>
                     <div class="card-block pre-scrollable pt-0">
@@ -116,7 +114,7 @@
             <!-- Dokumente -->
             <div class="col-lg-6">
                 <div class="card my-3">
-                    <div class="card-header red">
+                    <div class="card-header">
                         Zuletzt geöffnete Dokumente
                     </div>
                     <div class="card-block pre-scrollable pt-0">
@@ -208,7 +206,7 @@
             <!-- Termine -->
             <div class="col-lg-6">
                 <div class="card my-3">
-                    <div class="card-header red">
+                    <div class="card-header">
                         Bevorstehende Termine
                     </div>
                     <div class="card-block pre-scrollable pt-0">
@@ -300,7 +298,7 @@
             <!-- Favoriten -->
             <div class="col-lg-6">
                 <div class="card my-3">
-                    <div class="card-header red">
+                    <div class="card-header">
                         Favoriten
                     </div>
                     <div class="card-block pre-scrollable pt-0">
