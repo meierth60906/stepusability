@@ -27,7 +27,7 @@
 
     <!--Form-->
 
-    <div class="form-group col-lg-9 offset-lg-4">
+    <div class="form-group col-lg-9 offset-lg-4 pt-5">
 
         <!--akutelles Passwort eingeben-->
 
@@ -47,7 +47,7 @@
 
 
     <!--                Passwort wiederholen-->
-    <div class="form-group col-lg-2 offset-lg-9">
+    <div class="form-group col-lg-2 offset-lg-6">
         <!--                                <label for="repeatPassword" class="row form-control-label">Passwort wiederholen:</label>-->
         <input id="repeatPassword" class="row form control float-right" type="text" name="repeatPassword"
                placeholder="Passwort wiederholen">
