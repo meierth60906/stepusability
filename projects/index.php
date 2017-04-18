@@ -39,7 +39,7 @@
                     <tbody>
                     <tr class='clickable-row' data-href='project1.php'>
                         <td scope="row">Laufend</td>
-                        <th><a href="../index.php">Projekt 1</a></th>
+                        <th><a href="project1.php">Projekt 1</a></th>
                         <td>Auftrag Geber</td>
                         <td>11.04.17</td>
                         <td>02.03.17</td>
