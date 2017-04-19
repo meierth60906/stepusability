@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
+                <div class="col-lg-12 col-lg-offset-1">
                     <form action="" class="search-form">
                         <div class="form-group has-feedback">
                             <label for="search" class="sr-only">Search</label>
@@ -60,29 +60,29 @@
                 <div class="form-group row">
                     <label for="inputFirstName" class="col-lg-2 form-control-label">Name</label>
                     <div class="col-lg-5">
-                        <input type="name" class="form-control" id="inputFirstName" placeholder="Vorname">
-                        <input type="name" class="form-control" id="inputName" placeholder="Nachname">
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="Vorname">
+                        <input type="text" class="form-control" id="inputName" placeholder="Nachname">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputFirm" class="col-lg-2 form-control-label">Firma</label>
                     <div class="col-lg-5">
-                        <input type="firm" class="form-control" id="inputName" placeholder="Firma">
+                        <input type="text" class="form-control" id="inputName" placeholder="Firma">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-lg-2 form-control-label">Kontaktmöglichkeiten</label>
                     <div class="col-lg-5">
                         <input type="email" class="form-control" id="inputEmail3" placeholder="E-Mail">
-                        <input type="mobile" class="form-control" id="inputPhone" placeholder="Mobil">
+                        <input type="number" class="form-control" id="inputPhone" placeholder="Mobil">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputAddress" class="col-lg-2 form-control-label">Anschrift</label>
                     <div class="col-lg-5">
-                        <input type="street" class="form-control" id="inputAddress" placeholder="Straße & Hausnr.">
-                        <input type="plz" class="form-control" id="inputAddress" placeholder="PLZ">
-                        <input type="city" class="form-control" id="inputName" placeholder="Ort">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Straße & Hausnr.">
+                        <input type="number" class="form-control" id="inputAddress" placeholder="PLZ">
+                        <input type="text" class="form-control" id="inputName" placeholder="Ort">
                     </div>
                 </div>
         </div>
