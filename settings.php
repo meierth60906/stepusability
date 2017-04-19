@@ -28,45 +28,41 @@
     <!--Form-->
 
     <div class="form-group col-lg-9 offset-lg-4 pt-5">
+        <form>
+            <!--akutelles Passwort eingeben-->
+            <div class="form-group row">
+                <label for="currentPassword" class="col-lg-5 form-control-label">Bitte geben Sie Ihr aktuelles Passwort
+                    ein:</label>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" id="currentPassword" placeholder="aktuelles Passwort">
+                </div>
+            </div>
 
-        <!--akutelles Passwort eingeben-->
+            <!--neues Passwort eingeben-->
 
-        <div class="row col-lg-6">
-            <label for="currentPassword" class="form-control-label">Bitte geben Sie Ihr aktuelles Passwort
-                ein:</label>
-        </div>
+            <div class="form-group row">
+                <label for="newPassword" class="col-lg-5 form-control-label">Bitte geben Sie Ihr neues Passwort
+                    ein:</label>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" id="newPassword" placeholder="neues Passwort">
+                </div>
+            </div>
 
-        <!--neues Passwort eingeben-->
+            <!--Passwort wiederholen-->
+            <div class="form-group row">
+                <div class="col-lg-5 offset-lg-5">
+                    <input type="text" class="form-control" id="repeatPassword" placeholder="Passwort wiederholen">
 
-        <div class="row col-lg-6">
-            <label for="newPassword" class="form-control-label">Bitte geben Sie Ihr neues Passwort
-                ein:</label>
-        </div>
-
-    </div>
+                </div>
+            </div>
 
 
-    <!--                Passwort wiederholen-->
-    <div class="form-group col-lg-2 offset-lg-6">
-        <!--                                <label for="repeatPassword" class="row form-control-label">Passwort wiederholen:</label>-->
-        <input id="repeatPassword" class="row form control float-right" type="text" name="repeatPassword"
-               placeholder="Passwort wiederholen">
+            <!--Passwort ändern Button -->
 
-        <!--                            <label for="currentPassword" class="row form-control-label">aktuelles Passwort:</label>-->
-        <input id="currentPassword" class="row form control" type="text" name="currentPassword"
-               placeholder="aktuelles Passwort">
-
-        <!--                            <label for="newPassword" class="row form-control-label">neues Passwort:</label>-->
-        <input id="newPassword" class="row form control" type="text" name="newPassword"
-               placeholder="neues Passwort">
-
-    </div>
-    <!--                Passwort ändern Button -->
-
-    <div class="text-center">
-        <input type="submit" class="btn-submit-orange btn btn-danger btn-lg" name="change_password"
-               value="Passwort ändern">
-    </div>
+            <div class="text-center">
+                <input type="submit" class="btn-submit-orange btn btn-danger btn-lg" name="change_password"
+                       value="Passwort ändern">
+            </div>
     </div>
 
 
