@@ -1,0 +1,39 @@
+#singleproject .nav-tabs {
+    border-bottom: solid 5px #e84a29;
+}
+
+#singleproject .nav-tabs .nav-item {
+    background-color: #eaeaea;
+    color: black;
+    border: 1px solid #0000001a;
+    border-bottom: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+}
+
+#singleproject .nav-tabs .nav-item .active {
+    background-color: #e84a29;
+    color: white;
+    border: 0;
+    -webkit-border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#singleproject .nav-link {
+    border: 0;
+}
+
+#singleproject .titlebar {
+    background: none;
+    border: none;
+}
+
