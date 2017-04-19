@@ -9,13 +9,14 @@
     border-bottom: none;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 0;
     -webkit-border-top-left-radius: 50px;
     border-top-left-radius: 50px;
     -webkit-border-top-right-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-right-radius: 50px;/*
     -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
-    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);*/
 }
 
 #singleproject .nav-tabs .nav-item .active {
@@ -35,5 +36,17 @@
 #singleproject .titlebar {
     background: none;
     border: none;
+}
+
+.inner-body {
+    height: 100% !important;
+    min-height: 100% !important;
+
+}
+
+.inner-body {
+    height: 100% !important;
+    min-height: 100% !important;
+
 }
 
