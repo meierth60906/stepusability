@@ -18,13 +18,42 @@
     <!--innere Navigationsleiste-->
 
     <div class="sidebar-wrapper col-lg-3" id="secondSidebar">
-            <div class="active">
-        <a class="row card-item p-3 nav-link " href="#profile">Profil bearbeiten</a>
-        <a class="row card-item p-3 nav-link" href="#password">Passwort ändern</a>
-        <a class="row card-item p-3 nav-link" href="#testWindow">Einstellungen im Testfenster</a>
-        <a class="row card-item p-3 nav-link" href="#pageInformation">Seiteninformation</a>
+        <div class="active">
+            <a class="row card-item p-3 nav-link " href="#profile">Profil bearbeiten</a>
+            <a class="row card-item p-3 nav-link" href="#password">Passwort ändern</a>
+            <a class="row card-item p-3 nav-link" href="#testWindow">Einstellungen im Testfenster</a>
+            <a class="row card-item p-3 nav-link" href="#pageInformation">Seiteninformation</a>
+        </div>
     </div>
-    </div>
+<!---->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-6">-->
+<!---->
+<!--                <div class="row">-->
+<!--                    <div class="col-xs-3">-->
+<!--                        <ul class="nav nav-tabs tabs-left">-->
+<!--                            <li class="active"><a href="#profile" data-toggle="tab">Profil bearbeiten</a></li>-->
+<!--                            <li><a href="#password" data-toggle="tab">Passwort ändern</a></li>-->
+<!--                            <li><a href="#testWindow" data-toggle="tab">Einstellungen im Testfenster</a></li>-->
+<!--                            <li><a href="#pageInfo" data-toggle="tab">Seiteninformation</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-xs-9">-->
+<!--            <div class="tab-content">-->
+<!--                <div class="tab-pane active" id="profile">Profil bearbeiten Tab.</div>-->
+<!--                <div class="tab-pane active" id="password">Passwort ändern</div>-->
+<!--                <div class="tab-pane active" id="testWindow">Einstellungen im Testfenster</div>-->
+<!--                <div class="tab-pane active" id="pageInfo">Seiteninformation</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
 
     <!--Form-->
 
