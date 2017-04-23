@@ -17,41 +17,17 @@
 
     <!--innere Navigationsleiste-->
 
-
-
-
-
-
-
-    <div class="nav-side-menu" id="sidebarLibrary">
-        <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Einverständniserklärung</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
-        <a class="nav-item nav-link" href="#">Protokollleitfaden</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
-        <a class="dropdown-header nav-link" href="#">Protokollleitfaden</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
-        <a class="dropdown-header nav-link" href="#">Testskript</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
-        <a class="dropdown-toggle nav-link" href="#">Testplan</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
-        <a class="dropdown-header nav-link" href="#">Testbericht</a>
-        <a class="dropdown-item" href="#">Vorlage 1</a>
-        <a class="dropdown-item" href="#">Vorlage 2</a>
+            <div class="sidebar-wrapper col-lg-3" id="sidebarLibrary">
+           <a class="dropdown-toggle p-3 nav-link " href="#einverständniserklärung">Einverständniserklärung</a>
+    <a class="dropdown-item card-item p-1 nav-link " href="#vorlage1">Vorlage 1</a>
+    <a class="dropdown-toggle p-3 nav-link" href="#protocol">Protokollleitfaden</a>
+    <a class="dropdown-item card-item p-1 nav-link " href="#">Vorlage 1</a>
+    <a class="dropdown-toggle p-3 nav-link" href="#">Testskript</a>
+    <a class="dropdown-item card-item p-1 nav-link " href="#">Vorlage 1</a>
+    <a class="dropdown-toggle p-3 nav-link" href="#">Testplan</a>
+    <a class="dropdown-item card-item p-1 nav-link " href="#">Vorlage 1</a>
+    <a class="dropdown-toggle p-3 nav-link" href="#">Testbericht</a>
     </div>
-
-<!--    <div class="navbar col-lg-3" id="secondSidebar">-->
-<!--        <a class="row dropdown-header card-item p-3 nav-link active" href="#">Einverständniserklärung</a>-->
-<!--        <a class="row card-item p-3 nav-link dropdown-item" href="#">Protokollleitfaden</a>-->
-<!--        <a class="row card-item p-3 nav-link" href="#">Protokollleitfaden</a>-->
-<!--        <a class="row card-item p-3 nav-link" href="#">Testskript</a>-->
-<!--        <a class="row card-item p-3 nav-link" href="#">Testplan</a>-->
-<!--        <a class="row card-item p-3 nav-link" href="#">Testbericht</a>-->
-<!--    </div>-->
 
 
 

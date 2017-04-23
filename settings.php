@@ -18,16 +18,18 @@
     <!--innere Navigationsleiste-->
 
     <div class="sidebar-wrapper col-lg-3" id="secondSidebar">
-        <a class="row card-item p-3 nav-link active" href="#">Profil bearbeiten</a>
-        <a class="row card-item p-3 nav-link" href="#">Passwort ändern</a>
-        <a class="row card-item p-3 nav-link" href="#">Einstellungen im Testfenster</a>
-        <a class="row card-item p-3 nav-link" href="#">Seiteninformation</a>
+            <div class="active">
+        <a class="row card-item p-3 nav-link " href="#profile">Profil bearbeiten</a>
+        <a class="row card-item p-3 nav-link" href="#password">Passwort ändern</a>
+        <a class="row card-item p-3 nav-link" href="#testWindow">Einstellungen im Testfenster</a>
+        <a class="row card-item p-3 nav-link" href="#pageInformation">Seiteninformation</a>
     </div>
-
+    </div>
 
     <!--Form-->
 
-    <div class="form-group col-lg-9 offset-lg-4 pt-5">
+    <div class="form-group row">
+        <div class="col-lg-9 offset-lg-4 pt-5"
         <form>
             <!--akutelles Passwort eingeben-->
             <div class="form-group row">
@@ -59,7 +61,8 @@
 
             <!--Passwort ändern Button -->
 
-            <div class="text-center">
+            <div class="form-group row">
+                <div class="col-lg-5 offset-lg-5">
                 <input type="submit" class="btn-submit-orange btn btn-danger btn-lg" name="change_password"
                        value="Passwort ändern">
             </div>
