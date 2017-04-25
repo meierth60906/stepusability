@@ -312,7 +312,7 @@
                                     <div class="text-muted small">Siemens AG</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right middle-two-line">
-                                    <div class="img-placeholder darkgrey-bg">AA</div>
+                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
                                 </div>
                             </div>
                         </a>

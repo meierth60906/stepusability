@@ -81,5 +81,14 @@
 #singleproject .inner-sidebar {
     overflow: auto;
     position:fixed;
-    right: -3rem;
+    right: -30px;
+    /*right: -3rem;*/
+}
+
+#singleproject .goals {
+}
+
+#singleproject .goals .pl-5 {
+    position:fixed;
+    bottom: 0;
 }

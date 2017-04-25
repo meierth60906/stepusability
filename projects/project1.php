@@ -44,7 +44,7 @@
         <div class="tab-content">
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="inner-body row">
-                    <div class="col-9 p-5">
+                    <div class="col-md-9 p-5 pb-3">
                         <div class="row">
                             <div class="col-lg-12 text-right">
                                 <a href="project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
@@ -59,7 +59,7 @@
                             <div class="col-lg-8 font-weight-bold"><a href="../new_contact.php">Max Mustermann</a></div>
                         </div>
 
-                        <div class="row py-3">
+                        <div class="row">
                             <div class="col-lg-4">Projektbeschreibung:</div>
                             <div class="col-lg-8 font-weight-bold">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -68,90 +68,93 @@
                                 sanctus est Lorem ipsum dolor sit amet.
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-9 px-0 goals">
+                        <div class="pl-5" style="display:inline-block;width:100%;overflow-y:auto;">
+                            <ul class="timeline timeline-horizontal">
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-orange-bg"><i class="icon-folder"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Projekt "Projekt 1" erstellt</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 08.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis faiz elementum girarzis, nisi eros gostis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-einverst-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Einverständniserklärung erstellt</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 10.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis faiz elementum girarzis, nisi eros gostis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-protokoll-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Protokolle erstellt</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 12.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipisci. Mé faiz elementum girarzis, nisi eros gostis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-orange-bg"><i class="icon-calendar-1"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Termin für Testdurchlauf</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 14.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-plan-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Testplan erstellt</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-skript-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Testskript erstellt</p>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <div class="row py-3">
-                            <div class="col-md-12">
-                                <div style="display:inline-block;width:100%;overflow-y:auto;">
-                                    <ul class="timeline timeline-horizontal">
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 1</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis faiz elementum girarzis, nisi eros gostis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 2</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis faiz elementum girarzis, nisi eros gostis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 3</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipisci. Mé faiz elementum girarzis, nisi eros gostis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 4</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 5</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                                            <div class="timeline-panel">
-                                                <div class="timeline-heading">
-                                                    <p class="timeline-title">Mussum ipsum cacilds 6</p>
-                                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+
+                    </div>
+                    <div class="inner-sidebar c-grey-bg col-md-3">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <i class="icon-check"></i>Projekt abschließen
                             </div>
                         </div>
-                    </div>
-                    <div class="inner-sidebar grey-bg col-3">
-                        Hiiii
                     </div>
                 </div>
 
@@ -178,16 +181,16 @@
     $('.inner-sidebar').css('height', h - header_h );
     $(".inner-body").css("padding-top", header_h)
 
-/*    $(".nav-item .active").hover(
-        function() {
-            $(".nav-tabs").css("border-bottom", "solid 5px #ff512d");
-            $(this).css("background-color", "#ff512d");
-        },
-        function() {
-        $(".nav-tabs").css("border-bottom", "solid 5px #e84a29");
-        $(this).css("background-color", "#e84a29");
-    }
-    )*/
+    /*    $(".nav-item .active").hover(
+     function() {
+     $(".nav-tabs").css("border-bottom", "solid 5px #ff512d");
+     $(this).css("background-color", "#ff512d");
+     },
+     function() {
+     $(".nav-tabs").css("border-bottom", "solid 5px #e84a29");
+     $(this).css("background-color", "#e84a29");
+     }
+     )*/
 </script>
 </body>
 
