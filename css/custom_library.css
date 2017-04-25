@@ -1,4 +1,16 @@
-#sidebarLibrary{
-    margin-left: 60px;
+#sidebarLibrary {
+    background-color: #EFEFEF;
+    height: 100%;
+    width: 25%;
+
 }
 
+/*2 second navbar text color*/
+#sidebarLibrary a.nav-link {
+    color: BLACK;
+}
+
+/* second navbar hover color*/
+#sidebarLibrary .card-item:hover {
+    background-color: #e84a29;
+}

@@ -236,7 +236,7 @@
                                     <div class="text-muted small">Projekt 3</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Sa, 08. April 2017</div>
+                                    <div class="text-muted">Sa, 08.04.17</div>
                                     <div class="text-muted small">14:00 - 17:00</div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@
                                     <div class="text-muted small">Projekt 2</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Sa, 15. April 2017</div>
+                                    <div class="text-muted">Sa, 15.04.17</div>
                                     <div class="text-muted small">14:00 - 17:00</div>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Di, 18. April 2017</div>
+                                    <div class="text-muted">Di, 18.04.17</div>
                                     <div class="text-muted small">14:00 - 17:00</div>
                                 </div>
                             </div>
@@ -284,7 +284,7 @@
                                     <div class="text-muted small">Projekt 1</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Do, 20. April 2017</div>
+                                    <div class="text-muted">Do, 20.04.17</div>
                                     <div class="text-muted small">14:00 - 17:00</div>
                                 </div>
                             </div>
@@ -312,7 +312,7 @@
                                     <div class="text-muted small">Siemens AG</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right middle-two-line">
-                                    <div class="img-placeholder darkgrey-bg">AA</div>
+                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
                                 </div>
                             </div>
                         </a>
