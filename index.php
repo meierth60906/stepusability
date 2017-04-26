@@ -32,7 +32,7 @@
 
                         <!--  Schaltflaeche  als  Button  -->
                        <div class="text-center">
-                           <a href="index.php" class="btn btn-submit-orange btn-lg active" role="button" aria-pressed="true">Login</a>
+                           <a href="home.php" class="btn btn-submit-orange btn-lg active" role="button" aria-pressed="true">Login</a>
 
                     </div>
                 </form>
