@@ -92,3 +92,9 @@
     position:fixed;
     bottom: 0;
 }
+
+#singleproject .question-angles {
+    position: relative;
+    top: 0.5rem;
+    font-size: 4rem;
+}
