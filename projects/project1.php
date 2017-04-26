@@ -23,18 +23,18 @@
         </div>
         <div class="row project-tabs ">
             <div class="col-md-12 p-0">
-                <ul class="px-1 px-md-4 nav nav-tabs nav-justified">
+                <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#allgemein" role="tab" data-toggle="tab">Allgemein</a>
+                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab">Allgemein</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testaufgaben" role="tab" data-toggle="tab">Testaufgaben</a>
+                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab">Testaufgaben</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projektunterlagen" role="tab" data-toggle="tab">Projektunterlagen</a>
+                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab">Projektunterlagen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#evaluation" role="tab" data-toggle="tab">Evaluation</a>
+                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab">Evaluation</a>
                     </li>
                 </ul>
             </div>
@@ -150,9 +150,10 @@
 
                     </div>
                     <div class="inner-sidebar c-grey-bg col-md-3">
-                        <div class="row ">
-                            <div class="col-md-6">
-                                <i class="icon-check"></i>Projekt abschließen
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="h3 text-center"><i class="icon-check"></i>Test starten</div>
+                                <p class="text-center"><i class="icon-check"></i>Projekt abschließen</p>
                             </div>
                         </div>
                     </div>
@@ -161,25 +162,73 @@
             </div>
             <div class="tab-pane" id="testaufgaben" role="tabpanel">...</div>
             <div class="tab-pane" id="projektunterlagen" role="tabpanel">...</div>
-            <div class="tab-pane" id="evaluation" role="tabpanel">...</div>
+            <div class="tab-pane" id="evaluation" role="tabpanel">
+                <div class="inner-body row c-grey-bg">
+                    <div class="col-2 text-right p-5">
+                        <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
+                    </div>
+                    <div class="col-8 p-5">
+                        <p class="font-weight-bold text-center">Aufgabe 1</p>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum.
+                        </p>
+                    </div>
+                    <div class="col-2 p-5">
+                        <a class="c-orange" href=""><i class="question-angles icon-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row p-5">
+                            <div class="col-md-2">
+                                <div class="img-placeholder c-darkgrey-bg">AA</div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-lg-4">Lösungsschritte:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                        dolores et ea rebum.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">Anmerkungen:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        Editor
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 </section>
 
 <?php include ('scripts.html'); ?>
-<script>
+<!--<script>
     jQuery(document).ready(function($) {
         $(".clickable-row").click(function() {
             window.location = $(this).data("href");
         });
     });
-</script>
+</script>-->
 <script>
     var h = $(window).height();
     var header_h = $(".page-top").height();
     $('.inner-sidebar').css('height', h - header_h );
-    $(".inner-body").css("padding-top", header_h)
+    $(".inner-body").css("padding-top", header_h);
 
     /*    $(".nav-item .active").hover(
      function() {
@@ -191,6 +240,20 @@
      $(this).css("background-color", "#e84a29");
      }
      )*/
+
+
+    $(function(){
+        var hash = window.location.hash;
+        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+        $('.nav-tabs a').click(function (e) {
+            $(this).tab('show');
+            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+        });
+    });
+
 </script>
 </body>
 
