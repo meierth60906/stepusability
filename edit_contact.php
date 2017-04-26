@@ -10,6 +10,7 @@
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
+
     <div class="row titlebar px-3 py-3">
         <div class="col-8">
             <h1>Kontakte</h1>
@@ -21,79 +22,7 @@
         </div>
     </div>
 
-    <div class="col-lg-4" id="secondSidebarContacts">
-        <!-- Suchleiste -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <div class="input-group">
-                        <div class="input-group-btn search-panel">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <span id="search_concept">Filter by</span> <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#Favoriten">Favoriten</a></li>
-                                <li><a href="#Kunden">Kunden</a></li>
-                                <li><a href="#Team">Team</a></li>
-                                <li><a href="#Probanden">Probanden</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#all">Alle</a></li>
-                            </ul>
-                        </div>
-                        <input type="hidden" name="search_param" value="all" id="search_param">
-                        <input type="text" class="form-control" name="x" placeholder="Search term...">
-                        <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><span class="icon-search"></span></button>
-                </span>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--<div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-lg-offset-1">
-                        <span class="icon-search">
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control" id="inputSearch" placeholder="Suche">
-
-                            </div>
-                    </div>
-                </div>
-            </div>-->
-            <!-- Kontaktliste -->
-            <a href="#" class="header">A</a>
-            <a class="row card-item p-3 nav-link" href="#">Alena Ahorn</a>
-            <a class="row card-item p-3 nav-link" href="#">Alessa Albert</a>
-            <a class="row card-item p-3 nav-link active" href="#">Anna Apfel</a>
-            <a href="#" class="header">B</a>
-            <a class="row card-item p-3 nav-link" href="#">Benjamin Berger</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-            <a class="row card-item p-3 nav-link" href="#">Bernd Bogner</a>
-        </div>
-    </div>
+    <?php include ('contactlist.html');?>
 
     <!--Form-->
     <div class="form-group pt-5 col-lg-8 offset-lg-4">

@@ -11,9 +11,34 @@
     background-color: #EFEFEF;
     border-color: #EFEFEF;
     width: 25%;
-    position: absolute;
+    position: fixed;
+}
+#secondSidebarContacts::-webkit-scrollbar{
+
 }
 
+.scrollbar
+{
+    margin-left: 0px;
+    float: left;
+    height: 900px;
+    width: 350px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow
+{
+    min-height: 950px;
+}
+
+#wrapper
+{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
 /*2 second navbar text color*/
 #secondSidebarContacts a.nav-link {
     color: BLACK;
@@ -87,4 +112,7 @@
 
 .profile-header {
     margin-top: 10px;
+}
+.row header{
+    background-color: #4b5257;
 }
