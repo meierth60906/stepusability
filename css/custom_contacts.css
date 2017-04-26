@@ -19,13 +19,12 @@
 
 .scrollbar
 {
-    margin-left: 0px;
     float: left;
     height: 900px;
     width: 350px;
-    background: #F5F5F5;
+    background: #EFEFEF;
     overflow-y: scroll;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
 .force-overflow

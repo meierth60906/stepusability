@@ -10,7 +10,7 @@
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
-    <div class="row titlebar fixed-top px-3 py-3">
+    <div class="row titlebar px-3 py-3">
         <div class="col-8">
             <h1>Kontakte</h1>
         </div>

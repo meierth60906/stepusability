@@ -1,0 +1,9 @@
+#testfenster{
+    background: #EFEFEF;
+    height:100%;
+    min-height: 100%;
+}
+
+.container col{
+    background-color: #EFEFEF;
+}
