@@ -5,7 +5,7 @@
 
     <?php include ('head.html'); ?>
 </head>
-<body>
+<body id="body-singleproject">
 
 <?php include ('navigation.html'); ?>
 
@@ -163,48 +163,86 @@
             <div class="tab-pane" id="testaufgaben" role="tabpanel">...</div>
             <div class="tab-pane" id="projektunterlagen" role="tabpanel">...</div>
             <div class="tab-pane" id="evaluation" role="tabpanel">
-                <div class="inner-body row c-grey-bg">
-                    <div class="col-2 text-right p-5">
-                        <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
+                <div class="aufgabenfeld inner-body row c-grey-bg">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 text-right p-5">
+                                <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
+                            </div>
+                            <div class="col-8 p-5">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum.
+                                </p>
+                            </div>
+                            <div class="col-2 p-5">
+                                <a class="c-orange" href=""><i class="question-angles icon-angle-right"></i></a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-8 p-5">
-                        <p class="font-weight-bold text-center">Aufgabe 1</p>
-                        <p class="text-center">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum.
-                        </p>
-                    </div>
-                    <div class="col-2 p-5">
-                        <a class="c-orange" href=""><i class="question-angles icon-angle-right"></i></a>
-                    </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="row p-5">
-                            <div class="col-md-2">
-                                <div class="img-placeholder c-darkgrey-bg">AA</div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="row">
-                                    <div class="col-lg-4">Lösungsschritte:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                        dolores et ea rebum.
-                                    </div>
+                    <div class="protokollant-container col-md-6">
+                        <div class="protokollant-card m-5">
+                            <div class="row px-4 p-4">
+                                <div class="col-md-12">
+                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
+
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                    <hr>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-4">Anmerkungen:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua.
-                                    </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-lg-4">Lösungsschritte:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores et ea rebum.
+                                </div>
+                            </div>
+                            <div class="row px-4 p-4">
+                                <div class="col-lg-4">Anmerkungen:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua.
                                 </div>
                             </div>
                         </div>
+
+                        <div class="protokollant-card m-5">
+                            <div class="row px-4 p-4">
+                                <div class="col-md-12">
+                                    <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-lg-4">Lösungsschritte:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores et ea rebum.
+                                </div>
+                            </div>
+                            <div class="row px-4 p-4">
+                                <div class="col-lg-4">Anmerkungen:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-md-6">
                         Editor
@@ -226,9 +264,26 @@
 </script>-->
 <script>
     var h = $(window).height();
+
     var header_h = $(".page-top").height();
+    var innerbody = $(".inner-body");
+    var aufgabenfeld = $(".aufgabenfeld");
+
     $('.inner-sidebar').css('height', h - header_h );
-    $(".inner-body").css("padding-top", header_h);
+    innerbody.css("padding-top", header_h);
+
+    var aufgabenfeld_h = aufgabenfeld.height();
+
+    $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
+
+    $( window ).resize( function(){
+        h = $(window).height();
+        $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
+    });
+
+
+
+    alert("WindowHeight: " + h + " Innerbody: " + aufgabenfeld_h + " Header_h: " + header_h);
 
     /*    $(".nav-item .active").hover(
      function() {
@@ -246,7 +301,7 @@
         var hash = window.location.hash;
         hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
-        $('.nav-tabs a').click(function (e) {
+        $('.nav-tabs a').click(function () {
             $(this).tab('show');
             var scrollmem = $('body').scrollTop() || $('html').scrollTop();
             window.location.hash = this.hash;

@@ -70,8 +70,22 @@
 }
 
 #singleproject .page-top {
-    margin-left: 120px;
+    margin-left: 60px;
     background-color: white;
+}
+
+
+@media(min-height: 720px) {
+    #singleproject .page-top {
+        margin-left: 120px !important;
+    }
+}
+
+
+@media(min-height: 600px) {
+    #singleproject .page-top {
+        margin-left: 100px;
+    }
 }
 
 #singleproject .inner-body {
@@ -97,4 +111,26 @@
     position: relative;
     top: 0.5rem;
     font-size: 4rem;
+}
+
+#singleproject hr {
+    margin-bottom: 0;
+}
+
+#singleproject .protokollant-card {
+    border: 1px solid #0000001a;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+}
+
+#singleproject .protokollant-container {
+    overflow-y: scroll;
+}
+
+#body-singleproject {
+}
+
+.aufgabenfeld {
+    height: 310px !important;
 }

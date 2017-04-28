@@ -23,9 +23,9 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row protokollant-container">
             <!-- Projekte -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 protokollant-content">
                 <div class="card my-3">
                     <div class="card-header">
                         Aktuelle Projekte
