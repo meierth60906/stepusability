@@ -22,13 +22,12 @@
             <div class="col-lg-3 p-0" id="secondSidebar">
                 <ul class="flex-column nav">
                     <li class="nav-item">
-                        <a class="p-3 nav-link active" href="#profile" role="tab" data-toggle="tab">Profil
+                        <a class="p-3 nav-link" href="#profile" role="tab" data-toggle="tab">Profil
                             bearbeiten</a></li>
                     <li class="nav-item">
                         <a class="p-3 nav-link" href="#password" role="tab" data-toggle="tab">Passwort ändern</a></li>
                     <li class="nav-item">
-                        <a class="p-3 nav-link" href="#pageInfo" role="tab"
-                           data-toggle="tab">Seiteninformation</a>
+                        <a class="p-3 nav-link" href="#pageInfo" role="tab" data-toggle="tab">Seiteninformation</a>
                     </li>
                 </ul>
             </div>
@@ -164,17 +163,13 @@
 
 <?php include('scripts.html'); ?>
 <script>
-    $(function () {
-        var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
+    $(function(){
         $('.nav').click(function (e) {
-            $(this).tab('show');
-            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-            window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
-        });
+            e.preventDefault()
+            $(this).tab('show')
+        })
     });
+
 </script>
 
 </body>
