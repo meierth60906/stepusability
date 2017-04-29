@@ -4,7 +4,7 @@
     height: 100%;
     width: 25%;
     position: fixed;
-    padding: 15px;
+    margin-left: -15px;
 }
 
 /*2 second navbar text color*/
@@ -13,9 +13,34 @@
 }
 
 /* second navbar hover color*/
-#secondSidebar .card-item:hover {
+#secondSidebar .nav-item:hover {
     background-color: #e84a29;
 }
 
+#settings .page-top {
+    margin-left: 60px;
+    background-color: white;
+}
 
 
+@media(min-height: 720px) {
+    #settings .page-top {
+        margin-left: 120px !important;
+    }
+}
+
+
+@media(min-height: 600px) {
+    #settings .page-top {
+        margin-left: 100px;
+    }
+}
+
+
+#settings .tab-content {
+    margin-left:30px;
+}
+
+#settings .form-group {
+    margin-top: 50px;
+}

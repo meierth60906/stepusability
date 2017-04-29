@@ -3,104 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>Settings | step</title>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
-
+    <?php include('head.html') ?>
 </head>
 <body>
 <!-- Sidebar und Header-->
 <?php include('navigation.html'); ?>
+
+
 <section id="settings" class="page-content">
-    <div class="titlebar px-3 py-3">
-        <h1>Einstellungen</h1>
-    </div>
+    <div class="page-top fixed-top container-fluid">
+        <div class="row titlebar px-3 py-3">
+            <h1>Einstellungen</h1>
+        </div>
 
-    <!--innere Navigationsleiste-->
 
-    <div class="sidebar-wrapper col-lg-3" id="secondSidebar">
-        <div class="active">
-            <a class="row card-item p-3 nav-link " href="#profile">Profil bearbeiten</a>
-            <a class="row card-item p-3 nav-link" href="#password">Passwort ändern</a>
-            <a class="row card-item p-3 nav-link" href="#testWindow">Einstellungen im Testfenster</a>
-            <a class="row card-item p-3 nav-link" href="#pageInformation">Seiteninformation</a>
+        <!--innere Navigationsleiste-->
+        <div class="container row">
+            <div class="col-lg-3 p-0" id="secondSidebar">
+                <ul class="flex-column nav">
+                    <li class="nav-item">
+                        <a class="p-3 nav-link active" href="#profile" role="tab" data-toggle="tab">Profil
+                            bearbeiten</a></li>
+                    <li class="nav-item">
+                        <a class="p-3 nav-link" href="#password" role="tab" data-toggle="tab">Passwort ändern</a></li>
+                    <li class="nav-item">
+                        <a class="p-3 nav-link" href="#pageInfo" role="tab"
+                           data-toggle="tab">Seiteninformation</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-<!---->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-6">-->
-<!---->
-<!--                <div class="row">-->
-<!--                    <div class="col-xs-3">-->
-<!--                        <ul class="nav nav-tabs tabs-left">-->
-<!--                            <li class="active"><a href="#profile" data-toggle="tab">Profil bearbeiten</a></li>-->
-<!--                            <li><a href="#password" data-toggle="tab">Passwort ändern</a></li>-->
-<!--                            <li><a href="#testWindow" data-toggle="tab">Einstellungen im Testfenster</a></li>-->
-<!--                            <li><a href="#pageInfo" data-toggle="tab">Seiteninformation</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="col-xs-9">-->
-<!--            <div class="tab-content">-->
-<!--                <div class="tab-pane active" id="profile">Profil bearbeiten Tab.</div>-->
-<!--                <div class="tab-pane active" id="password">Passwort ändern</div>-->
-<!--                <div class="tab-pane active" id="testWindow">Einstellungen im Testfenster</div>-->
-<!--                <div class="tab-pane active" id="pageInfo">Seiteninformation</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
+    <div class="container-fluid">
+        <div class="tab-content">
 
+            <!--            Profil bearbeiten Seite -->
 
-    <!--Form-->
+            <div class="tab-pane row" id="profile" role="tabpanel">
+                <div class="form-group pt-5 col-lg-8 offset-lg-4">
+                    <form>
+                        <div class="form-group row">
+                            <div class="profile-header-img">
+                                <img class="img-circle" src="img/add_picture.png"/>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" id="vorname"
+                                       placeholder="Vorname">
+                                <input type="text" class="form-control" id="nachname"
+                                       placeholder="Nachname">
+                                <input type="text" class="form-control" id="firma"
+                                       placeholder="Firma">
+                            </div>
+                        </div>
 
-    <div class="form-group row">
-        <div class="col-lg-9 offset-lg-4 pt-5"
-        <form>
-            <!--akutelles Passwort eingeben-->
-            <div class="form-group row">
-                <label for="currentPassword" class="col-lg-5 form-control-label">Bitte geben Sie Ihr aktuelles Passwort
-                    ein:</label>
-                <div class="col-lg-5">
-                    <input type="text" class="form-control" id="currentPassword" placeholder="aktuelles Passwort">
+                        <div class="form-group row">
+                            <label for="email" class="col-lg-3 form-control-label">Kontaktmöglichkeiten</label>
+                            <div class="col-lg-5">
+                                <input type="email" class="form-control" id="email" placeholder="E-Mail">
+                                <input type="text" class="form-control" id="phone" placeholder="Mobil">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="birthday" class="col-lg-3 form-control-label">Geburtsdatum</label>
+                            <div class="col-lg-5">
+                                <input type="date" class="form-control" id="birthday" placeholder="Geburtstag">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="skill" class="col-lg-3 form-control-label">Fähigkeiten</label>
+                            <div class="col-lg-5">
+                                <div class="chip">
+                                    <input type="text" class="card-text" id="skill" placeholder="Skill 1">
+                                    <input type="text" class="card-text" id="skill" placeholder="Skill 2">
+                                    <input type="text" class="card-text" id="skill" placeholder="Skill 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputAddress" class="col-lg-3 form-control-label">Anschrift</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" id="address"
+                                       placeholder="Straße & Hausnr.">
+                                <input type="text" class="form-control" id="address" placeholder="PLZ">
+                                <input type="text" class="form-control" id="place" placeholder="Ort">
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-submit-orange btn-md">Speichern</button>
+                        </div>
+                    </form>
                 </div>
+
             </div>
 
-            <!--neues Passwort eingeben-->
-
-            <div class="form-group row">
-                <label for="newPassword" class="col-lg-5 form-control-label">Bitte geben Sie Ihr neues Passwort
-                    ein:</label>
-                <div class="col-lg-5">
-                    <input type="text" class="form-control" id="newPassword" placeholder="neues Passwort">
-                </div>
-            </div>
-
-            <!--Passwort wiederholen-->
-            <div class="form-group row">
-                <div class="col-lg-5 offset-lg-5">
-                    <input type="text" class="form-control" id="repeatPassword" placeholder="Passwort wiederholen">
-
-                </div>
-            </div>
-
-
-            <!--Passwort ändern Button -->
-
-            <div class="form-group row">
-                <div class="col-lg-5 offset-lg-5">
-                <input type="submit" class="btn-submit-orange btn btn-danger btn-lg" name="change_password"
-                       value="Passwort ändern">
-            </div>
+        </div>
     </div>
 
+    <!--                    Passwort ändern seite-->
 
-    </form>
+
+    <div class="tab-pane row" id="password" role="tabpanel">
+        <div class="form-group pt-5 col-lg-8 offset-lg-4">
+            <form>
+
+                <!--    akutelles Passwort eingeben-->
+                <div class="form-group row">
+                    <label for="currentPassword" class="col-lg-6 form-control-label">Bitte geben Sie Ihr aktuelles
+                        Passwort ein:</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" id="currentPassword" placeholder="aktuelles Passwort">
+                    </div>
+                </div>
+
+                <!--                            neues Passwort eingeben-->
+
+                <div class="form-group row">
+                    <label for="newPassword" class="col-lg-6 form-control-label">Bitte geben Sie Ihr neues Passwort
+                        ein:</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" id="newPassword" placeholder="neues Passwort">
+                    </div>
+                </div>
+
+                <!--                            Passwort wiederholen-->
+
+                <div class="form-group row">
+                    <div class="col-lg-5 offset-6">
+                        <input type="text" class="form-control" id="repeatPassword"
+                               placeholder="Passwort wiederholen">
+                    </div>
+                </div>
+
+                <!--                         Passwort ändern Button -->
+
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-submit-orange btn-md">Passwort speichern</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--            pageInformation-->
+
+
+    <div class="tab-pane" id="pageInfo" role="tabpanel">
+        <div class="form-group pt-5 col-lg-8 offset-lg-4">
+            <p class="font-weight-bold text-center">Datenschutz</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+
 </section>
 
+<?php include('scripts.html'); ?>
+<script>
+    $(function () {
+        var hash = window.location.hash;
+        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+        $('.nav').click(function (e) {
+            $(this).tab('show');
+            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+        });
+    });
+</script>
 
 </body>
 </html>
