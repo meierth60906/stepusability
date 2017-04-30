@@ -7,6 +7,11 @@
     margin-left: -15px;
 }
 
+#secondSidebar .nav-item{
+    border-bottom: solid 1px;
+    border-bottom-color: lightgrey;
+}
+
 /*2 second navbar text color*/
 #secondSidebar a.nav-link {
     color: BLACK;
