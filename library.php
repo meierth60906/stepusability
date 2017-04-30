@@ -30,81 +30,131 @@
 
         <!--innere Navigationsleiste-->
         <div class="row" id="sidebarLibrary">
-            <div class="col p-0"
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#einverständniserklärung">Einverständniserklärung</a>
+            <div class="col p-0">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#einverständniserklärung">Einverständniserklärung</a>
 
-                        </h4>
-                    </div>
-                    <div id="einverständniserklärung" class="panel-collapse collapse">
-                        <div class="panel-body">Vorlage</div>
-                        <div class="panel-body">Einverständniserklärung 1</div>
-                        <div class="panel-body">Einverständniserklärung 2</div>
-                    </div>
+                            </h4>
+                        </div>
+                        <div id="einverständniserklärung" class="panel-collapse collapse">
+                            <div class="panel-body">Vorlage</div>
+                            <div class="panel-body">Einverständniserklärung 1</div>
+                            <div class="panel-body">Einverständniserklärung 2</div>
+                        </div>
 
-                    <!--Protkollleitfaden-->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#protokollleitfaden">Protokollleitfaden</a>
-                        </h4>
-                    </div>
-                    <div id="protokollleitfaden" class="panel-collapse collapse">
-                        <div class="panel-body">Vorlage</div>
-                        <div class="panel-body">Protokollleitfaden 1</div>
-                        <div class="panel-body">Protokollleitfaden 2</div>
-                    </div>
-                    <!--Testskript-->
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#testskript">Testskript</a>
-                        </h4>
-                    </div>
-                    <div id="testskript" class="panel-collapse collapse">
-                        <div class="panel-body">Vorlage</div>
-                        <div class="panel-body">Testskript 1</div>
-                        <div class="panel-body">Testskript 2</div>
-                    </div>
+                        <!--Protkollleitfaden-->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#protokollleitfaden">Protokollleitfaden</a>
+                            </h4>
+                        </div>
+                        <div id="protokollleitfaden" class="panel-collapse collapse">
+                            <div class="panel-body">Vorlage</div>
+                            <div class="panel-body">Protokollleitfaden 1</div>
+                            <div class="panel-body">Protokollleitfaden 2</div>
+                        </div>
+                        <!--Testskript-->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#testskript">Testskript</a>
+                            </h4>
+                        </div>
+                        <div id="testskript" class="panel-collapse collapse">
+                            <div class="panel-body">Vorlage</div>
+                            <div class="panel-body">Testskript 1</div>
+                            <div class="panel-body">Testskript 2</div>
+                        </div>
 
-                    <!--                    Testplan-->
+                        <!--                    Testplan-->
 
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#testplan">Testplan</a>
-                        </h4>
-                    </div>
-                    <div id="testplan" class="panel-collapse collapse">
-                        <div class="panel-body">Vorlage</div>
-                        <div class="panel-body">Testplan 1</div>
-                        <div class="panel-body">Testplan 2</div>
-                    </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#testplan">Testplan</a>
+                            </h4>
+                        </div>
+                        <div id="testplan" class="panel-collapse collapse">
+                            <div class="panel-body">Vorlage</div>
+                            <div class="panel-body">Testplan 1</div>
+                            <div class="panel-body">Testplan 2</div>
+                        </div>
 
-                    <!--                    Testbericht-->
+                        <!--                    Testbericht-->
 
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" href="#testbericht">Testbericht</a>
-                        </h4>
-                    </div>
-                    <div id="testbericht" class="panel-collapse collapse">
-                        <div class="panel-body">Vorlage 1</div>
-                        <div class="panel-body">Testbericht 1</div>
-                        <div class="panel-body">Testbericht 2</div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#testbericht">Testbericht</a>
+                            </h4>
+                        </div>
+                        <div id="testbericht" class="panel-collapse collapse">
+                            <div class="panel-body">Vorlage 1</div>
+                            <div class="panel-body">Testbericht 1</div>
+                            <div class="panel-body">Testbericht 2</div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="tab-pane row" id="einverständniserklärung">
+            <div class="col-lg-8 offset-lg-4">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Aufgabenanweisung</th>
+                        <th>Lösungsschritte</th>
+                        <th>Anmekungen</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et
+                        </td>
+                        <td>Lorem ipsum dolor sit</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore e
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore e
+                        </td>
+                        <td>Lorem ipsum dolor sit</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore e
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore e
+                        </td>
+                        <td>Lorem ipsum dolor sitvidunt ut labore e</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-    $( function() {
-        $('.panel-title').click( function() {
+    $(function () {
+        $('.panel-title').click(function () {
             $(this).toggleClass('on');
-        } )
+        })
     });
 </script>
 </body>
