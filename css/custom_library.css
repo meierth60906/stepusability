@@ -5,6 +5,7 @@
     width: 25%;
     position: fixed;
     margin-left: -15px;
+    border-right: solid 1px lightgrey;
 }
 
 /*border of tabs*/
@@ -49,6 +50,9 @@
 .panel-footer, .panel-body {
     border: none !important;
     padding: 8px !important;
+    padding-left: 20px !important;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .panel-body:hover, .panel-footer:hover {
@@ -64,6 +68,33 @@
 }
 
 .panel-title.on {
-    font-weight: bold;
+    font-weight: bold !important;
     text-decoration: none !important;
+}
+
+#library a{
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: BLACK !important;
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    padding: 20px;
+}
+
+#library .collapse.show {
+    background-color: white;
+}
+
+#library table {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    border: solid 1px lightgrey;
+}
+
+#library tr{
+    border-bottom: lightgrey solid 1px;
+}
+
+#library .table-bordered td, .table-bordered th{
+    border: solid 1px lightgrey;
 }

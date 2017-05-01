@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Settings | step</title>
     <?php include('head.html') ?>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 <body>
 <!-- Sidebar und Header-->
@@ -16,7 +16,7 @@
         <div class="row titlebar px-3 py-3">
             <h1>Bibliothek</h1>
 
-            <div class="offset-8 text-right align-self-center ">
+            <div class="offset-7 text-right align-self-center ">
                 <a class="titlebar-link" href="#">
                     <div class=" d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Drucken</span></a>
@@ -147,9 +147,7 @@
     </div>
 
 </section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<?php include('scripts.html'); ?>
 <script>
     $(function () {
 //        changes the active collapse class to 'on' for changing the text to bold
