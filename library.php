@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Settings | step</title>
     <?php include('head.html') ?>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -19,79 +20,92 @@
             <div class="offset-7 text-right align-self-center ">
                 <a class="titlebar-link" href="#">
                     <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Drucken</span></a>
-                <a class="titlebar-link" href="#">
+                    <span class="hidden-sm-down icon-print"> Drucken</span>
+                </a>
+                <a class="titlebar-link" href="library.php">
                     <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Bearbeiten</span></a>
+                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
+                </a>
             </div>
         </div>
 
-        <!--innere Navigationsleiste-->
 
         <!--innere Navigationsleiste-->
         <div class="row" id="sidebarLibrary">
             <div class="col p-0">
                 <div class="panel-group">
+
+<!--                    Switch Button-->
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Vorlagen
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Projekte
+                        </label>
+                    </div>
+
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#einverständniserklärung">Einverständniserklärung</a>
+                                <a data-toggle="collapse" href="#einverständniserklärung" class="icon-angle-right">Einverständniserklärung</a>
 
                             </h4>
                         </div>
                         <div id="einverständniserklärung" class="panel-collapse collapse">
-                            <div class="panel-body">Vorlage</div>
-                            <div class="panel-body">Einverständniserklärung 1</div>
-                            <div class="panel-body">Einverständniserklärung 2</div>
+                            <div class="panel-body icon-file-text-o"> Vorlage</div>
+                            <div class="panel-body icon-file-text-o"> Einverständniserklärung 1</div>
+                            <div class="panel-body icon-file-text-o"> Einverständniserklärung 2</div>
                         </div>
 
                         <!--Protkollleitfaden-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#protokollleitfaden">Protokollleitfaden</a>
+                                <a data-toggle="collapse" href="#protokollleitfaden" class="icon-angle-right">Protokollleitfaden</a>
                             </h4>
                         </div>
                         <div id="protokollleitfaden" class="panel-collapse collapse">
-                            <div class="panel-body">Vorlage</div>
-                            <div class="panel-body">Protokollleitfaden 1</div>
-                            <div class="panel-body">Protokollleitfaden 2</div>
+                            <div class="panel-body icon-file-text-o"> Vorlage</div>
+                            <div class="panel-body icon-file-text-o"> Protokollleitfaden 1</div>
+                            <div class="panel-body icon-file-text-o"> Protokollleitfaden 2</div>
                         </div>
                         <!--Testskript-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testskript">Testskript</a>
+                                <a data-toggle="collapse" href="#testskript" class="icon-angle-right">Testskript</a>
                             </h4>
                         </div>
                         <div id="testskript" class="panel-collapse collapse">
-                            <div class="panel-body">Vorlage</div>
-                            <div class="panel-body">Testskript 1</div>
-                            <div class="panel-body">Testskript 2</div>
+                            <div class="panel-body icon-file-text-o"> Vorlage</div>
+                            <div class="panel-body icon-file-text-o"> Testskript 1</div>
+                            <div class="panel-body icon-file-text-o"> Testskript 2</div>
                         </div>
 
                         <!--                    Testplan-->
 
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testplan">Testplan</a>
+                                <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Testplan</a>
                             </h4>
                         </div>
                         <div id="testplan" class="panel-collapse collapse">
-                            <div class="panel-body">Vorlage</div>
-                            <div class="panel-body">Testplan 1</div>
-                            <div class="panel-body">Testplan 2</div>
+                            <div class="panel-body icon-file-text-o"> Vorlage</div>
+                            <div class="panel-body icon-file-text-o"> Testplan 1</div>
+                            <div class="panel-body icon-file-text-o"> Testplan 2</div>
                         </div>
 
                         <!--                    Testbericht-->
 
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testbericht">Testbericht</a>
+                                <a data-toggle="collapse" href="#testbericht" class="icon-angle-right">Testbericht</a>
                             </h4>
                         </div>
                         <div id="testbericht" class="panel-collapse collapse">
-                            <div class="panel-body">Vorlage 1</div>
-                            <div class="panel-body">Testbericht 1</div>
-                            <div class="panel-body">Testbericht 2</div>
+                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
+                            <div class="panel-body icon-file-text-o"> Testbericht 1</div>
+                            <div class="panel-body icon-file-text-o"> Testbericht 2</div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +114,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="tab-pane row" id="einverständniserklärung">
+        <div class="tab-pane row" id="protokollleitfaden">
             <div class="col-lg-8 offset-lg-4">
                 <table class="table table-bordered">
                     <thead>
@@ -148,12 +162,33 @@
 
 </section>
 <?php include('scripts.html'); ?>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script>
     $(function () {
 //        changes the active collapse class to 'on' for changing the text to bold
         $('.panel-title').click(function () {
             $(this).toggleClass('on');
         })
+    });
+
+//    $(function () {
+////        changes the active collapse class to 'on' for changing the text to bold
+//        $('.btn-primary').click(function () {
+//            $(this).toggleClass('on');
+//        })
+//    });
+
+
+    $(function () {
+        var hash = window.location.hash;
+        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+        $('.nav-link').click(function () {
+            $(this).tab('show');
+            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+        });
     });
 </script>
 </body>
