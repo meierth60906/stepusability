@@ -152,6 +152,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
     $(function () {
+//        changes the active collapse class to 'on' for changing the text to bold
         $('.panel-title').click(function () {
             $(this).toggleClass('on');
         })
