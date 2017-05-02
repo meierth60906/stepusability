@@ -27,7 +27,7 @@
 
     <!--Form-->
 
-    <div class="container-fluid pt-5">
+    <div class="kontaktinfos pt-5">
 
         <div class="form-group pt-5 col-lg-8 offset-lg-4">
 
@@ -111,8 +111,8 @@
                     </div>
                 </div>
         </div>
-
     </div>
+
 
 </section>
 
