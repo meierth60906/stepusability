@@ -99,7 +99,6 @@
                         </form>
                     </div>
                 </div>
-
             </div>
 
             <!--                    Passwort ändern seite-->
@@ -144,7 +143,9 @@
                         <div class="row">
                             <div class="col-lg-5 offset-6">
                                 <div class="text-right">
-                                    <button id="buttonPassword" type="button" class="btn btn-submit-orange btn-md">Passwort speichern</button>
+                                    <button id="buttonPassword" type="button" class="btn btn-submit-orange btn-md">
+                                        Passwort speichern
+                                    </button>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Settings | step</title>
     <?php include('head.html') ?>
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -12,17 +11,13 @@
 
 <?php include('navigation.html'); ?>
 
-<section id="library" class="page-content">
+<section id="templates" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <h1>Bibliothek</h1>
+            <h1>Vorlagen</h1>
 
-            <div class="offset-7 text-right align-self-center ">
-                <a class="titlebar-link" href="#">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-print"> Drucken</span>
-                </a>
-                <a class="titlebar-link" href="library.php">
+            <div class="offset-8 text-right align-self-center ">
+                <a class="titlebar-link" href="templates.php">
                     <div class=" d-inline-block px-2"></div>
                     <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
                 </a>
@@ -31,18 +26,18 @@
 
 
         <!--innere Navigationsleiste-->
-        <div class="row" id="sidebarLibrary">
+        <div class="row" id="sidebarTemplates">
             <div class="col p-0">
                 <div class="panel-group">
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#einverständniserklärung" class="icon-angle-right">Einverständniserklärung</a>
+                                <a data-toggle="collapse" href="#vorlageEinverständniserklärung" class="icon-angle-right">Einverständniserklärung</a>
 
                             </h4>
                         </div>
-                        <div id="einverständniserklärung" class="panel-collapse collapse">
+                        <div id="vorlageEinverständniserklärung" class="panel-collapse collapse">
                             <div class="panel-body icon-file-text-o"> Vorlage 1</div>
                             <div class="panel-body icon-file-text-o"> Vorlage 2</div>
                             <div class="panel-body icon-file-text-o"> Vorlage 3</div>
@@ -147,7 +142,7 @@
 <script>
     $(function () {
 //        changes the active collapse class to 'on' for changing the text to bold
-        $('.panel-title').click(function () {
+        $('.nav').click(function () {
             $(this).toggleClass('on');
         })
     });
@@ -160,17 +155,17 @@
     //    });
 
 
-    $(function () {
-        var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-        $('.nav-link').click(function () {
-            $(this).tab('show');
-            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-            window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
-        });
-    });
+//    $(function () {
+//        var hash = window.location.hash;
+//        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+//
+//        $('.nav-link').click(function () {
+//            $(this).tab('show');
+//            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+//            window.location.hash = this.hash;
+//            $('html,body').scrollTop(scrollmem);
+//        });
+//    });
 </script>
 </body>
 

@@ -1,0 +1,124 @@
+
+#sidebarTemplates {
+    background-color: #EFEFEF;
+    height:100%;
+    width: 25%;
+    position: fixed;
+    margin-left: -15px;
+    border-right: solid 1px lightgrey;
+}
+
+/*border of tabs*/
+#sidebarTemplates .nav-item {
+    border-bottom: solid 1px;
+    border-bottom-color: lightgrey;
+}
+
+/*2 second navbar text color*/
+#sidebarTemplates a.nav-link {
+    color: BLACK;
+}
+
+/* second navbar hover color*/
+#sidebarTemplates.nav-item:hover {
+    background-color: #e84a29;
+}
+
+@media (min-height: 720px) {
+    #templates .page-top {
+        margin-left: 120px !important;
+    }
+}
+
+@media (min-height: 600px) {
+    #templates .page-top {
+        margin-left: 100px;
+    }
+}
+
+#templates .panel-default > .panel-heading {
+    border: none !important;
+    background-color: #EFEFEF !important;
+    text-decoration: none !important;
+}
+
+#templates .panel-default {
+    border: none !important;
+    border-color: transparent !important;
+}
+
+#templates .panel-footer, .panel-body {
+    border: none !important;
+    padding: 8px !important;
+    padding-left: 35px !important;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#templates .panel-body:hover, .panel-footer:hover {
+    background-color: #ccd9e4 !important;
+}
+
+#templates .panel-title {
+    font-weight: normal;
+}
+
+#templates a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+#templates.panel-title.on {
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+#templates a{
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: BLACK !important;
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    padding-left:20px;
+}
+
+#templates .collapse.show {
+    background-color: white;
+}
+
+#templates table {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    border: solid 1px lightgrey;
+}
+
+#templates th {
+    background: #EFEFEF;
+    -webkit-border-radius: 0 0 0 0;
+}
+
+#templates tr{
+    border-bottom: lightgrey solid 1px;
+}
+
+#templates .table-bordered td, .table-bordered th{
+    border: solid 1px lightgrey;
+}
+
+#templates .btn-group, .btn-group-vertical {
+    height:5%;
+    margin-left:3rem;
+    margin-top:10px;
+}
+
+
+#templates .btn-primary {
+    background-color: transparent;
+    border-color:#133E5C;
+    color: #133E5C;
+}
+
+#templates .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #133E5C;
+    border-color: #133E5C;
+    color:white;
+}

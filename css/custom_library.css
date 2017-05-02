@@ -36,30 +36,34 @@
     }
 }
 
-.panel-default > .panel-heading {
+#library .panel-default > .panel-heading {
     border: none !important;
     background-color: #EFEFEF !important;
     text-decoration: none !important;
 }
 
-.panel-default {
+#library .panel-default {
     border: none !important;
     border-color: transparent !important;
 }
 
-.panel-footer, .panel-body {
+#library .panel-footer, .panel-body {
     border: none !important;
-    padding: 8px !important;
     padding-left: 35px !important;
     font-weight: 400;
     font-size: 0.9rem;
+    padding-bottom: 8px;
 }
 
-.panel-body:hover, .panel-footer:hover {
+#library .panel-heading{
+    padding-left:20px !important;
+}
+
+#library .panel-body:hover, .panel-footer:hover {
     background-color: #ccd9e4 !important;
 }
 
-.panel-title {
+#library .panel-title {
     font-weight: normal;
 }
 
@@ -67,7 +71,7 @@
     text-decoration: none !important;
 }
 
-.panel-title.on {
+#library .panel-title.on {
     font-weight: bold !important;
     text-decoration: none !important;
 }
@@ -78,7 +82,6 @@
     color: BLACK !important;
     font-family: 'Lato', sans-serif !important;
     -webkit-font-smoothing: antialiased !important;
-    padding: 20px;
 }
 
 #library .collapse.show {
@@ -108,6 +111,7 @@
     height:5%;
     margin-left:3rem;
     margin-top:10px;
+    padding: 20px;
 }
 
 
