@@ -1,0 +1,56 @@
+#goals .goal-badge {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    font-size: 25px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    background-color: #bfbfbf;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 3px solid rgba(0,0,0,0.02);
+    transition: all .2s ease-in; /* explorer 10 */
+    -webkit-transition: all .2s ease-in; /* chrome & safari */
+    -moz-transition: all .2s ease-in; /* firefox */
+    -o-transition: all .2s ease-in; /* opera */
+}
+
+#goals .goal:hover .goal-badge {
+    border: 3px solid rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
+    transition: all .2s ease-in; /* explorer 10 */
+    -webkit-transition: all .2s ease-in; /* chrome & safari */
+    -moz-transition: all .2s ease-in; /* firefox */
+    -o-transition: all .2s ease-in; /* opera */
+}
+
+#goals .goal-description {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#goals .goalcard {
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+#goals .goalcard:hover {
+    border-radius: 5px;
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}

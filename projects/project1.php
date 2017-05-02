@@ -44,22 +44,30 @@
         <div class="tab-content">
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="inner-body row">
-                    <div class="col-md-9 p-5 pb-3">
+
+                    <div class="col-md-9 px-5 pt-5">
                         <div class="row">
-                            <div class="col-lg-12 text-right">
+                            <div class="col-lg-8 headline">
+                                Projektinformationen
+                            </div>
+                            <div class="col-lg-4 text-right">
                                 <a href="project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
                         </div>
-                        <div class="row">
+                        <div class="row pb-2">
+
+                        </div>
+                        <div class="row pb-2">
                             <div class="col-lg-4">Kunde:</div>
                             <div class="col-lg-8 font-weight-bold">Musterfirma</div>
                         </div>
-                        <div class="row">
+                        <div class="row pb-2">
                             <div class="col-lg-4">Ansprechpartner:</div>
                             <div class="col-lg-8 font-weight-bold"><a href="../new_contact.php">Max Mustermann</a></div>
                         </div>
 
-                        <div class="row">
+                        <div class="row pb-2">
                             <div class="col-lg-4">Projektbeschreibung:</div>
                             <div class="col-lg-8 font-weight-bold">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -69,78 +77,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9 px-0 goals">
-                        <div class="px-5" style="display:inline-block;width:100%;overflow-y:auto;">
-                            <ul class="timeline">
-                                <li class="timeline-item timeline-plus">
-                                    <div class="timeline-badge c-darkgrey-bg"><p>+</p></div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-skript-bg"><i class="icon-file-text"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Testskript erstellt</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-plan-bg"><i class="icon-file-text"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Testplan erstellt</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-orange-bg"><i class="icon-calendar-1"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Termin für Testdurchlauf</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 14.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-protokoll-bg"><i class="icon-file-text"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Protokolle erstellt</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 12.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-einverst-bg"><i class="icon-file-text"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Einverständniserklärung erstellt</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 10.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-orange-bg"><i class="icon-folder"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Projekt "Projekt 1" erstellt</p>
-                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 08.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                    <div id="goals" class="col-md-9 p-5">
+                        <?php include("goals.html") ?>
+                    </div>
+                    <div class="inner-sidebar c-grey-bg">
+                        <div class="row pt-5 px-3">
+                            <div class="col-lg-12 headline">
+                                Beteiligt
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
                         </div>
 
-
-                    </div>
-                    <div class="inner-sidebar c-grey-bg col-md-3">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-lg-12 p-3">
+                                Anna Apfel
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 py-5">
                                 <div class="h3 text-center"><i class="icon-check"></i>Test starten</div>
                                 <p class="text-center"><i class="icon-check"></i>Projekt abschließen</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -264,6 +224,7 @@
     $( window ).resize( function(){
         h = $(window).height();
         $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
+        $('.inner-sidebar').css('height', h - header_h );
     });
 
 
@@ -292,6 +253,16 @@
             window.location.hash = this.hash;
             $('html,body').scrollTop(scrollmem);
         });
+    });
+
+</script>
+<script>
+
+    $('.goal').click(function () {
+        $(this).tab('show');
+        var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+        window.location.hash = this.hash;
+        $('html,body').scrollTop(scrollmem);
     });
 
 </script>
