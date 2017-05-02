@@ -109,8 +109,8 @@
 
 #singleproject .question-angles {
     position: relative;
-    top: 0.5rem;
-    font-size: 4rem;
+    top: 0.9rem;
+    font-size: 3rem;
 }
 
 #singleproject hr {
@@ -132,5 +132,5 @@
 }
 
 .aufgabenfeld {
-    height: 310px !important;
+    height: 240px !important;
 }

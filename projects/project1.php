@@ -70,53 +70,17 @@
                         </div>
                     </div>
                     <div class="col-md-9 px-0 goals">
-                        <div class="pl-5" style="display:inline-block;width:100%;overflow-y:auto;">
-                            <ul class="timeline timeline-horizontal">
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-orange-bg"><i class="icon-folder"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Projekt "Projekt 1" erstellt</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 08.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis faiz elementum girarzis, nisi eros gostis.</p>
-                                        </div>
-                                    </div>
+                        <div class="px-5" style="display:inline-block;width:100%;overflow-y:auto;">
+                            <ul class="timeline">
+                                <li class="timeline-item timeline-plus">
+                                    <div class="timeline-badge c-darkgrey-bg"><p>+</p></div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge c-einverst-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-badge c-skript-bg"><i class="icon-file-text"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <p class="timeline-title">Einverständniserklärung erstellt</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 10.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis faiz elementum girarzis, nisi eros gostis.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-protokoll-bg"><i class="icon-file-text"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Protokolle erstellt</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 12.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipisci. Mé faiz elementum girarzis, nisi eros gostis.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-badge c-orange-bg"><i class="icon-calendar-1"></i></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <p class="timeline-title">Termin für Testdurchlauf</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 14.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                            <p class="timeline-title">Testskript erstellt</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
                                         </div>
                                     </div>
                                 </li>
@@ -125,22 +89,43 @@
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <p class="timeline-title">Testplan erstellt</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge c-skript-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-badge c-orange-bg"><i class="icon-calendar-1"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <p class="timeline-title">Testskript erstellt</p>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
+                                            <p class="timeline-title">Termin für Testdurchlauf</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 14.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
                                         </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-protokoll-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Protokolle erstellt</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 12.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-einverst-bg"><i class="icon-file-text"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Einverständniserklärung erstellt</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 10.04.17 von <a href="../new_contact.php">Anna Apfel</a></small></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge c-orange-bg"><i class="icon-folder"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p class="timeline-title">Projekt "Projekt 1" erstellt</p>
+                                            <p class="mb-0"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Am 08.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small></p>
                                         </div>
                                     </div>
                                 </li>
@@ -166,10 +151,10 @@
                 <div class="aufgabenfeld inner-body row c-grey-bg">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-2 text-right p-5">
-                                <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
+                            <div class="col-2 text-right p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
                             </div>
-                            <div class="col-8 p-5">
+                            <div class="col-8 p-3">
                                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                                 <p class="text-center">
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -177,8 +162,8 @@
                                     accusam et justo duo dolores et ea rebum.
                                 </p>
                             </div>
-                            <div class="col-2 p-5">
-                                <a class="c-orange" href=""><i class="question-angles icon-angle-right"></i></a>
+                            <div class="col-2 p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
                             </div>
                         </div>
 
@@ -283,7 +268,7 @@
 
 
 
-    alert("WindowHeight: " + h + " Innerbody: " + aufgabenfeld_h + " Header_h: " + header_h);
+//    alert("WindowHeight: " + h + " Innerbody: " + aufgabenfeld_h + " Header_h: " + header_h);
 
     /*    $(".nav-item .active").hover(
      function() {
