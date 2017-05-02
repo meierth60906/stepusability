@@ -1,0 +1,34 @@
+#testfenster_mod{
+    background: white;
+    height:100%;
+    min-height: 100%;
+}
+
+#testfenster_mod.titlebar {
+    background: none;
+    border: none;
+}
+
+#testfenster_mod.page-top {
+    background-color: white;
+}
+
+#testfenster_mod.inner-body {
+    padding-top: 100px;
+}
+
+#testfenster_mod .question-angles {
+    position: relative;
+    top: 0.5rem;
+    font-size: 4rem;
+}
+
+#testfenster_mod .inner-sidebar {
+    overflow: auto;
+    position:fixed;
+    right: -30px;
+    /*right: -3rem;*/
+}
+#testfenster_mod.page-content{
+    margin-left: 1em;
+}

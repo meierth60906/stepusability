@@ -10,20 +10,22 @@
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
-    <div class="row titlebar px-3 py-3">
-        <div class="col-8">
-            <h1>Kontakte</h1>
-        </div>
-        <div class="col-4 text-right align-self-center ">
-            <a class="titlebar-link" href="view_contact.php">
-                <div class="icon-check d-inline-block px-2"></div>
-                <span class="hidden-sm-down">Speichern</span></a>
+    <div class="page-top fixed-top">
+        <div class="row titlebar px-3 py-3">
+            <div class="col-8">
+                <h1>Kontakte</h1>
+            </div>
+            <div class="col-4 text-right align-self-center ">
+                <a class="titlebar-link" href="view_contact.php">
+                    <div class="icon-check d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Speichern</span></a>
+            </div>
         </div>
     </div>
-
-  <?php include ('contactlist.html');?>
+    <?php include ('contactlist.html');?>
 
     <!--Form-->
+
     <div class="form-group pt-5 col-lg-8 offset-lg-4">
 
         <form>

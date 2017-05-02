@@ -10,18 +10,18 @@
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
-
-    <div class="row titlebar px-3 py-3">
-        <div class="col-8">
-            <h1>Kontakte</h1>
-        </div>
-        <div class="col-4 text-right align-self-center ">
-            <a class="titlebar-link" href="edit_contact.php">
-                <div class="icon-check d-inline-block px-2"></div>
-                <span class="hidden-sm-down">Speichern</span></a>
+    <div class="page-top fixed-top">
+        <div class="row titlebar px-3 py-3">
+            <div class="col-8">
+                <h1>Kontakte</h1>
+            </div>
+            <div class="col-4 text-right align-self-center ">
+                <a class="titlebar-link" href="edit_contact.php">
+                    <div class="icon-check d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Speichern</span></a>
+            </div>
         </div>
     </div>
-
     <?php include ('contactlist.html');?>
 
     <!--Form-->
@@ -75,7 +75,6 @@
                 <button type="button" class="btn btn-submit-orange btn-md">Kontakt löschen</button>
             </div>
     </div>
-
 
 
 </section>
