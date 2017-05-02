@@ -63,6 +63,10 @@
     font-weight: normal;
 }
 
+#templates .panel-group{
+    margin-top:20px;
+}
+
 #templates a:focus, a:hover {
     text-decoration: none !important;
 }
@@ -122,3 +126,4 @@
     border-color: #133E5C;
     color:white;
 }
+
