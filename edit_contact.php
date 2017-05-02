@@ -16,7 +16,7 @@
                 <h1>Kontakte</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="edit_contact.php">
+                <a class="titlebar-link" href="view_contact.php">
                     <div class="icon-check d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Speichern</span></a>
             </div>
