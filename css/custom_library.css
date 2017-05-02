@@ -1,8 +1,17 @@
+
 #sidebarLibrary {
     background-color: #EFEFEF;
-    height: 100%;
+    height:100%;
     width: 25%;
+    position: fixed;
+    margin-left: -15px;
+    border-right: solid 1px lightgrey;
+}
 
+/*border of tabs*/
+#sidebarLibrary .nav-item {
+    border-bottom: solid 1px;
+    border-bottom-color: lightgrey;
 }
 
 /*2 second navbar text color*/
@@ -11,6 +20,104 @@
 }
 
 /* second navbar hover color*/
-#sidebarLibrary .card-item:hover {
+#sidebarLibrary .nav-item:hover {
     background-color: #e84a29;
+}
+
+@media (min-height: 720px) {
+    #library .page-top {
+        margin-left: 120px !important;
+    }
+}
+
+@media (min-height: 600px) {
+    #library .page-top {
+        margin-left: 100px;
+    }
+}
+
+.panel-default > .panel-heading {
+    border: none !important;
+    background-color: #EFEFEF !important;
+    text-decoration: none !important;
+}
+
+.panel-default {
+    border: none !important;
+    border-color: transparent !important;
+}
+
+.panel-footer, .panel-body {
+    border: none !important;
+    padding: 8px !important;
+    padding-left: 35px !important;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.panel-body:hover, .panel-footer:hover {
+    background-color: #ccd9e4 !important;
+}
+
+.panel-title {
+    font-weight: normal;
+}
+
+#library a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+.panel-title.on {
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+#library a{
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: BLACK !important;
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    padding: 20px;
+}
+
+#library .collapse.show {
+    background-color: white;
+}
+
+#library table {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    border: solid 1px lightgrey;
+}
+
+#library th {
+    background: #EFEFEF;
+    -webkit-border-radius: 0 0 0 0;
+}
+
+#library tr{
+    border-bottom: lightgrey solid 1px;
+}
+
+#library .table-bordered td, .table-bordered th{
+    border: solid 1px lightgrey;
+}
+
+#library .btn-group, .btn-group-vertical {
+    height:5%;
+    margin-left:3rem;
+    margin-top:10px;
+}
+
+#library .btn-primary {
+    background-color: transparent;
+    border-color:#133E5C;
+    color: #133E5C;
+}
+
+#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #133E5C;
+    border-color: #133E5C;
+    color:white;
 }
