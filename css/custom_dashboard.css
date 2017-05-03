@@ -12,6 +12,7 @@
 }
 
 .card {
+    border-color: #CCC;
     z-index: 10;
     transition: all .1s ease-in; /* explorer 10 */
     -webkit-transition: all .1s ease-in; /* chrome & safari */
@@ -31,7 +32,8 @@
 }
 
 .card .card-header {
-    background-color: #e84a29;
+    /*background-color: #e84a29;*/
+    background-color: #133e5c;
     color: white;
     transition: all .1s ease-in; /* explorer 10 */
     -webkit-transition: all .1s ease-in; /* chrome & safari */
@@ -40,7 +42,8 @@
 }
 
 .card:hover .card-header {
-    background-color: #ff512d;
+    /*background-color: #ff512d;*/
+    background-color: #185077;
     transition: all .1s ease-in; /* explorer 10 */
     -webkit-transition: all .1s ease-in; /* chrome & safari */
     -moz-transition: all .1s ease-in; /* firefox */
@@ -129,4 +132,8 @@
     border-radius:50%;
     vertical-align:middle;
     color:white;
+}
+
+#dashboardbody {
+    background-color: #ededed;
 }

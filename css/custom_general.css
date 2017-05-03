@@ -11,6 +11,10 @@ html, body {
     border-bottom: solid 1px #ccc;
 }
 
+#dashboardbody .titlebar {
+    background-color: #fff !important;
+}
+
 h1 {
     font-weight: 300;
     font-size: 2rem;
