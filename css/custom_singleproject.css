@@ -95,10 +95,12 @@
 #singleproject .inner-sidebar {
     overflow: auto;
     position:fixed;
-    right: -30px;
+    right:0;
+    width: 23%;
     /*right: -3rem;*/
 }
 
+/*
 #singleproject .goals {
 }
 
@@ -106,6 +108,7 @@
     position:fixed;
     bottom: 0;
 }
+*/
 
 #singleproject .question-angles {
     position: relative;
@@ -115,6 +118,10 @@
 
 #singleproject hr {
     margin-bottom: 0;
+}
+
+#singleproject .headline {
+    font-size: 24px;
 }
 
 #singleproject .protokollant-card {

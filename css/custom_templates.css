@@ -1,5 +1,5 @@
 
-#sidebarLibrary {
+#sidebarTemplates {
     background-color: #EFEFEF;
     height:100%;
     width: 25%;
@@ -9,120 +9,121 @@
 }
 
 /*border of tabs*/
-#sidebarLibrary .nav-item {
+#sidebarTemplates .nav-item {
     border-bottom: solid 1px;
     border-bottom-color: lightgrey;
 }
 
 /*2 second navbar text color*/
-#sidebarLibrary a.nav-link {
+#sidebarTemplates a.nav-link {
     color: BLACK;
 }
 
 /* second navbar hover color*/
-#sidebarLibrary .nav-item:hover {
+#sidebarTemplates.nav-item:hover {
     background-color: #e84a29;
 }
 
 @media (min-height: 720px) {
-    #library .page-top {
+    #templates .page-top {
         margin-left: 120px !important;
     }
 }
 
 @media (min-height: 600px) {
-    #library .page-top {
+    #templates .page-top {
         margin-left: 100px;
     }
 }
 
-#library .panel-default > .panel-heading {
+#templates .panel-default > .panel-heading {
     border: none !important;
     background-color: #EFEFEF !important;
     text-decoration: none !important;
 }
 
-#library .panel-default {
+#templates .panel-default {
     border: none !important;
     border-color: transparent !important;
 }
 
-#library .panel-footer, .panel-body {
+#templates .panel-footer, .panel-body {
     border: none !important;
+    padding: 8px !important;
     padding-left: 35px !important;
     font-weight: 400;
     font-size: 0.9rem;
-    padding-bottom: 8px;
 }
 
-#library .panel-heading{
-    padding-left:20px !important;
-}
-
-#library .panel-body:hover, .panel-footer:hover {
+#templates .panel-body:hover, .panel-footer:hover {
     background-color: #ccd9e4 !important;
 }
 
-#library .panel-title {
+#templates .panel-title {
     font-weight: normal;
 }
 
-#library a:focus, a:hover {
+#templates .panel-group{
+    margin-top:20px;
+}
+
+#templates a:focus, a:hover {
     text-decoration: none !important;
 }
 
-#library .panel-title.on {
+#templates.panel-title.on {
     font-weight: bold !important;
     text-decoration: none !important;
 }
 
-#library a{
+#templates a{
     font-size: 1rem !important;
     line-height: 1.5 !important;
     color: BLACK !important;
     font-family: 'Lato', sans-serif !important;
     -webkit-font-smoothing: antialiased !important;
+    padding-left:20px;
 }
 
-#library .collapse.show {
+#templates .collapse.show {
     background-color: white;
 }
 
-#library table {
+#templates table {
     margin-top: 6rem;
     margin-left: -2rem;
     border: solid 1px lightgrey;
 }
 
-#library th {
+#templates th {
     background: #EFEFEF;
     -webkit-border-radius: 0 0 0 0;
 }
 
-#library tr{
+#templates tr{
     border-bottom: lightgrey solid 1px;
 }
 
-#library .table-bordered td, .table-bordered th{
+#templates .table-bordered td, .table-bordered th{
     border: solid 1px lightgrey;
 }
 
-#library .btn-group, .btn-group-vertical {
+#templates .btn-group, .btn-group-vertical {
     height:5%;
     margin-left:3rem;
     margin-top:10px;
-    padding: 20px;
 }
 
 
-#library .btn-primary {
+#templates .btn-primary {
     background-color: transparent;
     border-color:#133E5C;
     color: #133E5C;
 }
 
-#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+#templates .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
     background-color: #133E5C;
     border-color: #133E5C;
     color:white;
 }
+

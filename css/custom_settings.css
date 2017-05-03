@@ -19,7 +19,7 @@
 
 /* second navbar hover color*/
 #secondSidebar .nav-item:hover {
-    background-color: #e84a29;
+    background-color: #ccd9e4 ;
 }
 
 #settings .page-top {
@@ -50,3 +50,7 @@
     margin-top: 50px;
 }
 
+
+#buttonPassword{
+    margin-top: 30px;
+}
