@@ -5,12 +5,12 @@
 
     <?php include ('head.html'); ?>
 </head>
-<body>
+<body id="body-contacts">
 
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
-    <div class="page-top fixed-top">
+    <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
                 <h1>Kontakte</h1>
@@ -22,6 +22,7 @@
             </div>
         </div>
     </div>
+
     <?php include ('contactlist.html');?>
 
     <!--Form-->
@@ -80,6 +81,20 @@
 </section>
 
 <?php include ('scripts.html'); ?>
+<script>
+
+    var h = $(window).height();
+
+    var header_h = $(".page-top").height();
+
+
+    $(".contact-sidebar").height(h - header_h);
+    $( window ).resize( function(){
+        h = $(window).height();
+        $(".contact-sidebar").height(h - header_h);
+    });
+
+</script>
 
 
 </body>

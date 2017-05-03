@@ -1,124 +1,95 @@
-#contacts {
-    background: white;
-    height:100%;
-    min-height: 100%;
-}
-
-#contacts .container-fluid {
-    height: 100%;
-}
 #secondSidebarContacts {
     background-color: #EFEFEF;
     border-color: #EFEFEF;
-    width: 25%;
+    width: auto;
     position: fixed;
     padding-top: 10px;
     margin-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-#secondSidebarContacts::-webkit-scrollbar{
-
-}
-
-.scrollbar
-{
-    float: inherit;
-    height: 900px;
-    width: 300px;
-    background: #EFEFEF;
-    overflow-y: scroll;
-}
-
 #secondSidebarContacts ul {
-    padding-left: 20px;
+    padding-left: 0px;
+    border-color: #4b5257;
+
 }
 #secondSidebarContacts li {
     list-style: none;
 }
 #secondSidebarContacts ul li a{
-    padding-left: 5px;
+    padding-left: 0px;
     text-decoration: none;
 }
-#secondSidebarContacts .scrollbar .row{
-    padding-left: 0px;
-}
-.force-overflow
-{
-    min-height: 950px;
+#secondSidebarContacts ul li p{
+    text-align: center;
+    background-color: #b4b4b4;
+    color: black;
+    margin: 0px;
 }
 
-#wrapper
-{
-    text-align: center;
-    width: 500px;
-    margin: auto;
+/* contactlist hover color*/
+#secondSidebarContacts .card-item:hover {
+    background-color: #ccd9e4;
 }
-/*2 second navbar text color*/
+/* Scroll bar Kontaktliste */
+.contact-sidebar{
+    overflow-y: scroll;
+}
+
+/* Kontaktliste text color*/
 #secondSidebarContacts a.nav-link {
     color: BLACK;
 }
 
-/* second navbar hover color*/
-#secondSidebarContacts .card-item:hover {
-    background-color: #ccd9e4;
-}
-/* second navbar hover color*/
-.contactlist .card-item:hover {
-    background-color: #ccd9e4;
+/***** HEADER *****/
+
+#contacts .titlebar {
+    background: #EFEFEF;
+    border: none;
 }
 
-.white {
-    background-color: white;
-}
-
-.img-placeholder {
-    display:inline-block;
-    font-size:1em;
-    width:2.5em;
-    height:2.5em;
-    line-height:2.5em;
-    text-align:center;
-    border-radius:50%;
-    vertical-align:middle;
-    color:white;
-}
-
-
-.contact label{
-    padding: inherit;
-
-}
-
-/* Suchfeld */
-
-.input-group-btn{
+#contacts .page-top {
+    margin-left: 60px;
     background-color: #EFEFEF;
 }
+@media(min-height: 720px) {
+    #contacts .page-top {
+        margin-left: 120px !important;
+    }
+}
+@media(min-height: 600px) {
+    #contacts .page-top {
+        margin-left: 100px;
+    }
+}
+/***** SUCHLEISTE *****/
+/*  Filter by und Such Button */
+.input-group-btn .btn-default {
+    background-color: #EFEFEF;
+    border-color: #4b5257;
+}
+ .input-group-btn .form-control{
+     border-color: #4b5257;
+ }
+.input-group-btn .form-control{
 
+}
+/* Dropdown Menu Suchleiste Links */
 .input-group-btn ul li a {
     color: #4b5257;
     text-decoration: none;
 }
-
 
 .input-group-btn ul li:hover{
     background-color: #FFFFFF;
     text-decoration: none;
 }
 .dropdown-menu{
-    background-color: #D2D2D2;
-    text-decoration: none;
-}
-#contacts .titlebar {
-    background: #EFEFEF;
-    border: none;
-
-}
-
-
-#contacts .page-top {
-    margin-left: 115px;
     background-color: #EFEFEF;
+    text-decoration: dotted;
+    border-color: #4b5257;
 }
+
 
 
 /* Kontaktbild */
@@ -145,6 +116,8 @@
 .row header{
     background-color: #4b5257;
 }
+
+/*
 .checkbox label:after,
 .radio label:after {
     content: '';
@@ -203,3 +176,7 @@
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
 }
+
+
+#body-singleproject {
+}*/

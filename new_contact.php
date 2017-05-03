@@ -5,24 +5,27 @@
 
     <?php include ('head.html'); ?>
 </head>
-<body>
+<body id="body-contacts">
 
 <?php include ('navigation.html'); ?>
 
 <section id="contacts" class="page-content">
-    <div class="page-top fixed-top">
+    <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
                 <h1>Kontakte</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="view_contact.php">
-                    <div class="icon-check d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Speichern</span></a>
+                <a class="titlebar-link" href="edit_contact.php">
+                    <div class="icon-pencil d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Bearbeiten</span></a>
             </div>
         </div>
     </div>
+
     <?php include ('contactlist.html');?>
+
+    <!--Form-->
 
     <!--Form-->
     <div class="kontaktinfos pt-5">
@@ -97,6 +100,20 @@
 </section>
 
 <?php include ('scripts.html'); ?>
+<script>
+
+    var h = $(window).height();
+
+    var header_h = $(".page-top").height();
+
+
+    $(".contact-sidebar").height(h - header_h);
+    $( window ).resize( function(){
+        h = $(window).height();
+        $(".contact-sidebar").height(h - header_h);
+    });
+
+</script>
 
 
 </body>
