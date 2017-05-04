@@ -5,7 +5,7 @@
 
     <?php include ('head.html'); ?>
 </head>
-<body>
+<body id="dashboardbody">
 
 <?php include ('navigation.html'); ?>
 
@@ -28,7 +28,12 @@
             <div class="col-lg-6 protokollant-content">
                 <div class="card my-3">
                     <div class="card-header">
-                        Aktuelle Projekte
+                        <div class="row">
+                            <div class="col-8">Aktuelle Projekte</div>
+                            <div class="col-4 text-right">
+                                <span class="badge c-orange-bg">5</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
@@ -115,7 +120,12 @@
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header">
-                        Zuletzt geöffnete Dokumente
+                        <div class="row">
+                            <div class="col-8">Zuletzt geöffnete Dokumente</div>
+                            <div class="col-4 text-right">
+                                <span class="badge c-orange-bg">5</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
@@ -207,7 +217,12 @@
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header">
-                        Bevorstehende Termine
+                        <div class="row">
+                            <div class="col-8">Bevorstehende Termine</div>
+                            <div class="col-4 text-right">
+                                <span class="badge c-orange-bg">5</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">
@@ -299,7 +314,12 @@
             <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header">
-                        Favoriten
+                        <div class="row">
+                            <div class="col-8">Favoriten</div>
+                            <div class="col-4 text-right">
+                                <span class="badge c-orange-bg">2</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
                         <a class="card-item-link" href="home.php">

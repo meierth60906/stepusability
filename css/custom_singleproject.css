@@ -93,10 +93,10 @@
 }
 
 #singleproject .inner-sidebar {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     position:fixed;
     right:0;
-    width: 23%;
     /*right: -3rem;*/
 }
 
@@ -135,9 +135,25 @@
     overflow-y: scroll;
 }
 
-#body-singleproject {
-}
 
 .aufgabenfeld {
     height: 240px !important;
+}
+
+.teammember {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.teammember:hover {
+    background-color: #ecdcd7;
+}
+
+.inner-sidebar-button {
+    border-radius: 30px;
+}
+
+.body-allgemein {
+    overflow-y: scroll;
 }

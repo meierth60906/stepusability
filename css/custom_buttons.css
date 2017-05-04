@@ -9,3 +9,15 @@
     background-color: #ff512d;
     border-color: #ff512d;
 }
+
+.btn-submit-grey{
+    color: #000;
+    background-color: #cfcfcf;
+    border-color: #c4c4c4;
+}
+
+.btn-submit-grey:hover{
+    color: #000;
+    background-color: #dcdcdc;
+    border-color: #d4d4d4;
+}
