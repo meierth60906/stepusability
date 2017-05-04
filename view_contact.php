@@ -16,10 +16,15 @@
                 <h1>Kontakte</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
+                <a class="titlebar-link" href="new_contact.php">
+                    <div class="icon-plus d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Kontakt hinzufügen</span></a>
                 <a class="titlebar-link" href="edit_contact.php">
                     <div class="icon-pencil d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Bearbeiten</span></a>
+
             </div>
+
         </div>
     </div>
 
@@ -43,6 +48,11 @@
                         <input type="text" class="form-control" id="inputName" value="Apfel" placeholder="Nachname">
                         <input type="text" class="form-control" id="inputName" value="Apple" placeholder="Firma">-->
 
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <span class="star icon-star"></span>
+                        </div>
                     </div>
                 </div>
 

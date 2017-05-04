@@ -40,6 +40,11 @@
                         <input type="text" class="form-control" id="inputName" value="Apple" placeholder="Firma">
 
                     </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <span class="star icon-star"></span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-group row">
@@ -59,9 +64,9 @@
                     <label for="inputSkill" class="col-lg-3 form-control-label">Fähigkeiten</label>
                     <div class="col-lg-5">
                         <div class="chip">
-                            <input type="text" class="card-text" id="inputSkill" value="Java" placeholder="Skill 1">
-                            <input type="text" class="card-text" id="inputSkill" value="Android" placeholder="Skill 2">
-                            <input type="text" class="card-text" id="inputSkill" value="CSS" placeholder="Skill 3">
+                            <input type="text" class="form-control" id="inputSkill" value="Java" placeholder="Skill 1">
+                            <input type="text" class="form-control" id="inputSkill" value="Android" placeholder="Skill 2">
+                            <input type="text" class="form-control" id="inputSkill" value="CSS" placeholder="Skill 3">
                         </div>
                     </div>
                 </div>
@@ -71,6 +76,30 @@
                         <input type="text" class="form-control" id="inputAddress" value="Ahornstraße 22" placeholder="Straße & Hausnr.">
                         <input type="text" class="form-control" id="inputAddress" value="12345" placeholder="PLZ">
                         <input type="text" class="form-control" id="inputAddress" value="Nürnberg" placeholder="Ort">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputRole" class="col-lg-3 form-control-label">Rolle</label>
+                    <div class="col-lg-5">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                Team</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                Proband</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value=""
+                                >
+                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                Kunde</label>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer text-center">
@@ -94,6 +123,10 @@
         $(".contact-sidebar").height(h - header_h);
     });
 
+
+    $(".star.glyphicon").click(function() {
+        $(this).toggleClass("glyphicon-star glyphicon-star-empty");
+    });
 </script>
 
 

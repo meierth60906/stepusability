@@ -17,12 +17,13 @@
     list-style: none;
 }
 #secondSidebarContacts ul li a{
-    padding-left: 0px;
+    padding-left: 30px;
     text-decoration: none;
 }
 #secondSidebarContacts ul li p{
     text-align: center;
-    background-color: #b4b4b4;
+    border-top: 1px solid #4b5257;
+    border-bottom: 1px solid #4b5257;
     color: black;
     margin: 0px;
 }
@@ -65,15 +66,13 @@
 /***** SUCHLEISTE *****/
 /*  Filter by und Such Button */
 .input-group-btn .btn-default {
-    background-color: #EFEFEF;
+    background-color: #c9c8c8;
     border-color: #4b5257;
 }
- .input-group-btn .form-control{
-     border-color: #4b5257;
- }
 .input-group-btn .form-control{
-
+    border-color: #4b5257;
 }
+
 /* Dropdown Menu Suchleiste Links */
 .input-group-btn ul li a {
     color: #4b5257;
@@ -89,8 +88,20 @@
     text-decoration: dotted;
     border-color: #4b5257;
 }
+/* Add Button */
+#contacts .btn-success{
+    background-color: #133e5c ;
+}
 
+#contacts .btn-danger{
+    background-color: #e84a29 ;
 
+}
+
+.star {
+    font-size: 50px;
+    color:gold;
+}
 
 /* Kontaktbild */
 /**
@@ -117,16 +128,8 @@
     background-color: #4b5257;
 }
 
-/*
-.checkbox label:after,
-.radio label:after {
-    content: '';
-    display: table;
-    clear: both;
-}
 
-.checkbox .cr,
-.radio .cr {
+.checkbox .cr {
     position: relative;
     display: inline-block;
     border: 1px solid #a9a9a9;
@@ -137,46 +140,31 @@
     margin-right: .5em;
 }
 
-.radio .cr {
-    border-radius: 50%;
-}
 
-.checkbox .cr .cr-icon,
-.radio .cr .cr-icon {
+#contacts .checkbox .cr .cr-icon {
     position: absolute;
-    font-size: .8em;
+    font-size: 1.3em;
     line-height: 0;
-    top: 50%;
-    left: 20%;
+    top: 0%;
+    left: 0%;
 }
 
-.radio .cr .cr-icon {
-    margin-left: 0.04em;
-}
 
-.checkbox label input[type="checkbox"],
-.radio label input[type="radio"] {
+.checkbox label input[type="checkbox"] {
     display: none;
 }
 
-.checkbox label input[type="checkbox"] + .cr > .cr-icon,
-.radio label input[type="radio"] + .cr > .cr-icon {
+.checkbox label input[type="checkbox"] + .cr > .cr-icon {
     transform: scale(3) rotateZ(-20deg);
     opacity: 0;
     transition: all .3s ease-in;
 }
 
-.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
-.radio label input[type="radio"]:checked + .cr > .cr-icon {
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
     transform: scale(1) rotateZ(0deg);
     opacity: 1;
 }
 
-.checkbox label input[type="checkbox"]:disabled + .cr,
-.radio label input[type="radio"]:disabled + .cr {
+.checkbox label input[type="checkbox"]:disabled + .cr{
     opacity: .5;
 }
-
-
-#body-singleproject {
-}*/

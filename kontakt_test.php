@@ -16,9 +16,9 @@
                 <h1>Kontakte</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="view_contact.php">
-                    <div class="icon-check d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Speichern</span></a>
+                <a class="titlebar-link" href="edit_contact.php">
+                    <div class="icon-pencil d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Bearbeiten</span></a>
             </div>
         </div>
     </div>
@@ -43,11 +43,6 @@
                         <input type="text" class="form-control" id="inputName" placeholder="Firma">
 
                     </div>
-                    <div class="col-lg-4">
-                        <div>
-                            <span class="star icon-star"></span>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="form-group row">
@@ -65,12 +60,11 @@
                                     <li><a href="#www">Web</a></li>
                                     <li><a href="#other">Andere</a></li>
                                 </ul>
-                                <input type="hidden" class="input-group-select-val" name="form-group['type'][]" value="mobile">
+                                <input type="hidden" class="input-group-select-val" name="contacts['type'][]" value="mobile">
                             </div>
-                            <input type="text" name="form-group['value'][]" class="form-control">
+                            <input type="text" name="contacts['value'][]" class="form-control">
                             <span class="input-group-btn">
                             <button type="button" class="btn btn-success btn-add">+</button>
-
                         </span>
                         </div>
                     </div>
@@ -189,7 +183,7 @@
                     .html('–');
 
                 $formGroupClone.find('input').val('');
-                $formGroupClone.find('.concept').text('');
+                $formGroupClone.find('.concept').text('Phone');
                 $formGroupClone.insertAfter($formGroup);
 
                 var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
