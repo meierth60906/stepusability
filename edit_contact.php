@@ -83,7 +83,7 @@
                     <div class="col-lg-5">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">
+                                <input type="checkbox" value="" checked>
                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                 Team</label>
                         </div>
@@ -104,6 +104,7 @@
                 </div>
                 <div class="modal-footer text-center">
                     <button type="button" class="btn btn-submit-orange btn-md">Kontakt löschen</button>
+                    <button type="button" class="btn btn-submit-orange btn-md">Kontakt speichern</button>
                 </div>
         </div>
     </div>
