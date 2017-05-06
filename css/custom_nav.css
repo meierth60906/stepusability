@@ -20,10 +20,10 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-top: solid 1px #0d2b40;
-    transition: background-color .1s ease-in; /* explorer 10 */
-    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
-    -moz-transition: background-color .1s ease-in; /* firefox */
-    -o-transition: background-color .1s ease-in; /* opera */
+    transition: background-color .2s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
+    -moz-transition: background-color .2s ease-in; /* firefox */
+    -o-transition: background-color .2s ease-in; /* opera */
 }
 
 .sidebar-wrapper ul li:last-child {
@@ -40,10 +40,10 @@
 
 .sidebar-wrapper ul li:hover {
     background-color: #185077;
-    transition: background-color .2s ease-in; /* explorer 10 */
-    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
-    -moz-transition: background-color .2s ease-in; /* firefox */
-    -o-transition: background-color .2s ease-in; /* opera */
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
 }
 
 .sidebar-wrapper ul li a {

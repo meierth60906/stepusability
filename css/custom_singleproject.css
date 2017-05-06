@@ -1,5 +1,6 @@
 #singleproject .nav-tabs {
-    border-bottom: solid 5px #e84a29;
+    /*border-bottom: solid 5px #e84a29;*/
+    border-bottom: solid 5px #133e5c;
 }
 
 @media(min-width: 992px) {
@@ -22,7 +23,7 @@
     }
 
     #singleproject .nav-tabs .nav-item .active {
-        background-color: #e84a29;
+        background-color: #133e5c;
         color: white;
         border: 0;
         -webkit-border-top-left-radius: 50px !important;
@@ -48,7 +49,7 @@
 }
 
 #singleproject .nav-tabs .nav-item .active {
-    background-color: #e84a29;
+    background-color: #133e5c;
     color: white !important;
     border: 0;
     -webkit-border-radius:0;
@@ -92,11 +93,12 @@
     padding-top: 100px;
 }
 
-#singleproject .inner-sidebar {
+#singleproject .project-sidebar {
     overflow-y: auto;
     overflow-x: hidden;
     position:fixed;
     right:0;
+    width: 23%;
     /*right: -3rem;*/
 }
 

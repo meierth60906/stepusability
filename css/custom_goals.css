@@ -1,3 +1,8 @@
+#goals .goal {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 #goals .goal-badge {
     color: #fff;
     width: 60px;
@@ -26,10 +31,10 @@
     -webkit-box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
     -moz-box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
     box-shadow: 0 0 30px -10px rgba(0,0,0,0.9);
-    transition: all .2s ease-in; /* explorer 10 */
-    -webkit-transition: all .2s ease-in; /* chrome & safari */
-    -moz-transition: all .2s ease-in; /* firefox */
-    -o-transition: all .2s ease-in; /* opera */
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
 }
 
 #goals .goal-description {
@@ -38,12 +43,19 @@
     font-weight: bold;
 }
 
-#goals .goalcard {
+.goalcard,
+.element-allgemein {
+    background-color: white;
     border-radius: 5px;
     border: 1px solid #dcdcdc;
+    transition: all .2s ease-in; /* explorer 10 */
+    -webkit-transition: all .2s ease-in; /* chrome & safari */
+    -moz-transition: all .2s ease-in; /* firefox */
+    -o-transition: all .2s ease-in; /* opera */
 }
 
-#goals .goalcard:hover {
+.goalcard:hover,
+.element-allgemein:hover {
     border-radius: 5px;
     border: 1px solid #999;
     -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
@@ -53,4 +65,15 @@
     -webkit-transition: all .1s ease-in; /* chrome & safari */
     -moz-transition: all .1s ease-in; /* firefox */
     -o-transition: all .1s ease-in; /* opera */
+}
+
+.goalcard-icon {
+    color: white;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+}
+
+.goalcard-todo {
+    background-color: #f3e3dd;
 }
