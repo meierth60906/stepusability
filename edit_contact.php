@@ -104,7 +104,7 @@
                 </div>
                 <div class="modal-footer text-center">
                     <button type="button" class="btn btn-submit-orange btn-md">Kontakt löschen</button>
-                    <button type="button" class="btn btn-submit-orange btn-md">Kontakt speichern</button>
+                    <button type="button" class="btn btn-submit-orange btn-md" href="view_contact.php">Kontakt speichern</button>
                 </div>
         </div>
     </div>
