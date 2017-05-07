@@ -134,6 +134,7 @@
     color:white;
 }
 
-#dashboardbody {
-    background-color: #ededed;
+#dashboardbody,
+#body-singleproject {
+    background-color: #f5f5f5;
 }
