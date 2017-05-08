@@ -20,16 +20,16 @@
             <div class="col-md-12 p-0">
                 <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab">Allgemein</a>
+                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-folder"></span> <span>Allgemein</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab">Testaufgaben</a>
+                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-list"></span> <span>Testaufgaben</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab">Projektunterlagen</a>
+                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-file-text"></span> <span>Projektunterlagen</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab">Evaluation</a>
+                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-check-1"></span> <span>Evaluation</span></a>
                     </li>
                 </ul>
             </div>
