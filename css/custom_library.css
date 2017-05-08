@@ -55,9 +55,6 @@
     padding-bottom: 8px;
 }
 
-#library .panel-heading{
-    padding-left:20px !important;
-}
 
 #library .panel-body:hover, .panel-footer:hover {
     background-color: #ccd9e4 !important;

@@ -60,25 +60,19 @@
                                 </h4>
                             </div>
                             <div id="einverständniserklärung" class="panel-collapse collapse">
-                                <a href="">
-                                    <div class="panel-body icon-file-text-o active">
-                                        Einverständniserklärung 1
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="panel-body icon-file-text-o"> Einverständniserklärung
-                                        2
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                                </a>
-                                <a href="#page1">
-                                    <div class="panel-body icon-file-text-o"> Protokollleitfaden</div>
-                                </a>
-                                <a href="">
-                                    <div class="panel-body icon-file-text-o"> Testskript</div>
-                                </a>
+
+                                <div class="panel-body icon-file-text-o active"><a href="">
+                                        Einverständniserklärung 1</a></div>
+                                <div class="panel-body icon-file-text-o"><a href=""> Einverständniserklärung</a>
+                                    2
+                                </div>
+                                <div class="panel-body icon-file-text-o"><a href="">Testaufgaben</a></div>
+
+                                <div class="panel-body icon-file-text-o"><a href="#page1"> Protokollleitfaden</a></div>
+
+
+                                <div class="panel-body icon-file-text-o"><a href=""> Testskript</a></div>
+
                             </div>
 
                             <!--Projekt 1-->
@@ -296,7 +290,6 @@
             </div>
 
 
-
         </div>
     </div>
 
@@ -317,7 +310,7 @@
             //shows different page content
 
             $(function () {
-                $('.a').click(function (e) {
+                $('.panel-body a').click(function (e) {
                     e.preventDefault()
                     $(this).tab('show')
                 })
@@ -325,36 +318,7 @@
 
 
         });
-//
-//
-//        $(function () {
-//            var hash = window.location.hash;
-//            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-//
-//            $('.nav-link').click(function () {
-//                $(this).tab('show');
-//                var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-//                window.location.hash = this.hash;
-//                $('html,body').scrollTop(scrollmem);
-//            });
-//        });
 
-    //    $(document).ready(function(){
-    //        $('#sidebarLibrary').on('change', function(){
-    //            var n = $(this).val();
-    //            switch(n)
-    //            {
-    //                case '1':
-    //                    document.getElementById('#show').innerHTML="1st radio button";
-    //                    break;
-    //                case '2':
-    //                    document.getElementById('#show').innerHTML="2nd radio button";
-    //                    break;
-    //                case '3':
-    //                    document.getElementById('#show').innerHTML="3rd radio button";
-    //                    break;
-    //            }
-    //        });
 </script>
 </body>
 
