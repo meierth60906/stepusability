@@ -167,3 +167,8 @@
 .body-allgemein {
     overflow-y: scroll;
 }
+
+.icon-play {
+
+    vertical-align: -1px;
+}

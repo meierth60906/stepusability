@@ -40,35 +40,39 @@
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="row inner-body">
                     <div id="content-allgemein" class="col-lg-9 py-3">
-
+                        <div class="row pt-4 hidden-lg-up">
+                            <div class="col-lg-12 text-center">
+                                <a href="#" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
+                            </div>
+                        </div>
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
                             <!--                            Projektinfo -->
-                            <div class="col-lg-8 pr-0">
-                                <div class="row my-3 ml-3 mr-2">
+                            <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
                                     <div class="col-lg-12 element-allgemein p-3">
                                         <div class="row">
-                                            <div class="col-lg-8 headline">
+                                            <div class="col-10 col-sm-6 headline">
                                                 Projektinformationen
                                             </div>
-                                            <div class="col-lg-4 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                            <div class="col-2 col-sm-6 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                             </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
+                                            <div class="col-12"><hr class="pb-3"></div>
                                         </div>
                                         <div class="row pb-2">
-                                            <div class="col-lg-4">Kunde:</div>
-                                            <div class="col-lg-8 font-weight-bold">Musterfirma</div>
+                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
+                                            <div class="col-xl-8">Musterfirma</div>
                                         </div>
                                         <div class="row pb-2">
-                                            <div class="col-lg-4">Ansprechpartner:</div>
-                                            <div class="col-lg-8 font-weight-bold"><a href="../new_contact.php">Max Mustermann</a></div>
+                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
                                         </div>
 
                                         <div class="row pb-2">
-                                            <div class="col-lg-4">Projektbeschreibung:</div>
-                                            <div class="col-lg-8 font-weight-bold">
+                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                            <div class="col-xl-8">
                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                                 accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
@@ -77,8 +81,8 @@
                                         </div>
 
                                         <div class="row pb-2">
-                                            <div class="col-lg-4">Status:</div>
-                                            <div class="col-lg-8 font-weight-bold">
+                                            <div class="col-xl-4 font-weight-bold">Status:</div>
+                                            <div class="col-xl-8">
                                                 Laufend
                                             </div>
                                         </div>
@@ -92,7 +96,7 @@
 
                                     </div>
                                 </div>
-                                <div class="row my-3 ml-3 mr-3 mr-lg-2">
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
                                     <div class="col-lg-12 element-allgemein p-3">
                                         <div class="row">
                                             <div class="col-lg-12 headline">
@@ -110,83 +114,83 @@
 
                             </div>
                             <!--                            Beteiligte -->
-                            <div class="col-lg-4 pl-0">
-                                <div class="row m-3">
+                            <div class="col-lg-4 pr-0 pr-md-3 pl-0 pl-md-3 pl-lg-0">
+                                <div class="row my-3 ml-2 mr-lg-3 mr-2">
                                     <div class="col-lg-12 element-allgemein p-3">
                                         <div class="row">
-                                            <div class="col-lg-6 headline">
+                                            <div class="col-10 col-sm-6 col-lg-4 headline">
                                                 Beteiligte
                                             </div>
-                                            <div class="col-lg-6 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                            <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
                                             </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
+                                            <div class="col-12"><hr class="pb-3"></div>
                                         </div>
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <div class="img-placeholder c-darkgrey-bg">AA</div>
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Anna Apfel
                                                 <div class="text-muted small">Protokollant</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
                                         </div>
 
                                         <div class="teammember row">
-                                            <div class="pl-0 col-2">
+                                            <div class="pl-0 col-2 hidden-lg-down">
                                                 <img class="img-placeholder rounded-circle" src="../img/user.jpg">
                                             </div>
-                                            <div class="pl-0 col-10">
+                                            <div class="pl-0 col-10 pl-xl-2">
                                                 Bernd Bogner
                                                 <div class="text-muted small">Moderator</div>
                                             </div>
@@ -222,12 +226,12 @@
 
                     </div>
                     <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
-                        <div class="row pt-4 pb-3">
+                        <div class="row pt-4 hidden-md-down">
                             <div class="col-lg-12 text-center">
-                                <a href="#" class="btn btn-submit-orange m-2 "><i class="icon-check"></i> Test starten</a>
+                                <a href="#" class="btn btn-submit-orange m-4"><i class="icon-play"></i> Test starten</a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
                             <div class="col-lg-12 headline">
                                 Benachrichtigungen
                             </div>

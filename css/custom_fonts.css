@@ -125,3 +125,12 @@
 .icon-plus-1:before {
   content: "\43";
 }
+.icon-th-list:before {
+  content: "\44";
+}
+.icon-check-1:before {
+  content: "\45";
+}
+.icon-list:before {
+  content: "\46";
+}
