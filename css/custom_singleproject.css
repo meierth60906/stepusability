@@ -123,7 +123,7 @@
 }
 
 #singleproject .headline {
-    font-size: 24px;
+    font-weight: bold;
 }
 
 #singleproject .protokollant-card {
@@ -143,13 +143,21 @@
 }
 
 .teammember {
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    transition: all .2s ease-in; /* explorer 10 */
+    -webkit-transition: all .2s ease-in; /* chrome & safari */
+    -moz-transition: all .2s ease-in; /* firefox */
+    -o-transition: all .2s ease-in; /* opera */
 }
 
 .teammember:hover {
-    background-color: #ecdcd7;
+    background-color: #ccd9e4;
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
 }
 
 .inner-sidebar-button {

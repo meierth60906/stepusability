@@ -75,6 +75,21 @@
                                                 sanctus est Lorem ipsum dolor sit amet.
                                             </div>
                                         </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-lg-4">Status:</div>
+                                            <div class="col-lg-8 font-weight-bold">
+                                                Laufend
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-lg-12 text-right">
+                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check"></i> Projekt abschließen</a>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                                 <div class="row my-3 ml-3 mr-3 mr-lg-2">
@@ -99,10 +114,10 @@
                                 <div class="row m-3">
                                     <div class="col-lg-12 element-allgemein p-3">
                                         <div class="row">
-                                            <div class="col-lg-8 headline">
+                                            <div class="col-lg-6 headline">
                                                 Beteiligte
                                             </div>
-                                            <div class="col-lg-4 text-right">
+                                            <div class="col-lg-6 text-right">
                                                 <a href="project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
                                             </div>
                                             <div class="col-lg-12"><hr class="pb-3"></div>
@@ -208,19 +223,21 @@
                     </div>
                     <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
                         <div class="row pt-4 pb-3">
-                            <div class="col-lg-6 text-center">
-                                <a href="#" class="btn btn-submit-grey"><i class="icon-check"></i> Projekt abschließen</a>
-                            </div>
-                            <div class="col-lg-6 text-center">
-                                <a href="#" class="btn btn-submit-orange"><i class="icon-check"></i> Test starten</a>
+                            <div class="col-lg-12 text-center">
+                                <a href="#" class="btn btn-submit-orange m-2 "><i class="icon-check"></i> Test starten</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="row px-3">
+                            <div class="col-lg-12 headline">
+                                Benachrichtigungen
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+                            <div class="col-lg-12 small">
+
+                                <div class="row px-3 ">
                                     <div id="goalcard-projekt" class="goalcard col-lg-12 p-3 mb-3">
 
-                                        <div class="font-weight-bold">Projekt "Projekt 1" erstellt</div>
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Testskript aktualisiert erstellt</div>
                                         <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
 
                                     </div>
@@ -228,7 +245,7 @@
                                 <div class="row px-3">
                                     <div id="goalcard-einverst" class="goalcard col-lg-12 p-3 mb-3">
 
-                                        <div class="font-weight-bold">Projekt "Projekt 1" erstellt</div>
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 2 erstellt</div>
                                         <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
 
                                     </div>
@@ -236,7 +253,7 @@
                                 <div class="row px-3">
                                     <div id="goalcard-skript" class="goalcard col-lg-12 p-3 mb-3">
 
-                                        <div class="font-weight-bold">Projekt "Projekt 1" erstellt</div>
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 1 erstellt</div>
                                         <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
 
                                     </div>
@@ -244,7 +261,7 @@
                                 <div class="row px-3">
                                     <div id="goalcard-plan" class="goalcard col-lg-12 p-3 mb-3">
 
-                                        <div class="font-weight-bold">Projekt "Projekt 1" erstellt</div>
+                                        <div class="font-weight-bold"><span class="icon-folder d-inline text-muted"></span> Projekt "Projekt 1" erstellt</div>
                                         <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
 
                                     </div>

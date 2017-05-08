@@ -110,3 +110,18 @@
 .icon-search:before {
   content: "\67";
 }
+.icon-angle-down:before {
+  content: "\78";
+}
+.icon-stop:before {
+  content: "\7a";
+}
+.icon-ellipsis-v:before {
+  content: "\41";
+}
+.icon-ellipsis-h:before {
+  content: "\42";
+}
+.icon-plus-1:before {
+  content: "\43";
+}
