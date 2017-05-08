@@ -36,27 +36,8 @@
     }
 }
 
-#templates .panel-default > .panel-heading {
-    border: none !important;
-    background-color: #EFEFEF !important;
-    text-decoration: none !important;
-}
-
-#templates .panel-default {
-    border: none !important;
-    border-color: transparent !important;
-}
-
-#templates .panel-footer, .panel-body {
-    border: none !important;
-    padding: 8px !important;
-    padding-left: 35px !important;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
 #templates .panel-body:hover, .panel-footer:hover {
-    background-color: #ccd9e4 !important;
+    background-color: #ccd9e4;
 }
 
 #templates .panel-title {
@@ -67,26 +48,30 @@
     margin-top:20px;
 }
 
-#templates a:focus, a:hover {
-    text-decoration: none !important;
+#templates .on{
+    text-decoration: none;
+    font-weight: bold;
+}
+#templates .panel-body a:hover, .panel-heading a:hover{
+    font-weight: bold ;
 }
 
-#templates.panel-title.on {
-    font-weight: bold !important;
-    text-decoration: none !important;
+#templates .collapsed, .panel-body a{
+    text-decoration: none;
 }
 
-#templates a{
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    color: BLACK !important;
-    font-family: 'Lato', sans-serif !important;
-    -webkit-font-smoothing: antialiased !important;
+#templates .panel-body a , .panel-heading a{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: BLACK ;
+    font-family: 'Lato', sans-serif ;
+    -webkit-font-smoothing: antialiased;
     padding-left:20px;
 }
 
 #templates .collapse.show {
     background-color: white;
+
 }
 
 #templates table {

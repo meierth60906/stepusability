@@ -39,95 +39,111 @@
                     <!--                    Switch Button-->
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Projekte
+                            <a class="active switchlink" href="#projects"><input type="radio" name="options"
+                                                                                 id="option1" autocomplete="off"
+                                                                                 checked>Projekte
+                            </a>
                         </label>
                         <label class="btn btn-primary">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> Archiv
+                            <a class="switchlink" href="#archiv"><input type="radio" name="options" id="option2"
+                                                                        autocomplete="off">Archiv</a>
                         </label>
                     </div>
 
+                    <div class="tab-pane active" id="projects">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="icon-angle-right active" data-toggle="collapse"
+                                       href="#einverständniserklärung">Projekt
+                                        1</a>
+                                </h4>
+                            </div>
+                            <div id="einverständniserklärung" class="panel-collapse collapse">
+                                <a href="">
+                                    <div class="panel-body icon-file-text-o active">
+                                        Einverständniserklärung 1
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="panel-body icon-file-text-o"> Einverständniserklärung
+                                        2
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="panel-body icon-file-text-o"> Testaufgaben</div>
+                                </a>
+                                <a href="#page1">
+                                    <div class="panel-body icon-file-text-o"> Protokollleitfaden</div>
+                                </a>
+                                <a href="">
+                                    <div class="panel-body icon-file-text-o"> Testskript</div>
+                                </a>
+                            </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="icon-angle-right active" data-toggle="collapse" href="#einverständniserklärung">Projekt
-                                    1</a>
-                            </h4>
-                        </div>
-                        <div id="einverständniserklärung" class="panel-collapse collapse">
-                            <a href="">
-                                <div class="panel-body icon-file-text-o active"> Einverständniserklärung 1</div>
-                            </a>
-                            <a href="">
-                                <div class="panel-body icon-file-text-o"> Einverständniserklärung 2</div>
-                            </a>
-                            <a href="">
+                            <!--Projekt 1-->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#protokollleitfaden"
+                                       class="icon-angle-right">Projekt
+                                        2</a>
+                                </h4>
+                            </div>
+                            <div id="protokollleitfaden" class="panel-collapse collapse">
+                                <a href="">
+                                    <div class="panel-body icon-file-text-o"> Einverständniserklärung
+                                    </div>
+                                </a>
                                 <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                            </a>
-                            <a href="#page1">
-                                <div class="panel-body icon-file-text-o"> Protokollleitfaden</div>
-                            </a>
-                            <a href="">
+                                <div class="panel-body icon-file-text-o"> Protokollleitfaden 1</div>
+                                <a href="#page2">
+                                    <div class="panel-body icon-file-text-o"> Protokollleitfaden 2</div>
+                                </a>
                                 <div class="panel-body icon-file-text-o"> Testskript</div>
-                            </a>
-                        </div>
+                            </div>
 
-                        <!--Projekt 1-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#protokollleitfaden" class="icon-angle-right">Projekt
-                                    2</a>
-                            </h4>
-                        </div>
-                        <div id="protokollleitfaden" class="panel-collapse collapse">
-                            <a href="">
-                                <div class="panel-body icon-file-text-o">Einverständniserklärung</div>
-                            </a>
-                            <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                            <div class="panel-body icon-file-text-o"> Protokollleitfaden 1</div>
-                            <a href="#page2">
-                                <div class="panel-body icon-file-text-o"> Protokollleitfaden 2</div>
-                            </a>
-                            <div class="panel-body icon-file-text-o"> Testskript</div>
-                        </div>
+                            <!--Projekt 2-->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testskript"
+                                       class="icon-angle-right">Projekt 3</a>
+                                </h4>
+                            </div>
+                            <div id="testskript" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
+                                <div class="panel-body icon-file-text-o"> Testaufgaben</div>
+                            </div>
 
-                        <!--Projekt 2-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testskript" class="icon-angle-right">Projekt 3</a>
-                            </h4>
-                        </div>
-                        <div id="testskript" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
-                            <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                        </div>
+                            <!--Projekt 3-->
 
-                        <!--Projekt 3-->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Projekt
+                                        4</a>
+                                </h4>
+                            </div>
+                            <div id="testplan" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
+                            </div>
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Projekt 4</a>
-                            </h4>
-                        </div>
-                        <div id="testplan" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
-                        </div>
+                            <!--Projekt 4-->
 
-                        <!--Projekt 4-->
-
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testbericht" class="icon-angle-right">Projekt 5</a>
-                            </h4>
-                        </div>
-                        <div id="testbericht" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testbericht"
+                                       class="icon-angle-right">Projekt 5</a>
+                                </h4>
+                            </div>
+                            <div id="testbericht" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid">
         <div class="tab-content">
@@ -146,51 +162,67 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                    accusam etLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
+                                    accusam etLorem ipsum dolor sit amet, consetetur sadipscing
+                                    elitr, sed diam nonumy
                                     eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                    accusam etLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
+                                    accusam etLorem ipsum dolor sit amet, consetetur sadipscing
+                                    elitr, sed diam nonumy
                                     eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
                                 <td>Lorem ipsum dolor sit</td>
                             </tr>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut labore eLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                                     diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore eLorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed
+                                    diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
                                 <td>Lorem ipsum dolor sit</td>
                             </tr>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut labore eLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                                     diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore eLorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed
+                                    diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
@@ -215,35 +247,43 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et
                                     accusam et
                                 </td>
                                 <td>Lorem ipsum dolor sit</td>
                             </tr>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
                                 <td>Lorem ipsum dolor sit</td>
                             </tr>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod
                                     tempor
                                     invidunt ut labore e
                                 </td>
@@ -254,6 +294,9 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 
@@ -271,11 +314,10 @@
                 $(this).toggleClass('on');
             })
 
-
             //shows different page content
 
             $(function () {
-                $('.nav').click(function (e) {
+                $('.a').click(function (e) {
                     e.preventDefault()
                     $(this).tab('show')
                 })
@@ -283,27 +325,19 @@
 
 
         });
-
-
-    //    $(function () {
-    ////        changes the active collapse class to 'on' for changing the text to bold
-    //        $('.btn-primary').click(function () {
-    //            $(this).toggleClass('on');
-    //        })
-    //    });
-
-
-    //    $(function () {
-    //        var hash = window.location.hash;
-    //        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-    //
-    //        $('.nav-link').click(function () {
-    //            $(this).tab('show');
-    //            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-    //            window.location.hash = this.hash;
-    //            $('html,body').scrollTop(scrollmem);
-    //        });
-    //    });
+//
+//
+//        $(function () {
+//            var hash = window.location.hash;
+//            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+//
+//            $('.nav-link').click(function () {
+//                $(this).tab('show');
+//                var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+//                window.location.hash = this.hash;
+//                $('html,body').scrollTop(scrollmem);
+//            });
+//        });
 
     //    $(document).ready(function(){
     //        $('#sidebarLibrary').on('change', function(){

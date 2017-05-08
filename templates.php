@@ -26,70 +26,86 @@
 
 
         <!--innere Navigationsleiste-->
-        <div class="row" id="sidebarTemplates">
-            <div class="col p-0">
-                <div class="panel-group">
+        <div class="container" id="sidebarTemplates">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="panel-group">
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#vorlageEinverständniserklärung" class="icon-angle-right">Einverständniserklärung</a>
 
-                            </h4>
-                        </div>
-                        <div id="vorlageEinverständniserklärung" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 2</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 3</div>
-                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#einverstaendniserklaerung"
+                                       class="icon-angle-right active">Einverständniserklärung</a>
+                                </h4>
+                            </div>
+                            <div id="einverstaendniserklaerung" class="panel-collapse collapse active">
+                                <div class="panel-body icon-file-text-o active"><a href="#einverstaendniserklaerung1">
+                                        Vorlage 1</a></div>
+                                <div class="panel-body icon-file-text-o"><a href="#einverstaendniserklaerung2"> Vorlage
+                                        2</a></div>
+                                <div class="panel-body icon-file-text-o"><a href="#einverstaendniserklaerung3"> Vorlage
+                                        3</a></div>
+                            </div>
 
-                        <!--Protkollleitfaden-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#protokollleitfaden" class="icon-angle-right">Protokollleitfaden</a>
-                            </h4>
-                        </div>
-                        <div id="protokollleitfaden" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 2</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 3</div>
-                        </div>
-                        <!--Testskript-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testskript" class="icon-angle-right">Testskript</a>
-                            </h4>
-                        </div>
-                        <div id="testskript" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 2</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 3</div>
-                        </div>
+                            <!--Protkollleitfaden-->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#protokollleitfaden"
+                                       class="icon-angle-right">Protokollleitfaden</a>
+                                </h4>
+                            </div>
+                            <div id="protokollleitfaden" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"><a href="#protokollleitfaden1"> Vorlage
+                                        1</a>
+                                </div>
+                                <div class="panel-body icon-file-text-o"><a href=""> Vorlage 2</a></div>
+                                <div class="panel-body icon-file-text-o"><a href=""> Vorlage 3</a></div>
+                            </div>
+                            <!--Testskript-->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testskript" class="icon-angle-right">Testskript</a>
+                                </h4>
+                            </div>
+                            <div id="testskript" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"><a href="#testskript1"> Vorlage
+                                        1</a>
+                                </div>
+                                <div class="panel-body icon-file-text-o"><a href="#testskript2"> Vorlage 2</a></div>
+                                <div class="panel-body icon-file-text-o"><a href="#testskript3"> Vorlage 3</a></div>
+                            </div>
 
-                        <!--                    Testplan-->
+                            <!--                    Testplan-->
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Testplan</a>
-                            </h4>
-                        </div>
-                        <div id="testplan" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 2</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 3</div>
-                        </div>
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Testplan</a>
+                                </h4>
+                            </div>
+                            <div id="testplan" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"><a href="#testplan1"> Vorlage
+                                        1</a>
+                                </div>
+                                <div class="panel-body icon-file-text-o"><a href="#testplan2"> Vorlage 2</a></div>
+                                <div class="panel-body icon-file-text-o"><a href="#testplan3"> Vorlage 3</a></div>
+                            </div>
 
-                        <!--                    Testbericht-->
+                            <!--                    Testbericht-->
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testbericht" class="icon-angle-right">Testbericht</a>
-                            </h4>
-                        </div>
-                        <div id="testbericht" class="panel-collapse collapse">
-                            <div class="panel-body icon-file-text-o"> Vorlage 1</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 2</div>
-                            <div class="panel-body icon-file-text-o"> Vorlage 3</div>
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#testbericht"
+                                       class="icon-angle-right">Testbericht</a>
+                                </h4>
+                            </div>
+                            <div id="testbericht" class="panel-collapse collapse">
+                                <div class="panel-body icon-file-text-o"><a href="#testbericht1"> Vorlage
+                                        1</a>
+                                </div>
+                                <div class="panel-body icon-file-text-o"><a href="#testbericht2"> Vorlage 2</a></div>
+                                <div class="panel-body icon-file-text-o"><a href="#testbericht3"> Vorlage 3</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,74 +114,188 @@
     </div>
 
     <div class="container-fluid">
-        <div class="tab-pane row" id="protokollleitfaden">
-            <div class="col-lg-8 offset-lg-4">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Aufgabenanweisung</th>
-                        <th>Lösungsschritte</th>
-                        <th>Anmekungen</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
+        <div class="tab-content">
+
+
+            <div class="tab-pane active" id="einverstaendniserklaerung1" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Einverständniserklärung</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="einverstaendniserklaerung2" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Einverständniserklärung</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="einverstaendniserklaerung3" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Einverständniserklärung</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="protokollleitfaden1" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Aufgabenanweisung</th>
+                                <th>Lösungsschritte</th>
+                                <th>Anmekungen</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="testskript1" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Testskript</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="testplan1" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Testplan</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="testbericht1" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Testbericht</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </section>
 <?php include('scripts.html'); ?>
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script>
-    $(function () {
+    $(document).ready(function () {
+
+
+        $(function () {
 //        changes the active collapse class to 'on' for changing the text to bold
-        $('.nav').click(function () {
-            $(this).toggleClass('on');
-        })
+            $('.panel-heading a').click(function () {
+                $(this).toggleClass('on');
+            })
+        });
+
+
+        $(function () {
+            $('.panel-body a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+
     });
 
-    //    $(function () {
-    ////        changes the active collapse class to 'on' for changing the text to bold
-    //        $('.btn-primary').click(function () {
-    //            $(this).toggleClass('on');
-    //        })
-    //    });
 
-
-//    $(function () {
-//        var hash = window.location.hash;
-//        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-//
-//        $('.nav-link').click(function () {
-//            $(this).tab('show');
-//            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-//            window.location.hash = this.hash;
-//            $('html,body').scrollTop(scrollmem);
-//        });
-//    });
 </script>
 </body>
 

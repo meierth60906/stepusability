@@ -79,10 +79,11 @@
 #library a{
     font-size: 1rem !important;
     line-height: 1.5 !important;
-    color: BLACK !important;
+    color: black;
     font-family: 'Lato', sans-serif !important;
     -webkit-font-smoothing: antialiased !important;
 }
+
 
 #library .collapse.show {
     background-color: white;
@@ -116,13 +117,20 @@
 
 
 #library .btn-primary {
-    background-color: transparent;
+    background-color: white;
     border-color:#133E5C;
-    color: #133E5C;
 }
 
 #library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
     background-color: #133E5C;
     border-color: #133E5C;
-    color:white;
 }
+
+#library .switchlink {
+    color: #133E5C;
+}
+
+#library .active .switchlink {
+    color: #FFFFFF;
+}
+
