@@ -160,6 +160,27 @@
     -o-transition: all .1s ease-in; /* opera */
 }
 
+.item-hover {
+    z-index: 1;
+    transition: background-color .2s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
+    -moz-transition: background-color .2s ease-in; /* firefox */
+    -o-transition: background-color .2s ease-in; /* opera */
+}
+
+.item-hover:hover {
+    background-color: #eaeaea;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.item-hover:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .inner-sidebar-button {
     border-radius: 30px;
 }
@@ -171,4 +192,128 @@
 .icon-play {
 
     vertical-align: -1px;
+}
+
+.icon-align {
+    vertical-align: -2px;
+}
+
+.top-line {
+    border-top: 1px solid #0000001a;
+}
+
+.links-noblue a {
+    text-decoration: none;
+    color: black;
+}
+
+.links-noblue a:hover {
+    text-decoration: none;
+    color: #6d767d;
+}
+
+.link-noblue {
+    text-decoration: none;
+    color: black;
+}
+
+.link-noblue:hover,
+.link-noblue:focus,
+.link-noblue:active {
+    text-decoration: none;
+    color: #6d767d;
+}
+
+
+@media (min-width: 992px) {
+    #content-allgemein,
+    #content-aufgaben,
+    #content-unterlagen,
+    #sidebar-allgemein,
+    #sidebar-aufgaben,
+    #sidebar-unterlagen {
+        position: fixed;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #sidebar-allgemein {
+        right:0;
+    }
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
+}
+
+.dropdown-menu-right {
+    margin-right: 1rem;
+}
+
+.dropdown-menu li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    transition: background-color .2s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .2s ease-in; /* chrome & safari */
+    -moz-transition: background-color .2s ease-in; /* firefox */
+    -o-transition: background-color .2s ease-in; /* opera */
+}
+
+.dropdown-menu li:hover {
+    background-color: #f3f3f3;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.dropdown-menu li:hover:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f3f3f3;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.dropdown-menu li:hover:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f3f3f3;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.scenario-container {
+    list-style: none !important;
+}
+
+ol.scenario-container li.scenario {
+    list-style: none;
+    /** More li styles **/
+}
+ol.scenario-container li.scenario:before {
+    list-style: none;
+    /** Define arrowhead **/
 }

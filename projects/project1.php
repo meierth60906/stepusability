@@ -20,16 +20,16 @@
             <div class="col-md-12 p-0">
                 <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-folder"></span><span>Allgemein</span></a>
+                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-align icon-folder"></span><span class="pl-2 hidden-sm-down">Allgemein</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-list"></span><span>Testaufgaben</span></a>
+                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-align icon-list"></span><span class="pl-2 hidden-sm-down">Testaufgaben</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-file-text"></span><span>Projektunterlagen</span></a>
+                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-align icon-file-text"></span><span class="pl-2 hidden-sm-down">Projektunterlagen</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-check-1"></span><span>Evaluation</span></a>
+                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-align icon-check-1"></span><span class="pl-2 hidden-sm-down">Evaluation</span></a>
                     </li>
                 </ul>
             </div>
@@ -37,6 +37,7 @@
     </div>
     <div class="container-fluid">
         <div class="tab-content">
+            <!--            Allgemein -->
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="row inner-body">
                     <div id="content-allgemein" class="col-lg-9 py-3">
@@ -45,6 +46,551 @@
                                 <a href="#" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
                             </div>
                         </div>
+                        <!--                        Projektinfo + Beteiligte -->
+                        <div class="row pr-3">
+
+                            <!--                            Projektinfo -->
+                            <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                    <div class="col-lg-12 element-allgemein p-3">
+                                        <div class="row">
+                                            <div class="col-10 col-sm-6 headline">
+                                                Projektinformationen
+                                            </div>
+                                            <div class="col-2 col-sm-6 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                            </div>
+                                            <div class="col-12"><hr class="pb-3"></div>
+                                        </div>
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
+                                            <div class="col-xl-8">Musterfirma</div>
+                                        </div>
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                            <div class="col-xl-8">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                                sanctus est Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Status:</div>
+                                            <div class="col-xl-8">
+                                                Laufend
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-lg-12 text-right">
+                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                    <div class="col-lg-12 element-allgemein p-3">
+                                        <div class="row">
+                                            <div class="col-lg-12 headline">
+                                                Meilensteine
+                                            </div>
+                                            <div class="col-lg-12"><hr class="pb-3"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div id="goals" class="col-lg-12 p-3">
+                                                <?php include("goals.html") ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--                            Beteiligte -->
+                            <div class="col-lg-4 pr-0 pr-md-3 pl-0 pl-md-3 pl-lg-0">
+                                <div class="row my-3 ml-2 mr-lg-3 mr-2">
+                                    <div class="col-lg-12 element-allgemein p-3">
+                                        <div class="row">
+                                            <div class="col-10 col-sm-6 col-lg-4 headline">
+                                                Beteiligte
+                                            </div>
+                                            <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                            </div>
+                                            <div class="col-12"><hr class="pb-3"></div>
+                                        </div>
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Anna Apfel
+                                                <div class="text-muted small">Protokollant</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="teammember row">
+                                            <div class="pl-0 col-2 hidden-lg-down">
+                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                            </div>
+                                            <div class="pl-0 col-10 pl-xl-2">
+                                                Bernd Bogner
+                                                <div class="text-muted small">Moderator</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
+                        <div class="row pt-4 hidden-md-down">
+                            <div class="col-lg-12 text-center">
+                                <a href="#" class="btn btn-submit-orange m-4"><i class="icon-play"></i> Test starten</a>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-lg-12 headline">
+                                Benachrichtigungen
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+                            <div class="col-lg-12 small">
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 p-3 mb-3">
+
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Testskript aktualisiert</div>
+                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
+
+                                    </div>
+                                </div>
+                                <div class="row px-3">
+                                    <div id="goalcard-einverst" class="goalcard col-lg-12 p-3 mb-3">
+
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 2 erstellt</div>
+                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
+
+                                    </div>
+                                </div>
+                                <div class="row px-3">
+                                    <div id="goalcard-skript" class="goalcard col-lg-12 p-3 mb-3">
+
+                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 1 erstellt</div>
+                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
+
+                                    </div>
+                                </div>
+                                <div class="row px-3">
+                                    <div id="goalcard-plan" class="goalcard col-lg-12 p-3 mb-3">
+
+                                        <div class="font-weight-bold"><span class="icon-folder d-inline text-muted"></span> Projekt "Projekt 1" erstellt</div>
+                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--            Testaufgaben -->
+            <div class="tab-pane" id="testaufgaben" role="tabpanel">
+
+                <div class="row inner-body">
+                    <div id="sidebar-aufgaben" class="col-lg-3 c-grey-bg">
+                        <div class="row pt-3 mt-3">
+                            <div class="col-lg-6 headline">
+                                Aufgabenliste
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <!--                                Menu rechts mit Dropdown-->
+                                <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-ellipsis-v"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                    <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <li><a class="new-scenario" href="#">Neues Szenario</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+
+                            <ol class="scenario-container col-lg-12 links-noblue">
+                                    <li class="scenario">
+                                        <div class="scenario row px-3 ">
+                                            <div class="element-allgemein col-lg-12 mb-3">
+                                                <div class="row py-3">
+                                                    <div class="col-lg-10">
+                                                        <span class="font-weight-bold">Szenario 1</span>
+                                                    </div>
+                                                    <div class="col-lg-2 text-right">
+                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                            <div class="dropdown-divider m-0"></div>
+                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="szenario1" class="collapse show">
+                                                    <hr class="m-0">
+
+                                                    <div class="row item-hover">
+                                                        <div class="col-lg-12 py-3">
+                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe X
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row item-hover">
+                                                        <div class="col-lg-12 py-3">
+                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Y
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="scenario">
+                                        <div class="row px-3 ">
+                                            <div class="element-allgemein col-lg-12 mb-3">
+                                                <div class="row py-3">
+                                                    <div class="col-lg-10">
+                                                        <span class="font-weight-bold">Szenario 2</span>
+                                                    </div>
+                                                    <div class="col-lg-2 text-right">
+                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                            <div class="dropdown-divider m-0"></div>
+                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div id="szenario2" >
+                                                    <hr class="m-0">
+
+                                                    <div class="row item-hover">
+                                                        <div class="col-lg-12 py-3">
+                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Z
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row item-hover">
+                                                        <div class="col-lg-12 py-3">
+                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe W
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row item-hover">
+                                                        <div class="col-lg-12 py-3">
+                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe V
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div id="content-aufgaben" class="offset-lg-3 col-lg-9 py-3">
+
+
+
+                        <!--                        Projektinfo + Beteiligte -->
+                        <div class="row pl-3">
+
+                            <!--                            Projektinfo -->
+                            <div class="col-lg-12 pl-0 pl-md-3 pr-0 pr-md-3">
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                    <div class="col-lg-12 element-allgemein p-3">
+                                        <div class="row">
+                                            <div class="col-10 col-sm-6 headline">
+                                                Projektinformationen
+                                            </div>
+                                            <div class="col-2 col-sm-6 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                            </div>
+                                            <div class="col-12"><hr class="pb-3"></div>
+                                        </div>
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
+                                            <div class="col-xl-8">Musterfirma</div>
+                                        </div>
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                            <div class="col-xl-8">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                                sanctus est Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Status:</div>
+                                            <div class="col-xl-8">
+                                                Laufend
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-2">
+                                            <div class="col-lg-12 text-right">
+                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--            Projektunterlagen -->
+            <div class="tab-pane" id="projektunterlagen" role="tabpanel">
+
+                <div class="row inner-body">
+                    <div id="sidebar-unterlagen" class="col-lg-3 c-grey-bg">
+                        <div class="row pt-3 mt-3">
+                            <div class="col-lg-6 headline">
+                                Dokumente
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <span class="icon-ellipsis-v"></span>
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+
+                            <div class="col-lg-12 links-noblue">
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-einverst" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Einverständniserklärung</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-einverst" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-einverst" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-protokoll" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Protokollleitfaden</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-protokoll" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-protokoll" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-plan" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Testplan</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-plan" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-plan" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-skript" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Testskript</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-skript" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-skript" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-loesweg" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Lösungsweg-Zusammenfassung</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-loesweg" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-loesweg" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-3 ">
+                                    <div id="goalcard-projekt" class="goalcard col-lg-12 mb-3">
+                                        <div class="row py-3">
+                                            <div class="col-lg-10">
+                                                <a data-toggle="collapse" href="#dok-bericht" aria-expanded="false" aria-controls="collapseExample"><span class="font-weight-bold">Testbericht</span></a>
+                                            </div>
+                                            <div class="col-lg-2 text-right">
+                                                <a data-toggle="collapse" href="#dok-bericht" aria-expanded="false" aria-controls="collapseExample"><span class="icon-angle-down"></span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="dok-bericht" class="collapse">
+                                            <hr class="m-0">
+                                            <div class="row item-hover">
+                                                <div class="col-lg-12 py-3">
+                                                    <span class="icon-file-text pr-2 text-muted"></span>Testteilnehmer #1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-unterlagen" class="offset-lg-3 col-lg-9 py-3">
+
+                        <div class="row">
+
+                        </div>
+
+
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
@@ -89,7 +635,7 @@
 
                                         <div class="row pb-2">
                                             <div class="col-lg-12 text-right">
-                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check"></i> Projekt abschließen</a>
+                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
                                             </div>
                                         </div>
 
@@ -225,65 +771,8 @@
 
 
                     </div>
-                    <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
-                        <div class="row pt-4 hidden-md-down">
-                            <div class="col-lg-12 text-center">
-                                <a href="#" class="btn btn-submit-orange m-4"><i class="icon-play"></i> Test starten</a>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-lg-12 headline">
-                                Benachrichtigungen
-                            </div>
-                            <div class="col-lg-12"><hr class="pb-3"></div>
-                            <div class="col-lg-12 small">
 
-                                <div class="row px-3 ">
-                                    <div id="goalcard-projekt" class="goalcard col-lg-12 p-3 mb-3">
-
-                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Testskript aktualisiert erstellt</div>
-                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
-
-                                    </div>
-                                </div>
-                                <div class="row px-3">
-                                    <div id="goalcard-einverst" class="goalcard col-lg-12 p-3 mb-3">
-
-                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 2 erstellt</div>
-                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
-
-                                    </div>
-                                </div>
-                                <div class="row px-3">
-                                    <div id="goalcard-skript" class="goalcard col-lg-12 p-3 mb-3">
-
-                                        <div class="font-weight-bold"><span class="icon-file-text d-inline text-muted"></span> Einverständniserklärung für Proband 1 erstellt</div>
-                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
-
-                                    </div>
-                                </div>
-                                <div class="row px-3">
-                                    <div id="goalcard-plan" class="goalcard col-lg-12 p-3 mb-3">
-
-                                        <div class="font-weight-bold"><span class="icon-folder d-inline text-muted"></span> Projekt "Projekt 1" erstellt</div>
-                                        <small class="text-muted">Am 18.04.17 von <a href="../new_contact.php">Bernd Bogner</a></small>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-            </div>
-            <div class="tab-pane" id="testaufgaben" role="tabpanel">
-
-
-
-            </div>
-            <div class="tab-pane" id="projektunterlagen" role="tabpanel">
-
-
 
             </div>
             <div class="tab-pane" id="evaluation" role="tabpanel">
@@ -379,94 +868,174 @@
 </section>
 
 <?php include ('scripts.html'); ?>
-<!--<script>
-    jQuery(document).ready(function($) {
-        $(".clickable-row").click(function() {
-            window.location = $(this).data("href");
-        });
-    });
-</script>-->
 <script>
+
     var h = $(window).height();
     var w = $(window).width();
     var header_h = $(".page-top").height();
     var innerbody = $(".inner-body");
-    var aufgabenfeld = $(".aufgabenfeld");
-    var innersidebar = $(".inner-sidebar");
     var nav = $(".sidebar-wrapper");
-    var bodyallgemein = $(".body-allgemein");
 
-    var container = $("#content-allgemein");
-    var sidebar = $("#sidebar-allgemein");
-
-    innersidebar.css('height', h - header_h );
+    //    Initial Functions
     innerbody.css("padding-top", header_h);
 
-    var aufgabenfeld_h = aufgabenfeld.height();
+    //Nav Width
+    var nav_w = nav.width();
 
-    $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
-    bodyallgemein.height(h - header_h - 1);
+    //Sidebars
+    var sidAllg = $("#sidebar-allgemein");
+    var sidAufg = $("#sidebar-aufgaben");
+    var sidUnt = $("#sidebar-unterlagen");
+
+    //Contents
+    var conAllg = $("#content-allgemein");
+    var conAufg = $("#content-aufgaben");
+    var conUnt = $("#content-unterlagen");
 
 
 
-    if(container.height() > (h - header_h) {
-        sidebar.height(container);
-    } else {
-        sidebar.height(h - header_h);
-    }
+    $(function() {
+        if(w > 991) {
+            //Set Sidebar Height
+            sidAllg.height(h-header_h);
+            sidAufg.height(h-header_h);
+            sidUnt.height(h-header_h);
 
-    $( window ).resize( function(){
-        h = $(window).height();
-        $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
-        $('.inner-sidebar').css('height', h - header_h );
-        innersidebar.width(w - $(".col-md-9"));
-        bodyallgemein.height(h - header_h - 1);
+            //Set Content Height
+            conAllg.height(h-header_h - 32);
+            conAufg.height(h-header_h - 32);
+            conUnt.height(h-header_h - 32);
 
-        if(container.height() > (h - header_h) {
-            sidebar.height(container);
-        } else {
-            sidebar.height(h - header_h);
+            //Set Content Width
+            conAllg.width(w - sidAllg.width() - 60 - nav_w);
+            conAufg.width(w - sidAufg.width() - 60 - nav_w);
+            conUnt.width(w - sidUnt.width() - 60 - nav_w);
         }
     });
 
 
+    //Function for Window Resize
+    $(window).on('resize', function(){
+        //Window Height
+        h = $(window).height();
+        w = $(window).width();
+        nav_w = nav.width();
 
-    //    alert("WindowHeight: " + h + " Innerbody: " + aufgabenfeld_h + " Header_h: " + header_h);
+        if(w > 991) {
+            //Set Sidebar Height
+            sidAllg.height(h - header_h);
+            sidAufg.height(h - header_h);
+            sidUnt.height(h - header_h);
 
-    /*    $(".nav-item .active").hover(
-     function() {
-     $(".nav-tabs").css("border-bottom", "solid 5px #ff512d");
-     $(this).css("background-color", "#ff512d");
-     },
-     function() {
-     $(".nav-tabs").css("border-bottom", "solid 5px #e84a29");
-     $(this).css("background-color", "#e84a29");
-     }
-     )*/
+            //Set Content Height
+            conAllg.height(h - header_h - 32);
+            conAufg.height(h - header_h - 32);
+            conUnt.height(h - header_h - 32);
 
-
-    $(function(){
-        var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-        $('.nav-tabs a').click(function () {
-            $(this).tab('show');
-            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-            window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
-        });
+            //Set Content Width
+            conAllg.width(w - sidAllg.width() - 60 - nav_w);
+            conAufg.width(w - sidAufg.width() - 60 - nav_w);
+            conUnt.width(w - sidUnt.width() - 60 - nav_w);
+        }
     });
+
+</script>
+
+<script src="../js/jquery-sortable-min.js"></script>
+<script>
+    /*
+     var h = $(window).height();
+     var header_h = $(".page-top").height();
+     var innerbody = $(".inner-body");
+     var aufgabenfeld = $(".aufgabenfeld");
+
+     var container_allg = $("#content-allgemein");
+     var sidebar_allg = $("#sidebar-allgemein");
+
+     var container_aufg = $("#content-aufgaben");
+     var sidebar_aufg = $("#sidebar-aufgaben");
+
+     var container_unterlagen = $("#content-unterlagen");
+     var sidebar_unterlagen = $("#sidebar-unterlagen");
+
+
+
+
+
+
+     $(".protokollant-container").height(h - aufgabenfeld.height() - header_h);
+
+     if(container_aufg.height() > (h - header_h) {
+     sidebar_aufg.height(container_aufg);
+     } else {
+     sidebar_aufg.height(h - header_h);
+     }
+
+     if(container_allg.height() > (h - header_h) {
+     sidebar_allg.height(container_allg);
+     } else {
+     sidebar_allg.height(h - header_h);
+     }
+
+
+
+     //    Functions on Window Resize
+     $( window ).resize( function(){
+
+     $(".protokollant-container").height(h - aufgabenfeld.height() - header_h);
+
+
+
+     if(container_allg.height() > (h - header_h) {
+     sidebar_allg.height(container_allg);
+     } else {
+     sidebar_allg.height(h - header_h);
+     }
+
+     if(container_aufg.height() > (h - header_h) {
+     sidebar_aufg.height(container_aufg);
+     } else {
+     sidebar_aufg.height(h - header_h);
+     }
+     });
+
+     */
 
 </script>
 <script>
 
-    $('.goal').click(function () {
-        $(this).tab('show');
-        var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-        window.location.hash = this.hash;
-        $('html,body').scrollTop(scrollmem);
+    // Javascript to enable link to tab
+    var hash = document.location.hash;
+    if (hash) {
+        $('.nav-tabs a[href="'+hash+'"]').tab('show');
+    }
+
+    // Change hash for page-reload
+    $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+        if(w > 991) {
+            //Set Sidebar Height
+            sidAllg.height(h - header_h);
+            sidAufg.height(h - header_h);
+            sidUnt.height(h - header_h);
+
+            //Set Content Height
+            conAllg.height(h - header_h - 32);
+            conAufg.height(h - header_h - 32);
+            conUnt.height(h - header_h - 32);
+
+            //Set Content Width
+            conAllg.width(w - sidAllg.width() - 60 - nav_w);
+            conAufg.width(w - sidAufg.width() - 60 - nav_w);
+            conUnt.width(w - sidUnt.width() - 60 - nav_w);
+        }
     });
 
+</script>
+<script>
+    $(function  () {
+        $("ol.scenario-container").sortable();
+    });
 </script>
 </body>
 
