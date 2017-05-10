@@ -66,6 +66,12 @@
     -o-transition: background-color .1s ease-in; /* opera */
 }
 
+.card-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
 .card-item-link {
     color: black;
 }
