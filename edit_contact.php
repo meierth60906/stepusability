@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div>
-                            <span class="star icon-star"></span>
+                            <span class="star icon-star-o"></span>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,6 @@
                 </div>
                 <div class="modal-footer text-center">
                     <button type="button" class="btn btn-submit-orange btn-md">Kontakt löschen</button>
-                    <button type="button" class="btn btn-submit-orange btn-md" href="view_contact.php">Kontakt speichern</button>
                 </div>
         </div>
     </div>
@@ -124,9 +123,70 @@
         $(".contact-sidebar").height(h - header_h);
     });
 
+    (function ($) {
+        $(function () {
 
-    $(".star.glyphicon").click(function() {
-        $(this).toggleClass("glyphicon-star glyphicon-star-empty");
+            var addFormGroup = function (event) {
+                event.preventDefault();
+
+                var $formGroup = $(this).closest('.form-group');
+                var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
+                var $formGroupClone = $formGroup.clone();
+
+                $(this)
+                    .toggleClass('btn-success btn-add btn-danger btn-remove')
+                    .html('–');
+
+                $formGroupClone.find('input').val('');
+                $formGroupClone.find('.concept').text('');
+                $formGroupClone.insertAfter($formGroup);
+
+                var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
+                if ($multipleFormGroup.data('max') <= countFormGroup($multipleFormGroup)) {
+                    $lastFormGroupLast.find('.btn-add').attr('disabled', true);
+                }
+            };
+
+            var removeFormGroup = function (event) {
+                event.preventDefault();
+
+                var $formGroup = $(this).closest('.form-group');
+                var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
+
+                var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
+                if ($multipleFormGroup.data('max') >= countFormGroup($multipleFormGroup)) {
+                    $lastFormGroupLast.find('.btn-add').attr('disabled', false);
+                }
+
+                $formGroup.remove();
+            };
+
+            var selectFormGroup = function (event) {
+                event.preventDefault();
+
+                var $selectGroup = $(this).closest('.input-group-select');
+                var param = $(this).attr("href").replace("#","");
+                var concept = $(this).text();
+
+                $selectGroup.find('.concept').text(concept);
+                $selectGroup.find('.input-group-select-val').val(param);
+
+            }
+
+            var countFormGroup = function ($form) {
+                return $form.find('.form-group').length;
+            };
+
+            $(document).on('click', '.btn-add', addFormGroup);
+            $(document).on('click', '.btn-remove', removeFormGroup);
+            $(document).on('click', '.dropdown-menu a', selectFormGroup);
+
+        });
+    })(jQuery);
+
+
+    $(".star").click(function() {
+        $(this).toggleClass("icon-star icon-star-o");
     });
 </script>
 

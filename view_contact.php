@@ -142,5 +142,9 @@
     });
 
 </script>
+<script>
+    $(this).toggleClass('icon-star icon-star-o');
+
+</script>
 </body>
 </html>

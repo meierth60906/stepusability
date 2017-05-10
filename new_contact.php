@@ -130,8 +130,7 @@
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value=""
-                                >
+                                <input type="checkbox" value="">
                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                 Kunde</label>
                         </div>
@@ -139,7 +138,6 @@
                 </div>
                 <div class="modal-footer text-center">
                     <button type="button" class="btn btn-submit-orange btn-md" >Kontakt löschen</button>
-                    <button type="button" class="btn btn-submit-orange btn-md"href="view_contact.php">Kontakt speichern</button>
 
                 </div>
         </div>
@@ -164,6 +162,7 @@
 
 <?php include ('scripts.html'); ?>
 <script>
+
 
     var h = $(window).height();
 
@@ -236,6 +235,14 @@
 
         });
     })(jQuery);
+
+
+    /** Icon Switch **/
+
+    $(".star").click(function() {
+        $(this).toggleClass("icon-star icon-star-o");
+    });
+
 </script>
 
 
