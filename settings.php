@@ -157,7 +157,7 @@
             <!--            pageInformation-->
 
 
-            <div class="tab-pane" id="pageInfo" role="tabpanel">
+            <div class="tab-pane row" id="pageInfo" role="tabpanel">
                 <div class="form-group pt-5 col-lg-8 offset-lg-4">
                     <p class="font-weight-bold text-center">Datenschutz</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
@@ -183,14 +183,15 @@
 
 <?php include('scripts.html'); ?>
 <script>
-    $(function () {
-        $('.nav').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-        })
+    $(document).ready(function () {
+        $(function () {
+            $('.nav').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        });
+
     });
-
-
 </script>
 
 </body>

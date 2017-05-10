@@ -36,9 +36,6 @@
     }
 }
 
-#templates .panel-body:hover, .panel-footer:hover {
-    background-color: #ccd9e4;
-}
 
 #templates .panel-title {
     font-weight: normal;
@@ -52,15 +49,11 @@
     text-decoration: none;
     font-weight: bold;
 }
-#templates .panel-body a:hover, .panel-heading a:hover{
-    font-weight: bold ;
-}
-
-#templates .collapsed, .panel-body a{
+#templates .collapsed{
     text-decoration: none;
 }
 
-#templates .panel-body a , .panel-heading a{
+#templates .panel-heading a{
     font-size: 1rem;
     line-height: 1.5;
     color: BLACK ;
@@ -112,3 +105,28 @@
     color:white;
 }
 
+#templates .list-group-item {
+border:none;
+}
+
+#templates .list-group-item {
+background-color: white;
+    color: black;
+    padding-left: 35px;
+}
+
+#templates .list-group a{
+    color: black;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+#templates .list-group-item:hover{
+    background-color: #ccd9e4;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+}
