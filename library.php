@@ -31,111 +31,126 @@
 
 
         <!--innere Navigationsleiste-->
+        <div class="container row">
+            <div class="col-lg-3 p-0" id="sidebarLibrary">
+                <!--                    Switch Button-->
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                        <a class="active switchlink" href="#projects"><input type="radio" name="options"
+                                                                             id="option1" autocomplete="off"
+                                                                             checked>Projekte
+                        </a>
+                    </label>
+                    <label class="btn btn-primary">
+                        <a class="switchlink" href="#archiv"><input type="radio" name="options" id="option2"
+                                                                    autocomplete="off">Archiv</a>
+                    </label>
+                </div>
 
-        <div class="row" id="sidebarLibrary">
-            <div class="col p-0">
                 <div class="panel-group">
 
-                    <!--                    Switch Button-->
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary active">
-                            <a class="active switchlink" href="#projects"><input type="radio" name="options"
-                                                                                 id="option1" autocomplete="off"
-                                                                                 checked>Projekte
-                            </a>
-                        </label>
-                        <label class="btn btn-primary">
-                            <a class="switchlink" href="#archiv"><input type="radio" name="options" id="option2"
-                                                                        autocomplete="off">Archiv</a>
-                        </label>
-                    </div>
 
-                    <div class="tab-pane active" id="projects">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="icon-angle-right active" data-toggle="collapse"
-                                       href="#einverständniserklärung">Projekt
-                                        1</a>
-                                </h4>
-                            </div>
-                            <div id="einverständniserklärung" class="panel-collapse collapse">
+                    <!--                    innere Navigationsleiste -->
 
-                                <div class="panel-body icon-file-text-o active"><a href="">
-                                        Einverständniserklärung 1</a></div>
-                                <div class="panel-body icon-file-text-o"><a href=""> Einverständniserklärung</a>
-                                    2
-                                </div>
-                                <div class="panel-body icon-file-text-o"><a href="">Testaufgaben</a></div>
+                    <!--Projekt 1-->
 
-                                <div class="panel-body icon-file-text-o"><a href="#page1"> Protokollleitfaden</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="icon-angle-right active" data-toggle="collapse"
+                                   href="#projekt1">Projekt
+                                    1</a>
+                            </h4>
+                        </div>
+                        <div id="projekt1" class="panel-collapse collapse active">
 
+                            <ul class="list-group">
+                                <li class="list-group-item icon-file-text-o active"><a
+                                            href="#pr1ein1"> Einverständniserklärung 1</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr1einv2">
+                                        Einverständniserklärung 2</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr1aufg">
+                                        Testaufgaben</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr1leit">
+                                        Protokollleitfaden</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr1skri">
+                                        Testskript</a></li>
+                            </ul>
+                        </div>
 
-                                <div class="panel-body icon-file-text-o"><a href=""> Testskript</a></div>
+                        <!--Projekt 2-->
 
-                            </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#projekt2"
+                                   class="icon-angle-right">Projekt
+                                    2</a>
+                            </h4>
+                        </div>
+                        <div id="projekt2" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item icon-file-text-o"><a
+                                            href="#pr2ein1"> Einverständniserklärung 1</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr2einv2">
+                                        Einverständniserklärung 2</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr2aufg">
+                                        Testaufgaben</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr1leit">
+                                        Protokollleitfaden</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr2skri">
+                                        Testskript</a></li>
+                            </ul>
+                        </div>
 
-                            <!--Projekt 1-->
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#protokollleitfaden"
-                                       class="icon-angle-right">Projekt
-                                        2</a>
-                                </h4>
-                            </div>
-                            <div id="protokollleitfaden" class="panel-collapse collapse">
-                                <a href="">
-                                    <div class="panel-body icon-file-text-o"> Einverständniserklärung
-                                    </div>
-                                </a>
-                                <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                                <div class="panel-body icon-file-text-o"> Protokollleitfaden 1</div>
-                                <a href="#page2">
-                                    <div class="panel-body icon-file-text-o"> Protokollleitfaden 2</div>
-                                </a>
-                                <div class="panel-body icon-file-text-o"> Testskript</div>
-                            </div>
+                        <!--Projekt 3-->
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#projekt3"
+                                   class="icon-angle-right">Projekt 3</a>
+                            </h4>
+                        </div>
+                        <div id="projekt3" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item icon-file-text-o active"><a
+                                            href="#pr3ein1"> Einverständniserklärung 1</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr3einv2">
+                                        Einverständniserklärung 2</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr3aufg">
+                                        Testaufgaben</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr3leit">
+                                        Protokollleitfaden</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr3skri">
+                                        Testskript</a></li>
+                            </ul>
+                        </div>
 
-                            <!--Projekt 2-->
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#testskript"
-                                       class="icon-angle-right">Projekt 3</a>
-                                </h4>
-                            </div>
-                            <div id="testskript" class="panel-collapse collapse">
-                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
-                                <div class="panel-body icon-file-text-o"> Testaufgaben</div>
-                            </div>
+                        <!--Projekt 4-->
 
-                            <!--Projekt 3-->
-
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Projekt
-                                        4</a>
-                                </h4>
-                            </div>
-                            <div id="testplan" class="panel-collapse collapse">
-                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
-                            </div>
-
-                            <!--Projekt 4-->
-
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" href="#testbericht"
-                                       class="icon-angle-right">Projekt 5</a>
-                                </h4>
-                            </div>
-                            <div id="testbericht" class="panel-collapse collapse">
-                                <div class="panel-body icon-file-text-o"> Einverständniserklärung</div>
-                            </div>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#projekt4" class="icon-angle-right">Projekt
+                                    4</a>
+                            </h4>
+                        </div>
+                        <div id="projekt4" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item icon-file-text-o active"><a
+                                            href="#pr1ein1"> Einverständniserklärung 1</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr4einv2">
+                                        Einverständniserklärung 2</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr4aufg">
+                                        Testaufgaben</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr4leit">
+                                        Protokollleitfaden</a></li>
+                                <li class="list-group-item icon-file-text-o"><a href="#pr4skri">
+                                        Testskript</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

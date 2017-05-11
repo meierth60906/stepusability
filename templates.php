@@ -300,8 +300,15 @@
 
         $(function () {
             $('.list-group-item a').click(function (e) {
-                e.preventDefault()
-                $(this).tab('show')
+                e.preventDefault();
+                $(this).tab('show');
+            })
+        });
+
+        $(function () {
+            $('.panel-heading a').click(function (e) {
+                $(this).removeClass('.icon-angle-right');
+                $(this).addClass('.icon-angle-down');
             })
         });
 

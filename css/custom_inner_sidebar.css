@@ -1,0 +1,151 @@
+/*page top */
+
+@media (min-height: 720px) {
+    #library .page-top, #templates .page-top {
+        margin-left: 120px !important;
+    }
+}
+
+@media (min-height: 600px) {
+    #library .page-top, #templates .page-top{
+        margin-left: 100px;
+    }
+}
+
+/*sideBar*/
+
+#sidebarLibrary, #sidebarTemplates {
+    background-color: #EFEFEF;
+    height:100%;
+    width: 25%;
+    position: fixed;
+    margin-left: -15px;
+    border-right: solid 1px lightgrey;
+}
+
+/*border of tabs*/
+ #library .nav-item , #templates .nav-item{
+    border-bottom: solid 1px;
+    border-bottom-color: lightgrey;
+}
+
+/*2 second navbar text color*/
+#library a.nav-link, #templates a.nav-link {
+    color: BLACK;
+}
+
+/* second navbar hover color*/
+#library .nav-item:hover, #templates .nav-item:hover{
+    background-color: #e84a29;
+}
+
+
+/*sidebar Headings*/
+
+
+#library a:focus, a:hover, #templates a:focus, a:hover{
+    text-decoration: none !important;
+}
+
+/*bold text when active*/
+#library .panel-title.on, #templates a:focus, a:hover {
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+/*how the links of the side bar look like */
+#library .panel-heading a, #templates .panel-heading a{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: BLACK ;
+    font-family: 'Lato', sans-serif ;
+    -webkit-font-smoothing: antialiased;
+    padding-left:20px;
+}
+
+
+#templates .panel-title {
+    font-weight: normal;
+}
+
+#templates .panel-group{
+    margin-top:20px;
+}
+
+
+/*background of the active projekt document list */
+#library .collapse.show, #templates .collapse.show  {
+    background-color: white;
+}
+
+
+
+
+
+/*sidebar - list items*/
+
+#library .list-group-item, #templates .list-group-item {
+    border:none;
+}
+
+#library .list-group-item, #templates .list-group-item  {
+    background-color: white;
+    color: black;
+    padding-left: 35px;
+}
+
+#library .list-group a, #templates .list-group a{
+    color: black;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+#library .list-group-item:hover, #templates .list-group-item:hover{
+    background-color: #ccd9e4;
+}
+
+#library .list-group-item:first-child, #templates .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+}
+
+/*table */
+
+#library table, #templates table {
+    margin-top: 6rem;
+    margin-left: -2rem;
+    border: solid 1px lightgrey;
+}
+
+#library th, #templates th {
+    background: #EFEFEF;
+    -webkit-border-radius: 0 0 0 0;
+}
+
+#library tr, #templates tr{
+    border-bottom: lightgrey solid 1px;
+}
+
+#library .table-bordered td, .table-bordered th, #templates .table-bordered td, .table-bordered th{
+    border: solid 1px lightgrey;
+}
+
+
+/*collapse*/
+
+
+
+#library .on, #templates .on{
+    text-decoration: none;
+    font-weight: bold;
+}
+#templates .collapsed, #templates .collapsed{
+    text-decoration: none;
+}
+
+
+#library .collapse.show, #templates .collapse.show {
+    background-color: white;
+
+}

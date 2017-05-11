@@ -1,109 +1,5 @@
 
-#sidebarLibrary {
-    background-color: #EFEFEF;
-    height:100%;
-    width: 25%;
-    position: fixed;
-    margin-left: -15px;
-    border-right: solid 1px lightgrey;
-}
-
-/*border of tabs*/
-#sidebarLibrary .nav-item {
-    border-bottom: solid 1px;
-    border-bottom-color: lightgrey;
-}
-
-/*2 second navbar text color*/
-#sidebarLibrary a.nav-link {
-    color: BLACK;
-}
-
-/* second navbar hover color*/
-#sidebarLibrary .nav-item:hover {
-    background-color: #e84a29;
-}
-
-@media (min-height: 720px) {
-    #library .page-top {
-        margin-left: 120px !important;
-    }
-}
-
-@media (min-height: 600px) {
-    #library .page-top {
-        margin-left: 100px;
-    }
-}
-
-#library .panel-default > .panel-heading {
-    border: none !important;
-    background-color: #EFEFEF !important;
-    text-decoration: none !important;
-}
-
-#library .panel-default {
-    border: none !important;
-    border-color: transparent !important;
-}
-
-#library .panel-footer, .panel-body {
-    border: none !important;
-    padding-left: 35px !important;
-    font-weight: 400;
-    font-size: 0.9rem;
-    padding-bottom: 8px;
-}
-
-
-#library .panel-body:hover, .panel-footer:hover {
-    background-color: #ccd9e4 !important;
-}
-
-#library .panel-title {
-    font-weight: normal;
-}
-
-#library a:focus, a:hover {
-    text-decoration: none !important;
-}
-
-#library .panel-title.on {
-    font-weight: bold !important;
-    text-decoration: none !important;
-}
-
-#library a{
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    color: black;
-    font-family: 'Lato', sans-serif !important;
-    -webkit-font-smoothing: antialiased !important;
-}
-
-
-#library .collapse.show {
-    background-color: white;
-}
-
-#library table {
-    margin-top: 6rem;
-    margin-left: -2rem;
-    border: solid 1px lightgrey;
-}
-
-#library th {
-    background: #EFEFEF;
-    -webkit-border-radius: 0 0 0 0;
-}
-
-#library tr{
-    border-bottom: lightgrey solid 1px;
-}
-
-#library .table-bordered td, .table-bordered th{
-    border: solid 1px lightgrey;
-}
+/*switchLink*/
 
 #library .btn-group, .btn-group-vertical {
     height:5%;
@@ -130,4 +26,5 @@
 #library .active .switchlink {
     color: #FFFFFF;
 }
+
 
