@@ -132,6 +132,8 @@
         </div>
     </div>
 
+<!--page content -->
+
 
     <div class="container-fluid">
         <div class="tab-content">
