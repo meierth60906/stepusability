@@ -43,12 +43,18 @@
 /*sidebar Headings*/
 
 
-#library a:focus, a:hover, #templates a:focus, a:hover{
+#library a:focus,
+#library a:hover,
+#templates a:focus,
+#templates a:hover {
     text-decoration: none !important;
 }
 
 /*bold text when active*/
-#library .panel-title.on, #templates a:focus, a:hover {
+#library .panel-title.on,
+#templates a:focus,
+#library a:hover,
+#templates a:hover {
     font-weight: bold !important;
     text-decoration: none !important;
 }
