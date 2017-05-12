@@ -263,10 +263,10 @@
                 <div class="row inner-body">
                     <div id="sidebar-aufgaben" class="col-lg-3 c-grey-bg">
                         <div class="row pt-3 mt-3">
-                            <div class="col-lg-6 headline">
+                            <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
-                            <div class="col-lg-6 text-right">
+                            <div class="col-6 text-right">
                                 <!--                                Menu rechts mit Dropdown-->
                                 <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-ellipsis-v"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-right links-noblue">
@@ -276,91 +276,74 @@
                                 </ul>
 
                             </div>
-                            <div class="col-lg-12"><hr class="pb-3"></div>
+                            <div class="col-lg-12"><hr class="mb-3"></div>
 
                             <ol class="scenario-container col-lg-12 links-noblue">
-                                    <li class="scenario">
-                                        <div class="scenario row px-3 ">
-                                            <div class="element-allgemein col-lg-12 mb-3">
-                                                <div class="row py-3">
-                                                    <div class="col-lg-10">
-                                                        <span class="font-weight-bold">Szenario 1</span>
-                                                    </div>
-                                                    <div class="col-lg-2 text-right">
-                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                            <div class="dropdown-divider m-0"></div>
-                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                                        </ul>
-                                                    </div>
+                                <li class="scenario element-allgemein mb-3">
+                                    <div class="row p-3">
+                                        <div class="col-10">Szenario 1</div>
+                                        <div class="col-2 text-right">
+                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                            </ul>
+                                        </div>
 
-                                                </div>
+                                    </div>
 
-                                                <div id="szenario1" class="collapse show">
-                                                    <hr class="m-0">
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe X
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Y
-                                                        </div>
-                                                    </div>
-
+                                    <ol class="task-container pl-0">
+                                        <hr class="m-0">
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 1
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="scenario">
-                                        <div class="row px-3 ">
-                                            <div class="element-allgemein col-lg-12 mb-3">
-                                                <div class="row py-3">
-                                                    <div class="col-lg-10">
-                                                        <span class="font-weight-bold">Szenario 2</span>
-                                                    </div>
-                                                    <div class="col-lg-2 text-right">
-                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                            <div class="dropdown-divider m-0"></div>
-                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div id="szenario2" >
-                                                    <hr class="m-0">
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Z
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe W
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe V
-                                                        </div>
-                                                    </div>
+                                        </li>
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 2
                                                 </div>
                                             </div>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li class="scenario element-allgemein mb-3">
+                                    <div class="row p-3">
+                                        <div class="col-10">Szenario 2</div>
+                                        <div class="col-2 text-right">
+                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                            </ul>
                                         </div>
-                                    </li>
 
+                                    </div>
 
-
+                                    <ol class="task-container pl-0">
+                                        <hr class="m-0">
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 3
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 4
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
                             </ol>
 
                         </div>
@@ -1032,9 +1015,71 @@
     });
 
 </script>
+
 <script>
     $(function  () {
-        $("ol.scenario-container").sortable();
+
+        var adjustment;
+
+        $("ol.scenario-container").sortable({
+            nested: true,
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function ($item, container) {
+                var depth = 1, // Start with a depth of one (the element itself)
+                    maxDepth = 2,
+                    children = $item.find('ol').first().find('li');
+
+                // Add the amount of parents to the depth
+                depth += container.el.parents('ol').length;
+
+                // Increment the depth for each time a child
+                while (children.length) {
+                    depth++;
+                    children = children.find('ol').first().find('li');
+                }
+
+                return depth <= maxDepth;
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: 0});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+                if($item.is('.task') && $item.parent().is('.task-container')) {
+                    $item.removeClass("element-allgemein mb-3");
+                } else {
+                    $item.addClass("element-allgemein mb-3");
+                }
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
     });
 </script>
 </body>

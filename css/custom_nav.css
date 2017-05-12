@@ -73,6 +73,10 @@
     font-size: 19px;
 }
 
+.sidebar-nav .icon-clipboard {
+    font-size: 19px;
+}
+
 .sidebar-nav .icon-users {
     font-size: 18px;
 }
@@ -120,6 +124,10 @@
 
     .sidebar-nav .icon-file-text {
         font-size: 40px;
+    }
+
+    .sidebar-nav .icon-clipboard {
+        font-size: 35px;
     }
 
     .sidebar-nav .icon-users {
