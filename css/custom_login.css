@@ -11,7 +11,7 @@
 .white {
     background-color: white;
 }
-.form-group{
+#login .form-group {
     color: gray;
     background-color: white;
     border-color: gray;
