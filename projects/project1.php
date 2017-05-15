@@ -36,6 +36,13 @@
         </div>
     </div>
     <div class="container-fluid">
+
+
+
+        <!--        TABS -->
+
+
+
         <div class="tab-content">
             <!--            Allgemein -->
             <div class="tab-pane active" id="allgemein" role="tabpanel">
@@ -115,7 +122,7 @@
 
                             </div>
                             <!--                            Beteiligte -->
-                            <div class="col-lg-4 pr-0 pr-md-3 pl-0 pl-md-3 pl-lg-0">
+                            <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
                                 <div class="row my-3 ml-2 mr-lg-3 mr-2">
                                     <div class="col-lg-12 element-allgemein p-3">
                                         <div class="row">
@@ -263,104 +270,91 @@
                 <div class="row inner-body">
                     <div id="sidebar-aufgaben" class="col-lg-3 c-grey-bg">
                         <div class="row pt-3 mt-3">
-                            <div class="col-lg-6 headline">
+                            <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
-                            <div class="col-lg-6 text-right">
+                            <div class="col-6 text-right">
                                 <!--                                Menu rechts mit Dropdown-->
-                                <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-ellipsis-v"></span></a>
+                                <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-plus-1 icon-align"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                    <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                    <li><a class="new-task" onclick="createTask(); return false;" href="#">Testaufgabe</a></li>
                                     <div class="dropdown-divider m-0"></div>
-                                    <li><a class="new-scenario" href="#">Neues Szenario</a></li>
+                                    <li><a class="new-scenario" onclick="createScenario(); return false;" href="#">Szenario</a></li>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <li><a class="new-postsession" onclick="createPostSession(); return false;" href="#">Post Session Interview</a></li>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <li><a class="new-conclusion" onclick="createConclusion(); return false;" href="#">Abschlussfragen</a></li>
                                 </ul>
 
                             </div>
-                            <div class="col-lg-12"><hr class="pb-3"></div>
+                            <div class="col-lg-12"><hr class="mb-3"></div>
 
                             <ol class="scenario-container col-lg-12 links-noblue">
-                                    <li class="scenario">
-                                        <div class="scenario row px-3 ">
-                                            <div class="element-allgemein col-lg-12 mb-3">
-                                                <div class="row py-3">
-                                                    <div class="col-lg-10">
-                                                        <span class="font-weight-bold">Szenario 1</span>
-                                                    </div>
-                                                    <div class="col-lg-2 text-right">
-                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                            <div class="dropdown-divider m-0"></div>
-                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                                        </ul>
-                                                    </div>
+                                <li class="scenario element-allgemein mb-3">
+                                    <div class="row p-3">
+                                        <div class="col-10">Szenario 1</div>
+                                        <div class="col-2 text-right">
+                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                            </ul>
+                                        </div>
 
-                                                </div>
+                                    </div>
 
-                                                <div id="szenario1" class="collapse show">
-                                                    <hr class="m-0">
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe X
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Y
-                                                        </div>
-                                                    </div>
-
+                                    <ol class="task-container pl-0">
+                                        <hr class="m-0">
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 1
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="scenario">
-                                        <div class="row px-3 ">
-                                            <div class="element-allgemein col-lg-12 mb-3">
-                                                <div class="row py-3">
-                                                    <div class="col-lg-10">
-                                                        <span class="font-weight-bold">Szenario 2</span>
-                                                    </div>
-                                                    <div class="col-lg-2 text-right">
-                                                        <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                                        <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                            <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                            <div class="dropdown-divider m-0"></div>
-                                                            <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div id="szenario2" >
-                                                    <hr class="m-0">
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe Z
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe W
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row item-hover">
-                                                        <div class="col-lg-12 py-3">
-                                                            <span class="icon-align icon-list pr-2 text-muted"></span>Aufgabe V
-                                                        </div>
-                                                    </div>
+                                        </li>
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 2
                                                 </div>
                                             </div>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                                <li class="scenario element-allgemein mb-3">
+                                    <div class="row p-3">
+                                        <div class="col-10">Szenario 2</div>
+                                        <div class="col-2 text-right">
+                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
+                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
+                                            </ul>
                                         </div>
-                                    </li>
 
+                                    </div>
 
-
+                                    <ol class="task-container pl-0">
+                                        <hr class="m-0">
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 3
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="task item-hover">
+                                            <div class="row p-3">
+                                                <div class="col-lg-12">
+                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 4
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
                             </ol>
 
                         </div>
@@ -369,62 +363,8 @@
                     <div id="content-aufgaben" class="offset-lg-3 col-lg-9 py-3">
 
 
+                        <?php include ('scenarioForm.html'); ?>
 
-                        <!--                        Projektinfo + Beteiligte -->
-                        <div class="row pl-3">
-
-                            <!--                            Projektinfo -->
-                            <div class="col-lg-12 pl-0 pl-md-3 pr-0 pr-md-3">
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 headline">
-                                                Projektinformationen
-                                            </div>
-                                            <div class="col-2 col-sm-6 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
-                                            <div class="col-xl-8">Musterfirma</div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
-                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
-                                            <div class="col-xl-8">
-                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet.
-                                            </div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Status:</div>
-                                            <div class="col-xl-8">
-                                                Laufend
-                                            </div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-lg-12 text-right">
-                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
 
 
                     </div>
@@ -1002,6 +942,170 @@
      */
 
 </script>
+
+<!-- Rubriken erstellen -->
+<script>
+    var scenarioContainer = $(".scenario-container");
+
+    //                <li class='task item-hover'>
+    //                <div class='row p-3'>
+    //                <div class='col-lg-12'>
+    //                <span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1
+    //            </div>
+    //            </div>
+    //            </li>
+
+    function createTask() {
+
+//        scenarioContainer.before(
+//                "<li class='postSessionRubrik scenario element-allgemein mb-3'>" +
+//                "<div class='row p-3'>" +
+//                "<div class='col-10'>Post Session Interview</div>" +
+//                "<div class='col-2 text-right'>" +
+//                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+//                "</div>" +
+//                "</div>" +
+//                "<ol class='postSession-container pl-0'>" +
+//                "<hr class='m-0'>" +
+//                "</ol>" +
+//                "</li>"
+//            )
+
+    }
+
+    function createScenario() {
+
+        var postSessionRubrik = $(".postSessionRubrik");
+        var abschlussfragen = $(".abschlussfragen");
+
+        function insideScenario() {
+            return "<li class='scenario element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Szenario Name</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='scenario-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(scenarioContainer.find(postSessionRubrik).length !== 0) && !(scenarioContainer.find(abschlussfragen).length !== 0)) {
+            scenarioContainer.append(insideScenario);
+        } else if (scenarioContainer.find(abschlussfragen).length !== 0) {
+            abschlussfragen.before(insideScenario);
+        } else {
+            postSessionRubrik.before(insideScenario);
+        }
+
+    }
+
+    function createPostSession() {
+
+        function insidePostSession() {
+            return "<li class='postSessionRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Post Session Interview</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='postSession-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(scenarioContainer.find('.postSessionRubrik').length !== 0)) {
+            scenarioContainer.append(insidePostSession);
+        } else {
+            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.");
+        }
+
+    }
+
+    function createConclusion() {
+
+        if(!(scenarioContainer.find('.postSessionRubrik').length !== 0)) {
+            scenarioContainer.append(
+                "<li class='postSessionRubrik scenario element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Post Session Interview</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='postSession-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>"
+            )
+        } else {
+            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.")
+        }
+
+    }
+</script>
+
+
+
+<!-- Testaufgaben Aufgaben-Switch -->
+<script>
+    var taskForm_formGroup = $("#taskForm .form-group");
+    var taskForm_hr = $("#taskForm .hline");
+    var headline = $("#headline-aufgaben");
+
+    var radioTask = $("#radioTask");
+    var radioPostSession = $("#radioPostSession");
+    var radioConclusion = $("#radioConclusion");
+
+    var formTask = $(".formTask");
+    var formPostSession = $(".formPostSession");
+    var formConclusion = $(".formConclusion");
+
+    $(document).ready(function(){
+        if(radioTask.is(':checked')) {
+            headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
+            $(taskForm_formGroup).not(formTask).hide();
+            $(taskForm_hr).not(formTask).hide();
+            $(formTask).show();
+        } else if (radioPostSession.is(':checked')) {
+            headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
+            $(taskForm_formGroup).not(formPostSession).hide();
+            $(taskForm_hr).not(formPostSession).hide();
+            $(formPostSession).show();
+        } else if (radioConclusion.is(':checked')) {
+            headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
+            $(taskForm_formGroup).not(formConclusion).hide();
+            $(taskForm_hr).not(formConclusion).hide();
+            $(formConclusion).show();
+        }
+
+        $('input[type="radio"]').click(function(){
+            var inputValue = $(this).attr("value");
+            var necessaryInput = $("." + inputValue);
+            $(taskForm_formGroup).not(necessaryInput).hide();
+            $(taskForm_hr).not(necessaryInput).hide();
+            $(necessaryInput).show();
+
+            if(inputValue === "formTask") {
+                headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
+            } else if (inputValue === "formPostSession") {
+                headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
+            } else if (inputValue === "formConclusion") {
+                headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
+            }
+        });
+    });
+</script>
+<script>
+
+
+
+
+</script>
 <script>
 
     // Javascript to enable link to tab
@@ -1032,9 +1136,71 @@
     });
 
 </script>
+
 <script>
     $(function  () {
-        $("ol.scenario-container").sortable();
+
+        var adjustment;
+
+        $("ol.scenario-container").sortable({
+            nested: true,
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function ($item, container) {
+                var depth = 1, // Start with a depth of one (the element itself)
+                    maxDepth = 2,
+                    children = $item.find('ol').first().find('li');
+
+                // Add the amount of parents to the depth
+                depth += container.el.parents('ol').length;
+
+                // Increment the depth for each time a child
+                while (children.length) {
+                    depth++;
+                    children = children.find('ol').first().find('li');
+                }
+
+                return depth <= maxDepth;
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: $item.height()});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+                if($item.is('.task') && $item.parent().is('.task-container')) {
+                    $item.removeClass("element-allgemein mb-3");
+                } else {
+                    $item.addClass("element-allgemein mb-3");
+                }
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
     });
 </script>
 </body>

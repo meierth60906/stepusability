@@ -309,11 +309,15 @@ ol.scenario-container {
     list-style: none !important;
 }
 
-ol.scenario-container li.scenario {
+ol.scenario-container li {
     list-style: none;
     /** More li styles **/
 }
-ol.scenario-container li.scenario:before {
-    list-style: none;
-    /** Define arrowhead **/
+
+#singleproject textarea {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#singleproject a:hover {
+    cursor:pointer;
 }
