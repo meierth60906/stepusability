@@ -305,11 +305,16 @@ body.dragging, body.dragging * {
     z-index: 2000;
 }
 
-ol.scenario-container {
+ol.scenario-container,
+ol.postSession-container,
+ol.ps-question-container,
+ol.conclusion-container {
     list-style: none !important;
 }
 
-ol.scenario-container li {
+ol.scenario-container li,
+ol.postSession-container li,
+ol.conclusion-container li {
     list-style: none;
     /** More li styles **/
 }
