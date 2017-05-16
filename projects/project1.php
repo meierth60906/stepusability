@@ -932,7 +932,7 @@
             return "<li class='task item-hover'>" +
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
+                "<a href='#testaufgaben' onclick='editQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
                 "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
                 "</a>" +
                 "</div>" +
@@ -952,7 +952,7 @@
             return "<li class='task item-hover'>" +
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
+                "<a href='#testaufgaben' onclick='editQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
                 "<span class='pr-2 icon-question icon-align text-muted'></span>AbschlussFrage" +
                 "</a>" +
                 "</div>" +
@@ -1045,6 +1045,10 @@
 
     function editTask() {
         contentAufgaben.load("taskForm.html");
+    }
+
+    function editQuestion() {
+        contentAufgaben.load("questionForm.html");
     }
 
     function editScenario() {
@@ -1223,7 +1227,7 @@
                 if( !$item.closest("ol").is(container.el)){
                     return false;
                     // additional rules
-                }
+                } else return true;
             },
             // animation on drop
             onDrop: function  ($item, container, _super) {
@@ -1272,7 +1276,7 @@
                 if( !$item.closest("ol").is(container.el)){
                     return false;
                     // additional rules
-                }
+                } else return true;
             },
             // animation on drop
             onDrop: function  ($item, container, _super) {
