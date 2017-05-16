@@ -269,7 +269,7 @@
 
                 <div class="row inner-body">
                     <div id="sidebar-aufgaben" class="col-lg-3 c-grey-bg">
-                        <div class="row pt-3 mt-3">
+                        <div class="spc-container row pt-3 mt-3">
                             <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
@@ -277,85 +277,22 @@
                                 <!--                                Menu rechts mit Dropdown-->
                                 <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-plus-1 icon-align"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                    <li><a class="new-task" onclick="createTask(); return false;" href="#">Testaufgabe</a></li>
+                                    <li><a class="new-task" onclick="createTaskOnly(); return false;" href="#testaufgaben">Testaufgabe</a></li>
                                     <div class="dropdown-divider m-0"></div>
-                                    <li><a class="new-scenario" onclick="createScenario(); return false;" href="#">Szenario</a></li>
+                                    <li><a class="new-scenario" onclick="createScenario(); return false;" href="#testaufgaben">Szenario</a></li>
                                     <div class="dropdown-divider m-0"></div>
-                                    <li><a class="new-postsession" onclick="createPostSession(); return false;" href="#">Post Session Interview</a></li>
+                                    <li><a class="new-postsession" onclick="createPostSession(); return false;" href="#testaufgaben">Post Session Interview</a></li>
                                     <div class="dropdown-divider m-0"></div>
-                                    <li><a class="new-conclusion" onclick="createConclusion(); return false;" href="#">Abschlussfragen</a></li>
+                                    <li><a class="new-conclusion" onclick="createConclusion(); return false;" href="#testaufgaben">Abschlussfragen</a></li>
                                 </ul>
 
                             </div>
                             <div class="col-lg-12"><hr class="mb-3"></div>
 
-                            <ol class="scenario-container col-lg-12 links-noblue">
-                                <li class="scenario element-allgemein mb-3">
-                                    <div class="row p-3">
-                                        <div class="col-10">Szenario 1</div>
-                                        <div class="col-2 text-right">
-                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                            </ul>
-                                        </div>
+                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
 
-                                    </div>
-
-                                    <ol class="task-container pl-0">
-                                        <hr class="m-0">
-                                        <li class="task item-hover">
-                                            <div class="row p-3">
-                                                <div class="col-lg-12">
-                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 1
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="task item-hover">
-                                            <div class="row p-3">
-                                                <div class="col-lg-12">
-                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 2
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </li>
-
-                                <li class="scenario element-allgemein mb-3">
-                                    <div class="row p-3">
-                                        <div class="col-10">Szenario 2</div>
-                                        <div class="col-2 text-right">
-                                            <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-align icon-ellipsis-v"></span></a>
-                                            <ul class="dropdown-menu dropdown-menu-right links-noblue">
-                                                <li><a class="edit-scenario" href="#">Bearbeiten</a></li>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <li><a class="new-task" href="#">Neue Aufgabe</a></li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="task-container pl-0">
-                                        <hr class="m-0">
-                                        <li class="task item-hover">
-                                            <div class="row p-3">
-                                                <div class="col-lg-12">
-                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 3
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="task item-hover">
-                                            <div class="row p-3">
-                                                <div class="col-lg-12">
-                                                    <span class="pr-2 icon-list icon-align text-muted"></span>Aufgabe 4
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
 
                         </div>
                     </div>
@@ -363,7 +300,7 @@
                     <div id="content-aufgaben" class="offset-lg-3 col-lg-9 py-3">
 
 
-                        <?php include ('scenarioForm.html'); ?>
+
 
 
 
@@ -946,59 +883,108 @@
 <!-- Rubriken erstellen -->
 <script>
     var scenarioContainer = $(".scenario-container");
+    var postSessionContainer = $(".postSession-container");
+    var conclusionContainer = $(".conclusion-container");
 
-    //                <li class='task item-hover'>
-    //                <div class='row p-3'>
-    //                <div class='col-lg-12'>
-    //                <span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1
-    //            </div>
-    //            </div>
-    //            </li>
+    function createTask(event) {
 
-    function createTask() {
+        function insideTask() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
 
-//        scenarioContainer.before(
-//                "<li class='postSessionRubrik scenario element-allgemein mb-3'>" +
-//                "<div class='row p-3'>" +
-//                "<div class='col-10'>Post Session Interview</div>" +
-//                "<div class='col-2 text-right'>" +
-//                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
-//                "</div>" +
-//                "</div>" +
-//                "<ol class='postSession-container pl-0'>" +
-//                "<hr class='m-0'>" +
-//                "</ol>" +
-//                "</li>"
-//            )
+
+        var parentScenario = $(event).closest(".scenario");
+        var taskContainer = parentScenario.find(".task-container");
+        taskContainer.append(insideTask);
+
+    }
+
+    function createTaskOnly() {
+
+        function insideTask() {
+            return "<li class='element-allgemein mb-3 task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+
+        scenarioContainer.append(insideTask);
+
+    }
+
+    function createPostSessionQuestion(event) {
+
+        function insidePSQ() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentPSQ = $(event).closest(".postSessionRubrik");
+        var psqContainer = parentPSQ.find(".ps-question-container");
+        psqContainer.append(insidePSQ);
+
+    }
+
+    function createConclusionQuestion(event) {
+
+        function insideCon() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-question icon-align text-muted'></span>AbschlussFrage" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentCon = $(event).closest(".conclusionRubrik");
+        var conContainer = parentCon.find(".cc-question-container");
+        conContainer.append(insideCon);
 
     }
 
     function createScenario() {
 
-        var postSessionRubrik = $(".postSessionRubrik");
-        var abschlussfragen = $(".abschlussfragen");
-
         function insideScenario() {
             return "<li class='scenario element-allgemein mb-3'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-10'>Szenario Name</div>" +
-                "<div class='col-2 text-right'>" +
-                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
-                "</div>" +
-                "</div>" +
-                "<ol class='scenario-container pl-0'>" +
-                "<hr class='m-0'>" +
-                "</ol>" +
-                "</li>";
+                        "<div class='row p-3'>" +
+                            "<div class='col-10'>" +
+                                "<a href='#testaufgaben' onclick='editScenario()' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue'>Szenario Name</a>" +
+                            "</div>" +
+                            "<div class='col-2 text-right'>" +
+                                "<a href='#testaufgaben' onclick='createTask(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                            "</div>" +
+                        "</div>" +
+                        "<ol class='task-container pl-0'>" +
+                            "<hr class='m-0'>" +
+                        "</ol>" +
+                    "</li>";
         }
 
-        if(!(scenarioContainer.find(postSessionRubrik).length !== 0) && !(scenarioContainer.find(abschlussfragen).length !== 0)) {
-            scenarioContainer.append(insideScenario);
-        } else if (scenarioContainer.find(abschlussfragen).length !== 0) {
-            abschlussfragen.before(insideScenario);
-        } else {
-            postSessionRubrik.before(insideScenario);
-        }
+        scenarioContainer.append(insideScenario);
 
     }
 
@@ -1009,17 +995,19 @@
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Post Session Interview</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#testaufgaben' onclick='createPostSessionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
                 "</div>" +
                 "</div>" +
-                "<ol class='postSession-container pl-0'>" +
+                "<ol class='ps-question-container pl-0'>" +
                 "<hr class='m-0'>" +
                 "</ol>" +
                 "</li>";
         }
 
-        if(!(scenarioContainer.find('.postSessionRubrik').length !== 0)) {
-            scenarioContainer.append(insidePostSession);
+        if(!(postSessionContainer.find('.postSessionRubrik').length !== 0)) {
+
+            postSessionContainer.append(insidePostSession);
+
         } else {
             alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.");
         }
@@ -1028,78 +1016,94 @@
 
     function createConclusion() {
 
-        if(!(scenarioContainer.find('.postSessionRubrik').length !== 0)) {
-            scenarioContainer.append(
-                "<li class='postSessionRubrik scenario element-allgemein mb-3'>" +
+        function insideConclusion() {
+            return "<li class='conclusionRubrik element-allgemein mb-3'>" +
                 "<div class='row p-3'>" +
-                "<div class='col-10'>Post Session Interview</div>" +
+                "<div class='col-10'>Abschlussfragen</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#testaufgaben' onclick='createConclusionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Abschlussfrage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
                 "</div>" +
                 "</div>" +
-                "<ol class='postSession-container pl-0'>" +
+                "<ol class='cc-question-container pl-0'>" +
                 "<hr class='m-0'>" +
                 "</ol>" +
-                "</li>"
-            )
+                "</li>";
+        }
+
+        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
+            conclusionContainer.append(insideConclusion);
         } else {
-            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.")
+            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
         }
 
     }
 </script>
 
+<!-- Edits verknüpfen -->
+<script>
+    var contentAufgaben = $("#content-aufgaben");
 
+    function editTask() {
+        contentAufgaben.load("taskForm.html");
+    }
+
+    function editScenario() {
+        contentAufgaben.load("scenarioForm.html");
+    }
+
+</script>
 
 <!-- Testaufgaben Aufgaben-Switch -->
 <script>
-    var taskForm_formGroup = $("#taskForm .form-group");
-    var taskForm_hr = $("#taskForm .hline");
-    var headline = $("#headline-aufgaben");
-
-    var radioTask = $("#radioTask");
-    var radioPostSession = $("#radioPostSession");
-    var radioConclusion = $("#radioConclusion");
-
-    var formTask = $(".formTask");
-    var formPostSession = $(".formPostSession");
-    var formConclusion = $(".formConclusion");
-
-    $(document).ready(function(){
-        if(radioTask.is(':checked')) {
-            headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
-            $(taskForm_formGroup).not(formTask).hide();
-            $(taskForm_hr).not(formTask).hide();
-            $(formTask).show();
-        } else if (radioPostSession.is(':checked')) {
-            headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
-            $(taskForm_formGroup).not(formPostSession).hide();
-            $(taskForm_hr).not(formPostSession).hide();
-            $(formPostSession).show();
-        } else if (radioConclusion.is(':checked')) {
-            headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
-            $(taskForm_formGroup).not(formConclusion).hide();
-            $(taskForm_hr).not(formConclusion).hide();
-            $(formConclusion).show();
-        }
-
-        $('input[type="radio"]').click(function(){
-            var inputValue = $(this).attr("value");
-            var necessaryInput = $("." + inputValue);
-            $(taskForm_formGroup).not(necessaryInput).hide();
-            $(taskForm_hr).not(necessaryInput).hide();
-            $(necessaryInput).show();
-
-            if(inputValue === "formTask") {
-                headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
-            } else if (inputValue === "formPostSession") {
-                headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
-            } else if (inputValue === "formConclusion") {
-                headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
-            }
-        });
-    });
+//    var taskForm_formGroup = $("#taskForm .form-group");
+//    var taskForm_hr = $("#taskForm .hline");
+//    var headline = $("#headline-aufgaben");
+//
+//    var radioTask = $("#radioTask");
+//    var radioPostSession = $("#radioPostSession");
+//    var radioConclusion = $("#radioConclusion");
+//
+//    var formTask = $(".formTask");
+//    var formPostSession = $(".formPostSession");
+//    var formConclusion = $(".formConclusion");
+//
+//    $(document).ready(function(){
+//        if(radioTask.is(':checked')) {
+//            headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
+//            $(taskForm_formGroup).not(formTask).hide();
+//            $(taskForm_hr).not(formTask).hide();
+//            $(formTask).show();
+//        } else if (radioPostSession.is(':checked')) {
+//            headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
+//            $(taskForm_formGroup).not(formPostSession).hide();
+//            $(taskForm_hr).not(formPostSession).hide();
+//            $(formPostSession).show();
+//        } else if (radioConclusion.is(':checked')) {
+//            headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
+//            $(taskForm_formGroup).not(formConclusion).hide();
+//            $(taskForm_hr).not(formConclusion).hide();
+//            $(formConclusion).show();
+//        }
+//
+//        $('input[type="radio"]').click(function(){
+//            var inputValue = $(this).attr("value");
+//            var necessaryInput = $("." + inputValue);
+//            $(taskForm_formGroup).not(necessaryInput).hide();
+//            $(taskForm_hr).not(necessaryInput).hide();
+//            $(necessaryInput).show();
+//
+//            if(inputValue === "formTask") {
+//                headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
+//            } else if (inputValue === "formPostSession") {
+//                headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
+//            } else if (inputValue === "formConclusion") {
+//                headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
+//            }
+//        });
+//    });
 </script>
+
+
 <script>
 
 
@@ -1137,6 +1141,7 @@
 
 </script>
 
+<!-- Sortierfunktion Testaufgaben -->
 <script>
     $(function  () {
 
@@ -1149,7 +1154,8 @@
             isValidTarget: function ($item, container) {
                 var depth = 1, // Start with a depth of one (the element itself)
                     maxDepth = 2,
-                    children = $item.find('ol').first().find('li');
+                    children = $item.find('ol'); /*.first().find('li'); */
+
 
                 // Add the amount of parents to the depth
                 depth += container.el.parents('ol').length;
@@ -1157,7 +1163,7 @@
                 // Increment the depth for each time a child
                 while (children.length) {
                     depth++;
-                    children = children.find('ol').first().find('li');
+                    children = children.find('ol'); /*.first().find('li');*/
                 }
 
                 return depth <= maxDepth;
@@ -1201,8 +1207,109 @@
                 });
             }
         });
+
+
     });
 </script>
+
+<!-- Sortierfunktion PostSession -->
+<script>
+    $(function () {
+        $("ol.postSession-container").sortable({
+            exclude: ".postSessionRubrik",
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function($item, container) {
+                if( !$item.closest("ol").is(container.el)){
+                    return false;
+                    // additional rules
+                }
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: $item.height()});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
+    })
+</script>
+
+<!-- Sortierfunktion Conclusion -->
+<script>
+    $(function () {
+        $("ol.conclusion-container").sortable({
+            exclude: ".conclusionRubrik",
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function($item, container) {
+                if( !$item.closest("ol").is(container.el)){
+                    return false;
+                    // additional rules
+                }
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: $item.height()});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
+    })
+</script>
+
 </body>
 
 </html>
