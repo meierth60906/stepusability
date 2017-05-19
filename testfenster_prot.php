@@ -13,9 +13,23 @@
 <section id="testfenster">
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
+            <div class="col-4">
+                <div class="testfensterswitch btn-group" data-toggle="buttons">
+                    <label class="testfensterswitch btn btn-primary">
+                        <a class="switchlink" href="testfenster_mod.php">
+                            <input type="radio" name="options"id="option1" autocomplete="off">Moderator
+                        </a>
+                    </label>
+                    <label class="testfensterswitch btn btn-primary active">
+                        <a class="active switchlink" href="testfenster_prot.php">
+                            <input type="radio" name="options" id="option2"autocomplete="off"checked>Protokollant</a>
+                    </label>
+                </div>
+            </div>
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
                     <div class="icon-stop d-inline-block px-2"></div>
