@@ -50,7 +50,7 @@
                     <div id="content-allgemein" class="col-lg-9 py-3">
                         <div class="row pt-4 hidden-lg-up">
                             <div class="col-lg-12 text-center">
-                                <a href="#" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
+                                <a href="../testfenster_mod.php" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
                             </div>
                         </div>
                         <!--                        Projektinfo + Beteiligte -->
