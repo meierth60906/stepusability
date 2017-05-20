@@ -74,3 +74,29 @@
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
 }
+
+.testfensterswitch .btn-group, .btn-group-vertical {
+    height:5%;
+    margin-left:3rem;
+    margin-top:10px;
+    padding: 20px;
+}
+
+
+.testfensterswitch .btn-primary {
+    background-color: white;
+    border-color:#133E5C;
+}
+
+.testfensterswitch .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #133E5C;
+    border-color: #133E5C;
+}
+
+.testfensterswitch .switchlink {
+    color: #133E5C;
+}
+
+.testfensterswitch .active .switchlink {
+    color: #FFFFFF;
+}

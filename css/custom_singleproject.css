@@ -90,7 +90,7 @@
 }
 
 #singleproject .inner-body {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 #singleproject .project-sidebar {
@@ -229,9 +229,11 @@
     #content-allgemein,
     #content-aufgaben,
     #content-unterlagen,
+    #content-eval,
     #sidebar-allgemein,
     #sidebar-aufgaben,
-    #sidebar-unterlagen {
+    #sidebar-unterlagen,
+    #sidebar-eval {
         position: fixed;
         overflow-y: auto;
         overflow-x: hidden;
