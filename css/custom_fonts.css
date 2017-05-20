@@ -4,9 +4,9 @@
   font-family: "step-icons";
   src:url("../fonts/step-icons.eot");
   src:url("../fonts/step-icons.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/step-icons.woff") format("woff"),
-  url("../fonts/step-icons.ttf") format("truetype"),
-  url("../fonts/step-icons.svg#step-icons") format("svg");
+    url("../fonts/step-icons.woff") format("woff"),
+    url("../fonts/step-icons.ttf") format("truetype"),
+    url("../fonts/step-icons.svg#step-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -133,4 +133,16 @@
 }
 .icon-list:before {
   content: "\46";
+}
+.icon-comment:before {
+  content: "\47";
+}
+.icon-question:before {
+  content: "\48";
+}
+.icon-question-circle:before {
+  content: "\49";
+}
+.icon-trash:before {
+  content: "\4a";
 }

@@ -23,14 +23,12 @@
     top: 0.5rem;
     font-size: 4rem;
 }
-.checkbox label:after,
 .radio label:after {
     content: '';
     display: table;
     clear: both;
 }
 
-.checkbox .cr,
 .radio .cr {
     position: relative;
     display: inline-block;
@@ -46,7 +44,6 @@
     border-radius: 50%;
 }
 
-.checkbox .cr .cr-icon,
 .radio .cr .cr-icon {
     position: absolute;
     font-size: .8em;
@@ -59,25 +56,47 @@
     margin-left: 0.04em;
 }
 
-.checkbox label input[type="checkbox"],
 .radio label input[type="radio"] {
     display: none;
 }
 
-.checkbox label input[type="checkbox"] + .cr > .cr-icon,
 .radio label input[type="radio"] + .cr > .cr-icon {
     transform: scale(3) rotateZ(-20deg);
     opacity: 0;
     transition: all .3s ease-in;
 }
 
-.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
 .radio label input[type="radio"]:checked + .cr > .cr-icon {
     transform: scale(1) rotateZ(0deg);
     opacity: 1;
 }
 
-.checkbox label input[type="checkbox"]:disabled + .cr,
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
+}
+
+.testfensterswitch .btn-group, .btn-group-vertical {
+    height:5%;
+    margin-left:3rem;
+    margin-top:10px;
+    padding: 20px;
+}
+
+
+.testfensterswitch .btn-primary {
+    background-color: white;
+    border-color:#133E5C;
+}
+
+.testfensterswitch .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #133E5C;
+    border-color: #133E5C;
+}
+
+.testfensterswitch .switchlink {
+    color: #133E5C;
+}
+
+.testfensterswitch .active .switchlink {
+    color: #FFFFFF;
 }

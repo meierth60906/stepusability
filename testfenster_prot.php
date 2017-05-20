@@ -13,12 +13,26 @@
 <section id="testfenster">
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
+            <div class="col-4">
+                <div class="testfensterswitch btn-group" data-toggle="buttons">
+                    <label class="testfensterswitch btn btn-primary">
+                        <a class="switchlink" href="testfenster_mod.php">
+                            <input type="radio" name="options"id="option1" autocomplete="off">Moderator
+                        </a>
+                    </label>
+                    <label class="testfensterswitch btn btn-primary active">
+                        <a class="active switchlink" href="testfenster_prot.php">
+                            <input type="radio" name="options" id="option2"autocomplete="off"checked>Protokollant</a>
+                    </label>
+                </div>
+            </div>
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
-                    <div class="icon-play d-inline-block px-2"></div>
+                    <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
             </div>
         </div>
@@ -32,9 +46,7 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                    accusam et justo duo dolores et ea rebum.
+                    Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?
                 </p>
             </div>
             <div class="col-2 p-5">
@@ -60,8 +72,12 @@
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Lösungsschritte</label>
 
-                <div class="form-group col-12 text-center py-2">
-                    <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                <div class="form-group col-12 py-2">
+                    <ul>
+                        <li>Ort über Suchfeld eingeben</li>
+                        <li>„morgen“ auswählen (3 Möglichkeiten) </li>
+                        <li>Leiste „Mittag“ finden und aufklappen</li>
+                        <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Anmerkungen</label>

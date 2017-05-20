@@ -90,7 +90,7 @@
 }
 
 #singleproject .inner-body {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 #singleproject .project-sidebar {
@@ -229,9 +229,11 @@
     #content-allgemein,
     #content-aufgaben,
     #content-unterlagen,
+    #content-eval,
     #sidebar-allgemein,
     #sidebar-aufgaben,
-    #sidebar-unterlagen {
+    #sidebar-unterlagen,
+    #sidebar-eval {
         position: fixed;
         overflow-y: auto;
         overflow-x: hidden;
@@ -305,12 +307,24 @@ body.dragging, body.dragging * {
     z-index: 2000;
 }
 
-ol.scenario-container {
+ol.scenario-container,
+ol.postSession-container,
+ol.ps-question-container,
+ol.conclusion-container {
     list-style: none !important;
 }
 
-ol.scenario-container li {
+ol.scenario-container li,
+ol.postSession-container li,
+ol.conclusion-container li {
     list-style: none;
     /** More li styles **/
 }
 
+#singleproject textarea {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#singleproject a:hover {
+    cursor:pointer;
+}

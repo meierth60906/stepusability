@@ -1,0 +1,132 @@
+<!--  TaskForm  -->
+<div class="row">
+
+    <div class="col-lg-12 pl-0 pl-md-3 pr-0 pr-md-3">
+        <div class="row my-3 ml-2 ml-lg-3 mr-2 mr-lg-3">
+            <div class="col-12 px-0">
+                <div class="row">
+                    <div id="headline-aufgaben" class="col-6 headline">
+                        <span class='icon-align icon-list mr-2'></span>Testaufgabe
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="#"><span class="icon-check-1"></span><span class="hidden-md-down"> Speichern</span></a>
+                    </div>
+                </div>
+
+                <hr class="my-3">
+
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-12">
+                        <form id="taskForm">
+                            <!--<div class="form-group row formTask formPostSession formConclusion">
+                                <label class="col-lg-4 form-control-label">Aufgabenart:</label>
+                                <div class="col-lg-8">
+                                    <div class="form-check">
+                                        <label class="custom-control custom-radio mr-0">
+                                            <input id="radioTask" name="radioTaskType" type="radio" class="custom-control-input" value="formTask" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description"><span class="icon-align icon-list text-muted pr-2"></span>Testaufgabe</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-control custom-radio mr-0">
+                                            <input id="radioPostSession" name="radioTaskType" type="radio" value="formPostSession" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description"><span class="icon-align icon-comment text-muted pr-2"></span>Post-Session-Interview-Frage</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-control custom-radio mr-0">
+                                            <input id="radioConclusion" name="radioTaskType" type="radio" value="formConclusion" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description"><span class="icon-align icon-question text-muted pr-2"></span>Abschlussfrage</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="form-group row formTask">
+                                <label for="inputTaskDescription" class="col-lg-4 form-control-label">Aufgaben&shy;beschreibung:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputTaskDescription" placeholder="Aufgabenbeschreibung" rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row formTask">
+                                <label for="inputPrecondition" class="col-lg-4 form-control-label">Vorbedingung:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputPrecondition" placeholder="Vorbedingung" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row formTask">
+                                <label for="inputProvidedData" class="col-lg-4 form-control-label">Bereitgestellte Daten:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputProvidedData" placeholder="Bereitgestellte Daten" rows="2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <hr class="hline my-3 formTask">
+
+
+                            <div class="form-group row formTask">
+                                <label for="inputTaskInTestSwitch" class="col-lg-4 form-control-label">Für Test ausgewählt:</label>
+                                <div class="col-lg-8 text-left">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="inputTaskInTestSwitch">
+                                        <span class="custom-control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row formTask">
+                                <label for="inputChoosenWhy" class="col-lg-4 form-control-label">Auswahlgrund:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputChoosenWhy" placeholder="Auswahlgrund" rows="2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <hr class="hline my-3 formTask">
+
+
+                            <div class="form-group row formTask">
+                                <label for="inputPassedCondition" class="col-lg-4 form-control-label">Bestehens&shy;bedingung:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputPassedCondition" placeholder="Aufgabe erfüllt, wenn..." rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row formTask">
+                                <label for="inputCancelCondition" class="col-lg-4 form-control-label">Abbruch&shy;bedingung:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputCancelCondition" placeholder="Aufgabenabbruch, wenn..." rows="2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <hr class="hline my-3 formTask">
+
+
+                            <div class="form-group row formTask">
+                                <label for="inputSolutionSteps" class="col-lg-4 form-control-label">Gewünschte Lösungsschritte:</label>
+                                <div class="col-lg-8">
+                                    <textarea class="form-control" id="inputSolutionSteps" placeholder="Gewünschte Lösungsschritte" rows="6"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row formTask">
+                                <label for="inputDelete" class="col-lg-4 form-control-label">Aufgabe löschen:</label>
+                                <div class="col-lg-8">
+                                    <a id="inputDelete" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

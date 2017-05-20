@@ -5,29 +5,47 @@
 
     <?php include ('head.html'); ?>
 </head>
-<body id="singleproject">
+<body id="body-testfenster_mod">
 
 
 <section id="testfenster_mod" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
+            <div class="col-4">
+                <div class="testfensterswitch btn-group" data-toggle="buttons">
+                    <label class="testfensterswitch btn btn-primary active">
+                        <a class="active switchlink" href="testfenster_mod.php">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>Moderator
+                        </a>
+                    </label>
+                    <label class="testfensterswitch btn btn-primary">
+                        <a class="switchlink" href="testfenster_prot.php">
+                            <input type="radio" name="options" id="option2" autocomplete="off">Protokollant</a>
+                    </label>
+                </div>
+            </div>
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
                     <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
             </div>
+
         </div>
         <div class="row project-tabs ">
             <div class="col-md-12 p-0">
                 <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#vorbereitung" data-target="#allgemein" role="tab" data-toggle="tab"><span>Vorbereitung</span></a>
+                        <a class="nav-link active" href="#vorbereitung" data-target="#vorbereitung" role="tab" data-toggle="tab"><span>Vorbereitung</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span>Testaufgaben</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#postsession" data-target="#postsession" role="tab" data-toggle="tab"><span>Post-Session Interview</span></a>
                     </li>
                 </ul>
             </div>
@@ -36,19 +54,15 @@
 
     <div class="container-fluid">
         <div class="tab-content">
-            <div class="tab-pane active" id="allgemein" role="tabpanel">
+            <div class="tab-pane active" id="vorbereitung" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="content-allgemein" class="col-lg-9 py-3">
+                    <div id="content-vorbereitung" class="col-lg-9 py-3">
 
-                        <div class="row pt-4 hidden-lg-up">
-                            <div class="col-lg-12 text-center">
-                                <a href="#" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
-                            </div>
-                        </div>
+
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
-                            <div class="col-lg-12 text-right">
+                            <div class="col-lg-12 pr-3 text-right">
                                 <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
@@ -92,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
+                    <div id="sidebar-vorbereitung" class="col-lg-3 c-grey-bg">
                         <div class="row pt-4 hidden-md-down">
                             <div class="col-lg-12 text-center">
                                 <a href="#" class="btn btn-submit-orange m-4"><i class="icon-plus"> Anmerkungen hinzufügen</i></a>
@@ -170,8 +184,8 @@
 
             <div class="tab-pane" id="testaufgaben" role="tabpanel">
                 <div class="row inner-body">
-                    <div class="col-12 pt-5">
-                        <table class="table table-bordered">
+                    <div id="content-testaufgaben" class="col-12 pt-5">
+                        <table class="table table-bordered table-striped">
                             <thead>
                             <tr>
                                 <th>Aufgabenanweisung</th>
@@ -182,7 +196,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Welches Wetter ist morgen bei Ihnen Zuhause gemeldet? Was ist die Temperatur um 12 Uhr?</td>
+                                <td>Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?<br> Was ist die Temperatur um 12 Uhr?</td>
                                 <td>Startseite</td>
                                 <td></td>
                                 <td><ul>
@@ -193,7 +207,7 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Wie wandern die Wolken über Bayern? Ab wann ist Nürnberg morgen stark bewölkt?</td>
+                                <td>Wie wandern die Wolken über Bayern? <br>Ab wann ist Nürnberg morgen stark bewölkt?</td>
                                 <td></td>
                                 <td></td>
                                 <td><ul>
@@ -232,169 +246,205 @@
                         </table>
                     </div>
 
-                    <!--<div id="content-allgemein" class="col-lg-12 py-3">
 
+
+                </div>
+            </div>
+
+            <div class="tab-pane" id="postsession" role="tabpanel">
+                <div class="row inner-body">
+                    <div id="content-postsession" class="col-9 py-3 ">
+                        <div class="row">
+
+                            <div class="col-lg-12 pr-3 text-right">
+                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                            </div>
+                        </div>
                         <div class="row">
                             <!--  <div class="col-lg-8 font-weight-bold"><h1>Testskript:</h1></div>-->
-                    <!-- <div class="col-md-3">
-                         <h3>Aufgabenanweisung</h3>
-                         <p>Welches Wetter ist morgen bei Ihnen Zuhause gemeldet? Was ist die Temperatur um 12 Uhr?</p>
-                     </div>
-                     <div class="col-md-2">
-                         <h5>Einstiegsseite</h5>
-                         <p>Startseite</p>
-                     </div>
-                     <div class="col-md-2">
-                         <h5>Vorbedingung</h5>
-                         <p></p>
-                     </div>
-                     <div class="col-md-5">
-                         <h5>Lösungsschritte</h5>
-                         <ul>
-                             <li>Ort über Suchfeld eingeben</li>
-                             <li>„morgen“ auswählen (3 Möglichkeiten)</li>
-                             <li>Leiste „Mittag“ finden und aufklappen</li>
-                             <li>Temperatur für 12.00 Uhr nennen</li>
-                         </ul>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-md-3">
-                         <p>Wie wandern die Wolken über Bayern? Ab wann ist Nürnberg morgen stark bewölkt?</p></div>
-                     <div class="col-md-2">
-                         <p></p>
-                     </div>
-                     <div class="col-md-2">
-                         <p></p>
-                     </div>
-                     <div class="col-md-5">
-                         <ul>
-                             <li>Auswählen „Niederschlagsradar“ (rechte Spalte)</li>
-                             <li>Auswahlmenü („Niederschlagsradar“) nutzen und „Bewölkung“  auswählen</li>
-                             <li>Play-Button drücken</li>
-                             <li>(Ergebnis: 6:00 – 8:00 Uhr)</li>
+                            <div class="col-md-12">
+                                <h3>Vielen Dank!</h3>
+                                <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
+                                    Zunächst bitte ich Sie um Ihre Bemerkungen zu den Testaufgaben.<br></p>
+                                <ul>
+                                    <li>Waren die Testaufgaben realistisch? </li>
+                                    <li>Sind es Aufgaben, die Sie im echten Leben durchführen würden? </li>
+                                    <li>Welche Aufgaben haben gefehlt? </li>
+                                </ul>
 
-                             <li><u>Alternative: 1</u></li>
-                             <li>Menü „Wetterkarten“ > Untermenü „Bewölkung“</li>
-                             <li>...</li>
-                             <li><u>Alternative 2:</u></li>
-                             <li>Menü „Wetterkarten“</li>
-                             <li>Auf Seite auswählen Kachel „Bewölkung“</li>
-                             <li>...</li>
-                         </ul>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-md-3">
-                         <p>Finden Sie ein Sommerurlaubsziel in Südamerika, <br>
-                             welches im Juli eine Durchschnittstemperatur von 18 bis 30 Grad Celsius hat.</p></div>
-                     <div class="col-md-2">
-                         <p>Startseite</p>
-                     </div>
-                     <div class="col-md-2">
-                         <p></p>
-                     </div>
-                     <div class="col-md-5">
-                         <ul>
-                             <li>Menü: „Reise und Freizeit“ > Untermenü „Urlaubswetter“  auswählen</li>
-                             <li>Parameter einstellen und unzutreffende abwählen</li>
-                             <li>18-30 Grad</li>
-                             <li>Juli (Januar streichen)</li>
 
-                             <li>Südamerika (Europa streichen)</li>
-                             <li>Button „Ergebnisse anzeigen “ auswählen</li>
-                             <li>Stadt angeben (bel.)</li>
+                                <h5>Post-Session Interview Fragen</h5>
+                                <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
+                                <ul>
+                                    <li>Welche zwei bis drei Dinge haben Ihnen besonders gefallen?</li>
+                                    <li>Welche zwei bis drei Dinge haben Ihnen am wenigsten gefallen?</li>
+                                </ul>
+                                <h5>UEQ-Fragebogen:</h5>
+                                <p>Ich bitte Sie nun, außen Platz zu nehmen und für uns diesen Fragebogen auszufüllen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar-postsession" class="col-lg-3 c-grey-bg">
+                        <div class="row pt-4 hidden-md-down">
+                            <div class="col-lg-12 text-center">
+                                <a href="#" class="btn btn-submit-orange m-4"><i class="icon-plus"> Anmerkungen hinzufügen</i></a>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-lg-12 headline">
+                                Anmerkungen
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+                            <div class="col-lg-12 small">
 
-                         </ul>
-                     </div>
-                 </div>-->
+                                <div class="row px-3 ">
+                                    <div class="col-md-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                für Test bedanken</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                Bemerkungen des Probanden</label>
+                                        </div></div>
+                                    <div class="col-md-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                Post-Session Interview</label>
+                                        </div></div>
+                                    <div class="col-md-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                UEQ-Fragebogen</label>
+                                        </div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
 
 
 </section>
 <?php include ('scripts.html'); ?>
+
 <script>
-    var h = $(window).height();
-    var header_h = $(".page-top").height();
-    $('.inner-sidebar').css('height', h - header_h );
-    $(".inner-body").css("padding-top", header_h);
-    <script>
+
     var h = $(window).height();
     var w = $(window).width();
     var header_h = $(".page-top").height();
     var innerbody = $(".inner-body");
-    var aufgabenfeld = $(".aufgabenfeld");
-    var innersidebar = $(".inner-sidebar");
     var nav = $(".sidebar-wrapper");
-    var bodyallgemein = $(".body-allgemein");
 
-    var container = $("#content-allgemein");
-    var sidebar = $("#sidebar-allgemein");
-
-    innersidebar.css('height', h - header_h );
+    //    Initial Functions
     innerbody.css("padding-top", header_h);
 
-    var aufgabenfeld_h = aufgabenfeld.height();
+    //Nav Width
+    var nav_w = nav.width();
 
-    $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
-    bodyallgemein.height(h - header_h - 1);
+    //Sidebars
+    var sidVorb = $("#sidebar-vorbereitung");
+    var sidTaufg = $("#sidebar-testaufgaben");
+    var sidPostSes = $("#sidebar-postsession");
+
+    //Contents
+    var conVorb = $("#content-vorbereitung");
+    var conTaufg = $("#content-testaufgaben");
+    var conPostSes = $("#content-postsession");
 
 
 
-    if(container.height() > (h - header_h) {
-        sidebar.height(container);
-    } else {
-        sidebar.height(h - header_h);
-    }
+    $(function() {
+        if(w > 991) {
+            //Set Sidebar Height
+            sidVorb.height(h-header_h);
+            sidTaufg.height(h-header_h);
+            sidPostSes.height(h-header_h);
 
-    $( window ).resize( function(){
-        h = $(window).height();
-        $(".protokollant-container").height(h - aufgabenfeld_h - header_h);
-        $('.inner-sidebar').css('height', h - header_h );
-        innersidebar.width(w - $(".col-md-9"));
-        bodyallgemein.height(h - header_h - 1);
+            //Set Content Height
+            conAllg.height(h-header_h - 32);
+            conAufg.height(h-header_h - 32);
+            conPostSes.height(h-header_h - 32);
 
-        if(container.height() > (h - header_h) {
-            sidebar.height(container);
-        } else {
-            sidebar.height(h - header_h);
+            //Set Content Width
+            conVorb.width(w - sidVorb.width() - 60 - nav_w);
+            conTaufg.width(w - sidTaufg.width() - 60 - nav_w);
+            conPostSes.width(w - sidPostSes.width() - 60 - nav_w);
         }
     });
 
 
+    //Function for Window Resize
+    $(window).on('resize', function(){
+        //Window Height
+        h = $(window).height();
+        w = $(window).width();
+        nav_w = nav.width();
 
-    //    alert("WindowHeight: " + h + " Innerbody: " + aufgabenfeld_h + " Header_h: " + header_h);
+        if(w > 991) {
+            //Set Sidebar Height
+            sidVorb.height(h - header_h);
+            sidTaufg.height(h - header_h);
+            sidPostSes.height(h - header_h);
 
-    /*    $(".nav-item .active").hover(
-     function() {
-     $(".nav-tabs").css("border-bottom", "solid 5px #ff512d");
-     $(this).css("background-color", "#ff512d");
-     },
-     function() {
-     $(".nav-tabs").css("border-bottom", "solid 5px #e84a29");
-     $(this).css("background-color", "#e84a29");
-     }
-     )*/
+            //Set Content Height
+            conVorb.height(h - header_h - 32);
+            conAufg.height(h - header_h - 32);
+            conPostSes.height(h - header_h - 32);
 
-
-    $(function(){
-        var hash = window.location.hash;
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-        $('.nav-tabs a').click(function () {
-            $(this).tab('show');
-            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-            window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
-        });
+            //Set Content Width
+            conVorb.width(w - sidVorb.width() - 60 - nav_w);
+            conAufg.width(w - sidTaufg.width() - 60 - nav_w);
+            conPostSes.width(w - sidPostSes.width() - 60 - nav_w);
+        }
     });
 
 </script>
+
+<script src="../js/jquery-sortable-min.js"></script>
+<script>
+
+    // Javascript to enable link to tab
+    var hash = document.location.hash;
+    if (hash) {
+        $('.nav-tabs a[href="'+hash+'"]').tab('show');
+    }
+
+    // Change hash for page-reload
+    $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        window.location.hash = e.target.hash;
+        if(w > 991) {
+            //Set Sidebar Height
+            sidVorb.height(h - header_h);
+            sidTaufg.height(h - header_h);
+            sidPostSes.height(h - header_h);
+
+            //Set Content Height
+            conVorb.height(h - header_h - 32);
+            conTaufg.height(h - header_h - 32);
+            conPostSes.height(h - header_h - 32);
+
+            //Set Content Width
+            conVorb.width(w - sidVorb.width() - 60 - nav_w);
+            conTaufg.width(w - sidTaufg.width() - 60 - nav_w);
+            conPostSes.width(w - sidPostSes.width() - 60 - nav_w);
+        }
+    });
+
+</script>
+
 
 </body>
 
