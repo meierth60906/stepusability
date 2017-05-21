@@ -80,15 +80,28 @@
                         <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
-                <label for="inputRole" class="col-lg-3 form-control-label">Anmerkungen</label>
+                <form action="/projects/insert_testfenster_prot.php">
+
+                <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                 <div class="form-group col-12 text-center py-2">
-                    <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                    <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                 </div>
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
                 <div class="form-group col-12 text-center py-2">
                     <textarea class="form-control" id="message-text" placeholder=""></textarea>
                 </div>
+                    <input type="hidden" name="Protokollant" value="1">
+                    <input type="hidden" name="Termin" value="1">
+                    <input type="hidden" name="TerminUt" value="1">
+                    <input type="hidden" name="Textbaustein" value="1">
+                    <input type="hidden" name="TextbausteinAbschnitt" value="2">
+                    <input type="hidden" name="TextbausteinAbschnittUt" value="1">
+
+
+                    <input type="submit" value="Speichern">
+
+                </form>
             </div>
         </div>
 
