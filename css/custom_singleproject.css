@@ -328,3 +328,12 @@ ol.conclusion-container li {
 #singleproject a:hover {
     cursor:pointer;
 }
+
+#aufgabe-eval {
+    background-color: white;
+}
+
+.aufgabe-middle {
+    vertical-align: middle;
+    line-height: 2.5em;
+}
