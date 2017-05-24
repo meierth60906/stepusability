@@ -3,9 +3,13 @@
 <head>
     <title>Projekte | step</title>
 
-    <?php include ('head.html'); ?>
+    <?php include ('head.html');
+
+    ?>
 </head>
 <body id="body-projects">
+
+
 
 <?php include ('navigation.html'); ?>
 

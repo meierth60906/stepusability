@@ -20,14 +20,14 @@
         </div>
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                    <form>
+                <form action="/insert_login.php">
                         <!--  Normales  einzeiliges  Eingabefeld  -->
                         <div class="form-group">
-                            <input id="input1" type="text" class="form-control text-center" placeholder="Benutzername">
+                            <input name="Benutzername" id="input1" type="text" class="form-control text-center" placeholder="Benutzername">
                         </div>
                         <!--  Passwortfeld  -->
                         <div class="form-group">
-                            <input id="input2" class="form-control text-center" type="password" placeholder="Passwort">
+                            <input  name="Passwort" id="input2" class="form-control text-center" type="password" placeholder="Passwort">
                         </div>
 
                         <!--  Schaltflaeche  als  Button  -->
@@ -35,6 +35,8 @@
                            <a href="home.php" class="btn btn-submit-orange btn-lg active" role="button" aria-pressed="true">Login</a>
 
                     </div>
+
+                <input type="hidden" name="PERSONP_HAT_U_ID" value="3">
                 </form>
                 <!-- Links unter dem Login Button und Pop-up Fenster -->
                 <div class="row pt-3 text-center">
@@ -79,44 +81,56 @@
         </div>
     </div>
 </div>
+<form action="/insert_registrierung.php">
 
-<!-- Pop-up Fenster: Registrierung -->
-<div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content py-3">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registrierung</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body px-5 py-5">
-                Füllen Sie bitte das nachstehende Kontaktformular vollständig aus.<br>
-                Wir bearbeiten IhreAnfrage so schnell wie möglich.
-            </div>
-            <!-- Firma -->
-            <div class="form-group col-12 text-center px-5 py-2">
-                <input id="input5" type="text" class="form-control text-center"  placeholder="Firma*">
-            </div>
-            <!-- Name -->
-            <div class="form-group col-12 text-center px-5 py-2">
-                <input id="input6" type="text" class="form-control text-center"  placeholder="Name*">
-            </div>
-            <!-- Vorname -->
-            <div class="form-group col-12 text-center px-5 py-2">
-                <input id="input7" type="text" class="form-control text-center"  placeholder="Vorname*">
-            </div>
-            <!--  E-Mail  -->
-            <div class="form-group col-12 text-center px-5 py-2">
-                <input id="input8" class="form-control text-center" type="email" placeholder="E-Mail Adresse*">
-            </div>
-            <!-- Nachricht -->
-            <div class="form-group col-12 text-center px-5 py-2">
-                <textarea class="form-control text-center" id="message-text" placeholder="Nachricht"></textarea>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn btn-submit-orange btn-lg">Senden</button>
-            </div>
+    <div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content py-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrierung</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-5 py-5">
+                    Füllen Sie bitte das nachstehende Kontaktformular vollständig aus.<br>
+                    Wir bearbeiten IhreAnfrage so schnell wie möglich.
+                </div>
+                <!-- Anrede -->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Anrede" id="input5" type="text" class="form-control text-center"  placeholder="Anrede*">
+                </div>
+                <!-- Name -->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Name" id="input6" type="text" class="form-control text-center"  placeholder="Name*">
+                </div>
+                <!-- Vorname -->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Vorname" id="input7" type="text" class="form-control text-center"  placeholder="Vorname*">
+                </div>
+                <!--  Geburtsdatum  -->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Geburtsdatum" id="input8" class="form-control text-center" placeholder="Geburtsdatum*">
+                </div>
+                <!--Email-->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Firma" id="input8" class="form-control text-center" type="email"  placeholder="E-Mail*">
+                </div>
+
+                <!-- Firma -->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <input name="Firma" id="input8" class="form-control text-center"  placeholder="Firma*">
+                </div>
+                <!--Nachricht-->
+                <div class="form-group col-12 text-center px-5 py-2">
+                    <textarea class="form-control text-center" id="message-text" placeholder="Nachricht"></textarea>
+                </div>
+
+                <div class="modal-footer text-center">
+                    <input type="submit" value="Senden" class="btn btn-submit-orange btn-lg"></input>
+                </div>
+
+
         </div>
     </div>
 </div>
