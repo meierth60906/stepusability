@@ -26,7 +26,7 @@ if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
     $e = oci_error();
     echo $e['message'];
 } else {
-    header("Location: /index.php");
+    header("Location: index.php");
 }
 
 ?>
