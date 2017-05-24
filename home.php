@@ -25,7 +25,7 @@
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
-                <h1>Home</h1>
+                <h1>Test</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="settings.php">
