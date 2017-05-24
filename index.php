@@ -81,7 +81,7 @@
         </div>
     </div>
 </div>
-<form action="/insert_registrierung.php">
+<form action="insert_registrierung.php">
 
     <div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
