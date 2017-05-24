@@ -80,7 +80,7 @@
                         <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
-                <form action="/projects/insert_testfenster_prot.php">
+                <form action="/insert_testfenster_prot.php">
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                 <div class="form-group col-12 text-center py-2">
