@@ -17,13 +17,13 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <div class="testfensterswitch btn-group" data-toggle="buttons">
-                    <label class="testfensterswitch btn btn-primary">
-                        <a class="switchlink" href="testfenster_mod.php">
+                <div class="btn-group-md testfensterswitch btn-group" data-toggle="buttons">
+                    <label class="btn-group-md testfensterswitch btn btn-primary">
+                        <a href="testfenster_mod.php" class="switchlink">
                             <input type="radio" name="options"id="option1" autocomplete="off">Moderator
                         </a>
                     </label>
-                    <label class="testfensterswitch btn btn-primary active">
+                    <label class="btn-group-lg testfensterswitch btn btn-primary active">
                         <a class="active switchlink" href="testfenster_prot.php">
                             <input type="radio" name="options" id="option2"autocomplete="off"checked>Protokollant</a>
                     </label>
@@ -82,15 +82,15 @@
 
                 <form action="/insert_testfenster_prot.php">
 
-                <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
-                <div class="form-group col-12 text-center py-2">
-                    <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
-                </div>
+                    <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
+                    <div class="form-group col-12 text-center py-2">
+                        <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
+                    </div>
 
-                <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
-                <div class="form-group col-12 text-center py-2">
-                    <textarea class="form-control" id="message-text" placeholder=""></textarea>
-                </div>
+                    <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
+                    <div class="form-group col-12 text-center py-2">
+                        <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                    </div>
                     <input type="hidden" name="Protokollant" value="1">
                     <input type="hidden" name="Termin" value="1">
                     <input type="hidden" name="TerminUt" value="1">

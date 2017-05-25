@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
+                        <a class="card-item-link" href="projects/project1.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
@@ -334,7 +334,7 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
+                        <a class="card-item-link" href="view_contact.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-star d-inline text-muted"></div>
