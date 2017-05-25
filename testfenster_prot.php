@@ -20,12 +20,12 @@
                 <div class="btn-group-md testfensterswitch btn-group" data-toggle="buttons">
                     <label class="btn-group-md testfensterswitch btn btn-primary">
                         <a href="testfenster_mod.php" class="switchlink">
-                            <input type="radio" name="options"id="option1" autocomplete="off">Moderator
+                            <input type="radio" name="options" id="option1" autocomplete="off">Moderator
                         </a>
                     </label>
                     <label class="btn-group-lg testfensterswitch btn btn-primary active">
                         <a class="active switchlink" href="testfenster_prot.php">
-                            <input type="radio" name="options" id="option2"autocomplete="off"checked>Protokollant</a>
+                            <input type="radio" name="options" id="option2" autocomplete="off" checked>Protokollant</a>
                     </label>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
-                <form action="/insert_testfenster_prot.php">
+                <form action="/logic/insert_testfenster_prot.php">
 
                     <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                     <div class="form-group col-12 text-center py-2">

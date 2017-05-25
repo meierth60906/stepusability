@@ -672,91 +672,99 @@
 
             <!--            Evaluation -->
             <div class="tab-pane" id="evaluation" role="tabpanel">
+
+
                 <!--    <div class="aufgabenfeld inner-body row c-grey-bg">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-2 text-right p-3">
-                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                </div>
-                                <div class="col-8 p-3">
-                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam et justo duo dolores et ea rebum.
-                                    </p>
-                                </div>
-                                <div class="col-2 p-3">
-                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                </div>
-                            </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-2 text-right p-3">
+                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                </div>
+                <div class="col-8 p-3">
+                    <p class="font-weight-bold text-center">Aufgabe 1</p>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et justo duo dolores et ea rebum.
+                    </p>
+                </div>
+                <div class="col-2 p-3">
+                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                </div>
+            </div>
 
-                        </div>
+        </div>
 
+    </div>
+    <div class="row">
+        <div class="protokollant-container col-md-6">
+            <div class="protokollant-card m-5">
+                <div class="row px-4 p-4">
+                    <div class="col-md-12">
+                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+
+                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                        <hr>
                     </div>
-                    <div class="row">
-                        <div class="protokollant-container col-md-6">
-                            <div class="protokollant-card m-5">
-                                <div class="row px-4 p-4">
-                                    <div class="col-md-12">
-                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-lg-4">Lösungsschritte:</div>
+                    <div class="col-lg-8 font-weight-bold">
+                        Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum.
+                    </div>
+                </div>
+                <div class="row px-4 p-4">
+                    <div class="col-lg-4">Anmerkungen:</div>
+                    <div class="col-lg-8 font-weight-bold">
+                        Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.
+                    </div>
+                </div>
+            </div>
 
-                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <div class="row px-4">
-                                    <div class="col-lg-4">Lösungsschritte:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                        dolores et ea rebum.
-                                    </div>
-                                </div>
-                                <div class="row px-4 p-4">
-                                    <div class="col-lg-4">Anmerkungen:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua.
-                                    </div>
-                                </div>
-                            </div>
+            <div class="protokollant-card m-5">
+                <div class="row px-4 p-4">
+                    <div class="col-md-12">
+                        <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
 
-                            <div class="protokollant-card m-5">
-                                <div class="row px-4 p-4">
-                                    <div class="col-md-12">
-                                        <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                        <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row px-4">
+                    <div class="col-lg-4">Lösungsschritte:</div>
+                    <div class="col-lg-8 font-weight-bold">
+                        Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum.
+                    </div>
+                </div>
+                <div class="row px-4 p-4">
+                    <div class="col-lg-4">Anmerkungen:</div>
+                    <div class="col-lg-8 font-weight-bold">
+                        Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua.
+                    </div>
+                </div>
+            </div>
 
-                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <div class="row px-4">
-                                    <div class="col-lg-4">Lösungsschritte:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                        dolores et ea rebum.
-                                    </div>
-                                </div>
-                                <div class="row px-4 p-4">
-                                    <div class="col-lg-4">Anmerkungen:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua.
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+        <div class="col-md-6">
+            Editor
+        </div>
+    </div>-->
 
-                        </div>
-                        <div class="col-md-6">
-                            Editor
-                        </div>
-                    </div>-->
+
+
+
+
+
 
                 <div class="row inner-body">
                     <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
@@ -777,10 +785,34 @@
 
                     <div id="content-eval" class="offset-lg-3 col-lg-9 p-0">
 
+
+
                         <div id="aufgabe-eval" class="row m-0 p-3">
                             <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
                             <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
                         </div>
+
+
+                        <div class="row">
+
+                            <!--                            Projektinfo -->
+                            <div class="col-lg-12 p-3">
+                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                    <div class="col-lg-12 element-allgemein p-3">
+                                        <div class="row">
+                                            <div class="col-10 col-sm-6 headline">
+                                                Projektinformationen
+                                            </div>
+                                            <div class="col-2 col-sm-6 text-right">
+                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                            </div>
+                                            <div class="col-12"><hr class="pb-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div id="protokollanten-eval" class="col-lg-6">
 
                         </div>
@@ -851,7 +883,7 @@
             conAllg.width(w - sidAllg.width() - 60 - nav_w);
             conAufg.width(w - sidAufg.width() - 60 - nav_w);
             conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidUnt.width() - 60 - nav_w);
+            conEval.width(w - sidEval.width() - 30 - nav_w);
         }
     });
 
@@ -880,7 +912,7 @@
             conAllg.width(w - sidAllg.width() - 60 - nav_w);
             conAufg.width(w - sidAufg.width() - 60 - nav_w);
             conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidUnt.width() - 60 - nav_w);
+            conEval.width(w - sidEval.width() - 30 - nav_w);
         }
     });
 
@@ -952,7 +984,7 @@
 <script>
     $( function loadSections() {
         $.ajax({
-            url: 'viewScenario.php',
+            url: '../logic/viewScenario.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
             }
@@ -1048,7 +1080,7 @@
 
     function createScenario() {
         $.ajax({
-            url: 'postScenario.php',
+            url: '../logic/postScenario.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
             }
@@ -1202,7 +1234,7 @@
             sidAllg.height(h - header_h);
             sidAufg.height(h - header_h);
             sidUnt.height(h - header_h);
-            sidEval.height(h-header_h);
+            sidEval.height(h - header_h);
 
             //Set Content Height
             conAllg.height(h - header_h - 32);
@@ -1214,7 +1246,7 @@
             conAllg.width(w - sidAllg.width() - 60 - nav_w);
             conAufg.width(w - sidAufg.width() - 60 - nav_w);
             conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidUnt.width() - 60 - nav_w);
+            conEval.width(w - sidEval.width() - 30 - nav_w);
         }
     });
 
