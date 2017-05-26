@@ -12,28 +12,45 @@
 <section id="singleproject" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-12">
+            <div class="col-6">
+                <h1>Projekt1</h1>
+            </div>
+            <div class="col-6 text-right align-self-center ">
+                <a class="btn btn-submit-orange" href="../testfenster_mod.php">
+                    <div class="icon-play d-inline-block px-2"></div>
+                    <span class="hidden-sm-down">Test starten</span></a>
+            </div>
+
+        </div>
+
+
+        <!--<div class="row titlebar px-3 py-3">
+            <div class="col-8">
                 <h1>Projekt 1</h1>
             </div>
-        </div>
-        <div class="row project-tabs ">
-            <div class="col-md-12 p-0">
-                <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-align icon-folder"></span><span class="pl-2 hidden-sm-down">Allgemein</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-align icon-list"></span><span class="pl-2 hidden-sm-down">Testaufgaben</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-align icon-file-text"></span><span class="pl-2 hidden-sm-down">Projektunterlagen</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-align icon-check-1"></span><span class="pl-2 hidden-sm-down">Evaluation</span></a>
-                    </li>
-                </ul>
+            <div class="col-4 text-center">
+                <a href="../testfenster_mod.php" class="btn btn-submit-orange m-4"><i class="icon-play"></i> Test starten</a>
             </div>
         </div>
+    </div>-->
+    <div class="row project-tabs ">
+        <div class="col-md-12 p-0">
+            <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-align icon-folder"></span><span class="pl-2 hidden-sm-down">Allgemein</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-align icon-list"></span><span class="pl-2 hidden-sm-down">Testaufgaben</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-align icon-file-text"></span><span class="pl-2 hidden-sm-down">Projektunterlagen</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-align icon-check-1"></span><span class="pl-2 hidden-sm-down">Evaluation</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
     <div class="container-fluid">
 
@@ -214,11 +231,6 @@
 
                     </div>
                     <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
-                        <div class="row pt-4 hidden-md-down">
-                            <div class="col-lg-12 text-center">
-                                <a href="../testfenster_mod.php" class="btn btn-submit-orange m-4"><i class="icon-play"></i> Test starten</a>
-                            </div>
-                        </div>
                         <div class="row pt-3">
                             <div class="col-lg-12 headline">
                                 Benachrichtigungen
