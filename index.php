@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                <form action="/insert_login.php">
+                <form action="/logic/insert_login.php">
                         <!--  Normales  einzeiliges  Eingabefeld  -->
                         <div class="form-group">
                             <input name="Benutzername" id="input1" type="text" class="form-control text-center" placeholder="Benutzername">
@@ -81,7 +81,7 @@
         </div>
     </div>
 </div>
-<form action="insert_registrierung.php">
+<form action="logic/insert_registrierung.php">
 
     <div class="modal fade text-center" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="modal-footer text-center">
-                    <input type="submit" value="Senden" class="btn btn-submit-orange btn-lg"></input>
+                    <input type="submit" value="Senden" class="btn btn-submit-orange btn-lg" />
                 </div>
 
 
