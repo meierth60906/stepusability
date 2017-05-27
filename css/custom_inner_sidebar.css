@@ -105,6 +105,10 @@
     padding-left: 8px;
     text-decoration: none;
 }
+#library .list-group.active, #templates .list-group.active{
+background-color: #ccd9e4;
+}
+
 
 #library .list-group-item:hover, #templates .list-group-item:hover{
     background-color: #ccd9e4;
@@ -140,13 +144,6 @@
 
 /*collapse*/
 
-
-
-#library .on, #templates .on{
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #ccd9e4;
-}
 #templates .collapsed, #templates .collapsed{
     text-decoration: none;
 }
@@ -157,8 +154,4 @@
 
 }
 
-#library .collapse.show.active, #templates .collapse.show.active {
-    background-color: red;
-
-}
 
