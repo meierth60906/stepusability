@@ -234,9 +234,9 @@
     #sidebar-aufgaben,
     #sidebar-unterlagen,
     #sidebar-eval {
-        position: fixed;
-        overflow-y: auto;
-        overflow-x: hidden;
+        position: fixed !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
 
     #sidebar-allgemein {
@@ -327,4 +327,13 @@ ol.conclusion-container li {
 
 #singleproject a:hover {
     cursor:pointer;
+}
+
+#aufgabe-eval {
+    background-color: white;
+}
+
+.aufgabe-middle {
+    vertical-align: middle;
+    line-height: 2.5em;
 }

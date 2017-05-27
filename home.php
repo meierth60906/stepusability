@@ -3,7 +3,19 @@
 <head>
     <title>Dashboard | step</title>
 
-    <?php include ('head.html'); ?>
+    <?php include ('head.html');
+    ?>
+
+    <?php
+    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Vorname", "Anna", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Geburtsdatum", "01.01.1990", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Anrede", "Frau", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Firma", "Apple", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+
+    ?>
+
+
 </head>
 <body id="dashboardbody">
 
@@ -13,7 +25,7 @@
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
-                <h1>Home</h1>
+                <h1>Dashboard</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="settings.php">
@@ -36,7 +48,7 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
+                        <a class="card-item-link" href="projects/project1.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>
@@ -322,7 +334,7 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
+                        <a class="card-item-link" href="view_contact.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-star d-inline text-muted"></div>
