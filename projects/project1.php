@@ -1017,7 +1017,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1038,7 +1038,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1077,7 +1077,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-question icon-align text-muted'></span>AbschlussFrage" +
+                "<span class='pr-2 icon-question icon-align text-muted'></span>Abschlussfrage" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
