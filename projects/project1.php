@@ -931,66 +931,6 @@
 </script>
 
 <script src="../js/jquery-sortable-min.js"></script>
-<script>
-    /*
-     var h = $(window).height();
-     var header_h = $(".page-top").height();
-     var innerbody = $(".inner-body");
-     var aufgabenfeld = $(".aufgabenfeld");
-
-     var container_allg = $("#content-allgemein");
-     var sidebar_allg = $("#sidebar-allgemein");
-
-     var container_aufg = $("#content-aufgaben");
-     var sidebar_aufg = $("#sidebar-aufgaben");
-
-     var container_unterlagen = $("#content-unterlagen");
-     var sidebar_unterlagen = $("#sidebar-unterlagen");
-
-
-
-
-
-
-     $(".protokollant-container").height(h - aufgabenfeld.height() - header_h);
-
-     if(container_aufg.height() > (h - header_h) {
-     sidebar_aufg.height(container_aufg);
-     } else {
-     sidebar_aufg.height(h - header_h);
-     }
-
-     if(container_allg.height() > (h - header_h) {
-     sidebar_allg.height(container_allg);
-     } else {
-     sidebar_allg.height(h - header_h);
-     }
-
-
-
-     //    Functions on Window Resize
-     $( window ).resize( function(){
-
-     $(".protokollant-container").height(h - aufgabenfeld.height() - header_h);
-
-
-
-     if(container_allg.height() > (h - header_h) {
-     sidebar_allg.height(container_allg);
-     } else {
-     sidebar_allg.height(h - header_h);
-     }
-
-     if(container_aufg.height() > (h - header_h) {
-     sidebar_aufg.height(container_aufg);
-     } else {
-     sidebar_aufg.height(h - header_h);
-     }
-     });
-
-     */
-
-</script>
 
 <!-- Seiteninhalt aus Datenbank laden on Page Load-->
 <script>
@@ -1017,7 +957,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1038,7 +978,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe 1" +
+                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1077,7 +1017,7 @@
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
                 "<a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-question icon-align text-muted'></span>AbschlussFrage" +
+                "<span class='pr-2 icon-question icon-align text-muted'></span>Abschlussfrage" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1173,63 +1113,6 @@
 
 </script>
 
-<!-- Testaufgaben Aufgaben-Switch -->
-<script>
-    //    var taskForm_formGroup = $("#taskForm .form-group");
-    //    var taskForm_hr = $("#taskForm .hline");
-    //    var headline = $("#headline-aufgaben");
-    //
-    //    var radioTask = $("#radioTask");
-    //    var radioPostSession = $("#radioPostSession");
-    //    var radioConclusion = $("#radioConclusion");
-    //
-    //    var formTask = $(".formTask");
-    //    var formPostSession = $(".formPostSession");
-    //    var formConclusion = $(".formConclusion");
-    //
-    //    $(document).ready(function(){
-    //        if(radioTask.is(':checked')) {
-    //            headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
-    //            $(taskForm_formGroup).not(formTask).hide();
-    //            $(taskForm_hr).not(formTask).hide();
-    //            $(formTask).show();
-    //        } else if (radioPostSession.is(':checked')) {
-    //            headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
-    //            $(taskForm_formGroup).not(formPostSession).hide();
-    //            $(taskForm_hr).not(formPostSession).hide();
-    //            $(formPostSession).show();
-    //        } else if (radioConclusion.is(':checked')) {
-    //            headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
-    //            $(taskForm_formGroup).not(formConclusion).hide();
-    //            $(taskForm_hr).not(formConclusion).hide();
-    //            $(formConclusion).show();
-    //        }
-    //
-    //        $('input[type="radio"]').click(function(){
-    //            var inputValue = $(this).attr("value");
-    //            var necessaryInput = $("." + inputValue);
-    //            $(taskForm_formGroup).not(necessaryInput).hide();
-    //            $(taskForm_hr).not(necessaryInput).hide();
-    //            $(necessaryInput).show();
-    //
-    //            if(inputValue === "formTask") {
-    //                headline.html("<span class='icon-align icon-list mr-2'></span>Testaufgabe");
-    //            } else if (inputValue === "formPostSession") {
-    //                headline.html("<span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage");
-    //            } else if (inputValue === "formConclusion") {
-    //                headline.html("<span class='icon-align icon-question pr-2'></span>Abschlussfrage");
-    //            }
-    //        });
-    //    });
-</script>
-
-
-<script>
-
-
-
-
-</script>
 <script>
 
     // Javascript to enable link to tab
