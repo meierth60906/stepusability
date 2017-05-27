@@ -35,7 +35,7 @@
 }
 
 /* second navbar hover color*/
-#library .nav-item:hover, #templates .nav-item:hover{
+#library .nav-item:hover, #library .nav-link.active #templates .nav-item:hover, #templates .nav-link.active{
     background-color: #e84a29;
 }
 
@@ -156,3 +156,4 @@
     background-color: white;
 
 }
+
