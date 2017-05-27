@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Settings | step</title>
     <?php include('head.html') ?>
-    <!--    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
-
 </head>
 <body>
 <!-- Sidebar und Header-->
@@ -71,15 +69,7 @@
 
                             <ul class="list-group">
                                 <li class="list-group-item icon-file-text-o active"><a
-                                            href="#pr1ein1"> Einverständniserklärung 1</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr1einv2">
-                                        Einverständniserklärung 2</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr1aufg">
-                                        Testaufgaben</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr1leit">
-                                        Protokollleitfaden</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr1skri">
-                                        Testskript</a></li>
+                                            href="#p1einv"> Einverständniserklärung</a></li>
                             </ul>
                         </div>
 
@@ -95,15 +85,7 @@
                         <div id="projekt2" class="panel-collapse collapse">
                             <ul class="list-group">
                                 <li class="list-group-item icon-file-text-o"><a
-                                            href="#pr2ein1"> Einverständniserklärung 1</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr2einv2">
-                                        Einverständniserklärung 2</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr2aufg">
-                                        Testaufgaben</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr2leit">
-                                        Protokollleitfaden</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr2skri">
-                                        Testskript</a></li>
+                                            href="#p2einv"> Einverständniserklärung</a></li>
                             </ul>
                         </div>
 
@@ -116,16 +98,8 @@
                         </div>
                         <div id="projekt3" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o active"><a
-                                            href="#pr3ein1"> Einverständniserklärung 1</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr3einv2">
-                                        Einverständniserklärung 2</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr3aufg">
-                                        Testaufgaben</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr3leit">
+                                <li class="list-group-item icon-file-text-o"><a href="#p1leit">
                                         Protokollleitfaden</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr3skri">
-                                        Testskript</a></li>
                             </ul>
                         </div>
 
@@ -140,15 +114,7 @@
                         <div id="projekt4" class="panel-collapse collapse">
                             <ul class="list-group">
                                 <li class="list-group-item icon-file-text-o"><a
-                                            href="#pr1ein1"> Einverständniserklärung 1</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr4einv2">
-                                        Einverständniserklärung 2</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr4aufg">
-                                        Testaufgaben</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr4leit">
-                                        Protokollleitfaden</a></li>
-                                <li class="list-group-item icon-file-text-o"><a href="#pr4skri">
-                                        Testskript</a></li>
+                                            href="#pr3leit"> Einverständniserklärung 1</a></li>
                             </ul>
                         </div>
                     </div>
@@ -162,114 +128,200 @@
     <div class="container-fluid">
         <div class="tab-content">
 
-            <div class="tab-pane active" id="pr1ein1" role="tabpanel">
+            <div class="tab-pane active" id="p1einv" role="tabpanel">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-4">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>Aufgabenanweisung</th>
-                                <th>Lösungsschritte</th>
-                                <th>Anmekungen</th>
+                                <th>Einverständniserklärung</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                                </td>
-                                <td>Lorem ipsum dolor sit</td>
+                                <td>
+                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                        verbessern. </p>
+                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                        Sie können jederzeit abbrechen.<br>
+                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                        wird nicht veröffentlicht.<br></p>
+                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                        <br>Vielen Dank!</p>
                             </tr>
                             <tr>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                                </td>
-                                <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                                </td>
-                                <td>Lorem ipsum dolor sit</td>
+                                <td>
+                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                        während
+                                        ich an dem Test teilnehme.</p>
+                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                        verwenden.</p>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Datum, Ort, Unterschrift:</p>
+                                    <br>
+                                </th>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="tab-pane active" id="p2einv" role="tabpanel">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Einverständniserklärung</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                        verbessern. </p>
+                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                        Sie können jederzeit abbrechen.<br>
+                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                        wird nicht veröffentlicht.<br></p>
+                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                        <br>Vielen Dank!</p>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                        während
+                                        ich an dem Test teilnehme.</p>
+                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                        verwenden.</p>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Datum, Ort, Unterschrift:</p>
+                                    <br>
+                                </th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
 
-        <div class="tab-pane row" id="pr1leit role=" tabpanel
-        ">
-        <div class="col-lg-8 offset-lg-4">
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Aufgabenanweisung</th>
-                    <th>Lösungsschritte</th>
-                    <th>Anmekungen</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    </td>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            <div class="tab-pane row" id="p1leit" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Aufgabenanweisung</th>
+                            <th>Einstiegsseite</th>
+                            <th>Lösungsschritte</th>
+                            <th>Beobachtungen</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
 
-                    </td>
-                    <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-                    </td>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
 
-                    </td>
-                    <td>Lorem ipsum dolor sit</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="tab-pane row" id="pr3leit" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Aufgabenanweisung</th>
+                            <th>Einstiegsseite</th>
+                            <th>Lösungsschritte</th>
+                            <th>Beobachtungen</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
-
-
-    <div class="tab-pane row" id="pr2leit" role="tabpanel">
-        <div class="col-lg-8 offset-lg-4">
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Aufgabenanweisung</th>
-                    <th>Lösungsschritte</th>
-                    <th>Anmekungen</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                    </td>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                    </td>
-                    <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                    </td>
-                    <td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-
-                    </td>
-                    <td>Lorem ipsum dolor sit</td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-
 </section>
 <?php include('scripts.html'); ?>
 <script>
@@ -281,7 +333,7 @@
         $(function () {
             $('.panel-heading a').click(function () {
                 $(this).toggleClass('on');
-            })
+            });
 
             //shows different page content
 
