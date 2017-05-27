@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Settings | step</title>
+    <title>Einstellungen | step</title>
     <?php include('head.html') ?>
 </head>
 <body>
@@ -190,6 +190,15 @@
                 $(this).tab('show');
             })
         });
+
+        $(function () {
+//        changes the active collapse class to 'on' for changing the text to bold
+            $('.nav-link').click(function () {
+                $(this).toggleClass('on');
+            });
+
+        });
+
 
     });
 </script>

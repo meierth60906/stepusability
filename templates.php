@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Settings | step</title>
+    <title>Vorlagen | step</title>
     <?php include('head.html') ?>
 
 </head>
@@ -29,8 +29,12 @@
 
         <div class="container row">
             <div class="col-lg-3 p-0" id="sidebarTemplates">
+
+
                 <div class="panel-group">
                     <div class="panel panel-default">
+
+
 
 
                         <!--                        Einverständniserklärung-->
@@ -153,15 +157,15 @@
                                         verwenden.</p>
                             </tr>
                             <tr>
-                            <th>
-                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                            </th>
+                                <th>
+                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                                </th>
                             </tr>
                             <tr>
-                            <th>
-                                <p>Datum, Ort, Unterschrift:</p>
-                               <br>
-                            </th>
+                                <th>
+                                    <p>Datum, Ort, Unterschrift:</p>
+                                    <br>
+                                </th>
                             </tr>
                             </tbody>
                         </table>
@@ -227,30 +231,40 @@
                         <tr>
                             <td>
                                 <p><b>Technische Vorbereitung</b></p>
-                            <p>Browsercache löschen
-                            </p>
+                                <p>Browsercache löschen
+                                </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p><b>Briefing</b></p>
-                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.</p>
+                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung
+                                    unterschreiben lassen.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p><b>Einleitung und Beschreibung des Testgegenstands</b></p>
-                                <p>Wir möchten Sie bitten, www.wetter.com für uns zu testen. Sie helfen uns damit, die Webseite hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                <p>Wir möchten Sie bitten, www.wetter.com für uns zu testen. Sie helfen uns damit, die
+                                    Webseite hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
-                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert. Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung ihrer Daten machen.
-                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
+                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt
+                                    haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung
+                                    gespeichert. Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung
+                                    ihrer Daten machen.
+                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den
+                                    Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat,
+                                    werden wir das Gerät zunächst gemäß ihrem Augenabstand kalibrieren. Ich führe das
+                                    jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am
+                                    Computer arbeiten können.
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                              <p><b>Augencheck</b></p>
-                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.
+                                <p><b>Augencheck</b></p>
+                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen
+                                    mit den Augen zu verfolgen.
                                 </p>
                                 <p><b>Kalibration</b></p>
                             </td>
@@ -258,20 +272,28 @@
                         <tr>
                             <td>
                                 <p><b>Anweisung vor den Aufgaben</b></p>
-                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com. Damit helfen Sie uns wetter.com zu verbessern.
-                                    Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. Zusätzlich bekommen sie von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen können.</p>
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com.
+                                    Damit helfen Sie uns wetter.com zu verbessern.
+                                    Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. Zusätzlich bekommen sie
+                                    von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
+                                    können.</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p><b>Anweisung Think-Aloud</b></p>
-                                <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder positiv.
-                                    Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar frustriert. Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie uns bitte, was Sie denken.
+                                <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom
+                                    System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder
+                                    positiv.
+                                    Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar
+                                    frustriert. Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun
+                                    sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie
+                                    uns bitte, was Sie denken.
                                 </p>
                                 <p>Sie können jederzeit Fragen stellen, haben Sie im Moment Fragen?
                                 </p>
                                 <p><b>Start der Eyetracking-Aufzeichnung
-                                        </b></p>
+                                    </b></p>
                             </td>
                         </tr>
                         </tbody>
@@ -327,10 +349,9 @@
 //        changes the active collapse class to 'on' for changing the text to bold
             $('.panel-heading a').click(function () {
                 $(this).toggleClass('on');
-            })
+            });
 
         });
-
 
         $(function () {
             $('.list-group-item a').click(function (e) {

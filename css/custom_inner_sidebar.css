@@ -145,6 +145,7 @@
 #library .on, #templates .on{
     text-decoration: none;
     font-weight: bold;
+    background-color: #ccd9e4;
 }
 #templates .collapsed, #templates .collapsed{
     text-decoration: none;

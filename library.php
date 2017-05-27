@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Settings | step</title>
+    <title>Bibliothek | step</title>
     <?php include('head.html') ?>
 </head>
 <body>
