@@ -35,7 +35,7 @@
 }
 
 /* second navbar hover color*/
-#library .nav-item:hover, #library .list-group-item.active, #templates .nav-item:hover, #templates .list-group-item.active{
+#library .nav-item:hover, #library .list-group.active, #templates .nav-item:hover, #templates .list-group.active{
     background-color: #e84a29;
 }
 
