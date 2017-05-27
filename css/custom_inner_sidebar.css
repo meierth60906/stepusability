@@ -35,7 +35,7 @@
 }
 
 /* second navbar hover color*/
-#library .nav-item:hover, #library .list-group.active, #templates .nav-item:hover, #templates .list-group.active{
+#library .nav-item:hover, #templates .nav-item:hover{
     background-color: #e84a29;
 }
 
@@ -154,6 +154,11 @@
 
 #library .collapse.show, #templates .collapse.show {
     background-color: white;
+
+}
+
+#library .collapse.show.active, #templates .collapse.show.active {
+    background-color: red;
 
 }
 
