@@ -26,3 +26,11 @@
     text-decoration: underline;
 }
 
+#login-content {
+    position:absolute;
+    top: 50%;
+}
+
+.form-control {
+    font-family: 'Lato', sans-serif !important;
+}

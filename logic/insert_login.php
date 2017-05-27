@@ -14,9 +14,7 @@ if (!$conn) {
 
 $command="
 insert into benutzer(benutzernamen, passwort,PERSONP_HAT_U_ID)
-values('".$_GET["Benutzername"]."',".
-    $_GET["Passwort"].",".
-    $_GET["PERSONP_HAT_U_ID"].")";
+values('".$_GET["Benutzername"]."',".$_GET["Passwort"].",".$_GET["PERSONP_HAT_U_ID"].")";
 echo $command;
 
 $stid = oci_parse($conn, $command);

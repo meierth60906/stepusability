@@ -10,6 +10,18 @@
     border-color: #ff512d;
 }
 
+.btn-submit-blue{
+    color: #fff;
+    background-color: #133E5C !important;
+    border-color: #113650 !important;
+}
+
+.btn-submit-blue:hover{
+    color: #fff;
+    background-color: #185077 !important;
+    border-color: #133E5C !important;
+}
+
 .btn-submit-grey{
     color: #000;
     background-color: #cfcfcf;
