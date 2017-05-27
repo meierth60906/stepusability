@@ -191,13 +191,13 @@
             })
         });
 
-        $(function () {
-//        changes the active collapse class to 'on' for changing the text to bold
-            $('.nav-link').click(function () {
-                $(this).toggleClass('on');
-            });
-
-        });
+//        $(function () {
+////        changes the active collapse class to 'on' for changing the text to bold
+//            $('.nav').click(function () {
+//                $(this).toggleClass('on');
+//            });
+//
+//        });
 
 
     });
