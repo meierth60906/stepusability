@@ -196,7 +196,9 @@
     </div>
 </div>
 <?php include ('scripts.html'); ?>
+
 <script>
+
     $("#loginForm").submit(function(event){
         // cancels the form submission
         event.preventDefault();

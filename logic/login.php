@@ -32,6 +32,7 @@ if (isset($email) || isset($passwort)) {
 
             if (password_verify($passwort, $fetch['PASSWORT'])) {
                 $output = "success";
+                $_SESSION['login_user']= $email;
             } else {
                 $output = "invalid";
             }

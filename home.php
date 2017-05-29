@@ -1,19 +1,24 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    header("Location:index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <title>Dashboard | step</title>
 
-    <?php include ('head.html');
-    ?>
-
+    <?php include ('head.html'); ?>
     <?php
-    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+/*    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Vorname", "Anna", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Geburtsdatum", "01.01.1990", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Anrede", "Frau", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Firma", "Apple", time() + (86400 * 30), "/"); // 86400 = 1 Tag
 
-    ?>
+    */?>
 
 
 </head>
