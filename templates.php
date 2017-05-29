@@ -46,8 +46,7 @@
                         </div>
                         <div id="einverstaendniserklaerung" class="panel-collapse collapse active">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o active"><a
-                                            href="#einverstaendniserklaerung1"> Vorlage 1</a></li>
+                                <a href="#einverstaendniserklaerung1"><li class="list-group-item icon-file-text-o active"> Vorlage 1</li></a>
                             </ul>
                         </div>
 
@@ -62,8 +61,8 @@
                         </div>
                         <div id="protokollleitfaden" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#protokollleitfaden1">
-                                        Vorlage 1</a></li>
+                                <a href="#protokollleitfaden1"><li class="list-group-item icon-file-text-o">
+                                        Vorlage 1</li></a>
                             </ul>
                         </div>
 
@@ -76,8 +75,8 @@
                         </div>
                         <div id="testskript" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testskript1"> Vorlage 1</a>
-                                </li>
+                                <a href="#testskript1"><li class="list-group-item icon-file-text-o"> Vorlage 1
+                                </li></a>
                             </ul>
                         </div>
                         <!--                    Testplan-->
@@ -89,8 +88,8 @@
                         </div>
                         <div id="testplan" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testplan1"> Vorlage 1</a>
-                                </li>
+                                <a href="#testplan1"><li class="list-group-item icon-file-text-o"> Vorlage 1
+                                </li></a>
                             </ul>
                         </div>
 
@@ -105,8 +104,8 @@
                         </div>
                         <div id="testbericht" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testbericht1"> Vorlage
-                                        1</a></li>
+                                <a href="#testbericht1"><li class="list-group-item icon-file-text-o"> Vorlage
+                                        1</li></a>
                             </ul>
                         </div>
 
@@ -354,11 +353,10 @@
         });
 
         $(function () {
-            $('.list-group-item a').click(function (e) {
+            $('ul > a').click(function (e) {
                 e.preventDefault();
                 $(this).tab('show');
-            })
-        });
+            });
 
     });
 

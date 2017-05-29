@@ -68,8 +68,7 @@
                         <div id="projekt1" class="panel-collapse collapse active">
 
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o active"><a
-                                            href="#p1einv"> Einverständniserklärung</a></li>
+                                <a href="#p1einv"><li class="list-group-item icon-file-text-o active"> Einverständniserklärung</li></a>
                             </ul>
                         </div>
 
@@ -84,8 +83,7 @@
                         </div>
                         <div id="projekt2" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a
-                                            href="#p2einv"> Einverständniserklärung</a></li>
+                                <a href="#p2einv"><li class="list-group-item icon-file-text-o"> Einverständniserklärung</li></a>
                             </ul>
                         </div>
 
@@ -98,8 +96,8 @@
                         </div>
                         <div id="projekt3" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#p1leit">
-                                        Protokollleitfaden</a></li>
+                                <a href="#p1leit"><li class="list-group-item icon-file-text-o">
+                                        Protokollleitfaden</li></a>
                             </ul>
                         </div>
 
@@ -113,8 +111,7 @@
                         </div>
                         <div id="projekt4" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a
-                                            href="#pr3leit"> Einverständniserklärung 1</a></li>
+                                <a href="#pr3leit"><li class="list-group-item icon-file-text-o"> Einverständniserklärung 1</li></a>
                             </ul>
                         </div>
                     </div>
@@ -338,7 +335,7 @@
             //shows different page content
 
             $(function () {
-                $('.list-group-item a').click(function (e) {
+                $('ul > a').click(function (e) {
                     e.preventDefault();
                     $(this).tab('show');
                 })

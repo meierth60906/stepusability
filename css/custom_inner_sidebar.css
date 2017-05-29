@@ -102,7 +102,6 @@
 
 #library .list-group a, #templates .list-group a{
     color: black;
-    padding-left: 8px;
     text-decoration: none;
 }
 
@@ -110,8 +109,12 @@
     background-color: #ccd9e4;
 }
 
-#library .list-group-item.active, #templates .list-group-item.active{
-    background-color: #ccd9e4;
+#library .list-group-item a.active, #templates .list-group-item a.active{
+    background-color: #ccd9e4 !important;
+}
+
+#protokollleitfaden > ul > a{
+    background-color: #ccd9e4 !important;
 }
 
 #library .list-group-item:first-child, #templates .list-group-item:first-child {
@@ -119,6 +122,7 @@
     border-top-left-radius: 0;
 
 }
+
 
 /*table */
 
