@@ -1,5 +1,7 @@
 <?php
-session_start(); // Starting Session
+
+session_start();
+
 $error=''; // Variable To Store Error Message
 $output = '';
 

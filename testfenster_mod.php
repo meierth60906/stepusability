@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -413,7 +421,7 @@
 
 </script>
 
-<script src="../js/jquery-sortable-min.js"></script>
+<script src="js/jquery-sortable-min.js"></script>
 <script>
 
     // Javascript to enable link to tab
