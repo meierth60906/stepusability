@@ -19,24 +19,27 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <form action="/logic/insert_login.php">
+                        <form id="loginForm" action="/logic/login.php" method="post">
                             <!--  Normales  einzeiliges  Eingabefeld  -->
                             <div class="form-group">
-                                <input name="Benutzername" id="input1" type="text" class="form-control" placeholder="Benutzername">
+                                <input name="login-email" id="login-email"  type="text" class="form-control" placeholder="Email">
                             </div>
                             <!--  Passwortfeld  -->
                             <div class="form-group">
-                                <input  name="Passwort" id="input2" class="form-control" type="password" placeholder="Passwort">
+                                <input  name="login-passwort" id="login-passwort" class="form-control" type="password" placeholder="Passwort">
                             </div>
 
                             <!--  Schaltflaeche  als  Button  -->
                             <div class="text-right">
-                                <a href="home.php" class="btn btn-submit-blue active" role="button" aria-pressed="true">Login</a>
+                                <input name="submit" type="submit" class="btn btn-submit-blue active" role="button" value="Login">
 
                             </div>
+
+                            <div id="msgSubmit" style="display: none;" class="alert alert-danger my-3"></div>
+
                             <hr>
 
-                            <input type="hidden" name="PERSONP_HAT_U_ID" value="3">
+<!--                            <input type="hidden" name="PERSONP_HAT_U_ID" value="3">-->
                         </form>
                         <!-- Links unter dem Login Button und Pop-up Fenster -->
                         <div class="row text-center">
@@ -83,6 +86,7 @@
 </div>
 
 <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -91,7 +95,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="form" action="logic/insert_registrierung.php" method="post">
+            <form id="registerForm" class="form" action="logic/insert_registrierung.php" method="post">
                 <div class="modal-body">
                     <div class="mb-3">Füllen Sie bitte das nachstehende Kontaktformular vollständig aus.</div>
 
@@ -119,10 +123,10 @@
                         <label for="reg-anrede" class="col-lg-4 form-control-label">Anrede: *</label>
                         <div class="col-lg-8">
                             <label class="radio-inline pr-2">
-                                <input type="radio" name="reg-anrede"><span class="pl-2">Frau</span>
+                                <input type="radio" name="reg-anrede" value="Frau"><span class="pl-2">Frau</span>
                             </label>
                             <label class="radio-inline pr-2">
-                                <input type="radio" name="reg-anrede"><span class="pl-2">Herr</span>
+                                <input type="radio" name="reg-anrede" value="Herr"><span class="pl-2">Herr</span>
                             </label>
                         </div>
                     </div>
@@ -192,5 +196,42 @@
     </div>
 </div>
 <?php include ('scripts.html'); ?>
+<script>
+    $("#loginForm").submit(function(event){
+        // cancels the form submission
+        event.preventDefault();
+        submitForm();
+    });
+
+    function submitForm(){
+        // Initiate Variables With Form Content
+
+        var formData = $("#loginForm").serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "logic/login.php",
+            data: formData,
+            success: function(data) {
+                console.log(data);
+
+                if(data === "success") {
+                    location.href = "home.php";
+                } else if (data === "invalid") {
+                    formInvalid();
+                }
+
+
+            }
+
+        });
+    }
+    function formInvalid(){
+        var msg = $( "#msgSubmit" );
+
+        msg.html("Email oder Passwort ungültig.");
+        msg.show();
+    }
+</script>
 </body>
 </html>
