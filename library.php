@@ -66,9 +66,9 @@
                             </h4>
                         </div>
                         <div id="projekt1" class="panel-collapse collapse active">
-
                             <ul class="list-group">
-                                <a href="#p1einv"><li class="list-group-item icon-file-text-o active"> Einverständniserklärung</li></a>
+                                <li class="list-group-item icon-file-text-o active"><a href="#einver">Einverständniserklärung</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -83,7 +83,8 @@
                         </div>
                         <div id="projekt2" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <a href="#p2einv"><li class="list-group-item icon-file-text-o"> Einverständniserklärung</li></a>
+                                <li class="list-group-item icon-file-text-o">
+                                    <a href="#einver1">Einverständniserklärung</a></li>
                             </ul>
                         </div>
 
@@ -96,8 +97,8 @@
                         </div>
                         <div id="projekt3" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <a href="#p1leit"><li class="list-group-item icon-file-text-o">
-                                        Protokollleitfaden</li></a>
+                                <li class="list-group-item icon-file-text-o"><a href="#leitfaden2">
+                                        Protokollleitfaden</a></li>
                             </ul>
                         </div>
 
@@ -111,7 +112,7 @@
                         </div>
                         <div id="projekt4" class="panel-collapse collapse">
                             <ul class="list-group">
-                                <a href="#pr3leit"><li class="list-group-item icon-file-text-o"> Einverständniserklärung 1</li></a>
+                                <li class="list-group-item icon-file-text-o"><a href="#leitfaden3">Einverständniserklärung 1</a></li>
                             </ul>
                         </div>
                     </div>
@@ -125,108 +126,104 @@
     <div class="container-fluid">
         <div class="tab-content">
 
-            <div class="tab-pane active" id="p1einv" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-4">
-                        <table class="table table-bordered">
-                            <thead>
-                            <tr>
-                                <th>Einverständniserklärung</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
-                                        verbessern. </p>
-                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
-                                        Sie können jederzeit abbrechen.<br>
-                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
-                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
-                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
-                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
-                                        wird nicht veröffentlicht.<br></p>
-                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
-                                        <br>Vielen Dank!</p>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
-                                        während
-                                        ich an dem Test teilnehme.</p>
-                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
-                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
-                                        verwenden.</p>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Datum, Ort, Unterschrift:</p>
-                                    <br>
-                                </th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="tab-pane row" id="einver" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <div class="tab-pane active" id="p2einv" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-4">
-                        <table class="table table-bordered">
-                            <thead>
-                            <tr>
-                                <th>Einverständniserklärung</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
-                                        verbessern. </p>
-                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
-                                        Sie können jederzeit abbrechen.<br>
-                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
-                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
-                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
-                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
-                                        wird nicht veröffentlicht.<br></p>
-                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
-                                        <br>Vielen Dank!</p>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
-                                        während
-                                        ich an dem Test teilnehme.</p>
-                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
-                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
-                                        verwenden.</p>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Datum, Ort, Unterschrift:</p>
-                                    <br>
-                                </th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="tab-pane row" id="einver1" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
 
-            <div class="tab-pane row" id="p1leit" role="tabpanel">
+            <div class="tab-pane row" id="leitfaden1" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -272,7 +269,7 @@
             </div>
 
 
-            <div class="tab-pane row" id="pr3leit" role="tabpanel">
+            <div class="tab-pane row" id="leitfaden2" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -316,7 +313,6 @@
                     </table>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -331,18 +327,19 @@
             $('.panel-heading a').click(function () {
                 $(this).toggleClass('on');
             });
-
-            //shows different page content
-
-            $(function () {
-                $('ul > a').click(function (e) {
-                    e.preventDefault();
-                    $(this).tab('show');
-                })
-            });
-
-
         });
+
+        //shows different page content
+
+        $(function () {
+            $('.list-group-item a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+
+    });
 
 </script>
 </body>
