@@ -71,7 +71,7 @@ if (!$_SESSION['login_user']){
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">
@@ -265,7 +265,7 @@ if (!$_SESSION['login_user']){
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">

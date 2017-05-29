@@ -19,7 +19,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <form id="loginForm" action="/logic/login.php" method="post">
+                        <form id="loginForm" action="/logic/insertLogin.php" method="post">
                             <!--  Normales  einzeiliges  Eingabefeld  -->
                             <div class="form-group">
                                 <input name="login-email" id="login-email"  type="text" class="form-control" placeholder="Email">
@@ -95,7 +95,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="registerForm" class="form" action="logic/insert_registrierung.php" method="post">
+            <form id="registerForm" class="form" action="logic/insertRegister.php" method="post">
                 <div class="modal-body">
                     <div class="mb-3">Füllen Sie bitte das nachstehende Kontaktformular vollständig aus.</div>
 

@@ -88,7 +88,7 @@ if (!$_SESSION['login_user']){
                         <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
-                <form action="/logic/insert_testfenster_prot.php">
+                <form action="/logic/insertTestfensterProt.php">
 
                     <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                     <div class="form-group col-12 text-center py-2">
