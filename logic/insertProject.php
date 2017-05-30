@@ -42,7 +42,7 @@ $row = oci_fetch_array($print);
 
 echo"<a href='project.php' class='link-noblue link-orangehover'>";
 echo"<div class='row m-3 p-3 element-allgemein'>";
-echo"<div class='col-1'>" . $row['STATUS'] ."</div>";
+echo"<div class='col-1 project-status'>" . $row['STATUS'] ."</div>";
 echo"<div class='link-orangehover-child font-weight-bold col-4'>" . $row['NAME'] ."</div>";
 echo"<div class='col-3'>" . $row['AUFTRAGGEBER'] ."</div>";
 echo"<div class='col-2 text-right'>" . $row['ERSTELLDATUM'] ."</div>";

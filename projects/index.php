@@ -150,28 +150,29 @@
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 projectsContainer.append(response);
             }
-        });
+        })
     })
 </script>
 <script>
 
     var projectsContainer = $("#projects-container");
 
-//    $("#createProjectForm").submit(function(event){
-//        // cancels the form submission
-//        event.preventDefault();
-//        createProject();
-//
-//    });
+    $("#createProjectForm").submit(function(event){
+        // cancels the form submission
+        event.preventDefault();
+        createProject();
+        $("#newproject").modal('toggle');
+    });
 
     function createProject() {
-        //var projectSerialize = $("#createProjectForm").serialize();
+        var projectSerialize = $("#createProjectForm").serialize();
 
         $.ajax({
+            type: 'post',
             url: '../logic/insertProject.php',
-            //data: projectSerialize,
+            data: projectSerialize,
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                projectsContainer.append(response);
+                projectsContainer.prepend(response);
             }
         });
 
