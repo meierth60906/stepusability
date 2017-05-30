@@ -1,11 +1,11 @@
 <?php
 
-session_start();
-if (!$_SESSION['login_user']){
-    $_SESSION['login_user'] = '';
-    header("Location:../index.php");
-    die();
-}
+//session_start();
+//if (!$_SESSION['login_user']){
+//    $_SESSION['login_user'] = '';
+//    header("Location:../index.php");
+//    die();
+//}
 
 $id = 7;
 $art = "Szenario";

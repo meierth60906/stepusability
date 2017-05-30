@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 
 $error=''; // Variable To Store Error Message
 $output = '';
@@ -18,7 +18,7 @@ if (!$conn) {
 
 if (isset($email) || isset($passwort)) {
     if (empty($email) || empty($passwort)) {
-        $error = "Email oder Passwort sind ungültig!";
+        $output = "invalid";
     } else {
         $checkUser = oci_parse($conn, "SELECT * FROM BENUTZER WHERE BENUTZERNAMEN = '$email'");
         oci_execute($checkUser);

@@ -37,7 +37,6 @@ if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
 
 $personID = "select ID from PERSON where ID = ( select max(ID) from PERSON )";
 
-debug_to_console($personID);
 
 $userInsert="insert into Benutzer (BENUTZERNAMEN, PASSWORT, PERSONP_HAT_U_ID) select '".$email."', '".$hash."', ID from PERSON where ID = ( select max(ID) from PERSON )";
 $emailInsert="insert into Kommunikationsanschluss (KTYP, BEZEICHNUNG, KOMMENTAR, PERSON_ID) select 'Email', '".$email."', NULL, ID from PERSON where ID = ( select max(ID) from PERSON )";
