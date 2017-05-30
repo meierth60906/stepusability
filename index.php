@@ -43,7 +43,7 @@
 
                             <hr>
 
-<!--                            <input type="hidden" name="PERSONP_HAT_U_ID" value="3">-->
+                            <!--                            <input type="hidden" name="PERSONP_HAT_U_ID" value="3">-->
                         </form>
                         <!-- Links unter dem Login Button und Pop-up Fenster -->
                         <div class="row text-center">
@@ -99,15 +99,17 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="registerForm" class="form" action="logic/insertRegister.php" method="post">
+            <form id="registerForm" class="form" data-toggle="validator" action="logic/insertRegister.php" method="post">
                 <div class="modal-body">
                     <div class="mb-3">Füllen Sie bitte das nachstehende Kontaktformular vollständig aus.</div>
+
+                    <div id="registration-messages" class="alert alert-info" style="display: none;"></div>
 
                     <!--Email-->
                     <div class="form-group row formTask pt-3">
                         <label for="reg-email" class="col-lg-4 form-control-label">Email: *</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="reg-email" id="reg-email" placeholder="Email" />
+                            <input class="form-control" name="reg-email" id="reg-email" placeholder="Email" required="required" />
                         </div>
                     </div>
 
@@ -115,7 +117,7 @@
                     <div class="form-group row formTask">
                         <label for="reg-passwort" class="col-lg-4 form-control-label">Passwort: *</label>
                         <div class="col-lg-8">
-                            <input type="password" class="form-control" name="reg-passwort" id="reg-passwort" placeholder="Passwort" />
+                            <input type="password" class="form-control" name="reg-passwort" id="reg-passwort" placeholder="Passwort" required="required"/>
                         </div>
                     </div>
 
@@ -124,10 +126,10 @@
                         <label for="reg-anrede" class="col-lg-4 form-control-label">Anrede: *</label>
                         <div class="col-lg-8">
                             <label class="radio-inline pr-2">
-                                <input type="radio" name="reg-anrede" value="Frau"><span class="pl-2">Frau</span>
+                                <input type="radio" name="reg-anrede" value="Frau" required="required"><span class="pl-2">Frau</span>
                             </label>
                             <label class="radio-inline pr-2">
-                                <input type="radio" name="reg-anrede" value="Herr"><span class="pl-2">Herr</span>
+                                <input type="radio" name="reg-anrede" value="Herr" required="required"><span class="pl-2">Herr</span>
                             </label>
                         </div>
                     </div>
@@ -152,14 +154,14 @@
                     <div class="form-group row formTask">
                         <label for="reg-firma" class="col-lg-4 form-control-label">Firma: *</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="reg-firma" id="reg-firma" placeholder="Firma" />
+                            <input class="form-control" name="reg-firma" id="reg-firma" placeholder="Firma" required="required" />
                         </div>
                     </div>
 
                     <div class="form-group row formTask">
                         <label for="reg-geb" class="col-lg-4 form-control-label">Geburtsdatum: *</label>
                         <div class="col-lg-8">
-                            <input type="date" class="form-control" name="reg-geb" id="reg-geb" placeholder="01.01.1900" />
+                            <input type="date" class="form-control" name="reg-geb" id="reg-geb" placeholder="01.01.1900" required="required" />
                         </div>
                     </div>
 
@@ -214,5 +216,68 @@
     }
 
 </script>
+
+<script>
+
+    $(document).ready(function(){
+
+        // Get the form.
+        var form = $('#registerForm');
+
+        // Get the messages div.
+        var formMessages = $('#registration-messages');
+
+        // Set up an event listener for the contact form.
+        $(form).on('submit', function(event) {
+            // Stop the browser from submitting the form.
+            event.preventDefault();
+
+            // Serialize the form data.
+            var formData = $(form).serialize();
+
+            // Submit the form using AJAX.
+            $.ajax({
+                type: 'POST',
+                url: $(form).attr('action'),
+                data: formData
+            })
+                .done(function(response) {
+                    // Clear the form.
+                    $("#reg-email").val('');
+                    $("#reg-passwort").val('');
+                    $("#reg-vorname").val('');
+                    $("#reg-name").val('');
+                    $("#reg-firma").val('');
+                    $("#reg-geb").val('');
+                    $("#reg-anrede").val('');
+
+
+                    // Set the message text.
+                    $(formMessages).text(response);
+                    $(formMessages).show();
+
+
+
+                })
+//                .fail(function(data) {
+//                    // Make sure that the formMessages div has the 'error' class.
+//                    $(formMessages).removeClass('alert-success');
+//                    $(formMessages).addClass('alert-danger');
+//
+//                    // Set the message text.
+//                    if (data.responseText !== '') {
+//                        $(formMessages).text(data.responseText);
+//                    } else {
+//                        $(formMessages).text('Hoppla! Die Registrierung konnte nicht abgeschlossen werden.');
+//                    }
+//                });
+        });
+
+    });
+
+
+
+</script>
+
 </body>
 </html>
