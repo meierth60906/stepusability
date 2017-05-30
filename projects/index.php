@@ -35,7 +35,7 @@ if (!$_SESSION['login_user']){
         </div>
 
     </div>
-    <div class="container">
+    <div id="projects-container" class="container">
 
         <div class="row p-3 mx-3 font-weight-bold">
             <div class="col-1">Status</div>
@@ -113,7 +113,7 @@ if (!$_SESSION['login_user']){
                     <div class="form-group row formTask">
                         <label for="createProject-ag" class="col-lg-4 form-control-label">Auftraggeber:</label>
                         <div class="col-lg-8">
-                            <input type="password" class="form-control" name="createProject-ag" id="createProject-ag" placeholder="Auftraggeber" />
+                            <input class="form-control" name="createProject-ag" id="createProject-ag" placeholder="Auftraggeber" />
                         </div>
                     </div>
 
@@ -135,6 +135,26 @@ if (!$_SESSION['login_user']){
             window.location = $(this).data("href");
         });
     });
+</script>
+<script>
+
+    var projectsContainer = $("#projects-container");
+
+//    $("#createProjectForm").submit(function(event){
+//        // cancels the form submission
+//        event.preventDefault();
+//        createProject();
+//    });
+
+    function createProject() {
+        $.ajax({
+            url: '../logic/insertProject.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsContainer.append(response);
+            }
+        });
+
+    }
 </script>
 </body>
 

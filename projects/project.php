@@ -944,7 +944,7 @@ if (!$_SESSION['login_user']){
 <script>
     $( function loadSections() {
         $.ajax({
-            url: '../logic/viewScenario.php',
+            url: '../logic/selectScenario.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
             }
@@ -1040,7 +1040,7 @@ if (!$_SESSION['login_user']){
 
     function createScenario() {
         $.ajax({
-            url: '../logic/postScenario.php',
+            url: '../logic/insertScenario.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
             }
