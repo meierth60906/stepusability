@@ -22,6 +22,7 @@ if (!$conn) {
 $stid = oci_parse($conn, "SELECT BESCHREIBUNG FROM ABSCHNITT WHERE ART_AB = 'Szenario'");
 oci_execute($stid);
 
+
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     foreach ($row as $item) {
         echo "<li class='scenario element-allgemein mb-3'>";
