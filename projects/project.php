@@ -493,7 +493,7 @@
                         </div>
 
 
-                        <!--                        Projektinfo + Beteiligte
+                        <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
                             <!--                            Projektinfo -->
@@ -648,7 +648,7 @@
                             </div>
 
 
-                        </div>-->
+                        </div>
 
                         <!--                        Meilensteine drunter -->
                         <!--                        <div class="row">
