@@ -122,7 +122,7 @@ if (!$_SESSION['login_user']){
                         </div>
                         <div id="projekt4" class="panel-collapse collapse">
                             <ul class="flex-column nav">
-                                <li class="list-group-item icon-file-text-o">
+                                <li class="nav-item" >
                                     <a class="icon-file-text-o p-3 nav-link" href="#leitfaden3" role="tab" data-toggle="tab">Einverständniserklärung 1</a></li>
                             </ul>
                         </div>
@@ -137,7 +137,8 @@ if (!$_SESSION['login_user']){
     <div class="container-fluid">
         <div class="tab-content">
 
-            <div class="tab-pane row" id="einver" role="tabpanel">
+            <div class="tab-pane active" id="einver" role="tabpanel">
+                <div class="row">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -183,6 +184,7 @@ if (!$_SESSION['login_user']){
                         </tbody>
                     </table>
                 </div>
+            </div>
             </div>
 
             <div class="tab-pane row" id="einver1" role="tabpanel">
