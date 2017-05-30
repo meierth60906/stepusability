@@ -41,24 +41,24 @@
             </div>
         </div>
     </div>-->
-    <div class="row project-tabs ">
-        <div class="col-md-12 p-0">
-            <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-align icon-folder"></span><span class="pl-2 hidden-sm-down">Allgemein</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-align icon-list"></span><span class="pl-2 hidden-sm-down">Testaufgaben</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-align icon-file-text"></span><span class="pl-2 hidden-sm-down">Projektunterlagen</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-align icon-check-1"></span><span class="pl-2 hidden-sm-down">Evaluation</span></a>
-                </li>
-            </ul>
+        <div class="row project-tabs ">
+            <div class="col-md-12 p-0">
+                <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#allgemein" data-target="#allgemein" role="tab" data-toggle="tab"><span class="icon-align icon-folder"></span><span class="pl-2 hidden-sm-down">Allgemein</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testaufgaben" data-target="#testaufgaben" role="tab" data-toggle="tab"><span class="icon-align icon-list"></span><span class="pl-2 hidden-sm-down">Testaufgaben</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projektunterlagen" data-target="#projektunterlagen" role="tab" data-toggle="tab"><span class="icon-align icon-file-text"></span><span class="pl-2 hidden-sm-down">Projektunterlagen</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evaluation" data-target="#evaluation" role="tab" data-toggle="tab"><span class="icon-align icon-check-1"></span><span class="pl-2 hidden-sm-down">Evaluation</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </div>
     <div class="container-fluid">
 
@@ -340,7 +340,7 @@
             <div class="tab-pane" id="projektunterlagen" role="tabpanel">
                 <div class="row inner-body">
                     <div id="sidebar-unterlagen" class="col-lg-3 c-grey-bg">
-                        <div class="row pt-3 mt-3">
+                        <!--<div class="row pt-3 mt-3">
                             <div class="col-lg-6 headline">
                                 Dokumente
                             </div>
@@ -483,201 +483,214 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>-->
+
+                        <div class="spc-container row pt-3 mt-3">
+                            <div class="col-6 headline">
+                                Dokumente
+                            </div>
+                            <div class="col-6 text-right">
+                                <!--                                Menu rechts mit Dropdown-->
+                                <a href="#" data-toggle="dropdown" class="link-noblue"><span class="icon-plus-1 icon-align"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-right links-noblue">
+                                    <a class="dok-einverst" onclick="createAgreement(); return false;" href="#unterlagen"><li>Einverständniserklärung</li></a>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dok-protocol" onclick="createProtocol(); return false;" href="#unterlagen"><li>Protokoll</li></a>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dok-skript" onclick="createTestskript(); return false;" href="#unterlagen"><li>Testskript</li></a>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dok-plan" onclick="createTestplan(); return false;" href="#unterlagen"><li>Testplan</li></a>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dok-bericht" onclick="createTestbericht(); return false;" href="#unterlagen"><li>Testbericht</li></a>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <a class="dok-loesweg" onclick="createLoesweg(); return false;" href="#unterlagen"><li>Lösungsweg</li></a>
+                                </ul>
+
+                            </div>
+                            <div class="col-lg-12"><hr class="mb-3"></div>
+
+                            <ol class="agreement-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="protocol-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="testskript-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="testplan-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="testbericht-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="loesweg-container col-lg-12 links-noblue mb-0"></ol>
+
+
                         </div>
                     </div>
 
                     <div id="content-unterlagen" class="offset-lg-3 col-lg-9 py-3">
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
 
+            </div>
+
+
+            <!--                        Projektinfo + Beteiligte -->
+            <!--<div class="row">
+
+                <!--                            Projektinfo -->
+            <!--<div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
+                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                    <div class="col-lg-12 element-allgemein p-3">
                         <div class="row">
-
+                            <div class="col-10 col-sm-6 headline">
+                                Projektinformationen
+                            </div>
+                            <div class="col-2 col-sm-6 text-right">
+                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                            </div>
+                            <div class="col-12"><hr class="pb-3"></div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
+                            <div class="col-xl-8">Musterfirma</div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
                         </div>
 
-
-                        <!--                        Projektinfo + Beteiligte -->
-                        <div class="row">
-
-                            <!--                            Projektinfo -->
-                            <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 headline">
-                                                Projektinformationen
-                                            </div>
-                                            <div class="col-2 col-sm-6 text-right">
-                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
-                                            <div class="col-xl-8">Musterfirma</div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
-                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
-                                            <div class="col-xl-8">
-                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet.
-                                            </div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Status:</div>
-                                            <div class="col-xl-8">
-                                                Laufend
-                                            </div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-lg-12 text-right">
-                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-lg-12 headline">
-                                                Meilensteine
-                                            </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="goals" class="col-lg-12 p-3">
-                                                <?php include("goals.html") ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                        <div class="row pb-2">
+                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                            <div class="col-xl-8">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                sanctus est Lorem ipsum dolor sit amet.
                             </div>
-                            <!--                            Beteiligte -->
-                            <div class="col-lg-4 pr-0 pr-md-3 pl-0 pl-md-3 pl-lg-0">
-                                <div class="row my-3 ml-2 mr-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 col-lg-4 headline">
-                                                Beteiligte
-                                            </div>
-                                            <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Anna Apfel
-                                                <div class="text-muted small">Protokollant</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
 
-                        <!--                        Meilensteine drunter -->
-                        <!--                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="row m-3">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-lg-12 headline">
-                                                Meilensteine
-                                            </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="goals" class="col-lg-12 p-3">
-                                                <?php /*include("goals.html") */?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row pb-2">
+                            <div class="col-xl-4 font-weight-bold">Status:</div>
+                            <div class="col-xl-8">
+                                Laufend
                             </div>
-                        </div>-->
+                        </div>
+
+                        <div class="row pb-2">
+                            <div class="col-lg-12 text-right">
+                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                            </div>
+                        </div>
 
 
                     </div>
+                </div>
+                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                    <div class="col-lg-12 element-allgemein p-3">
+                        <div class="row">
+                            <div class="col-lg-12 headline">
+                                Meilensteine
+                            </div>
+                            <div class="col-lg-12"><hr class="pb-3"></div>
+                        </div>
+                        <div class="row">
+                            <div id="goals" class="col-lg-12 p-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <!--                            Beteiligte -->
+            <!--<div class="col-lg-4 pr-0 pr-md-3 pl-0 pl-md-3 pl-lg-0">
+                <div class="row my-3 ml-2 mr-lg-3 mr-2">
+                    <div class="col-lg-12 element-allgemein p-3">
+                        <div class="row">
+                            <div class="col-10 col-sm-6 col-lg-4 headline">
+                                Beteiligte
+                            </div>
+                            <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                            </div>
+                            <div class="col-12"><hr class="pb-3"></div>
+                        </div>
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <div class="img-placeholder c-darkgrey-bg">AA</div>
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Anna Apfel
+                                <div class="text-muted small">Protokollant</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+
+                        <div class="teammember row">
+                            <div class="pl-0 col-2 hidden-lg-down">
+                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                            </div>
+                            <div class="pl-0 col-10 pl-xl-2">
+                                Bernd Bogner
+                                <div class="text-muted small">Moderator</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
+        </div>
+
+
+
+    </div>
+
+</div>
+</div>
 
 
 
@@ -690,7 +703,9 @@
 
 
 
-            <!--            Evaluation -->
+
+
+<!--            Evaluation -->
             <div class="tab-pane" id="evaluation" role="tabpanel">
 
 
@@ -715,8 +730,8 @@
 
         </div>
 
-    </div>
-    <div class="row">
+        </div>
+        <div class="row">
         <div class="protokollant-container col-md-6">
             <div class="protokollant-card m-5">
                 <div class="row px-4 p-4">
@@ -778,7 +793,7 @@
         <div class="col-md-6">
             Editor
         </div>
-    </div>-->
+        </div>-->
 
 
 
@@ -957,6 +972,12 @@
     var scenarioContainer = $(".scenario-container");
     var postSessionContainer = $(".postSession-container");
     var conclusionContainer = $(".conclusion-container");
+    var agreementContainer = $(".agreement-container");
+    var protocolContainer = $(".protocol-container");
+    var testskriptContainer = $(".testskript-container");
+    var testplanContainer = $(".testplan-container");
+    var testberichtContainer = $(".testbericht-container");
+    var loeswegContainer = $(".loesweg-container");
 
     function createTask(event) {
 
@@ -998,25 +1019,7 @@
 
     }
 
-    function createPostSessionQuestion(event) {
 
-        function insidePSQ() {
-            return "<li class='task item-hover'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "</li>";
-        }
-
-        var parentPSQ = $(event).closest(".postSessionRubrik");
-        var psqContainer = parentPSQ.find(".ps-question-container");
-        psqContainer.append(insidePSQ);
-
-    }
 
     function createConclusionQuestion(event) {
 
@@ -1048,6 +1051,32 @@
 
     }
 
+
+
+    function createConclusion() {
+
+        function insideConclusion() {
+            return "<li class='conclusionRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Abschlussfragen</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#testaufgaben' onclick='createConclusionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Abschlussfrage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='cc-question-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
+            conclusionContainer.append(insideConclusion);
+        } else {
+            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
+        }
+
+    }
+
     function createPostSession() {
 
         function insidePostSession() {
@@ -1074,34 +1103,301 @@
 
     }
 
-    function createConclusion() {
+    function createPostSessionQuestion(event) {
 
-        function insideConclusion() {
-            return "<li class='conclusionRubrik element-allgemein mb-3'>" +
+        function insidePSQ() {
+            return "<li class='task item-hover'>" +
                 "<div class='row p-3'>" +
-                "<div class='col-10'>Abschlussfragen</div>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentPSQ = $(event).closest(".postSessionRubrik");
+        var psqContainer = parentPSQ.find(".ps-question-container");
+        psqContainer.append(insidePSQ);
+
+    }
+
+    function createAgreement() {
+
+        function insideAgreement() {
+            return "<li class='agreementRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Einverständniserklärung</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#testaufgaben' onclick='createConclusionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Abschlussfrage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
                 "</div>" +
                 "</div>" +
-                "<ol class='cc-question-container pl-0'>" +
+                "<ol class='agreement-container pl-0'>" +
                 "<hr class='m-0'>" +
                 "</ol>" +
                 "</li>";
         }
 
-        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
-            conclusionContainer.append(insideConclusion);
+        if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {
+
+            agreementContainer.append(insideAgreement());
+
         } else {
-            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
+            alert("Sie haben bereits eine Einverständniserklärungs-Rubrik erstellt.");
         }
 
     }
+    function createAgreementNew(event) {
+
+        function insideAgreementNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Teilnehmer #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentAgreementNew= $(event).closest(".agreementRubrik");
+        var agmtContainer = parentAgreementNew.find(".agreement-container");
+        agmtContainer.append(insideAgreementNew);
+
+    }
+    function createProtocol() {
+
+        function insideProtocol() {
+            return "<li class='protocolRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Protokoll</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='protocol-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(protocolContainer.find('.protocolRubrik').length !== 0)) {
+
+            protocolContainer.append(insideProtocol());
+
+        } else {
+            alert("Sie haben bereits eine Protokoll-Rubrik erstellt.");
+        }
+
+    }
+    function createProtocolNew(event) {
+
+        function insideProtocolNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editProtocol()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Protokollant #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentProtocolNew= $(event).closest(".protocolRubrik");
+        var protContainer = parentProtocolNew.find(".protocol-container");
+        protContainer.append(insideProtocolNew);
+
+    }
+
+    function createTestskript() {
+
+        function insideTestskript() {
+            return "<li class='testskriptRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testskript</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testskript-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(testskriptContainer.find('.testskriptRubrik').length !== 0)) {
+
+            testskriptContainer.append(insideTestskript());
+
+        } else {
+            alert("Sie haben bereits eine Testskript-Rubrik erstellt.");
+        }
+
+    }
+    function createTestskriptNew(event) {
+
+        function insideTestskriptNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestskript()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestskriptNew= $(event).closest(".testskriptRubrik");
+        var tskriptContainer = parentTestskriptNew.find(".testskript-container");
+        tskriptContainer.append(insideTestskriptNew);
+
+    }
+
+    function createTestplan() {
+
+        function insideTestplan() {
+            return "<li class='testplanRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testplan</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testplan-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(testplanContainer.find('.testplanRubrik').length !== 0)) {
+
+            testplanContainer.append(insideTestplan());
+
+        } else {
+            alert("Sie haben bereits eine Testplan-Rubrik erstellt.");
+        }
+
+    }
+    function createTestplanNew(event) {
+
+        function insideTestplanNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestplan()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestplanNew= $(event).closest(".testplanRubrik");
+        var tplanContainer = parentTestplanNew.find(".testplan-container");
+        tplanContainer.append(insideTestplanNew);
+
+    }
+
+    function createTestbericht() {
+
+        function insideTestbericht() {
+            return "<li class='testberichtRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testbericht</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testskript-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(testberichtContainer.find('.testberichtRubrik').length !== 0)) {
+
+            testberichtContainer.append(insideTestbericht());
+
+        } else {
+            alert("Sie haben bereits eine Testbericht-Rubrik erstellt.");
+        }
+
+    }
+    function createTestberichtNew(event) {
+
+        function insideTestberichtNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestbericht()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestberichtNew= $(event).closest(".testskriptRubrik");
+        var tberichtContainer = parentTestberichtNew.find(".testbericht-container");
+        tberichtContainer.append(insideTestberichtNew);
+
+    }
+
+    function createLoesweg() {
+
+        function insideLoesweg() {
+            return "<li class='loeswegRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Lösungswege</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='loesweg-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(loeswegContainer.find('.loeswegRubrik').length !== 0)) {
+
+            loeswegContainer.append(insideLoesweg());
+
+        } else {
+            alert("Sie haben bereits eine Lösungsweg-Rubrik erstellt.");
+        }
+
+    }
+    function createLoeswegNew(event) {
+
+        function insideLoeswegNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editLoesweg()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentLoeswegNew= $(event).closest(".loeswegRubrik");
+        var loeswegContainer = parentLoeswegNew.find(".loesweg-container");
+        loeswegContainer.append(insideLoeswegNew);
+
+    }
+
 </script>
 
 <!-- Edits verknüpfen -->
 <script>
     var contentAufgaben = $("#content-aufgaben");
+    var contentUnterlagen = $("#content-unterlagen");
 
     function editTask() {
         contentAufgaben.load("taskForm.html");
@@ -1118,7 +1414,25 @@
     function editScenario() {
         contentAufgaben.load("scenarioForm.html");
     }
+    function editAgreement() {
+        contentUnterlagen.load("agreementForm.html");
+    }
+    function editProtocol() {
+        contentUnterlagen.load("protocolForm.html");
+    }
+    function editTestskript() {
+        contentUnterlagen.load("testplanForm.html");
+    }
 
+    function editTestplan() {
+        contentUnterlagen.load("testplanForm.html");
+    }
+    function editTestbericht() {
+        contentUnterlagen.load("testberichtForm.html");
+    }
+    function editLoesweg() {
+        contentUnterlagen.load("loeswegForm.html");
+    }
 </script>
 
 <script>
@@ -1275,11 +1589,11 @@
     })
 </script>
 
-<!-- Sortierfunktion Conclusion -->
+<!-- Sortierfunktion Agreement -->
 <script>
     $(function () {
-        $("ol.conclusion-container").sortable({
-            exclude: ".conclusionRubrik",
+        $("ol.agreement-container").sortable({
+            exclude: ".agreementRubrik",
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function($item, container) {
@@ -1323,6 +1637,101 @@
         });
     })
 </script>
+<script>
+    $(function () {
+        $("ol.protocol-container").sortable({
+            exclude: ".protocolRubrik",
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function($item, container) {
+                if( !$item.closest("ol").is(container.el)){
+                    return false;
+                    // additional rules
+                } else return true;
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: $item.height()});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
+    })
+</script>
+<script>
+    $(function () {
+        $("ol.postSession-container").sortable({
+            exclude: ".postSessionRubrik",
+            placeholderClass: 'placeholder',
+            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
+            isValidTarget: function($item, container) {
+                if( !$item.closest("ol").is(container.el)){
+                    return false;
+                    // additional rules
+                } else return true;
+            },
+            // animation on drop
+            onDrop: function  ($item, container, _super) {
+
+                var $clonedItem = $('<li/>').css({height: $item.height()});
+                $item.before($clonedItem);
+                $clonedItem.animate({'height': $item.height()});
+
+                $item.animate($clonedItem.position(), function  () {
+                    $clonedItem.detach();
+                    _super($item, container);
+                });
+
+            },
+
+            // set $item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                    pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
+    })
+</script>
+
 
 </body>
 
