@@ -35,7 +35,7 @@
         </div>
 
     </div>
-    <div id="projects-container" class="container">
+    <div class="container">
 
         <div class="row p-3 mx-3 font-weight-bold">
             <div class="col-1">Status</div>
@@ -50,7 +50,13 @@
             <div class="col-12"><hr class="m-0"></div>
         </div>
 
-        <a href="project.php">
+        <div id="projects-container">
+
+
+
+        </div>
+
+        <!--<a href="project.php">
         <div class="row m-3 p-3 element-allgemein">
             <div class="col-1">Status</div>
             <div class="col-4">Projektname</div>
@@ -82,7 +88,7 @@
             <div class="col-3">Auftraggeber</div>
             <div class="col-2 text-right">Erstellt am</div>
             <div class="col-2 text-right">Zuletzt geändert am</div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -136,15 +142,27 @@
         });
     });
 </script>
+<!-- Seiteninhalt aus Datenbank laden on Page Load-->
+<script>
+    $( function loadProjects() {
+        $.ajax({
+            url: '../logic/selectProjectlist.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsContainer.append(response);
+            }
+        });
+    })
+</script>
 <script>
 
     var projectsContainer = $("#projects-container");
 
-//    $("#createProjectForm").submit(function(event){
-//        // cancels the form submission
-//        event.preventDefault();
-//        createProject();
-//    });
+    $("#createProjectForm").submit(function(event){
+        // cancels the form submission
+        event.preventDefault();
+        createProject();
+
+    });
 
     function createProject() {
         $.ajax({

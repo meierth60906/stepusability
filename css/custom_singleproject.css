@@ -337,3 +337,7 @@ ol.conclusion-container li {
     vertical-align: middle;
     line-height: 2.5em;
 }
+
+.link-orangehover:hover .link-orangehover-child {
+    color: #e84a29;
+}
