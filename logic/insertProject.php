@@ -34,7 +34,7 @@ if (!$r) {
     trigger_error(htmlentities($e['message']), E_USER_ERROR);
 }
 
-$print = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE NAME = $title");
+$print = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE NAME = '$title'");
 
 oci_execute($print);
 
