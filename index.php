@@ -118,9 +118,6 @@
                     </div>
 
                     <!-- Anrede -->
-                    <!--                    <div class="form-group col-2">-->
-                    <!--                        <input name="Anrede" id="input5" type="text" class="form-control"  placeholder="Anrede*">-->
-                    <!--                    </div>-->
                     <div class="form-group row formTask">
                         <label for="reg-anrede" class="col-lg-4 form-control-label">Anrede: *</label>
                         <div class="col-lg-8">
@@ -132,6 +129,7 @@
                             </label>
                         </div>
                     </div>
+
                     <!-- Vorname -->
                     <div class="form-group row formTask">
                         <label for="reg-vorname" class="col-lg-4 form-control-label">Vorname: *</label>
@@ -139,9 +137,7 @@
                             <input class="form-control" name="reg-vorname" id="reg-vorname" placeholder="Vorname" />
                         </div>
                     </div>
-                    <!--<div class="form-group col-5">
-                        <input name="Vorname" id="input7" type="text" class="form-control"  placeholder="Vorname*">
-                    </div>-->
+
                     <!-- Name -->
                     <div class="form-group row formTask">
                         <label for="reg-name" class="col-lg-4 form-control-label">Name: *</label>
@@ -149,8 +145,6 @@
                             <input class="form-control" name="reg-name" id="reg-name" placeholder="Name" />
                         </div>
                     </div>
-
-
 
                     <!-- Firma -->
                     <div class="form-group row formTask">
@@ -160,32 +154,12 @@
                         </div>
                     </div>
 
-                    <!--<div class="form-group col-5">
-                        <input name="Name" id="input6" type="text" class="form-control"  placeholder="Name*">
-                    </div>-->
-                    <!--  Geburtsdatum  -->
-                    <!--                    <div class="form-group col-12">-->
-                    <!--                        <input name="Geburtsdatum" id="input8" class="form-control" placeholder="Geburtsdatum*">-->
-                    <!--                    </div>-->
                     <div class="form-group row formTask">
                         <label for="reg-geb" class="col-lg-4 form-control-label">Geburtsdatum: *</label>
                         <div class="col-lg-8">
                             <input type="date" class="form-control" name="reg-geb" id="reg-geb" placeholder="01.01.1900" />
                         </div>
                     </div>
-
-                    <!--                    <div class="form-group col-12">-->
-                    <!--                        <input name="Firma" id="input8" class="form-control" type="email"  placeholder="E-Mail*">-->
-                    <!--                    </div>-->
-
-
-                    <!--<div class="form-group col-12">
-                        <input name="Firma" id="input8" class="form-control"  placeholder="Firma*">
-                    </div>-->
-                    <!--Nachricht-->
-                    <!--<div class="form-group col-12">
-                        <textarea class="form-control" id="message-text" placeholder="Nachricht"></textarea>
-                    </div>-->
 
                 </div>
 
@@ -236,6 +210,7 @@
         msg.html("Email oder Passwort ungültig.");
         msg.show();
     }
+
 </script>
 </body>
 </html>

@@ -10,7 +10,6 @@ $firma = $_POST['reg-firma'];
 $geb = $_POST['reg-geb'];
 
 
-
 //Verbindung aufbauen
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
@@ -23,13 +22,18 @@ $hash = password_hash($passwort, PASSWORD_DEFAULT);
 
 
 //Insert Abfrage für Person Tabelle
-$personInsert="insert into Person (Name, Vorname, Geburtsdatum, Anrede, Firma) values('".$name."', '".$vorname."', '".$geb."', '".$anrede."', '".$firma."')";
+
+$personInsert="insert into PERSON (NAME, VORNAME, GEBURTSDATUM, ANREDE, FIRMA) values('".$name."', '".$vorname."', '$geb', '".$anrede."', '".$firma."')";
+
 
 $stid = oci_parse($conn, $personInsert);
 if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
     $e = oci_error();
     echo $e['message'];
 }
+//else {
+//    header("Location: ../index.php");
+//}
 
 $personID = "select ID from PERSON where ID = ( select max(ID) from PERSON )";
 
