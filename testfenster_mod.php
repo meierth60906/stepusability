@@ -23,13 +23,13 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <div class="testfensterswitch btn-group" data-toggle="buttons">
-                    <label class="testfensterswitch btn btn-primary active">
+                <div class="switch btn-group" data-toggle="buttons">
+                    <label class="switch btn btn-primary active">
                         <a class="active switchlink" href="testfenster_mod.php">
                             <input type="radio" name="options" id="option1" autocomplete="off" checked>Moderator
                         </a>
                     </label>
-                    <label class="testfensterswitch btn btn-primary">
+                    <label class="switch btn btn-primary">
                         <a class="switchlink" href="testfenster_prot.php">
                             <input type="radio" name="options" id="option2" autocomplete="off">Protokollant</a>
                     </label>
