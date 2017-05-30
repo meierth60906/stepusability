@@ -76,7 +76,7 @@ if (!$_SESSION['login_user']){
                         <div id="projekt1" class="panel-collapse collapse active">
                             <ul class="flex-column nav">
                                 <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab" data-toggle="tab">Einverständniserklärung</a>
+                                    <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab" data-toggle="tab"> Einverständniserklärung</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,7 +93,7 @@ if (!$_SESSION['login_user']){
                         <div id="projekt2" class="panel-collapse collapse">
                             <ul class="flex-column nav">
                                 <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab" data-toggle="tab">Einverständniserklärung</a></li>
+                                    <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab" data-toggle="tab"> Einverständniserklärung</a></li>
                             </ul>
                         </div>
 
@@ -123,7 +123,7 @@ if (!$_SESSION['login_user']){
                         <div id="projekt4" class="panel-collapse collapse">
                             <ul class="flex-column nav">
                                 <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden3" role="tab" data-toggle="tab">Einverständniserklärung 1</a></li>
+                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden1" role="tab" data-toggle="tab"> Protokollleitfaden</a></li>
                             </ul>
                         </div>
                     </div>

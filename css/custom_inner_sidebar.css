@@ -63,7 +63,7 @@
     color: white;
 }
 
-#templates .icon-file-text-o {
+#templates .icon-file-text-o, #library .icon-file-text-o {
     padding-left: 38px !important;
 }
 
