@@ -35,7 +35,7 @@ if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
 //    header("Location: ../index.php");
 //}
 
-$personID = "select ID from PERSON where ID = ( select max(ID) from PERSON )";
+//$personID = "select ID from PERSON where ID = ( select max(ID) from PERSON )";
 
 
 $userInsert="insert into Benutzer (BENUTZERNAMEN, PASSWORT, PERSONP_HAT_U_ID) select '".$email."', '".$hash."', ID from PERSON where ID = ( select max(ID) from PERSON )";
