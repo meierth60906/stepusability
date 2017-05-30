@@ -1,31 +1,40 @@
 
 /*switchLink*/
 
-#library .btn-group, .btn-group-vertical {
-    height:5%;
-    margin-left:3rem;
-    margin-top:10px;
-    padding: 20px;
-}
+/*#library .btn-group, .btn-group-vertical {*/
+    /*height:5%;*/
+    /*margin-left:3rem;*/
+    /*margin-top:10px;*/
+    /*padding: 20px;*/
+/*}*/
 
 
-#library .btn-primary {
-    background-color: white;
-    border-color:#133E5C;
-}
+/*#library .btn-primary {*/
+    /*background-color: white;*/
+    /*border-color:#133E5C;*/
+/*}*/
 
-#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
-    background-color: #133E5C;
-    border-color: #133E5C;
-}
+/*#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{*/
+    /*background-color: #133E5C;*/
+    /*border-color: #133E5C;*/
+/*}*/
 
-#library .switchlink {
-    color: #133E5C;
-}
+/*#switchlink .nav-item{*/
+    /*background-color: white;*/
+    /*border: 1px solid;*/
+    /*border-color:#133E5C;*/
+/*}*/
+/*#switchlink .nav-item:hover{*/
+    /*background-color: transparent !important;*/
+/*}*/
 
-#library .active .switchlink {
-    color: #FFFFFF;
-}
+/*#library .active .switchlink {*/
+    /*color: #FFFFFF;*/
 
+/*}*/
+
+/*#library btn-group{*/
+
+/*}*/
 
 

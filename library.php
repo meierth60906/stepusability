@@ -40,94 +40,177 @@
         <div class="container row">
             <div class="col-lg-3 p-0" id="sidebarLibrary">
 
+                <!--                               Switch Button-->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#projects" role="tab" aria-controls="projects">Projekte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#archiv" role="tab" aria-controls="archiv">Archiv</a>
+                    </li>
+                </ul>
 
-                <!--                <!--                    Switch Button-->
-                <!--                <div class="container">-->
-                <!--                    <div class=btn-group" data-toggle="buttons">-->
-                <!--                        <label class="btn btn-primary active">-->
-                <!--                            <a class="active switchlink" href="#projects"><input type="radio" name="options"-->
-                <!--                                                                                 id="option1" autocomplete="off"-->
-                <!--                                                                                 checked>Projekte-->
-                <!--                            </a>-->
-                <!--                        </label>-->
-                <!--                        <label class="btn btn-primary">-->
-                <!--                            <a class="switchlink" href="#archiv"><input type="radio" name="options" id="option2"-->
-                <!--                                                                        autocomplete="off">Archiv</a>-->
-                <!--                        </label>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <div class="panel-group">
-                    <div class="panel panel-default">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="projects" role="tabpanel">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
 
 
-                        <!--                    innere Navigationsleiste -->
+                                <!--                    innere Navigationsleiste -->
 
-                        <!--Projekt 1-->
+                                <!--Projekt 1-->
 
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="icon-angle-right active" data-toggle="collapse"
-                                   href="#projekt1">Projekt
-                                    1</a>
-                            </h4>
-                        </div>
-                        <div id="projekt1" class="panel-collapse collapse active">
-                            <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab" data-toggle="tab"> Einverständniserklärung</a>
-                                </li>
-                            </ul>
-                        </div>
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right active" data-toggle="collapse"
+                                           href="#projekt1">Projekt
+                                            1</a>
+                                    </h4>
+                                </div>
+                                <div id="projekt1" class="panel-collapse collapse active">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                        <!--Projekt 2-->
+                                <!--Projekt 2-->
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#projekt2"
-                                   class="icon-angle-right">Projekt
-                                    2</a>
-                            </h4>
-                        </div>
-                        <div id="projekt2" class="panel-collapse collapse">
-                            <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab" data-toggle="tab"> Einverständniserklärung</a></li>
-                            </ul>
-                        </div>
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#projekt2"
+                                           class="icon-angle-right">Projekt
+                                            2</a>
+                                    </h4>
+                                </div>
+                                <div id="projekt2" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a></li>
+                                    </ul>
+                                </div>
 
-                        <!--Projekt 3-->
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#projekt3"
-                                   class="icon-angle-right">Projekt 3</a>
-                            </h4>
-                        </div>
-                        <div id="projekt3" class="panel-collapse collapse">
-                            <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden2" role="tab" data-toggle="tab">
-                                        Protokollleitfaden</a></li>
-                            </ul>
-                        </div>
+                                <!--Projekt 3-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#projekt3"
+                                           class="icon-angle-right">Projekt 3</a>
+                                    </h4>
+                                </div>
+                                <div id="projekt3" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#leitfaden2" role="tab"
+                                               data-toggle="tab">
+                                                Protokollleitfaden</a></li>
+                                    </ul>
+                                </div>
 
-                        <!--Projekt 4-->
+                                <!--Projekt 4-->
 
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#projekt4" class="icon-angle-right">Projekt
-                                    4</a>
-                            </h4>
-                        </div>
-                        <div id="projekt4" class="panel-collapse collapse">
-                            <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden1" role="tab" data-toggle="tab"> Protokollleitfaden</a></li>
-                            </ul>
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#projekt4" class="icon-angle-right">Projekt
+                                            4</a>
+                                    </h4>
+                                </div>
+                                <div id="projekt4" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#leitfaden1" role="tab"
+                                               data-toggle="tab"> Protokollleitfaden</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="archiv" role="tabpanel">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+
+
+                                <!--                    innere Navigationsleiste -->
+
+                                <!--Projekt 1-->
+
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right active" data-toggle="collapse"
+                                           href="#eins">Projekt
+                                            xyz</a>
+                                    </h4>
+                                </div>
+                                <div id="eins" class="panel-collapse collapse active">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link active" href="#" role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Projekt 2-->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#zwei"
+                                           class="icon-angle-right">Projekt
+                                            dssf</a>
+                                    </h4>
+                                </div>
+                                <div id="zwei" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a></li>
+                                    </ul>
+                                </div>
+
+                                <!--Projekt 3-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#drei"
+                                           class="icon-angle-right">Projekt dsds</a>
+                                    </h4>
+                                </div>
+                                <div id="drei" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
+                                               data-toggle="tab">
+                                                Protokollleitfaden</a></li>
+                                    </ul>
+                                </div>
+
+                                <!--Projekt 4-->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#vier" class="icon-angle-right">Projekt
+                                            sadfd</a>
+                                    </h4>
+                                </div>
+                                <div id="vier" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
+                                               data-toggle="tab"> Protokollleitfaden</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -139,52 +222,52 @@
 
             <div class="tab-pane active" id="einver" role="tabpanel">
                 <div class="row">
-                <div class="col-lg-8 offset-lg-4">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>Einverständniserklärung</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
-                                    verbessern. </p>
-                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
-                                    Sie können jederzeit abbrechen.<br>
-                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
-                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
-                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
-                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
-                                    wird nicht veröffentlicht.<br></p>
-                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
-                                    <br>Vielen Dank!</p>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
-                                    während
-                                    ich an dem Test teilnehme.</p>
-                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
-                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
-                                    verwenden.</p>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Datum, Ort, Unterschrift:</p>
-                                <br>
-                            </th>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="col-lg-8 offset-lg-4">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Einverständniserklärung</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                        verbessern. </p>
+                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                        Sie können jederzeit abbrechen.<br>
+                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                        wird nicht veröffentlicht.<br></p>
+                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                        <br>Vielen Dank!</p>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                        während
+                                        ich an dem Test teilnehme.</p>
+                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                        verwenden.</p>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Datum, Ort, Unterschrift:</p>
+                                    <br>
+                                </th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
             </div>
 
             <div class="tab-pane row" id="einver1" role="tabpanel">
@@ -351,7 +434,11 @@
             });
         });
 
-
+        $(function () {
+            $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
     });
 
 </script>
