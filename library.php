@@ -74,8 +74,9 @@
                             </h4>
                         </div>
                         <div id="projekt1" class="panel-collapse collapse active">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o active"><a href="#einver">Einverständniserklärung</a>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab" data-toggle="tab"> Einverständniserklärung</a>
                                 </li>
                             </ul>
                         </div>
@@ -90,9 +91,9 @@
                             </h4>
                         </div>
                         <div id="projekt2" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o">
-                                    <a href="#einver1">Einverständniserklärung</a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab" data-toggle="tab"> Einverständniserklärung</a></li>
                             </ul>
                         </div>
 
@@ -104,8 +105,9 @@
                             </h4>
                         </div>
                         <div id="projekt3" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#leitfaden2">
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden2" role="tab" data-toggle="tab">
                                         Protokollleitfaden</a></li>
                             </ul>
                         </div>
@@ -119,8 +121,9 @@
                             </h4>
                         </div>
                         <div id="projekt4" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#leitfaden3">Einverständniserklärung 1</a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#leitfaden1" role="tab" data-toggle="tab"> Protokollleitfaden</a></li>
                             </ul>
                         </div>
                     </div>
@@ -134,7 +137,8 @@
     <div class="container-fluid">
         <div class="tab-content">
 
-            <div class="tab-pane row" id="einver" role="tabpanel">
+            <div class="tab-pane active" id="einver" role="tabpanel">
+                <div class="row">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -180,6 +184,7 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
             </div>
 
             <div class="tab-pane row" id="einver1" role="tabpanel">
@@ -340,7 +345,7 @@
         //shows different page content
 
         $(function () {
-            $('.list-group-item a').click(function (e) {
+            $('.nav-item').click(function (e) {
                 e.preventDefault();
                 $(this).tab('show');
             });
