@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:../index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -20,7 +28,7 @@
                 <h1>Projekte</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="../settings.php">
+                <a class="titlebar-link" data-toggle="modal" data-target="#newproject" href="#newproject">
                     <div class="icon-plus-1 icon-align d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Erstellen</span></a>
             </div>
@@ -28,72 +36,6 @@
 
     </div>
     <div class="container">
-<!--        <div class="row">-->
-<!--            <div class="col-sm-12 mt-3">-->
-<!--                <table class="table table-hover">-->
-<!--                    <thead class="thead-default">-->
-<!--                    <tr>-->
-<!--                        <th>Status</th>-->
-<!--                        <th>Projektname</th>-->
-<!--                        <th>Auftraggeber</th>-->
-<!--                        <th>Zuletzt geändert am</th>-->
-<!--                        <th>Erstellt am</th>-->
-<!--                    </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody>-->
-<!--                    <tr class='clickable-row' data-href='project1.php'>-->
-<!--                        <td scope="row">Laufend</td>-->
-<!--                        <th><a href="project1.php">Projekt 1</a></th>-->
-<!--                        <td>Auftrag Geber</td>-->
-<!--                        <td>11.04.17</td>-->
-<!--                        <td>02.03.17</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td scope="row">Laufend</td>-->
-<!--                        <th>Projekt 2</th>-->
-<!--                        <td>Auftrag Geber</td>-->
-<!--                        <td>11.04.17</td>-->
-<!--                        <td>02.03.17</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td scope="row">Laufend</td>-->
-<!--                        <th>Projekt 3</th>-->
-<!--                        <td>Auftrag Geber</td>-->
-<!--                        <td>11.04.17</td>-->
-<!--                        <td>02.03.17</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td scope="row">Laufend</td>-->
-<!--                        <th>Projekt 4</th>-->
-<!--                        <td>Auftrag Geber</td>-->
-<!--                        <td>11.04.17</td>-->
-<!--                        <td>02.03.17</td>-->
-<!--                    </tr>-->
-<!--                    </tbody>-->
-<!--                </table>-->
-<!---->
-<!--                <!--<div class="card my-3">-->
-<!--                    <div class="card-block pt-0">-->
-<!--                        <a class="card-item-link" href="home.php">-->
-<!--                            <div class="row card-item p-3">-->
-<!--                                <div class="card-item-icon col-1 middle-two-line">-->
-<!--                                </div>-->
-<!--                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">-->
-<!--                                    Projekt 1-->
-<!--                                </div>-->
-<!--                                <div class="col-4 hidden-xs-down text-right middle-two-line">-->
-<!--                                    <div class="img-placeholder darkgrey-bg">AA</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                        <a href="index.php"><div class="icon-check p-absolute p-4"></div></a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-
 
         <div class="row p-3 mx-3 font-weight-bold">
             <div class="col-1">Status</div>
@@ -108,7 +50,7 @@
             <div class="col-12"><hr class="m-0"></div>
         </div>
 
-        <a href="project1.php">
+        <a href="project.php">
         <div class="row m-3 p-3 element-allgemein">
             <div class="col-1">Status</div>
             <div class="col-4">Projektname</div>
@@ -145,6 +87,46 @@
     </div>
 
 </section>
+
+<div class="modal fade" id="newproject" tabindex="-1" role="dialog" aria-labelledby="createProjectModal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createProjectModalTitle">Neues Projekt erstellen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="createProjectForm" class="form" action="../logic/insertProject.php" method="post">
+                <div class="modal-body">
+
+                    <!--Titel-->
+                    <div class="form-group row formTask pt-3">
+                        <label for="createProject-title" class="col-lg-4 form-control-label">Titel:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" name="createProject-title" id="createProject-title" placeholder="Titel des Projekts" />
+                        </div>
+                    </div>
+
+                    <!--Auftraggeber-->
+                    <div class="form-group row formTask">
+                        <label for="createProject-ag" class="col-lg-4 form-control-label">Auftraggeber:</label>
+                        <div class="col-lg-8">
+                            <input type="password" class="form-control" name="createProject-ag" id="createProject-ag" placeholder="Auftraggeber" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer text-center">
+                    <input type="submit" value="Senden" class="btn btn-submit-blue" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
 
 <?php include ('scripts.html'); ?>
 <script>

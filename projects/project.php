@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:../index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -83,7 +91,7 @@
                                                 Projektinformationen
                                             </div>
                                             <div class="col-2 col-sm-6 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>
@@ -148,7 +156,7 @@
                                                 Beteiligte
                                             </div>
                                             <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>
@@ -497,7 +505,7 @@
                                                 Projektinformationen
                                             </div>
                                             <div class="col-2 col-sm-6 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>
@@ -562,7 +570,7 @@
                                                 Beteiligte
                                             </div>
                                             <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>
@@ -816,7 +824,7 @@
                                                 Projektinformationen
                                             </div>
                                             <div class="col-2 col-sm-6 text-right">
-                                                <a href="project1.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -63,7 +71,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">
@@ -257,7 +265,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">
@@ -413,7 +421,7 @@
 
 </script>
 
-<script src="../js/jquery-sortable-min.js"></script>
+<script src="js/jquery-sortable-min.js"></script>
 <script>
 
     // Javascript to enable link to tab

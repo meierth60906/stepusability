@@ -1,19 +1,25 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <title>Dashboard | step</title>
 
-    <?php include ('head.html');
-    ?>
-
+    <?php include ('head.html'); ?>
     <?php
-    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+/*    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Vorname", "Anna", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Geburtsdatum", "01.01.1990", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Anrede", "Frau", time() + (86400 * 30), "/"); // 86400 = 1 Tag
     setcookie("Firma", "Apple", time() + (86400 * 30), "/"); // 86400 = 1 Tag
 
-    ?>
+    */?>
 
 
 </head>
@@ -48,7 +54,7 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="projects/project1.php">
+                        <a class="card-item-link" href="projects/project.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-folder d-inline text-muted"></div>

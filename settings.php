@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!$_SESSION['login_user']){
+    $_SESSION['login_user'] = '';
+    header("Location:index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

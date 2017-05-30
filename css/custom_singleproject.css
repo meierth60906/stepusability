@@ -49,7 +49,7 @@
 }
 
 #singleproject .nav-tabs .nav-item .active {
-    background-color: #133e5c;
+    background-color: #133e5c !important;
     color: white !important;
     border: 0;
     -webkit-border-radius:0;
