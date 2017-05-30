@@ -39,15 +39,17 @@
 
                         <!--                        Einverständniserklärung-->
                         <div class="panel-heading">
+
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#einverstaendniserklaerung"
-                                   class="icon-angle-right active">Einverständniserklärung</a>
+                                <a class="icon-angle-right active" href="#einverstaendniserklaerung" data-toggle="collapse" >Einverständniserklärung</a>
                             </h4>
+
                         </div>
+
                         <div id="einverstaendniserklaerung" class="panel-collapse collapse active">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o active">
-                                    <a href="#einverstaendniserklaerung1" role="tab" data-toggle="tab">Vorlage 1</a>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link active" href="#einverstaendniserklaerung1" role="tab" data-toggle="tab"> Vorlage 1</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,14 +59,15 @@
 
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#protokollleitfaden"
-                                   class="icon-angle-right">Protokollleitfaden</a>
+                                <a class="icon-angle-right" href="#protokollleitfaden" data-toggle="collapse">Protokollleitfaden</a>
                             </h4>
                         </div>
+
                         <div id="protokollleitfaden" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o">
-                                  <a href="#protokollleitfaden1">Vorlage 1</a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                  <a class="icon-file-text-o p-3 nav-link" href="#protokollleitfaden1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -72,26 +75,28 @@
                         <!--Testskript-->
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testskript" class="icon-angle-right">Testskript</a>
+                                <a class="icon-angle-right" data-toggle="collapse" href="#testskript" >Testskript</a>
                             </h4>
                         </div>
                         <div id="testskript" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testskript1">Vorlage 1
-                               </a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#testskript1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                </li>
                             </ul>
                         </div>
                         <!--                    Testplan-->
 
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testplan" class="icon-angle-right">Testplan</a>
+                                <a class="icon-angle-right" href="#testplan" data-toggle="collapse">Testplan</a>
                             </h4>
                         </div>
                         <div id="testplan" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testplan1">Vorlage 1
-                               </a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#testplan1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -100,14 +105,14 @@
 
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#testbericht"
-                                   class="icon-angle-right">Testbericht</a>
+                                <a class="icon-angle-right" href="#testbericht" data-toggle="collapse">Testbericht</a>
                             </h4>
                         </div>
                         <div id="testbericht" class="panel-collapse collapse">
-                            <ul class="list-group">
-                                <li class="list-group-item icon-file-text-o"><a href="#testbericht1">Vorlage
-                                        1</a></li>
+                            <ul class="flex-column nav">
+                                <li class="nav-item" >
+                                    <a class="icon-file-text-o p-3 nav-link" href="#testbericht1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -355,7 +360,7 @@
         });
 
         $(function () {
-            $('.list-group-item a').click(function (e) {
+            $('.nav-item').click(function (e) {
                 e.preventDefault();
                 $(this).tab('show');
             });

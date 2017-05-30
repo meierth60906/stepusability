@@ -34,15 +34,6 @@
     color: BLACK;
 }
 
-/* second navbar hover color*/
-#library .nav-item:hover, #templates .nav-item:hover{
-    background-color: #e84a29;
-}
-
-
-/*sidebar Headings*/
-
-
 #library a:focus,
 #library a:hover,
 #templates a:focus,
@@ -50,13 +41,30 @@
     text-decoration: none !important;
 }
 
-/*bold text when active*/
-#library .panel-title.on,
-#templates a:focus,
-#library a:hover,
-#templates a:hover {
+/*Hover Farbe der Unterpunkte*/
+#templates .nav-item:hover, #library .nav-item:hover{
+    background-color: #ccd9e4;
+}
+
+
+/*bold text when heading active*/
+#templates a.on, #library a.on{
+    font-weight: bold;
+}
+
+/*Farbe der Tabs, wenn Seite offen*/
+#templates .nav-item a:focus,
+#templates .nav-item a:active,
+#library .nav-item a:focus,
+#library .nav-item a:active
+{
     font-weight: bold !important;
-    text-decoration: none !important;
+    background-color: #185077;
+    color: white;
+}
+
+#templates .icon-file-text-o {
+    padding-left: 38px !important;
 }
 
 /*how the links of the side bar look like */

@@ -17,9 +17,17 @@
     color: BLACK;
 }
 
-/* second navbar hover color*/
-#secondSidebar .nav-item:hover, .nav-link.active{
-    background-color: #ccd9e4 !important;
+#settings a:hover{
+    background-color: #ccd9e4;
+}
+#settings a:active,
+#settings a:focus{
+
+
+    font-weight: bold !important;
+    text-decoration: none !important;
+    background-color: #185077;
+    color: white;
 }
 
 #settings .page-top {
@@ -54,6 +62,4 @@
 #settings #buttonPassword{
     margin-top: 30px;
 }
-
-
 
