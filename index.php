@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -212,7 +214,7 @@
 
         $.ajax({
             type: "POST",
-            url: "logic/login.php",
+            url: "logic/insertLogin.php",
             data: formData,
             success: function(data) {
                 console.log(data);
