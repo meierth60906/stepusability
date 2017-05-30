@@ -157,16 +157,19 @@
 
     var projectsContainer = $("#projects-container");
 
-    $("#createProjectForm").submit(function(event){
-        // cancels the form submission
-        event.preventDefault();
-        createProject();
-
-    });
+//    $("#createProjectForm").submit(function(event){
+//        // cancels the form submission
+//        event.preventDefault();
+//        createProject();
+//
+//    });
 
     function createProject() {
+        //var projectSerialize = $("#createProjectForm").serialize();
+
         $.ajax({
             url: '../logic/insertProject.php',
+            //data: projectSerialize,
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 projectsContainer.append(response);
             }
