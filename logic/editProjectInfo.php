@@ -6,15 +6,17 @@
 //    die();
 //}
 
-$title = $_POST['createProject-title'];
-$ag = $_POST['createProject-ag'];
+$title = $_POST['editProjectInfo-title'];
+$ag = $_POST['editProjectInfo-ag'];
+$talkto = $_POST['editProjectInfo-ag'];
+$desc = $_POST['editProjectInfo-ag'];
 
 
 // Insert into several tables, rolling back the changes if an error occurs
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
-$stid = oci_parse($conn, "INSERT INTO USABILITYTEST(NAME, STATUS, AUFTRAGGEBER, ERSTELLDATUM, ZULETZT_GEAENDERT) VALUES('".$title."', 'Laufend', '".$ag."', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)");
+$stid = oci_parse($conn, "INSERT INTO USABILITYTEST(NAME, AUFTRAGGEBER, BESCHREIBUNG, ZULETZT_GEAENDERT) VALUES('".$title."', '".$ag."', '".$talkto."', CURRENT_TIMESTAMP)");
 
 
 // The OCI_NO_AUTO_COMMIT flag tells Oracle not to commit the INSERT immediately

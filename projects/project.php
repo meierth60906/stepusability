@@ -98,34 +98,26 @@ if (!isset($_GET['id'])) {
                                                 Projektinformationen
                                             </div>
                                             <div class="col-2 col-sm-6 text-right">
-                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                <a id="projectinfo-edit" href="#editprojectinfo" data-target="#editprojectinfo" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                             </div>
                                             <div class="col-12"><hr class="pb-3"></div>
                                         </div>
                                         <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Kunde:</div>
-                                            <div class="col-xl-8">Musterfirma</div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
-                                            <div class="col-xl-8"><a href="../new_contact.php">Max Mustermann</a></div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
-                                            <div class="col-xl-8">
-                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet.
-                                            </div>
-                                        </div>
-
-                                        <div class="row pb-2">
                                             <div class="col-xl-4 font-weight-bold">Status:</div>
-                                            <div class="col-xl-8">
-                                                Laufend
-                                            </div>
+                                            <div id="project-status" class="col-xl-8"></div>
+                                        </div>
+                                        <div class="row pb-2">
+                                            <div class="col-xl-4 font-weight-bold">Auftraggeber:</div>
+                                            <div id="project-auftraggeber" class="col-xl-8"></div>
+                                        </div>
+                                        <div class="row pb-2 row-optional">
+                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                            <div id="project-ansprechpartner" class="col-xl-8"></div>
+                                        </div>
+
+                                        <div class="row pb-2 row-optional">
+                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                            <div id="project-desc" class="col-xl-8"></div>
                                         </div>
 
                                         <div class="row pb-2">
@@ -878,6 +870,61 @@ if (!isset($_GET['id'])) {
 
 </section>
 
+<div class="modal fade" id="editprojectinfo" tabindex="-1" role="dialog" aria-labelledby="editProjectInfoModal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProjectInfoModalTitle">Projektinformationen bearbeiten</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="editProjectInfoForm" class="form" action="../logic/editProjectInfo.php" method="post">
+                <div class="modal-body">
+
+                    <!--Titel-->
+                    <div class="form-group row formTask pt-3">
+                        <label for="editProjectInfo-title" class="col-lg-4 form-control-label">Titel:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" name="editProjectInfo-title" id="editProjectInfo-title" placeholder="Titel des Projekts" required/>
+                        </div>
+                    </div>
+
+                    <!--Auftraggeber-->
+                    <div class="form-group row formTask">
+                        <label for="editProjectInfo-ag" class="col-lg-4 form-control-label">Auftraggeber:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" name="editProjectInfo-ag" id="editProjectInfo-ag" placeholder="Auftraggeber" value=""/>
+                        </div>
+                    </div>
+
+                    <!--Ansprechpartner-->
+                    <div class="form-group row formTask">
+                        <label for="editProjectInfo-talkto" class="col-lg-4 form-control-label">Ansprechpartner:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>
+                        </div>
+                    </div>
+
+                    <!--Projektbeschreibung-->
+                    <div class="form-group row formTask">
+                        <label for="editProjectInfo-desc" class="col-lg-4 form-control-label">Projektbeschreibung:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" name="editProjectInfo-desc" id="editProjectInfo-desc" placeholder="Projektbeschreibung"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                    <input type="submit" value="Senden" class="btn btn-submit-blue" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 <?php include ('scripts.html'); ?>
 <script>
 
@@ -967,20 +1014,49 @@ if (!isset($_GET['id'])) {
 <script>
     var pageId = '<?php echo $user_id ?>';
 
-    $( function loadHeading() {
+    $( function loadInput() {
         $.ajax({
             type: 'get',
             data: 'id='+pageId,
+            dataType: 'json',
             url: '../logic/selectPAheading.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                $("#project-heading").text(response);
-
+                $("#project-heading").text(response.name);
+                $("#project-auftraggeber").text(response.auftraggeber);
+                $("#project-status").text(response.status);
+                $("#editProjectInfo-title").value = response.name;
+                $("#editProjectInfo-ag").value = response.auftraggeber;
+                $("#editProjectInfo-desc").value = response.beschreibung;
             }
         });
     });
 
 </script>
 
+<script>
+
+
+    $("#editProjectInfoForm").submit(function(event){
+        // cancels the form submission
+        event.preventDefault();
+        editProjectInfo();
+        $("#editprojectinfo").modal('toggle');
+    });
+
+    function editProjectInfo() {
+        var projectSerialize = $("#createProjectForm").serialize();
+
+        $.ajax({
+            type: 'post',
+            url: '../logic/editProjectInfo.php',
+            data: projectSerialize,
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsContainer.prepend(response);
+            }
+        });
+
+    }
+</script>
 
 <!-- Seiteninhalt aus Datenbank laden on Page Load-->
 <script>
@@ -1504,6 +1580,7 @@ if (!isset($_GET['id'])) {
 
         $("ol.scenario-container").sortable({
             nested: true,
+            delay: 100,
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function ($item, container) {
@@ -1572,6 +1649,7 @@ if (!isset($_GET['id'])) {
     $(function () {
         $("ol.postSession-container").sortable({
             exclude: ".postSessionRubrik",
+            delay: 100,
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function($item, container) {
@@ -1621,6 +1699,7 @@ if (!isset($_GET['id'])) {
     $(function () {
         $("ol.agreement-container").sortable({
             exclude: ".agreementRubrik",
+            delay: 100,
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function($item, container) {
@@ -1668,6 +1747,7 @@ if (!isset($_GET['id'])) {
     $(function () {
         $("ol.protocol-container").sortable({
             exclude: ".protocolRubrik",
+            delay: 100,
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function($item, container) {
@@ -1715,6 +1795,7 @@ if (!isset($_GET['id'])) {
     $(function () {
         $("ol.postSession-container").sortable({
             exclude: ".postSessionRubrik",
+            delay: 100,
             placeholderClass: 'placeholder',
             placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
             isValidTarget: function($item, container) {

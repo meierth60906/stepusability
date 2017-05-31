@@ -13,6 +13,14 @@ oci_execute($stid);
 
 $fetchRow = oci_fetch_array($stid);
 
-echo $fetchRow[1];
+//echo json_encode($fetchRow);
+echo json_encode(array(
+    "id" => $fetchRow[0],
+    "name" => $fetchRow[1],
+    "status" => $fetchRow[2],
+    "auftraggeber" => $fetchRow[3],
+    "erstellt" => $fetchRow[4],
+    "geaendert" => $fetchRow[5],
+    "beschreibung" => $fetchRow[6]));
 
 ?>

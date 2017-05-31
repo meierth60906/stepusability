@@ -13,7 +13,7 @@ $fetchRowCount = oci_fetch_row($stid);
 
 if($fetchRowCount) {
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-        echo "<a class='card-item-link' href='project.php?id=" . $row['ID'] . "' onClick='getPage(" . $row['ID'] . ")'>
+        echo "<a class='card-item-link' href='projects/project.php?id=" . $row['ID'] . "'>
                             <div class='row card-item p-3'>
                                 <div class='card-item-icon col-1 middle-two-line'>
                                     <div class='icon-folder d-inline text-muted'></div>

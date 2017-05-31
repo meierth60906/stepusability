@@ -25,3 +25,8 @@ h1 {
     font-size: 2rem;
     margin-bottom: 0;
 }
+
+.editable {
+    color: #000;
+    background-color: #d6ddea;
+}
