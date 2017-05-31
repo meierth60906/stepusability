@@ -13,7 +13,7 @@ $fetchRowCount = oci_fetch_row($stid);
 
 if($fetchRowCount) {
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-            echo"<a href='project.php' class='link-noblue link-orangehover'>";
+            echo"<a href='project.php?id=" . $row['ID'] . "' onClick='getPage(" . $row['ID'] . ")' class='link-noblue link-orangehover'>";
             echo"<div class='row m-3 p-3 element-allgemein'>";
             echo"<div class='col-1 project-status'>" . $row['STATUS'] ."</div>";
             echo"<div class='link-orangehover-child font-weight-bold col-4'>" . $row['NAME'] ."</div>";
@@ -28,3 +28,5 @@ if($fetchRowCount) {
 }
 
 ?>
+
+

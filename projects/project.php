@@ -5,6 +5,13 @@
 //    header("Location:../index.php");
 //    die();
 //}
+
+if (!isset($_GET['id'])) {
+    header("Location: index.php");
+    die();
+} else {
+    $user_id = $_GET['id'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -21,7 +28,7 @@
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-6">
-                <h1>Projekt1</h1>
+                <h1 id="project-heading"></h1>
             </div>
             <div class="col-6 text-right align-self-center ">
                 <a class="btn btn-submit-orange" href="../testfenster_mod.php">
@@ -954,6 +961,26 @@
 </script>
 
 <script src="../js/jquery-sortable-min.js"></script>
+
+
+<!--ALLGEMEIN-->
+<script>
+    var pageId = '<?php echo $user_id ?>';
+
+    $( function loadHeading() {
+        $.ajax({
+            type: 'get',
+            data: 'id='+pageId,
+            url: '../logic/selectPAheading.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#project-heading").text(response);
+
+            }
+        });
+    });
+
+</script>
+
 
 <!-- Seiteninhalt aus Datenbank laden on Page Load-->
 <script>

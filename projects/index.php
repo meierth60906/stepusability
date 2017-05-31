@@ -151,7 +151,8 @@
                 projectsContainer.append(response);
             }
         })
-    })
+    });
+
 </script>
 <script>
 
