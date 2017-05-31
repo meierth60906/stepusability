@@ -1524,7 +1524,7 @@ if (!isset($_GET['id'])) {
         contentUnterlagen.load("protocolForm.html");
     }
     function editTestskript() {
-        contentUnterlagen.load("testplanForm.html");
+        contentUnterlagen.load("testskriptForm.html");
     }
 
     function editTestplan() {
