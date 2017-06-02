@@ -926,91 +926,12 @@ if (!isset($_GET['id'])) {
 </div>
 
 <?php include ('scripts.html'); ?>
-<script>
-
-    var h = $(window).height();
-    var w = $(window).width();
-    var header_h = $(".page-top").height();
-    var innerbody = $(".inner-body");
-    var nav = $(".sidebar-wrapper");
-
-    //    Initial Functions
-    innerbody.css("padding-top", header_h);
-
-    //Nav Width
-    var nav_w = nav.width();
-
-    //Sidebars
-    var sidAllg = $("#sidebar-allgemein");
-    var sidAufg = $("#sidebar-aufgaben");
-    var sidUnt = $("#sidebar-unterlagen");
-    var sidEval = $("#sidebar-eval");
-
-    //Contents
-    var conAllg = $("#content-allgemein");
-    var conAufg = $("#content-aufgaben");
-    var conUnt = $("#content-unterlagen");
-    var conEval = $("#content-eval");
-
-
-
-    $(function() {
-        if(w > 991) {
-            //Set Sidebar Height
-            sidAllg.height(h-header_h);
-            sidAufg.height(h-header_h);
-            sidUnt.height(h-header_h);
-            sidEval.height(h-header_h);
-
-            //Set Content Height
-            conAllg.height(h-header_h - 32);
-            conAufg.height(h-header_h - 32);
-            conUnt.height(h-header_h - 32);
-            conEval.height(h-header_h - 32);
-
-            //Set Content Width
-            conAllg.width(w - sidAllg.width() - 60 - nav_w);
-            conAufg.width(w - sidAufg.width() - 60 - nav_w);
-            conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidEval.width() - 30 - nav_w);
-        }
-    });
-
-
-    //Function for Window Resize
-    $(window).on('resize', function(){
-        //Window Height
-        h = $(window).height();
-        w = $(window).width();
-        nav_w = nav.width();
-
-        if(w > 991) {
-            //Set Sidebar Height
-            sidAllg.height(h - header_h);
-            sidAufg.height(h - header_h);
-            sidUnt.height(h - header_h);
-            sidEval.height(h-header_h);
-
-            //Set Content Height
-            conAllg.height(h - header_h - 32);
-            conAufg.height(h - header_h - 32);
-            conUnt.height(h - header_h - 32);
-            conEval.height(h - header_h - 32);
-
-            //Set Content Width
-            conAllg.width(w - sidAllg.width() - 60 - nav_w);
-            conAufg.width(w - sidAufg.width() - 60 - nav_w);
-            conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidEval.width() - 30 - nav_w);
-        }
-    });
-
-</script>
 
 <script src="../js/jquery-sortable-min.js"></script>
 
 
 <!--ALLGEMEIN-->
+<!--Projektinfos laden-->
 <script>
     var pageId = '<?php echo $user_id ?>';
 
@@ -1019,7 +940,7 @@ if (!isset($_GET['id'])) {
             type: 'get',
             data: 'id='+pageId,
             dataType: 'json',
-            url: '../logic/selectPAheading.php',
+            url: '../logic/selectProjectInfo.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $("#project-heading").text(response.name);
                 $("#project-auftraggeber").text(response.auftraggeber);
@@ -1033,6 +954,7 @@ if (!isset($_GET['id'])) {
 
 </script>
 
+<!--Projektinformationen bearbeiten-->
 <script>
 
 
@@ -1058,23 +980,10 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
-<!-- Seiteninhalt aus Datenbank laden on Page Load-->
-<script>
-    $( function loadSections() {
-        $.ajax({
-            url: '../logic/selectScenario.php',
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                scenarioContainer.append(response);
-            }
-        });
-    })
-</script>
+
 
 <!-- Rubriken erstellen -->
 <script>
-    var scenarioContainer = $(".scenario-container");
-    var postSessionContainer = $(".postSession-container");
-    var conclusionContainer = $(".conclusion-container");
     var agreementContainer = $(".agreement-container");
     var protocolContainer = $(".protocol-container");
     var testskriptContainer = $(".testskript-container");
@@ -1082,149 +991,8 @@ if (!isset($_GET['id'])) {
     var testberichtContainer = $(".testbericht-container");
     var loeswegContainer = $(".loesweg-container");
 
-    function createTask(event) {
-
-        function insideTask() {
-            return "<li class='task item-hover'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "</li>";
-        }
 
 
-        var parentScenario = $(event).closest(".scenario");
-        var taskContainer = parentScenario.find(".task-container");
-        taskContainer.append(insideTask);
-
-    }
-
-    function createTaskOnly() {
-
-        function insideTask() {
-            return "<li class='element-allgemein mb-3 task item-hover'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-list icon-align text-muted'></span>Aufgabe" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "</li>";
-        }
-
-
-        scenarioContainer.append(insideTask);
-
-    }
-
-
-
-    function createConclusionQuestion(event) {
-
-        function insideCon() {
-            return "<li class='task item-hover'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-question icon-align text-muted'></span>Abschlussfrage" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "</li>";
-        }
-
-        var parentCon = $(event).closest(".conclusionRubrik");
-        var conContainer = parentCon.find(".cc-question-container");
-        conContainer.append(insideCon);
-
-    }
-
-    function createScenario() {
-        $.ajax({
-            url: '../logic/insertScenario.php',
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                scenarioContainer.append(response);
-            }
-        });
-
-    }
-
-
-
-    function createConclusion() {
-
-        function insideConclusion() {
-            return "<li class='conclusionRubrik element-allgemein mb-3'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-10'>Abschlussfragen</div>" +
-                "<div class='col-2 text-right'>" +
-                "<a href='#testaufgaben' onclick='createConclusionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Abschlussfrage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
-                "</div>" +
-                "</div>" +
-                "<ol class='cc-question-container pl-0'>" +
-                "<hr class='m-0'>" +
-                "</ol>" +
-                "</li>";
-        }
-
-        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
-            conclusionContainer.append(insideConclusion);
-        } else {
-            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
-        }
-
-    }
-
-    function createPostSession() {
-
-        function insidePostSession() {
-            return "<li class='postSessionRubrik element-allgemein mb-3'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-10'>Post Session Interview</div>" +
-                "<div class='col-2 text-right'>" +
-                "<a href='#testaufgaben' onclick='createPostSessionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
-                "</div>" +
-                "</div>" +
-                "<ol class='ps-question-container pl-0'>" +
-                "<hr class='m-0'>" +
-                "</ol>" +
-                "</li>";
-        }
-
-        if(!(postSessionContainer.find('.postSessionRubrik').length !== 0)) {
-
-            postSessionContainer.append(insidePostSession);
-
-        } else {
-            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.");
-        }
-
-    }
-
-    function createPostSessionQuestion(event) {
-
-        function insidePSQ() {
-            return "<li class='task item-hover'>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "</li>";
-        }
-
-        var parentPSQ = $(event).closest(".postSessionRubrik");
-        var psqContainer = parentPSQ.find(".ps-question-container");
-        psqContainer.append(insidePSQ);
-
-    }
 
     function createAgreement() {
 
@@ -1538,307 +1306,13 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
-<script>
+<script src="../js/testaufgabenLaden.js"></script>
 
-    // Javascript to enable link to tab
-    var hash = document.location.hash;
-    if (hash) {
-        $('.nav-tabs a[href="'+hash+'"]').tab('show');
-    }
+<script src="../js/testaufgabenErstellen.js"></script>
 
-    // Change hash for page-reload
-    $('.nav-tabs a').on('shown.bs.tab', function (e) {
-        window.location.hash = e.target.hash;
-        if(w > 991) {
-            //Set Sidebar Height
-            sidAllg.height(h - header_h);
-            sidAufg.height(h - header_h);
-            sidUnt.height(h - header_h);
-            sidEval.height(h - header_h);
+<script src="../js/projektfensterSetStyle.js"></script>
 
-            //Set Content Height
-            conAllg.height(h - header_h - 32);
-            conAufg.height(h - header_h - 32);
-            conUnt.height(h - header_h - 32);
-            conEval.height(h - header_h - 32);
-
-            //Set Content Width
-            conAllg.width(w - sidAllg.width() - 60 - nav_w);
-            conAufg.width(w - sidAufg.width() - 60 - nav_w);
-            conUnt.width(w - sidUnt.width() - 60 - nav_w);
-            conEval.width(w - sidEval.width() - 30 - nav_w);
-        }
-    });
-
-</script>
-
-<!-- Sortierfunktion Testaufgaben -->
-<script>
-    $(function  () {
-
-        var adjustment;
-
-        $("ol.scenario-container").sortable({
-            nested: true,
-            delay: 100,
-            placeholderClass: 'placeholder',
-            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
-            isValidTarget: function ($item, container) {
-                var depth = 1, // Start with a depth of one (the element itself)
-                    maxDepth = 2,
-                    children = $item.find('ol'); /*.first().find('li'); */
-
-
-                // Add the amount of parents to the depth
-                depth += container.el.parents('ol').length;
-
-                // Increment the depth for each time a child
-                while (children.length) {
-                    depth++;
-                    children = children.find('ol'); /*.first().find('li');*/
-                }
-
-                return depth <= maxDepth;
-            },
-            // animation on drop
-            onDrop: function  ($item, container, _super) {
-
-                var $clonedItem = $('<li/>').css({height: $item.height()});
-                $item.before($clonedItem);
-                $clonedItem.animate({'height': $item.height()});
-
-                $item.animate($clonedItem.position(), function  () {
-                    $clonedItem.detach();
-                    _super($item, container);
-                });
-
-                if($item.is('.task') && $item.parent().is('.task-container')) {
-                    $item.removeClass("element-allgemein mb-3");
-                } else {
-                    $item.addClass("element-allgemein mb-3");
-                }
-
-            },
-
-            // set $item relative to cursor position
-            onDragStart: function ($item, container, _super) {
-                var offset = $item.offset(),
-                    pointer = container.rootGroup.pointer;
-
-                adjustment = {
-                    left: pointer.left - offset.left,
-                    top: pointer.top - offset.top
-                };
-
-                _super($item, container);
-            },
-            onDrag: function ($item, position) {
-                $item.css({
-                    left: position.left - adjustment.left,
-                    top: position.top - adjustment.top
-                });
-            }
-        });
-
-
-    });
-</script>
-
-<!-- Sortierfunktion PostSession -->
-<script>
-    $(function () {
-        $("ol.postSession-container").sortable({
-            exclude: ".postSessionRubrik",
-            delay: 100,
-            placeholderClass: 'placeholder',
-            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
-            isValidTarget: function($item, container) {
-                if( !$item.closest("ol").is(container.el)){
-                    return false;
-                    // additional rules
-                } else return true;
-            },
-            // animation on drop
-            onDrop: function  ($item, container, _super) {
-
-                var $clonedItem = $('<li/>').css({height: $item.height()});
-                $item.before($clonedItem);
-                $clonedItem.animate({'height': $item.height()});
-
-                $item.animate($clonedItem.position(), function  () {
-                    $clonedItem.detach();
-                    _super($item, container);
-                });
-
-            },
-
-            // set $item relative to cursor position
-            onDragStart: function ($item, container, _super) {
-                var offset = $item.offset(),
-                    pointer = container.rootGroup.pointer;
-
-                adjustment = {
-                    left: pointer.left - offset.left,
-                    top: pointer.top - offset.top
-                };
-
-                _super($item, container);
-            },
-            onDrag: function ($item, position) {
-                $item.css({
-                    left: position.left - adjustment.left,
-                    top: position.top - adjustment.top
-                });
-            }
-        });
-    })
-</script>
-
-<!-- Sortierfunktion Agreement -->
-<script>
-    $(function () {
-        $("ol.agreement-container").sortable({
-            exclude: ".agreementRubrik",
-            delay: 100,
-            placeholderClass: 'placeholder',
-            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
-            isValidTarget: function($item, container) {
-                if( !$item.closest("ol").is(container.el)){
-                    return false;
-                    // additional rules
-                } else return true;
-            },
-            // animation on drop
-            onDrop: function  ($item, container, _super) {
-
-                var $clonedItem = $('<li/>').css({height: $item.height()});
-                $item.before($clonedItem);
-                $clonedItem.animate({'height': $item.height()});
-
-                $item.animate($clonedItem.position(), function  () {
-                    $clonedItem.detach();
-                    _super($item, container);
-                });
-
-            },
-
-            // set $item relative to cursor position
-            onDragStart: function ($item, container, _super) {
-                var offset = $item.offset(),
-                    pointer = container.rootGroup.pointer;
-
-                adjustment = {
-                    left: pointer.left - offset.left,
-                    top: pointer.top - offset.top
-                };
-
-                _super($item, container);
-            },
-            onDrag: function ($item, position) {
-                $item.css({
-                    left: position.left - adjustment.left,
-                    top: position.top - adjustment.top
-                });
-            }
-        });
-    })
-</script>
-<script>
-    $(function () {
-        $("ol.protocol-container").sortable({
-            exclude: ".protocolRubrik",
-            delay: 100,
-            placeholderClass: 'placeholder',
-            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
-            isValidTarget: function($item, container) {
-                if( !$item.closest("ol").is(container.el)){
-                    return false;
-                    // additional rules
-                } else return true;
-            },
-            // animation on drop
-            onDrop: function  ($item, container, _super) {
-
-                var $clonedItem = $('<li/>').css({height: $item.height()});
-                $item.before($clonedItem);
-                $clonedItem.animate({'height': $item.height()});
-
-                $item.animate($clonedItem.position(), function  () {
-                    $clonedItem.detach();
-                    _super($item, container);
-                });
-
-            },
-
-            // set $item relative to cursor position
-            onDragStart: function ($item, container, _super) {
-                var offset = $item.offset(),
-                    pointer = container.rootGroup.pointer;
-
-                adjustment = {
-                    left: pointer.left - offset.left,
-                    top: pointer.top - offset.top
-                };
-
-                _super($item, container);
-            },
-            onDrag: function ($item, position) {
-                $item.css({
-                    left: position.left - adjustment.left,
-                    top: position.top - adjustment.top
-                });
-            }
-        });
-    })
-</script>
-<script>
-    $(function () {
-        $("ol.postSession-container").sortable({
-            exclude: ".postSessionRubrik",
-            delay: 100,
-            placeholderClass: 'placeholder',
-            placeholder: "<li class='placeholder' style='border: 2px dashed #a9a9a9; border-radius: 5px; height: 60px;'></li>",
-            isValidTarget: function($item, container) {
-                if( !$item.closest("ol").is(container.el)){
-                    return false;
-                    // additional rules
-                } else return true;
-            },
-            // animation on drop
-            onDrop: function  ($item, container, _super) {
-
-                var $clonedItem = $('<li/>').css({height: $item.height()});
-                $item.before($clonedItem);
-                $clonedItem.animate({'height': $item.height()});
-
-                $item.animate($clonedItem.position(), function  () {
-                    $clonedItem.detach();
-                    _super($item, container);
-                });
-
-            },
-
-            // set $item relative to cursor position
-            onDragStart: function ($item, container, _super) {
-                var offset = $item.offset(),
-                    pointer = container.rootGroup.pointer;
-
-                adjustment = {
-                    left: pointer.left - offset.left,
-                    top: pointer.top - offset.top
-                };
-
-                _super($item, container);
-            },
-            onDrag: function ($item, position) {
-                $item.css({
-                    left: position.left - adjustment.left,
-                    top: position.top - adjustment.top
-                });
-            }
-        });
-    })
-</script>
+<script src="../js/testaufgabenSortieren.js"></script>
 
 
 </body>

@@ -6,15 +6,16 @@
 //    die();
 //}
 
-$art = "Szenario";
-$name = "Szenario";
+$art = "Aufgabe";
+$name = "Testaufgabe";
 $ut_id = $_POST['utid'];
+$scenario_id = $_POST['scenarioid'];
 
 // Insert into several tables, rolling back the changes if an error occurs
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
-$stid = oci_parse($conn, "INSERT INTO ABSCHNITT(ART_AB, NAME_AB, UT_ID) VALUES('".$art."', '".$name."', '".$ut_id."')");
+$stid = oci_parse($conn, "INSERT INTO ABSCHNITT(ART_AB, NAME_AB, UT_ID, IN_SZENARIO) VALUES('".$art."', '".$name."', '".$ut_id."', '".$scenario_id."')");
 
 
 
@@ -40,19 +41,16 @@ oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);
 
-echo "<li class='scenario element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>";
-echo "<div class='row p-3'>";
-echo "<div class='col-10'>";
-echo "<a href='#testaufgaben' onclick='editScenario()' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $fetchRowCount[3] . "</a>";
-echo "</div>";
-echo "<div class='col-2 text-right'>";
-echo "<a href='#testaufgaben' onclick='createTask(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
-echo "</div>";
-echo "</div>";
-echo "<ol class='task-container pl-0'>";
-echo "<hr class='m-0'>";
-echo "</ol>";
-echo "</li>";
 
+
+ echo "<li class='task item-hover'>";
+ echo    "<div class='row p-3'>";
+ echo    "<div class='col-lg-12'>";
+ echo    "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>";
+ echo    "<span class='pr-2 icon-list icon-align text-muted'></span>" . $fetchRowCount[3];
+ echo    "</a>";
+ echo    "</div>";
+ echo    "</div>";
+ echo    "</li>";
 ?>
     
