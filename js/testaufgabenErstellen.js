@@ -108,20 +108,18 @@ function createPostSession() {
 
 function createPostSessionQuestion(event) {
 
-    function insidePSQ() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Post-Session-Interview-Frage" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
     var parentPSQ = $(event).closest(".postSessionRubrik");
     var psqContainer = parentPSQ.find(".ps-question-container");
-    psqContainer.append(insidePSQ);
+
+    var psqId = parentPSQ.data('id');
+
+    $.ajax({
+        data: 'utid='+pageId+'&psqid='+psqId,
+        type: 'post',
+        url: '../logic/insertPostSessionQuestion.php',
+        success: function (response) {//response is value returned from php (for your example it's "bye bye"
+            psqContainer.append(response);
+        }
+    })
 
 }

@@ -21,14 +21,14 @@ oci_execute($stid);
 
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    echo "<li class='postSessionRubrik element-allgemein mb-3'>
+    echo "<li class='postSessionRubrik element-allgemein mb-3' data-id='" . $row['ID'] . "'>
 <div class='row p-3'>
 <div class='col-10'>" . $row['NAME_AB'] . "</div>
 <div class='col-2 text-right'>
 <a href='#testaufgaben' onclick='createPostSessionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>
 </div>
 </div>
-<ol class='ps-question-container pl-0'>
+<ol class='pl-0 ps-question-container'>
 <hr class='m-0'>
 </ol>
 </li>";

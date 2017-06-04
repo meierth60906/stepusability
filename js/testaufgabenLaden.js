@@ -45,17 +45,43 @@ $( function loadPostSession() {
 });
 
 $( function loadTasks() {
+
+
     $.ajax({
         type: 'post',
-        data: 'utid='+pageId+'&scenarioid='+scenarioId,
+        data: 'utid='+pageId,
         dataType: 'json',
         url: '../logic/loadTasks.php',
         success: function (response) {//response is value returned from php (for your example it's "bye bye"
-            //var scenarioId = response.szenarioId;
-            alert(response.szenarioid);
-            //var scenario = $(".scenario").find("[data-id='" + scenarioId + "']");
+            var scenarioId = response.szenarioid;
 
-            //scenario.append(response.echo);
+            for(i in scenarioId) {
+                var scenario = $(".scenario[data-id='" +scenarioId[i] + "']");
+                var taskContainer = scenario.find(".task-container");
+                taskContainer.append(response.echo[i]);
+            }
+
+
+
+
+        }
+    });
+});
+
+$( function loadPostSessionQuestion() {
+    $.ajax({
+        type: 'post',
+        data: 'utid='+pageId,
+        dataType: 'json',
+        url: '../logic/loadPostSessionQuestion.php',
+        success: function (response) {
+            var psId = response.postsessionid;
+
+            for(i in psId) {
+                var psq = $(".postSessionRubrik");
+                var psqContainer = psq.find(".ps-question-container");
+                psqContainer.append(response.echo[i]);
+            }
         }
     });
 });

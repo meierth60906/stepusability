@@ -945,9 +945,9 @@ if (!isset($_GET['id'])) {
                 $("#project-heading").text(response.name);
                 $("#project-auftraggeber").text(response.auftraggeber);
                 $("#project-status").text(response.status);
-                $("#editProjectInfo-title").value = response.name;
-                $("#editProjectInfo-ag").value = response.auftraggeber;
-                $("#editProjectInfo-desc").value = response.beschreibung;
+                $("#editProjectInfo-title").val(response.name);
+                $("#editProjectInfo-ag").val(response.auftraggeber);
+                $("#editProjectInfo-desc").val(response.beschreibung);
             }
         });
     });

@@ -21,6 +21,7 @@ oci_execute($stid);
 
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
+    $szenId[] = $row['IN_SZENARIO'];
     $data[] = "<li class='task item-hover'>
         <div class='row p-3'>
         <div class='col-lg-12'>
@@ -33,7 +34,7 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
 }
 
 echo json_encode(array(
-    "szenarioid" => $fetchRow[6],
+    "szenarioid" => $szenId,
     "echo" => $data
 ));
 
