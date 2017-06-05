@@ -708,7 +708,7 @@ if (!isset($_GET['id'])) {
             <div class="tab-pane" id="evaluation" role="tabpanel">
 
 
-                <!--    <div class="aufgabenfeld inner-body row c-grey-bg">
+                    <div class="aufgabenfeld inner-body row c-grey-bg">
         <div class="col-12">
             <div class="row">
                 <div class="col-2 text-right p-3">
@@ -792,8 +792,7 @@ if (!isset($_GET['id'])) {
         <div class="col-md-6">
             Editor
         </div>
-        </div>-->
-
+        </div>
 
 
 
