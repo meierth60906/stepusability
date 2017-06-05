@@ -835,11 +835,11 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                    <div id="aufgabe-eval" class="row m-0 p-3">
+                    <!--<div id="aufgabe-eval" class="row m-0 p-3">
                         <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
                         <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
                     </div>
-
+-->
 
                     <div class="row">
 
