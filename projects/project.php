@@ -803,7 +803,8 @@ if (!isset($_GET['id'])) {
                                 Protokollliste
                             </div>
 
-                            <div class="col-lg-12"><hr class="mb-3"></div><div class="protokollant-card m-5">
+                            <div class="col-lg-12"><hr class="mb-3"></div>
+                            <div class="protokollant-card">
                                 <div class="row px-4 p-4">
                                     <div class="col-md-12">
                                         <div class="img-placeholder c-darkgrey-bg">AA</div>
@@ -868,23 +869,23 @@ if (!isset($_GET['id'])) {
                     <div class="row">
 
                         <!--                            Projektinfo -->
-                        <!--
-                        <div class="col-lg-12 p-3">
-                            <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                <div class="col-lg-12 element-allgemein p-3">
-                                    <div class="row">
-                                        <div class="col-10 col-sm-6 headline">
-                                            Projektinformationen
-                                        </div>
-                                        <div class="col-2 col-sm-6 text-right">
-                                            <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                        </div>
-                                        <div class="col-12"><hr class="pb-3"></div>
+                    <!--
+                    <div class="col-lg-12 p-3">
+                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                            <div class="col-lg-12 element-allgemein p-3">
+                                <div class="row">
+                                    <div class="col-10 col-sm-6 headline">
+                                        Projektinformationen
                                     </div>
+                                    <div class="col-2 col-sm-6 text-right">
+                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                    </div>
+                                    <div class="col-12"><hr class="pb-3"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
+                </div>-->
 
                     <div id="protokollanten-eval" class="col-lg-6">
 
