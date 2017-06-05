@@ -40,39 +40,65 @@
         <div class="container row">
             <div class="col-lg-3 p-0" id="sidebarLibrary">
 
-                <!--                               Switch Button-->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- Switch Button-->
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#projects" role="tab" aria-controls="projects">Projekte</a>
+                        <a class="nav-link active" href="#projects" role="tab" data-toggle="tab">Projekte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#archiv" role="tab" aria-controls="archiv">Archiv</a>
+                        <a class="nav-link" href="#archiv" role="tab" data-toggle="tab">Archiv</a>
                     </li>
                 </ul>
 
+
+                <!--                Seitenleisten-Inhalt -->
+
                 <div class="tab-content">
+
+                    <!--                    Projekte-->
+
+
                     <div class="tab-pane active" id="projects" role="tabpanel">
                         <div class="panel-group">
                             <div class="panel panel-default">
-
-
-                                <!--                    innere Navigationsleiste -->
 
                                 <!--Projekt 1-->
 
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a class="icon-angle-right active" data-toggle="collapse"
-                                           href="#projekt1">Projekt
-                                            1</a>
+                                        <a class="icon-angle-right" data-toggle="collapse"
+                                           href="#wetter">wetter.com</a>
                                     </h4>
                                 </div>
-                                <div id="projekt1" class="panel-collapse collapse active">
+                                <div id="wetter" class="panel-collapse collapse">
                                     <ul class="flex-column nav">
                                         <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link active" href="#einver" role="tab"
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#einverstaendniserklaerungwetter"
+                                               role="tab"
                                                data-toggle="tab"> Einverständniserklärung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#protokollleitfadenwetter"
+                                               role="tab"
+                                               data-toggle="tab"> Protokollleitfaden</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testskriptwetter"
+                                               role="tab"
+                                               data-toggle="tab"> Testskript</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testplanwetter"
+                                               role="tab"
+                                               data-toggle="tab"> Testplan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testberichtwetter"
+                                               role="tab"
+                                               data-toggle="tab"> Testbericht</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -81,77 +107,44 @@
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#projekt2"
-                                           class="icon-angle-right">Projekt
-                                            2</a>
+                                        <a data-toggle="collapse" href="#step"
+                                           class="icon-angle-right">step</a>
                                     </h4>
                                 </div>
-                                <div id="projekt2" class="panel-collapse collapse">
+                                <div id="step" class="panel-collapse collapse">
                                     <ul class="flex-column nav">
                                         <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#einver1" role="tab"
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#einverstaendniserklaerungstep" role="tab"
                                                data-toggle="tab"> Einverständniserklärung</a></li>
                                     </ul>
                                 </div>
 
-                                <!--Projekt 3-->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#projekt3"
-                                           class="icon-angle-right">Projekt 3</a>
-                                    </h4>
-                                </div>
-                                <div id="projekt3" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#leitfaden2" role="tab"
-                                               data-toggle="tab">
-                                                Protokollleitfaden</a></li>
-                                    </ul>
-                                </div>
-
-                                <!--Projekt 4-->
-
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#projekt4" class="icon-angle-right">Projekt
-                                            4</a>
-                                    </h4>
-                                </div>
-                                <div id="projekt4" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#leitfaden1" role="tab"
-                                               data-toggle="tab"> Protokollleitfaden</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="tab-content">
+                    <!--                   Archiv-->
+
                     <div class="tab-pane" id="archiv" role="tabpanel">
                         <div class="panel-group">
                             <div class="panel panel-default">
 
 
-                                <!--                    innere Navigationsleiste -->
-
                                 <!--Projekt 1-->
 
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a class="icon-angle-right active" data-toggle="collapse"
-                                           href="#eins">Projekt
-                                            xyz</a>
+                                        <a class="icon-angle-right" data-toggle="collapse"
+                                           href="#amazon">amazon</a>
                                     </h4>
                                 </div>
-                                <div id="eins" class="panel-collapse collapse active">
+                                <div id="amazon" class="panel-collapse collapse">
                                     <ul class="flex-column nav">
                                         <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link active" href="#" role="tab"
+                                            <a class="icon-file-text-o p-3 nav-link active"
+                                               href="#einverstaendniserklaerungamazon" role="tab"
                                                data-toggle="tab"> Einverständniserklärung</a>
                                         </li>
                                     </ul>
@@ -161,116 +154,32 @@
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#zwei"
-                                           class="icon-angle-right">Projekt
-                                            dssf</a>
+                                        <a data-toggle="collapse" href="#th"
+                                           class="icon-angle-right">TH Nürnberg</a>
                                     </h4>
                                 </div>
-                                <div id="zwei" class="panel-collapse collapse">
+                                <div id="th" class="panel-collapse collapse">
                                     <ul class="flex-column nav">
                                         <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
+                                            <a class="icon-file-text-o p-3 nav-link" href="#einverstaendniserklaerungth"
+                                               role="tab"
                                                data-toggle="tab"> Einverständniserklärung</a></li>
                                     </ul>
                                 </div>
 
-                                <!--Projekt 3-->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#drei"
-                                           class="icon-angle-right">Projekt dsds</a>
-                                    </h4>
-                                </div>
-                                <div id="drei" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
-                                               data-toggle="tab">
-                                                Protokollleitfaden</a></li>
-                                    </ul>
-                                </div>
-
-                                <!--Projekt 4-->
-
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#vier" class="icon-angle-right">Projekt
-                                            sadfd</a>
-                                    </h4>
-                                </div>
-                                <div id="vier" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#" role="tab"
-                                               data-toggle="tab"> Protokollleitfaden</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
             </div>
         </div>
     </div>
-
-    <!--    page content-->
-
     <div class="container-fluid">
         <div class="tab-content">
 
-            <div class="tab-pane active" id="einver" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-4">
-                        <table class="table table-bordered">
-                            <thead>
-                            <tr>
-                                <th>Einverständniserklärung</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
-                                        verbessern. </p>
-                                    <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
-                                        Sie können jederzeit abbrechen.<br>
-                                        Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
-                                    <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
-                                        aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
-                                        zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
-                                        wird nicht veröffentlicht.<br></p>
-                                    <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
-                                        <br>Vielen Dank!</p>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
-                                        während
-                                        ich an dem Test teilnehme.</p>
-                                    <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
-                                        und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
-                                        verwenden.</p>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <p>Datum, Ort, Unterschrift:</p>
-                                    <br>
-                                </th>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane row" id="einver1" role="tabpanel">
+            <div class="tab-pane row" id="einverstaendniserklaerungwetter" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -318,8 +227,11 @@
                 </div>
             </div>
 
+            <!--            Projekte -->
 
-            <div class="tab-pane row" id="leitfaden1" role="tabpanel">
+            <!--            wetter.com-->
+
+            <div class="tab-pane row" id="protokollleitfadenwetter" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -365,49 +277,271 @@
             </div>
 
 
-            <div class="tab-pane row" id="leitfaden2" role="tabpanel">
+            <div class="tab-pane row" id="testskriptwetter" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th>Aufgabenanweisung</th>
-                            <th>Einstiegsseite</th>
-                            <th>Lösungsschritte</th>
-                            <th>Beobachtungen</th>
+                            <th>Testskript</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>
+                                <p><b>Technische Vorbereitung</b></p>
+                                <p>Browsercache löschen
+                                </p>
                             </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>
+                                <p><b>Briefing</b></p>
+                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung
+                                    unterschreiben lassen.</p>
                             </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>
+                                <p><b>Einleitung und Beschreibung des Testgegenstands</b></p>
+                                <p>Wir möchten Sie bitten, www.wetter.com für uns zu testen. Sie helfen uns damit, die
+                                    Webseite hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                </p>
+                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt
+                                    haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung
+                                    gespeichert. Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung
+                                    ihrer Daten machen.
+                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den
+                                    Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat,
+                                    werden wir das Gerät zunächst gemäß ihrem Augenabstand kalibrieren. Ich führe das
+                                    jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am
+                                    Computer arbeiten können.
+                                </p>
                             </td>
-                            <td>
-                            </td>
-                            <td>
-                            </td>
-                            <td></td>
                         </tr>
-
+                        <tr>
+                            <td>
+                                <p><b>Augencheck</b></p>
+                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen
+                                    mit den Augen zu verfolgen.
+                                </p>
+                                <p><b>Kalibration</b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Anweisung vor den Aufgaben</b></p>
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com.
+                                    Damit helfen Sie uns wetter.com zu verbessern.
+                                    Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. Zusätzlich bekommen sie
+                                    von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
+                                    können.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Anweisung Think-Aloud</b></p>
+                                <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom
+                                    System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder
+                                    positiv.
+                                    Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar
+                                    frustriert. Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun
+                                    sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie
+                                    uns bitte, was Sie denken.
+                                </p>
+                                <p>Sie können jederzeit Fragen stellen, haben Sie im Moment Fragen?
+                                </p>
+                                <p><b>Start der Eyetracking-Aufzeichnung
+                                    </b></p>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+
+            <div class="tab-pane row" id="testplanwetter" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Testplan</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane row" id="testberichtwetter" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Testbericht</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--            step-->
+
+            <div class="tab-pane row" id="einverstaendniserklaerungstep" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--            amazon-->
+            <div class="tab-pane row" id="einverstaendniserklaerungamazon" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <!--            TH-->
+            <div class="tab-pane row" id="einverstaendniserklaerungth" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     </div>
@@ -435,9 +569,10 @@
         });
 
         $(function () {
-            $('#myTab a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
+            $('nav-link').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
         });
     });
 
