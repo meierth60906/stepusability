@@ -41,7 +41,7 @@
             <div class="col-lg-3 p-0" id="sidebarLibrary">
 
                 <!-- Switch Button-->
-                <ul class="nav nav-tabs" role="tablist">
+                <ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" href="#projects" role="tab" data-toggle="tab">Projekte</a>
                     </li>
@@ -245,28 +245,59 @@
                         <tbody>
                         <tr>
                             <td>
+                                Welches Wetter ist morgen bei Ihnen Zuhause gemeldet? Was ist die Temperatur um 12 Uhr?
                             </td>
                             <td>
+                                Startseite
                             </td>
                             <td>
+                                <ul>
+                                    <li>Ort über Suchfeld eingeben</li>
+                                    <li>„morgen“ auswählen (3 Möglichkeiten)</li>
+                                    <li>Leiste „Mittag“ finden und aufklappen</li>
+                                    <li>Temperatur für 12.00 Uhr nennen</li>
+                                </ul>
                             </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
+                                Wie wandern die Wolken über Bayern? Ab wann ist Nürnberg morgen stark bewölkt?
                             </td>
                             <td>
                             </td>
                             <td>
+                                <ul>
+                                    <li>Auswählen „Niederschlagsradar“ (rechte Spalte)</li>
+                                    <li>Auswahlmenü („Niederschlagsradar“) nutzen und „Bewölkung“ auswählen</li>
+                                    <li>Play-Button drücken</li>
+                                    <li>(Ergebnis: 6:00 – 8:00 Uhr)
+                                        Alternative: 1
+                                    </li>
+                                    <li>Menü „Wetterkarten“ > Untermenü „Bewölkung“</li>
+                                    <li>Menü „Wetterkarten“</li>
+                                </ul>
                             </td>
+
                             <td></td>
                         </tr>
                         <tr>
-                            <td>
+                            <td>Finden Sie ein Sommerurlaubsziel in Südamerika, welches im Juli eine Durchschnittstemperatur von 18 bis 30 Grad Celsius hat.
+                            </td>
+                            <td>Startseite
                             </td>
                             <td>
-                            </td>
-                            <td>
+                                <ul>
+                                    <li>Menü: „Reise und Freizeit“ > Untermenü „Urlaubswetter“  auswählen
+                                    </li>
+                                    <li>Parameter einstellen und unzutreffende abwählen</li>
+                                    <li>18-30 Grad</li>
+                                    <li>Juli (Januar streichen)
+                                    </li>
+                                    <li>Südamerika (Europa streichen)</li>
+                                    <li>Button „Ergebnisse anzeigen “ auswählen
+                                    </li>
+                                </ul>
                             </td>
                             <td></td>
                         </tr>

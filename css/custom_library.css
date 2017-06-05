@@ -1,40 +1,36 @@
+#switch .nav-link a:focus, #switch .nav-link.active{
+    font-weight: bold !important;
+    background-color: #185077 !important;
+    color: white;
+}
+#switch .nav-link {
+    background-color: white;
+}
 
-/*switchLink*/
+#library th, #templates th{
+    width:30%;
+}
 
-/*#library .btn-group, .btn-group-vertical {*/
-    /*height:5%;*/
-    /*margin-left:3rem;*/
-    /*margin-top:10px;*/
-    /*padding: 20px;*/
-/*}*/
+#switch .nav-item{
+    width:100px;
 
+}
 
-/*#library .btn-primary {*/
-    /*background-color: white;*/
-    /*border-color:#133E5C;*/
-/*}*/
+#switch .nav-item:hover{
+    background-color: transparent !important;
+}
 
-/*#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{*/
-    /*background-color: #133E5C;*/
-    /*border-color: #133E5C;*/
-/*}*/
+#switch .nav-link{
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
 
-/*#switchlink .nav-item{*/
-    /*background-color: white;*/
-    /*border: 1px solid;*/
-    /*border-color:#133E5C;*/
-/*}*/
-/*#switchlink .nav-item:hover{*/
-    /*background-color: transparent !important;*/
-/*}*/
+#switch a{
+    text-align: center;
+}
 
-/*#library .active .switchlink {*/
-    /*color: #FFFFFF;*/
-
-/*}*/
-
-/*#library btn-group{*/
-
-/*}*/
-
-
+#library .panel-group{
+    padding-top:20px;
+}
