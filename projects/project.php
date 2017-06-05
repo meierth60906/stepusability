@@ -19,6 +19,21 @@ if (!isset($_GET['id'])) {
     <title>Projekt 1 | step</title>
 
     <?php include ('head.html'); ?>
+
+    <!-- Editor -->
+
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
+
 </head>
 <body id="body-singleproject">
 
@@ -708,91 +723,93 @@ if (!isset($_GET['id'])) {
             <div class="tab-pane" id="evaluation" role="tabpanel">
 
 
-                    <div class="aufgabenfeld inner-body row c-grey-bg">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-2 text-right p-3">
-                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                </div>
-                <div class="col-8 p-3">
-                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum.
-                    </p>
-                </div>
-                <div class="col-2 p-3">
-                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                </div>
-            </div>
+                <div class="aufgabenfeld inner-body row c-grey-bg">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 text-right p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                            </div>
+                            <div class="col-8 p-3">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum.
+                                </p>
+                            </div>
+                            <div class="col-2 p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                            </div>
+                        </div>
 
-        </div>
+                    </div>
 
-        </div>
-        <div class="row">
-        <div class="protokollant-container col-md-6">
-            <div class="protokollant-card m-5">
-                <div class="row px-4 p-4">
-                    <div class="col-md-12">
-                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+                </div>
+                <div class="row">
+                    <div class="protokollant-container col-md-6">
+                        <div class="protokollant-card m-5">
+                            <div class="row px-4 p-4">
+                                <div class="col-md-12">
+                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
 
-                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
-                        <hr>
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-lg-4">Lösungsschritte:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores et ea rebum.
+                                </div>
+                            </div>
+                            <div class="row px-4 p-4">
+                                <div class="col-lg-4">Anmerkungen:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="protokollant-card m-5">
+                            <div class="row px-4 p-4">
+                                <div class="col-md-12">
+                                    <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-lg-4">Lösungsschritte:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                    dolores et ea rebum.
+                                </div>
+                            </div>
+                            <div class="row px-4 p-4">
+                                <div class="col-lg-4">Anmerkungen:</div>
+                                <div class="col-lg-8 font-weight-bold">
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        Editor
+                        <div id="summernote">Hello Summernote</div>
+
                     </div>
                 </div>
-                <div class="row px-4">
-                    <div class="col-lg-4">Lösungsschritte:</div>
-                    <div class="col-lg-8 font-weight-bold">
-                        Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum.
-                    </div>
-                </div>
-                <div class="row px-4 p-4">
-                    <div class="col-lg-4">Anmerkungen:</div>
-                    <div class="col-lg-8 font-weight-bold">
-                        Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua.
-                    </div>
-                </div>
-            </div>
-
-            <div class="protokollant-card m-5">
-                <div class="row px-4 p-4">
-                    <div class="col-md-12">
-                        <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
-
-                        <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row px-4">
-                    <div class="col-lg-4">Lösungsschritte:</div>
-                    <div class="col-lg-8 font-weight-bold">
-                        Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum.
-                    </div>
-                </div>
-                <div class="row px-4 p-4">
-                    <div class="col-lg-4">Anmerkungen:</div>
-                    <div class="col-lg-8 font-weight-bold">
-                        Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat, sed diam voluptua.
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-6">
-            Editor
-        </div>
-        </div>
 
 
 
@@ -856,7 +873,6 @@ if (!isset($_GET['id'])) {
 
                     </div>
                 </div>
-
             </div>
 
 
@@ -927,7 +943,10 @@ if (!isset($_GET['id'])) {
 <?php include ('scripts.html'); ?>
 
 <script src="../js/jquery-sortable-min.js"></script>
-
+<script>$(document).ready(function() {
+        $('#summernote').summernote();
+    });
+</script>
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
@@ -1312,6 +1331,9 @@ if (!isset($_GET['id'])) {
 <script src="../js/projektfensterSetStyle.js"></script>
 
 <script src="../js/testaufgabenSortieren.js"></script>
+
+
+
 
 
 </body>
