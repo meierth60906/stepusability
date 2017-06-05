@@ -1,4 +1,5 @@
 <?php
+
 //session_start();
 //if (!$_SESSION['login_user']){
 //    $_SESSION['login_user'] = '';
@@ -6,8 +7,8 @@
 //    die();
 //}
 
-$art = "Szenario";
-$name = "Szenario";
+$art = "KatPostSession";
+$name = "Post Session Interview";
 $ut_id = $_POST['utid'];
 
 // Insert into several tables, rolling back the changes if an error occurs
@@ -40,19 +41,16 @@ oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);
 
-echo "<li class='scenario element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>";
-echo "<div class='row p-3'>";
-echo "<div class='col-10'>";
-echo "<a href='#testaufgaben' onclick='editScenario()' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $fetchRowCount[3] . "</a>";
-echo "</div>";
-echo "<div class='col-2 text-right'>";
-echo "<a href='#testaufgaben' onclick='createTask(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
-echo "</div>";
-echo "</div>";
-echo "<ol class='task-container pl-0'>";
-echo "<hr class='m-0'>";
-echo "</ol>";
-echo "</li>";
+echo "<li class='postSessionRubrik element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>
+<div class='row p-3'>
+<div class='col-10'>" . $fetchRowCount[3] . "</div>
+<div class='col-2 text-right'>
+<a href='#testaufgaben' onclick='createPostSessionQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>
+</div>
+</div>
+<ol class='pl-0 ps-question-container'>
+<hr class='m-0'>
+</ol>
+</li>";
 
 ?>
-    

@@ -6,8 +6,8 @@
 //    die();
 //}
 
-$art = "Szenario";
-$name = "Szenario";
+$art = "Aufgabe";
+$name = "Testaufgabe";
 $ut_id = $_POST['utid'];
 
 // Insert into several tables, rolling back the changes if an error occurs
@@ -40,19 +40,16 @@ oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);
 
-echo "<li class='scenario element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>";
-echo "<div class='row p-3'>";
-echo "<div class='col-10'>";
-echo "<a href='#testaufgaben' onclick='editScenario()' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $fetchRowCount[3] . "</a>";
-echo "</div>";
-echo "<div class='col-2 text-right'>";
-echo "<a href='#testaufgaben' onclick='createTask(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
-echo "</div>";
-echo "</div>";
-echo "<ol class='task-container pl-0'>";
-echo "<hr class='m-0'>";
-echo "</ol>";
-echo "</li>";
 
+
+echo "<li class='element-allgemein mb-3 task item-hover'>
+            <div class='row p-3'>
+            <div class='col-lg-12'>
+            <a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>
+            <span class='pr-2 icon-list icon-align text-muted'></span>" . $fetchRowCount[3] . "
+            </a>
+            </div>
+            </div>
+            </li>"
 ?>
     

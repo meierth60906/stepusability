@@ -43,92 +43,18 @@
     <div class="container">
         <div class="row protokollant-container">
             <!-- Projekte -->
-            <div class="col-lg-6 protokollant-content">
+            <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header">
                         <div class="row">
                             <div class="col-8">Aktuelle Projekte</div>
                             <div class="col-4 text-right">
-                                <span class="badge c-orange-bg">5</span>
+                                <span class="badge c-orange-bg project-count"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="projects/project.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 1
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 2
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 3
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 4
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 5
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
+                    <div class="card-block pre-scrollable pt-0 project-dashboard-content">
+
                     </div>
 
                 </div>
@@ -380,6 +306,31 @@
 </section>
 
 <?php include ('scripts.html'); ?>
+<!-- Seiteninhalt aus Datenbank laden on Page Load-->
+<script>
+    var projectsDashboardContainer = $(".project-dashboard-content");
+
+    $( function loadProjects() {
+        $.ajax({
+            url: '../logic/selectProjectlistDashboard.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsDashboardContainer.append(response);
+            }
+        })
+    })
+</script>
+<script>
+    var projectsDashboardCountContainer = $(".project-count");
+
+    $( function loadProjects() {
+        $.ajax({
+            url: '../logic/selectProjectlistDashboardCount.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsDashboardCountContainer.html(response);
+            }
+        })
+    })
+</script>
 </body>
 
 </html>
