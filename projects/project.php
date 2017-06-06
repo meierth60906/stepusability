@@ -1129,7 +1129,6 @@ if (!isset($_GET['id'])) {
         protContainer.append(insideProtocolNew);
 
     }
-
     function createTestskript() {
 
         function insideTestskript() {
@@ -1230,7 +1229,7 @@ if (!isset($_GET['id'])) {
                 "<a href='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
                 "</div>" +
                 "</div>" +
-                "<ol class='testskript-container pl-0'>" +
+                "<ol class='testbericht-container pl-0'>" +
                 "<hr class='m-0'>" +
                 "</ol>" +
                 "</li>";
@@ -1259,7 +1258,7 @@ if (!isset($_GET['id'])) {
                 "</li>";
         }
 
-        var parentTestberichtNew= $(event).closest(".testskriptRubrik");
+        var parentTestberichtNew= $(event).closest(".testberichtRubrik");
         var tberichtContainer = parentTestberichtNew.find(".testbericht-container");
         tberichtContainer.append(insideTestberichtNew);
 
