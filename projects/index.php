@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="modal-footer text-center">
-                    <input type="submit" value="Senden" class="btn btn-submit-blue" />
+                    <input type="submit" value="Erstellen" class="btn btn-submit-blue" />
                 </div>
             </form>
 
