@@ -5,6 +5,8 @@
 }
 #switch .nav-link {
     background-color: white;
+    /*border: 0.75px solid black;*/
+
 }
 
 #library th, #templates th{
@@ -20,11 +22,20 @@
     background-color: transparent !important;
 }
 
-#switch .nav-link{
-    border-top-right-radius: .25rem;
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem;
-    border-bottom-right-radius: .25rem;
+#buttonlinks{
+     border-top-left-radius: 0.75rem;
+     border-bottom-left-radius: 0.75rem;
+    border: 1px solid black;
+
+}
+
+#buttonrechts{
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
 }
 
 #switch a{
@@ -33,4 +44,12 @@
 
 #library .panel-group{
     padding-top:20px;
+}
+
+#switch{
+    padding:20px;
+    padding-left: 50px;
+}
+#switch .nav-item{
+    border: none !important;
 }
