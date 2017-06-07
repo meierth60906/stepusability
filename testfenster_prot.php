@@ -109,7 +109,7 @@
                 </form>
             </div>
         </div>
-
+    </div>
 </section>
 <?php include ('scripts.html'); ?>
 
