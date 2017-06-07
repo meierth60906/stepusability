@@ -23,14 +23,10 @@
         <div class="row titlebar px-3 py-3">
             <h1>Bibliothek</h1>
 
-            <div class="offset-8 text-right align-self-center ">
+            <div class="offset-9 text-right align-self-center ">
                 <a class="titlebar-link" href="#">
                     <div class=" d-inline-block px-2"></div>
                     <span class="hidden-sm-down icon-print"> Drucken</span>
-                </a>
-                <a class="titlebar-link" href="library.php">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
                 </a>
             </div>
         </div>
