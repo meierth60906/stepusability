@@ -707,7 +707,7 @@ if (!isset($_GET['id'])) {
 <!--            Evaluation -->
             <div class="tab-pane" id="evaluation" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="sidebar-eval" class="col-lg-2 c-grey-bg">
+                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
                         <div class="spc-container row pt-3 mt-3">
                             <div class="col-6 headline">
                                 Protokollliste
@@ -722,145 +722,155 @@ if (!isset($_GET['id'])) {
                         </div>
                     </div>
 
-                    <div id="content-eval" class="offset-lg-2 col-lg-5 p-0">
+                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
 
 
                         <div class="col-5 p-3">
                             <div class="row">
-                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam et justo duo dolores et ea rebum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--
-                  <div class="aufgabenfeld inner-body row c-grey-bg">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-2 text-right p-3">
-                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                            </div>
-                            <div class="col-8 p-3">
                                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                                 <p class="text-center">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum.
+                                    Antwort / Beobachtungen Proband 1
                                 </p>
                             </div>
-                            <div class="col-2 p-3">
-                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                            <div class="row">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Antwort / Beobachtungen Proband 2
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Antwort / Beobachtungen Proband 3
+                                </p>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="protokollant-container col-md-6">
-                        <div class="protokollant-card m-5">
-                            <div class="row px-4 p-4">
-                                <div class="col-md-12">
-                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
-                                        <hr>
-                                </div>
-                            </div>
-                            <div class="row px-4">
-                                <div class="col-lg-4">Lösungsschritte:</div>
-                                <div class="col-lg-8 font-weight-bold">
-                                    Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                    dolores et ea rebum.
-                                </div>
-                            </div>
-                            <div class="row px-4 p-4">
-                                <div class="col-lg-4">Anmerkungen:</div>
-                                <div class="col-lg-8 font-weight-bold">
-                                    Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="protokollant-card m-5">
-                            <div class="row px-4 p-4">
-                                <div class="col-md-12">
-                                    <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
-                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
-                                        <hr>
-                                </div>
-                            </div>
-                            <div class="row px-4">
-                                <div class="col-lg-4">Lösungsschritte:</div>
-                                <div class="col-lg-8 font-weight-bold">
-                                    Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                    dolores et ea rebum.
-                                </div>
-                            </div>
-                            <div class="row px-4 p-4">
-                               <div class="col-lg-4">Anmerkungen:</div>
-                                <div class="col-lg-8 font-weight-bold">
-                                    Lorem ipsum dolor sit amet, consetetur
-                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua.
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-                   <div class="col-md-6">
-                    Editor
-                   </div>
-                </div>-->
+                </div>
 
 
-                    <!--<div id="aufgabe-eval" class="row m-0 p-3">
-                        <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
-                        <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
-                    </div>
-
-
+                <!--
+              <div class="aufgabenfeld inner-body row c-grey-bg">
+                <div class="col-12">
                     <div class="row">
-
-                        <!--                            Projektinfo -->
-                    <!--
-                    <div class="col-lg-12 p-3">
-                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                            <div class="col-lg-12 element-allgemein p-3">
-                                <div class="row">
-                                    <div class="col-10 col-sm-6 headline">
-                                        Projektinformationen
-                                    </div>
-                                    <div class="col-2 col-sm-6 text-right">
-                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                    </div>
-                                    <div class="col-12"><hr class="pb-3"></div>
-                                </div>
+                        <div class="col-2 text-right p-3">
+                            <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                        </div>
+                        <div class="col-8 p-3">
+                            <p class="font-weight-bold text-center">Aufgabe 1</p>
+                            <p class="text-center">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum.
+                            </p>
+                        </div>
+                        <div class="col-2 p-3">
+                            <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="protokollant-container col-md-6">
+                    <div class="protokollant-card m-5">
+                        <div class="row px-4 p-4">
+                            <div class="col-md-12">
+                                <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                    <hr>
+                            </div>
+                        </div>
+                        <div class="row px-4">
+                            <div class="col-lg-4">Lösungsschritte:</div>
+                            <div class="col-lg-8 font-weight-bold">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum.
+                            </div>
+                        </div>
+                        <div class="row px-4 p-4">
+                            <div class="col-lg-4">Anmerkungen:</div>
+                            <div class="col-lg-8 font-weight-bold">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua.
                             </div>
                         </div>
                     </div>
-                </div>-->
 
-                    <div id="protokollanten-eval" class="col-lg-6">
-
+                    <div class="protokollant-card m-5">
+                        <div class="row px-4 p-4">
+                            <div class="col-md-12">
+                                <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                    <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                    <hr>
+                            </div>
+                        </div>
+                        <div class="row px-4">
+                            <div class="col-lg-4">Lösungsschritte:</div>
+                            <div class="col-lg-8 font-weight-bold">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                dolores et ea rebum.
+                            </div>
+                        </div>
+                        <div class="row px-4 p-4">
+                           <div class="col-lg-4">Anmerkungen:</div>
+                            <div class="col-lg-8 font-weight-bold">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna aliquyam erat, sed diam voluptua.
+                            </div>
+                        </div>
                     </div>
+               </div>
+               <div class="col-md-6">
+                Editor
+               </div>
+            </div>-->
 
-                    <div id="editor-eval" class="col-lg-6">
 
+                <!--<div id="aufgabe-eval" class="row m-0 p-3">
+                    <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+                    <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+                </div>
+
+
+                <div class="row">
+
+                    <!--                            Projektinfo -->
+                <!--
+                <div class="col-lg-12 p-3">
+                    <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                        <div class="col-lg-12 element-allgemein p-3">
+                            <div class="row">
+                                <div class="col-10 col-sm-6 headline">
+                                    Projektinformationen
+                                </div>
+                                <div class="col-2 col-sm-6 text-right">
+                                    <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                </div>
+                                <div class="col-12"><hr class="pb-3"></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>-->
+
+                <div id="protokollanten-eval" class="col-lg-6">
 
                 </div>
-            </div>
 
+                <div id="editor-eval" class="col-lg-6">
+
+                </div>
+
+            </div>
         </div>
+
+    </div>
 
 
 
