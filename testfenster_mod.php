@@ -28,7 +28,7 @@
                         <a id="buttonlinks" class="nav-link active" href="http://141.75.86.27/step/testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                        <a id="buttonrechts" class="nav-link" href="http://141.75.86.27/step/testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
                 </ul>
             </div>
