@@ -722,7 +722,7 @@ if (!isset($_GET['id'])) {
                         </div>
                     </div>
 
-                    <div id="content-eval" class="offset-lg-3 col-lg-9 p-0">
+                    <div id="content-eval" class="offset-lg-2 col-lg-5 p-0">
 
 
                         <div class="col-5 p-3">
