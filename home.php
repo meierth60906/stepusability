@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testbericht
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Hochschulwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testplan
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testskript
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Testwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -176,7 +176,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testdurchlauf
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted animated infinite flash">Morgen</div>
@@ -191,8 +191,8 @@
                                     <div class="icon-calendar-1 d-inline text-muted"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Projekt 3</div>
+                                    Kundenmeeting
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted">Sa, 08.04.17</div>
@@ -208,7 +208,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testdurchlauf
-                                    <div class="text-muted small">Projekt 2</div>
+                                    <div class="text-muted small">Hochschulwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted">Sa, 15.04.17</div>
