@@ -313,7 +313,7 @@
 
     $( function loadProjects() {
         $.ajax({
-            url: '../logic/selectProjectlistDashboard.php',
+            url: 'logic/selectProjectlistDashboard.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 projectsDashboardContainer.append(response);
             }
@@ -325,7 +325,7 @@
 
     $( function loadProjects() {
         $.ajax({
-            url: '../logic/selectProjectlistDashboardCount.php',
+            url: 'logic/selectProjectlistDashboardCount.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 projectsDashboardCountContainer.html(response);
             }
