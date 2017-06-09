@@ -305,6 +305,7 @@
     </div>
 </section>
 
+
 <?php include ('scripts.html'); ?>
 <!-- Seiteninhalt aus Datenbank laden on Page Load-->
 <script>
