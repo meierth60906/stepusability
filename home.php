@@ -273,7 +273,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Anna Apfel
-                                    <div class="text-muted small">Siemens AG</div>
+                                    <div class="text-muted small">Firma AG</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right middle-two-line">
                                     <div class="img-placeholder c-darkgrey-bg">AA</div>
