@@ -29,6 +29,10 @@
                     <div class=" d-inline-block px-2"></div>
                     <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
                 </a>
+                <a class="titlebar-link" href="">
+                    <div class=" d-inline-block px-2"></div>
+                    <span class="hidden-sm-down icon-plus"> Erstellen</span>
+                </a>
             </div>
         </div>
 

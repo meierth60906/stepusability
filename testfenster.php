@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Testfenster Moderator</title>
+    <title>Testfenster</title>
 
     <?php include ('head.html'); ?>
 </head>
@@ -25,13 +25,14 @@
             <div class="col-4">
                 <ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
-                        <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                        <a id="buttonlinks" class="nav-link active" href="#moderator" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                        <a id="buttonrechts" class="nav-link" href="#protokollant" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
                 </ul>
             </div>
+
 
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
@@ -40,7 +41,9 @@
             </div>
 
         </div>
-        <div class="row project-tabs ">
+
+
+        <div class="row project-tabs" >
             <div class="col-md-12 p-0">
                 <ul id="tabs" class="px-1 px-md-4 nav nav-tabs nav-justified">
                     <li class="nav-item">

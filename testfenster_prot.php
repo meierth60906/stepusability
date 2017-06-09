@@ -25,17 +25,14 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <div class="btn-group-md testfensterswitch btn-group" data-toggle="buttons">
-                    <label class="btn-group-md testfensterswitch btn btn-primary">
-                        <a href="testfenster_mod.php" class="switchlink">
-                            <input type="radio" name="options" id="option1" autocomplete="off">Moderator
-                        </a>
-                    </label>
-                    <label class="btn-group-lg testfensterswitch btn btn-primary active">
-                        <a class="active switchlink" href="testfenster_prot.php">
-                            <input type="radio" name="options" id="option2" autocomplete="off" checked>Protokollant</a>
-                    </label>
-                </div>
+                <ul id="switch" class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a id="buttonlinks" class="nav-link" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="buttonrechts" class="nav-link active" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="col-4 text-right align-self-center ">
@@ -112,7 +109,7 @@
                 </form>
             </div>
         </div>
-
+    </div>
 </section>
 <?php include ('scripts.html'); ?>
 

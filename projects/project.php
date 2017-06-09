@@ -706,6 +706,47 @@ if (!isset($_GET['id'])) {
 
 <!--            Evaluation -->
             <div class="tab-pane" id="evaluation" role="tabpanel">
+                <div class="row inner-body">
+                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
+                        <div class="spc-container row pt-3 mt-3">
+                            <div class="col-6 headline">
+                                Protokollliste
+                            </div>
+
+                            <div class="col-lg-12"><hr class="mb-3"></div>
+                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+
+
+                        </div>
+                    </div>
+
+                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
+
+
+                        <div class="col-5 p-3">
+                            <div class="row">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Antwort / Beobachtungen Proband 1
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Antwort / Beobachtungen Proband 2
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Antwort / Beobachtungen Proband 3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <!--
@@ -791,114 +832,45 @@ if (!isset($_GET['id'])) {
             </div>-->
 
 
+                <!--<div id="aufgabe-eval" class="row m-0 p-3">
+                    <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+                    <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+                </div>
 
 
+                <div class="row">
 
-
-
-                <div class="row inner-body">
-                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
-                        <div class="spc-container row pt-3 mt-3">
-                            <div class="col-6 headline">
-                                Protokollliste
-                            </div>
-
-                            <div class="col-lg-12"><hr class="mb-3"></div>
-                            <div class="protokollant-card">
-                                <div class="row px-4 p-4">
-                                    <div class="col-md-12">
-                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <div class="row px-4">
-                                    <div class="col-lg-4">Lösungsschritte:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                        dolores et ea rebum.
-                                    </div>
-                                </div>
-                                <div class="row px-4 p-4">
-                                    <div class="col-lg-4">Anmerkungen:</div>
-                                    <div class="col-lg-8 font-weight-bold">
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua.
-                                    </div>
-                                </div>
-                            </div>
-                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
-
-
-                        </div>
-                    </div>
-
-                    <div id="content-eval" class="offset-lg-3 col-lg-9 p-0">
-
-
-                        <div class="col-12">
+                    <!--                            Projektinfo -->
+                <!--
+                <div class="col-lg-12 p-3">
+                    <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                        <div class="col-lg-12 element-allgemein p-3">
                             <div class="row">
-                                <div class="col-2 text-right p-3">
-                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                <div class="col-10 col-sm-6 headline">
+                                    Projektinformationen
                                 </div>
-                                <div class="col-8 p-3">
-                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <p class="text-center">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam et justo duo dolores et ea rebum.
-                                    </p>
+                                <div class="col-2 col-sm-6 text-right">
+                                    <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
                                 </div>
-                                <div class="col-2 p-3">
-                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                </div>
+                                <div class="col-12"><hr class="pb-3"></div>
                             </div>
                         </div>
                     </div>
-                    <!--<div id="aufgabe-eval" class="row m-0 p-3">
-                        <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
-                        <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
-                    </div>
+                </div>
+            </div>-->
 
-
-                    <div class="row">
-
-                        <!--                            Projektinfo -->
-                    <!--
-                    <div class="col-lg-12 p-3">
-                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                            <div class="col-lg-12 element-allgemein p-3">
-                                <div class="row">
-                                    <div class="col-10 col-sm-6 headline">
-                                        Projektinformationen
-                                    </div>
-                                    <div class="col-2 col-sm-6 text-right">
-                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                    </div>
-                                    <div class="col-12"><hr class="pb-3"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-
-                    <div id="protokollanten-eval" class="col-lg-6">
-
-                    </div>
-
-                    <div id="editor-eval" class="col-lg-6">
-
-                    </div>
+                <div id="protokollanten-eval" class="col-lg-6">
 
                 </div>
-            </div>
 
+                <div id="editor-eval" class="col-lg-6">
+
+                </div>
+
+            </div>
         </div>
+
+    </div>
 
 
 
