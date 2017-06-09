@@ -21,7 +21,7 @@ oci_execute($stid);
 
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    echo "<li class='conclusionRubrik element-allgemein mb-3'>
+    echo "<li class='conclusionRubrik element-allgemein mb-3' data-id='" . $row['ID'] . "'>
     <div class='row p-3'>
         <div class='col-10'>" . $row['NAME_AB'] . "</div>
         <div class='col-2 text-right'>

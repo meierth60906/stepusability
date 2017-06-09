@@ -16,17 +16,16 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'Aufgabe' AND UT_ID = '$ut_id' AND IN_SZENARIO IS NOT NULL");
+$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'ConclusionQ' AND UT_ID = '$ut_id'");
 oci_execute($stid);
 
-
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    $szenId[] = $row['IN_SZENARIO'];
-    $data[] = "<li class='task item-hover' data-id='" .$row['ID']."' data-order='". $row['AB_ORDER'] ."'>
-        <div class='row p-3'>
+    $conId[] = $row['IN_SZENARIO'];
+    $data[] = "<li class='task item-hover' data-id='". $row['ID'] ."' data-order='". $row['AB_ORDER'] ."'>
+    <div class='row p-3'>
         <div class='col-lg-12'>
-        <a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>
-        <span class='pr-2 icon-list icon-align text-muted'></span>" . $row['NAME_AB'] . "
+        <a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>
+        <span class='pr-2 icon-question icon-align text-muted'></span>" . $row['NAME_AB'] . "
         </a>
         </div>
         </div>
@@ -34,7 +33,7 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
 }
 
 echo json_encode(array(
-    "szenarioid" => $szenId,
+    "conclusionid" => $conId,
     "echo" => $data
 ));
 

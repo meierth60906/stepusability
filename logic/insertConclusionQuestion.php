@@ -7,16 +7,16 @@
 //    die();
 //}
 
-$art = "PostSessionQ";
-$name = "Post-Session-Interview-Frage";
+$art = "ConclusionQ";
+$name = "Abschlussfrage";
 $ut_id = $_POST['utid'];
-$psq_id = $_POST['psqid'];
+$con_id = $_POST['conid'];
 
 // Insert into several tables, rolling back the changes if an error occurs
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
-$stid = oci_parse($conn, "INSERT INTO ABSCHNITT(ART_AB, NAME_AB, UT_ID, IN_SZENARIO) VALUES('".$art."', '".$name."', '".$ut_id."', '".$psq_id."')");
+$stid = oci_parse($conn, "INSERT INTO ABSCHNITT(ART_AB, NAME_AB, UT_ID, IN_SZENARIO) VALUES('".$art."', '".$name."', '".$ut_id."', '".$con_id."')");
 
 
 
@@ -43,13 +43,13 @@ oci_execute($stid);
 $fetchRowCount = oci_fetch_row($stid);
 
 echo "<li class='task item-hover' data-id='". $fetchRowCount[0] ."'>
-            <div class='row p-3'>
-            <div class='col-lg-12'>
-            <a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>
-            <span class='pr-2 icon-comment icon-align text-muted'></span>" . $fetchRowCount[3] . "
-            </a>
-            </div>
-            </div>
-            </li>";
+    <div class='row p-3'>
+        <div class='col-lg-12'>
+        <a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>
+        <span class='pr-2 icon-question icon-align text-muted'></span>" . $fetchRowCount[3] . "
+        </a>
+        </div>
+        </div>
+        </li>";
 
 ?>

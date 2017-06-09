@@ -40,21 +40,20 @@ function createTaskOnly() {
 
 function createConclusionQuestion(event) {
 
-    function insideCon() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#testaufgaben' onclick='editCcQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-question icon-align text-muted'></span>Abschlussfrage" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
     var parentCon = $(event).closest(".conclusionRubrik");
     var conContainer = parentCon.find(".cc-question-container");
-    conContainer.append(insideCon);
+    
+
+    var conId = parentCon.data('id');
+
+    $.ajax({
+        data: 'utid='+pageId+'&conid='+conId,
+        type: 'post',
+        url: '../logic/insertConclusionQuestion.php',
+        success: function (response) {//response is value returned from php (for your example it's "bye bye"
+            conContainer.append(response);
+        }
+    })
 
 }
 

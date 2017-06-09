@@ -43,7 +43,7 @@ $fetchRowCount = oci_fetch_row($stid);
 
 
 
- echo "<li class='task item-hover'>";
+ echo "<li class='task item-hover' data-id='". $fetchRowCount[0] ."'>";
  echo    "<div class='row p-3'>";
  echo    "<div class='col-lg-12'>";
  echo    "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>";

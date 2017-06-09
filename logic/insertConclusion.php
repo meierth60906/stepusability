@@ -41,7 +41,7 @@ oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);
 
-echo "<li class='conclusionRubrik element-allgemein mb-3'>
+echo "<li class='conclusionRubrik element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>
     <div class='row p-3'>
         <div class='col-10'>" . $fetchRowCount[3] . "</div>
         <div class='col-2 text-right'>
