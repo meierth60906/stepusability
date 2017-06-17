@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <?php include ('contactlist.html');?>
+    <?php include('contactlist.php');?>
 
     <!--Form-->
 
@@ -54,6 +54,7 @@
                     <div class="col-lg-4">
                         <div>
                             <span class="star icon-star"></span>
+                            <input type="hidden" id="favourite" name="contact-favourite" value="1">
                         </div>
                     </div>
                 </div>
@@ -251,6 +252,12 @@
 
     $(".star").click(function() {
         $(this).toggleClass("icon-star icon-star-o");
+        var wert = document.getElementById("favourite").value;
+        if (wert === "0") {
+            document.getElementById("favourite").value = "1";
+        } else {
+            document.getElementById("favourite").value = "0";
+        }
     });
 
 </script>
