@@ -308,6 +308,7 @@
 }
 #switch .nav-item{
     border: none !important;
+    size: 20px;
 }
 
 .nav-link{
