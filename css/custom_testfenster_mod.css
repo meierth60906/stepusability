@@ -309,7 +309,7 @@
     border: none !important;
 }
 
-#switch .nav-link{
+.nav-link{
     display: none; !important;
 }
 
