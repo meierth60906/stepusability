@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <?php include ('contactlist.html');?>
+    <?php include('contactlist.php');?>
 
     <!--Form-->
 

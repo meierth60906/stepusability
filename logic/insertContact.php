@@ -8,6 +8,7 @@ $strasse = $_POST['contact-strasse'];
 $plz = $_POST['contact-plz'];
 $ort = $_POST['contact-ort'];
 $geburtsdatum = $_POST['contact-geburtsdatum'];
+$favorit = $_POST['contact-favourite'];
 if (isset($_POST['contact-team'])) {
     $team = $_POST['contact-team'];
 } else {
@@ -41,7 +42,7 @@ if (!$conn) {
 
 
 //Insert Abfrage für Person Tabelle
-$personInsert="insert into Person (Name, Vorname, Geburtsdatum, Firma, Team, Proband, Kunde) values('".$nachname."', '".$vorname."', to_date('$geburtsdatum','yyyy-mm-dd'), '".$firma."',$team,$proband,$kunde) returning id into :id";
+$personInsert="insert into Person (Name, Vorname, Geburtsdatum, Firma, Team, Proband, Kunde, Favorit) values('".$nachname."', '".$vorname."', to_date('$geburtsdatum','yyyy-mm-dd'), '".$firma."',$team,$proband,$kunde, $favorit) returning id into :id";
 $stid = oci_parse($conn, $personInsert);
 oci_bind_by_name($stid, ":id",   $id, -1, SQLT_INT);
 if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
@@ -82,9 +83,9 @@ if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
     $e = oci_error();
     echo $anschriftInsert;
     echo $e['message'];
-} //else {
-    //header("Location: /new_contact.php");
-//}
+} else {
+    header("Location: /new_contact.php");
+}
 ?>
 
 
