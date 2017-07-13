@@ -311,7 +311,7 @@
     size: 20px;
 }
 
-.nav-link{
+#switch .nav-link{
     display: none; !important;
 }
 

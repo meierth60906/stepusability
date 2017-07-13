@@ -79,12 +79,8 @@ if (!isset($_GET['id'])) {
             <!--            Allgemein -->
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="content-allgemein" class="col-lg-9 py-3">
-                        <div class="row pt-4 hidden-lg-up">
-                            <div class="col-lg-12 text-center">
-                                <a href="../testfenster_mod.php" class="btn btn-submit-orange mx-4 mt-3 mb-4"><i class="icon-play"></i> Test starten</a>
-                            </div>
-                        </div>
+                    <div id="content-allgemein" class="col-lg-8 py-3 offset-lg-2">
+
 
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row pr-3">
@@ -237,7 +233,7 @@ if (!isset($_GET['id'])) {
 
 
                     </div>
-                    <div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
+                    <!--<div id="sidebar-allgemein" class="col-lg-3 c-grey-bg">
                         <div class="row pt-3">
                             <div class="col-lg-12 headline">
                                 Benachrichtigungen
@@ -279,7 +275,7 @@ if (!isset($_GET['id'])) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
 
