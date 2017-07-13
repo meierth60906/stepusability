@@ -56,7 +56,7 @@ oci_execute($stid);
                             //if($fetchRowCount){
                                 while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
 
-                                    echo"<li><a class=\"row card-item py-3 nav-link\" href=\"edit_contact.php?id=".$row['ID']."\">".$row['NAME'].", ".$row['VORNAME']."</a></li>";
+                                    echo"<li><a class=\"row card-item py-3 nav-link\" href=\"view_contact.php?id=".$row['ID']."\">".$row['NAME'].", ".$row['VORNAME']."</a></li>";
                                 }
                             //}
                             ?>
