@@ -68,6 +68,7 @@
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                         Geschafft
                     </label>
+                    <p>       </p>
                     <label style="font-size: 1.5em">
                         <input type="radio" name="o5" value="">
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
