@@ -74,3 +74,61 @@
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
 }
+
+.testfensterswitch .btn-group, .btn-group-vertical {
+    height:5%;
+    margin-left:3rem;
+    margin-top:10px;
+    padding: 20px;
+}
+
+
+.testfensterswitch .btn-primary {
+    background-color: white;
+    border-color:#133E5C;
+}
+
+.testfensterswitch .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #133E5C;
+    border-color: #133E5C;
+}
+
+.testfensterswitch .switchlink {
+    color: #133E5C;
+}
+
+.testfensterswitch .active .switchlink {
+    color: #FFFFFF;
+}
+
+#buttonlinks{
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border: 1px solid black;
+
+}
+
+#buttonrechts{
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+#switch a{
+    text-align: center;
+}
+
+#library .panel-group{
+    padding-top:20px;
+}
+
+#switch{
+    padding:20px;
+    padding-left: 50px;
+}
+#switch .nav-item{
+    border: none !important;
+}

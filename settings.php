@@ -1,8 +1,16 @@
+<?php
+//session_start();
+//if (!$_SESSION['login_user']){
+//    $_SESSION['login_user'] = '';
+//    header("Location:index.php");
+//    die();
+//}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Settings | step</title>
+    <title>Einstellungen | step</title>
     <?php include('head.html') ?>
 </head>
 <body>
@@ -186,9 +194,9 @@
     $(document).ready(function () {
         $(function () {
             $('.nav').click(function (e) {
-                e.preventDefault()
-                $(this).tab('show')
-            })
+                e.preventDefault();
+                $(this).tab('show');
+            });
         });
 
     });

@@ -1,3 +1,11 @@
+<?php
+//session_start();
+//if (!$_SESSION['login_user']){
+//    $_SESSION['login_user'] = '';
+//    header("Location:index.php");
+//    die();
+//}
+?>
 <!DOCTYPE html>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -13,9 +21,20 @@
 <section id="testfenster">
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
+            <div class="col-4">
+                <ul id="switch" class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a id="buttonlinks" class="nav-link" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="buttonrechts" class="nav-link active" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
                     <div class="icon-stop d-inline-block px-2"></div>
@@ -49,6 +68,7 @@
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                         Geschafft
                     </label>
+                    <p>       </p>
                     <label style="font-size: 1.5em">
                         <input type="radio" name="o5" value="">
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
@@ -66,18 +86,31 @@
                         <li>Temperatur für 12.00 Uhr nennen"></li></ul>
                 </div>
 
-                <label for="inputRole" class="col-lg-3 form-control-label">Anmerkungen</label>
-                <div class="form-group col-12 text-center py-2">
-                    <textarea class="form-control" id="message-text" placeholder=""></textarea>
-                </div>
+                <form action="/logic/insertTestfensterProt.php">
 
-                <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
-                <div class="form-group col-12 text-center py-2">
-                    <textarea class="form-control" id="message-text" placeholder=""></textarea>
-                </div>
+                    <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
+                    <div class="form-group col-12 text-center py-2">
+                        <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
+                    </div>
+
+                    <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
+                    <div class="form-group col-12 text-center py-2">
+                        <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                    </div>
+                    <input type="hidden" name="Protokollant" value="1">
+                    <input type="hidden" name="Termin" value="1">
+                    <input type="hidden" name="TerminUt" value="1">
+                    <input type="hidden" name="Textbaustein" value="1">
+                    <input type="hidden" name="TextbausteinAbschnitt" value="2">
+                    <input type="hidden" name="TextbausteinAbschnittUt" value="1">
+
+
+                    <input type="submit" value="Speichern">
+
+                </form>
             </div>
         </div>
-
+    </div>
 </section>
 <?php include ('scripts.html'); ?>
 

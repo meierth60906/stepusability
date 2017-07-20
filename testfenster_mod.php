@@ -1,3 +1,11 @@
+<?php
+//session_start();
+//if (!$_SESSION['login_user']){
+//    $_SESSION['login_user'] = '';
+//    header("Location:index.php");
+//    die();
+//}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -11,14 +19,26 @@
 <section id="testfenster_mod" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
+            <div class="col-4">
+                <ul id="switch" class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
                     <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
             </div>
+
         </div>
         <div class="row project-tabs ">
             <div class="col-md-12 p-0">
@@ -48,7 +68,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">
@@ -232,7 +252,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 pr-3 text-right">
-                                <a href="projects/project1.php"><span class="icon-pencil"></span> Bearbeiten</a>
+                                <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
                             </div>
                         </div>
                         <div class="row">
@@ -387,7 +407,7 @@
 
 </script>
 
-<script src="../js/jquery-sortable-min.js"></script>
+<script src="js/jquery-sortable-min.js"></script>
 <script>
 
     // Javascript to enable link to tab

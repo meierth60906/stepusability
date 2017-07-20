@@ -1,9 +1,27 @@
+<?php
+//session_start();
+//if (!$_SESSION['login_user']){
+//    $_SESSION['login_user'] = '';
+//    header("Location:index.php");
+//    die();
+//}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <title>Dashboard | step</title>
 
     <?php include ('head.html'); ?>
+    <?php
+/*    setcookie("Name", "Apfel", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Vorname", "Anna", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Geburtsdatum", "01.01.1990", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Anrede", "Frau", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+    setcookie("Firma", "Apple", time() + (86400 * 30), "/"); // 86400 = 1 Tag
+
+    */?>
+
+
 </head>
 <body id="dashboardbody">
 
@@ -13,7 +31,7 @@
     <div class="container-fluid">
         <div class="row titlebar px-3 py-3">
             <div class="col-8">
-                <h1>Home</h1>
+                <h1>Dashboard</h1>
             </div>
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="settings.php">
@@ -25,92 +43,18 @@
     <div class="container">
         <div class="row protokollant-container">
             <!-- Projekte -->
-            <div class="col-lg-6 protokollant-content">
+            <div class="col-lg-6">
                 <div class="card my-3">
                     <div class="card-header">
                         <div class="row">
                             <div class="col-8">Aktuelle Projekte</div>
                             <div class="col-4 text-right">
-                                <span class="badge c-orange-bg">5</span>
+                                <span class="badge c-orange-bg project-count"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 1
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 2
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 3
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 4
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-folder d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0 middle-two-line">
-                                    Projekt 5
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="text-muted">07.04.2017</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
+                    <div class="card-block pre-scrollable pt-0 project-dashboard-content">
+
                     </div>
 
                 </div>
@@ -135,7 +79,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testbericht
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Hochschulwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -151,7 +95,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testplan
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -167,7 +111,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testskript
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Testwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -232,7 +176,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testdurchlauf
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted animated infinite flash">Morgen</div>
@@ -247,8 +191,8 @@
                                     <div class="icon-calendar-1 d-inline text-muted"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Projekt 3</div>
+                                    Kundenmeeting
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted">Sa, 08.04.17</div>
@@ -264,7 +208,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Testdurchlauf
-                                    <div class="text-muted small">Projekt 2</div>
+                                    <div class="text-muted small">Hochschulwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted">Sa, 15.04.17</div>
@@ -322,14 +266,14 @@
                         </div>
                     </div>
                     <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
+                        <a class="card-item-link" href="view_contact.php">
                             <div class="row card-item p-3">
                                 <div class="card-item-icon col-1 middle-two-line">
                                     <div class="icon-star d-inline text-muted"></div>
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Anna Apfel
-                                    <div class="text-muted small">Siemens AG</div>
+                                    <div class="text-muted small">Firma AG</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right middle-two-line">
                                     <div class="img-placeholder c-darkgrey-bg">AA</div>
@@ -361,7 +305,33 @@
     </div>
 </section>
 
+
 <?php include ('scripts.html'); ?>
+<!-- Seiteninhalt aus Datenbank laden on Page Load-->
+<script>
+    var projectsDashboardContainer = $(".project-dashboard-content");
+
+    $( function loadProjects() {
+        $.ajax({
+            url: 'logic/selectProjectlistDashboard.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsDashboardContainer.append(response);
+            }
+        })
+    })
+</script>
+<script>
+    var projectsDashboardCountContainer = $(".project-count");
+
+    $( function loadProjects() {
+        $.ajax({
+            url: 'logic/selectProjectlistDashboardCount.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                projectsDashboardCountContainer.html(response);
+            }
+        })
+    })
+</script>
 </body>
 
 </html>

@@ -49,7 +49,7 @@
 }
 
 #singleproject .nav-tabs .nav-item .active {
-    background-color: #133e5c;
+    background-color: #133e5c !important;
     color: white !important;
     border: 0;
     -webkit-border-radius:0;
@@ -90,7 +90,7 @@
 }
 
 #singleproject .inner-body {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 #singleproject .project-sidebar {
@@ -229,12 +229,14 @@
     #content-allgemein,
     #content-aufgaben,
     #content-unterlagen,
+    #content-eval,
     #sidebar-allgemein,
     #sidebar-aufgaben,
-    #sidebar-unterlagen {
-        position: fixed;
-        overflow-y: auto;
-        overflow-x: hidden;
+    #sidebar-unterlagen,
+    #sidebar-eval {
+        position: fixed !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
 
     #sidebar-allgemein {
@@ -308,13 +310,25 @@ body.dragging, body.dragging * {
 ol.scenario-container,
 ol.postSession-container,
 ol.ps-question-container,
-ol.conclusion-container {
+ol.conclusion-container,
+ol.agreement-container,
+ol.protocol-container,
+ol.testskript-container,
+ol.testplan-container,
+ol.testbericht-container,
+ol.loesweg-container{
     list-style: none !important;
 }
 
 ol.scenario-container li,
 ol.postSession-container li,
-ol.conclusion-container li {
+ol.conclusion-container li,
+ol.agreement-container li,
+ol.protocol-container li,
+ol.testskript-container li,
+ol.testplan-container li,
+ol.testbericht-container li,
+ol.loesweg-container li{
     list-style: none;
     /** More li styles **/
 }
@@ -325,4 +339,17 @@ ol.conclusion-container li {
 
 #singleproject a:hover {
     cursor:pointer;
+}
+
+#aufgabe-eval {
+    background-color: white;
+}
+
+.aufgabe-middle {
+    vertical-align: middle;
+    line-height: 2.5em;
+}
+
+.link-orangehover:hover .link-orangehover-child {
+    color: #e84a29;
 }

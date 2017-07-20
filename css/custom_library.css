@@ -1,30 +1,55 @@
-
-/*switchLink*/
-
-#library .btn-group, .btn-group-vertical {
-    height:5%;
-    margin-left:3rem;
-    margin-top:10px;
-    padding: 20px;
+#switch .nav-link a:focus, #switch .nav-link.active{
+    font-weight: bold !important;
+    background-color: #185077 !important;
+    color: white;
 }
-
-
-#library .btn-primary {
+#switch .nav-link {
     background-color: white;
-    border-color:#133E5C;
+    /*border: 0.75px solid black;*/
+
 }
 
-#library .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
-    background-color: #133E5C;
-    border-color: #133E5C;
+#library th, #templates th{
+    width:30%;
 }
 
-#library .switchlink {
-    color: #133E5C;
+#switch .nav-item{
+    width:100px;
+
 }
 
-#library .active .switchlink {
-    color: #FFFFFF;
+#switch .nav-item:hover{
+    background-color: transparent !important;
 }
 
+#buttonlinks{
+     border-top-left-radius: 0.75rem;
+     border-bottom-left-radius: 0.75rem;
+    border: 1px solid black;
 
+}
+
+#buttonrechts{
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+#switch a{
+    text-align: center;
+}
+
+#library .panel-group{
+    padding-top:20px;
+}
+
+#switch{
+    padding:20px;
+    padding-left: 50px;
+}
+#switch .nav-item{
+    border: none !important;
+}
