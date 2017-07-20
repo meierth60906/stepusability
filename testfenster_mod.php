@@ -260,13 +260,6 @@
                             <div class="col-md-12">
                                 <h3>Vielen Dank!</h3>
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
-                                    Zunächst bitte ich Sie um Ihre Bemerkungen zu den Testaufgaben.<br></p>
-                                <ul>
-                                   <li>Waren die Testaufgaben realistisch? </li>
-                                    <li>Sind es Aufgaben, die Sie im echten Leben durchführen würden? </li>
-                                    <li>Welche Aufgaben haben gefehlt? </li>
-                                </ul>
-
 
                                 <h5>Post-Session Interview Fragen</h5>
                                 <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
