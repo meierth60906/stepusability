@@ -78,23 +78,23 @@
                                 <p>Browsercache löschen</p>
 
                                 <h5>Briefing:</h5>
-                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.
+                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.<br>
                                     Einleitung und Beschreibung des Testgegenstands.<br>
-                                    Wir möchten Sie bitten, www.wetter.com für uns zu testen. Sie helfen uns damit, die Webseite hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                    Wir möchten Sie bitten, die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
                                 <h5>Technische Vorbereitung</h5>
-                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
+                                <p>Herzlichen Dank, dass Sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
                                     <br>
                                     Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung ihrer Daten machen.
                                     Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
                                 </p>
                                 <h5>Augencheck</h5>
-                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.
+                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.<br>
                                     Kalibration
                                 </p>
                                 <h5>Anweisung vor den Aufgaben</h5>
-                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com. <br>
-                                    Damit helfen Sie uns wetter.com zu verbessern.
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
+                                    Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
                                     Zusätzlich bekommen sie von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
                                 </p>
@@ -104,7 +104,7 @@
                                     Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar frustriert. <br>
                                     Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie uns bitte, was Sie denken.
                                     <br>
-                                    Sie können jederzeit Fragen stellen, haben Sie im Moment Fragen?
+                                    Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
                                 <h5>Start der Eyetracking-Aufzeichnung</h5>
                             </div>
@@ -201,49 +201,39 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?<br> Was ist die Temperatur um 12 Uhr?</td>
-                                <td>Startseite</td>
+                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
+                                <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Ort über Suchfeld eingeben</li>
-                                        <li>„morgen“ auswählen (3 Möglichkeiten)</li>
-                                        <li>Leiste „Mittag“ finden und aufklappen</li>
-                                        <li>Temperatur für 12.00 Uhr nennen</li>
+                                        <li>"Projekte" in der linken Menüleiste auswählen</li>
+                                        <li>Auf "+ Erstellen" - Button klicken</li>
+                                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                                        <li>Auf "Senden" klicken</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Wie wandern die Wolken über Bayern? <br>Ab wann ist Nürnberg morgen stark bewölkt?</td>
-                                <td></td>
+                                <td>Suchen Sie bitte das Projekt ABC und finden Sie den jeweiligen Ansprechpartner sowie alle Projektbeteiligten heraus!</td>
+                                <td>Projekte</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Auswählen „Niederschlagsradar“ (rechte Spalte)</li>
-                                        <li>Auswahlmenü („Niederschlagsradar“) nutzen und „Bewölkung“  auswählen</li>
+                                        <li>Projekt "ABC" in der Liste auswählen</li>
+                                        <li>Ansprechpartner ist step</li>
                                         <li>Play-Button drücken</li>
-                                        <li>(Ergebnis: 6:00 – 8:00 Uhr)</li>
-
-                                        <li><u>Alternative: 1</u></li>
-                                        <li>Menü „Wetterkarten“ > Untermenü „Bewölkung“</li>
-                                        <li>...</li>
-                                        <li><u>Alternative 2:</u></li>
-                                        <li>Menü „Wetterkarten“</li>
-                                        <li>Auf Seite auswählen Kachel „Bewölkung“</li>
-                                        <li>...</li>
+                                        <li>Beteiligten sind Maura Maier, Thomas Meier,<br>Alina Schark, Isabel Eichner und <br>Nathalie Steinbinder</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Finden Sie ein Sommerurlaubsziel in Südamerika, <br>
-                                    welches im Juli eine Durchschnittstemperatur von 18 bis 30 Grad Celsius hat.</td>
-                                <td>Startseite</td>
+                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
+                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe an.</td>
+                                <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Menü: „Reise und Freizeit“ > Untermenü „Urlaubswetter“  auswählen</li>
-                                        <li>Parameter einstellen und unzutreffende abwählen</li>
-                                        <li>18-30 Grad</li>
-                                        <li>Juli (Januar streichen)</li>
-
-                                        <li>Südamerika (Europa streichen)</li>
-                                        <li>Button „Ergebnisse anzeigen “ auswählen</li>
-                                        <li>Stadt angeben (bel.)</li>
+                                        <li>Den Reiter "Testaufgaben" auswählen</li>
+                                        <li>Auf das "+" bei "Aufgabenliste" klicken</li>
+                                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                                        <li>Das "+" bei Szenario anwählen </li>
+                                        <li>Auf "Testaufgabe" klicken</li>
 
                                     </ul></td>
                             </tr>
@@ -270,19 +260,11 @@
                             <div class="col-md-12">
                                 <h3>Vielen Dank!</h3>
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
-                                    Zunächst bitte ich Sie um Ihre Bemerkungen zu den Testaufgaben.<br></p>
-                                <ul>
-                                    <li>Waren die Testaufgaben realistisch? </li>
-                                    <li>Sind es Aufgaben, die Sie im echten Leben durchführen würden? </li>
-                                    <li>Welche Aufgaben haben gefehlt? </li>
-                                </ul>
-
 
                                 <h5>Post-Session Interview Fragen</h5>
                                 <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
                                 <ul>
-                                    <li>Welche zwei bis drei Dinge haben Ihnen besonders gefallen?</li>
-                                    <li>Welche zwei bis drei Dinge haben Ihnen am wenigsten gefallen?</li>
+                                    <li>Gab es etwas was Ihnen besonders gut oder weniger gut gefallen hat?</li>
                                 </ul>
                                 <h5>UEQ-Fragebogen:</h5>
                                 <p>Ich bitte Sie nun, außen Platz zu nehmen und für uns diesen Fragebogen auszufüllen.</p>

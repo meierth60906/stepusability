@@ -51,7 +51,8 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
-                    Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?
+                    Sie haben einen neuen Projektauftrag XYZ bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg.
+
                 </p>
             </div>
             <div class="col-2 p-5">
@@ -68,6 +69,7 @@
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                         Geschafft
                     </label>
+                    <p>       </p>
                     <label style="font-size: 1.5em">
                         <input type="radio" name="o5" value="">
                         <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
@@ -79,10 +81,12 @@
 
                 <div class="form-group col-12 py-2">
                     <ul>
-                        <li>Ort über Suchfeld eingeben</li>
-                        <li>„morgen“ auswählen (3 Möglichkeiten) </li>
-                        <li>Leiste „Mittag“ finden und aufklappen</li>
-                        <li>Temperatur für 12.00 Uhr nennen"></li></ul>
+                        <li>"Projekte" in der linken Menüleiste auswählen</li>
+                        <li>Auf "+ Erstellen" - Button klicken</li>
+                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                        <li>Auf "Senden" klicken</li>
+                    </ul>
                 </div>
 
                 <form action="/logic/insertTestfensterProt.php">
