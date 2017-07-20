@@ -5,7 +5,7 @@
 //    header("Location:../index.php");
 //    die();
 //}
-$projectId = $_GET['utid'];
+$ut_id = $_POST['utid'];
 $title = $_POST['editProjectInfo-title'];
 $ag = $_POST['editProjectInfo-ag'];
 $talkto = $_POST['editProjectInfo-talkto'];
@@ -17,7 +17,7 @@ $desc = $_POST['editProjectInfo-desc'];
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
 //$stid = oci_parse($conn, "INSERT INTO USABILITYTEST(NAME, AUFTRAGGEBER, BESCHREIBUNG, ZULETZT_GEAENDERT) VALUES('".$title."', '".$ag."', '".$desc."', CURRENT_TIMESTAMP)");
-$stid = oci_parse($conn, "update USABILITYTEST SET NAME='".$title."', AUFTRAGGEBER='".$ag."', BESCHREIBUNG='".$desc."' WHERE ID='".$projectId."'");
+$stid = oci_parse($conn, "update USABILITYTEST SET NAME='".$title."', AUFTRAGGEBER='".$ag."', BESCHREIBUNG='".$desc."' WHERE ID='".$ut_id."'");
 //$stid = oci_parse($conn, "update P_BETEILIGT_UT SET PERSON_ID='".$talkto."', AUFTRAGGEBER='".$title."', BESCHREIBUNG='".$title."' WHERE ID='".$projectId."'");
 
 
@@ -26,7 +26,7 @@ $stid = oci_parse($conn, "update USABILITYTEST SET NAME='".$title."', AUFTRAGGEB
 
 $r = oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
 
-//$print = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE NAME = '$title'");
+//$print = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID='".$ut_id."'");
 //
 //oci_execute($print);
 //
@@ -42,7 +42,20 @@ $r = oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
 //echo"</div>";
 //echo"</a>";
 
-echo $projectId;
+$stid2 = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$projectId'");
+oci_execute($stid2);
+
+$fetchRow = oci_fetch_array($stid2);
+
+//echo json_encode($fetchRow);
+echo json_encode(array(
+    "id" => $fetchRow[0],
+    "name" => $fetchRow[1],
+    "status" => $fetchRow[2],
+    "auftraggeber" => $fetchRow[3],
+    "erstellt" => $fetchRow[4],
+    "geaendert" => $fetchRow[5],
+    "beschreibung" => $fetchRow[6]));
 
 ?>
 

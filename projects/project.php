@@ -1007,6 +1007,7 @@ if (!isset($_GET['id'])) {
     $("#editProjectInfoForm").submit(function(event){
         // cancels the form submission
         event.preventDefault();
+
         editProjectInfo();
         $("#editprojectinfo").modal('toggle');
     });
@@ -1019,9 +1020,8 @@ if (!isset($_GET['id'])) {
             dataType: 'json',
             url: '../logic/editProjectInfo.php',
             data: projectSerialize+'&utid='+pageId,
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                alert(response);
-                //projectsContainer.prepend(response);
+            success: function (response) {
+                $("#editProjectInfo-title").val(HELLOOOOO);
             }
         });
 
@@ -1319,7 +1319,7 @@ if (!isset($_GET['id'])) {
 
 </script>
 
-<!-- Edits verknüpfen -->
+<!-- TESTAUFGABEN UND DOKUMENTE BILDSCHIRM ÖFFNEN -->
 <script>
     var contentAufgaben = $("#content-aufgaben");
     var contentUnterlagen = $("#content-unterlagen");
@@ -1360,6 +1360,9 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
+
+
+<!--LOAD FUNCTIONS -->
 <script>
 
     $( function loadTaskOnlys() {
@@ -1466,8 +1469,7 @@ if (!isset($_GET['id'])) {
 
 </script>
 
-
-
+<!-- CREATE FUNCTIONS -->
 <script>
 
     var scenarioContainer = $(".scenario-container");
