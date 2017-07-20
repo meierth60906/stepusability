@@ -8,6 +8,8 @@
 //}
 
 $ut_id = $_POST['utid'];
+$szenId = array();
+$data = array();
 
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
@@ -22,7 +24,7 @@ oci_execute($stid);
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     $szenId[] = $row['IN_SZENARIO'];
-    $data[] = "<li class='task item-hover' data-id='" .$row['ID']."' data-order='". $row['AB_ORDER'] ."'>
+    $data[] = "<li class='task item-hover' data-id='" .$row['ID']. "'>
         <div class='row p-3'>
         <div class='col-lg-12'>
         <a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>

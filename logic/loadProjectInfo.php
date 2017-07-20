@@ -9,6 +9,10 @@ if (!$conn) {
 $stid = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE STATUS = 'Laufend'");
 oci_execute($stid);
 
+$stid_contacts = oci_parse($conn, "SELECT * FROM PERSON order by NAME");
+oci_execute($stid_contacts);
+
+
 $fetchRowCount = oci_fetch_row($stid);
 
 if($fetchRowCount) {

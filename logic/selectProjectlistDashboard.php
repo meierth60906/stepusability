@@ -6,10 +6,13 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE STATUS = 'Laufend'");
+$stid = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE STATUS = 'Laufend' ORDER BY ERSTELLDATUM DESC");
 oci_execute($stid);
 
-$fetchRowCount = oci_fetch_row($stid);
+$stid_if = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE STATUS = 'Laufend' ORDER BY ERSTELLDATUM DESC");
+oci_execute($stid_if);
+
+$fetchRowCount = oci_fetch_row($stid_if);
 
 if($fetchRowCount) {
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
