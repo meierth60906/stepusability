@@ -1021,7 +1021,17 @@ if (!isset($_GET['id'])) {
             url: '../logic/editProjectInfo.php',
             data: projectSerialize+'&utid='+pageId,
             success: function (response) {
-                $("#editProjectInfo-title").val(HELLOOOOO);
+                $("#project-heading").text(response.name);
+                $("#project-auftraggeber").text(response.auftraggeber);
+                $("#project-status").text(response.status);
+                if(response.beschreibung !== null) {
+                    $("#project-desc").text(response.beschreibung);
+                } else {
+                    $("#project-desc").html("<span class='text-muted'>Keine Beschreibung vorhanden</span>")
+                }
+                $("#editProjectInfo-title").val(response.name);
+                $("#editProjectInfo-ag").val(response.auftraggeber);
+                $("#editProjectInfo-desc").val(response.beschreibung);
             }
         });
 

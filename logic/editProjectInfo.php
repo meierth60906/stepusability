@@ -42,7 +42,7 @@ $r = oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
 //echo"</div>";
 //echo"</a>";
 
-$stid2 = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$projectId'");
+$stid2 = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$ut_id'");
 oci_execute($stid2);
 
 $fetchRow = oci_fetch_array($stid2);
