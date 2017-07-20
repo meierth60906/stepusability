@@ -78,12 +78,12 @@
                                 <p>Browsercache löschen</p>
 
                                 <h5>Briefing:</h5>
-                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.
+                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.<br>
                                     Einleitung und Beschreibung des Testgegenstands.<br>
                                     Wir möchten Sie bitten,die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
                                 <h5>Technische Vorbereitung</h5>
-                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
+                                <p>Herzlichen Dank, dass Sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
                                     <br>
                                     Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung ihrer Daten machen.
                                     Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
@@ -93,7 +93,7 @@
                                     Kalibration
                                 </p>
                                 <h5>Anweisung vor den Aufgaben</h5>
-                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step <br>
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
                                     Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
                                     Zusätzlich bekommen sie von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
@@ -201,7 +201,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen<br> und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
+                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen und möchten nun<br>ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
                                 <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
@@ -213,19 +213,19 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Such bitte das Projekt ABC und finde den jeweiligen Ansprechpartner<br>sowie alle Projektbeteiligten heraus!</td>
+                                <td>Suchen Sie bitte das Projekt ABC und finden Sie den jeweiligen Ansprechpartner sowie alle Projektbeteiligten heraus!</td>
                                 <td>Projekte</td>
                                 <td></td>
                                 <td><ul>
                                         <li>Projekt "ABC" in der Liste auswählen</li>
                                         <li>Ansprechpartner ist step</li>
                                         <li>Play-Button drücken</li>
-                                        <li>Beteiligten sind Maura Maier, Thomas Meier,<br>Alina Schark</li>
+                                        <li>Beteiligten sind Maura Maier, Thomas Meier,<br>Alina Schark, Isabel Eichner und <br>Nathalie Steinbinder</li>
                                     </ul></td>
                             </tr>
                             <tr>
                                 <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                für ein Szenario erstellen. Lege Sie bitte eine neues Testaufgabe an.</td>
+                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
