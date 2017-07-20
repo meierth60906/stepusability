@@ -911,7 +911,10 @@ if (!isset($_GET['id'])) {
                     <div class="form-group row formTask">
                         <label for="editProjectInfo-talkto" class="col-lg-4 form-control-label">Ansprechpartner:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>
+                            <select class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto">
+                                <option value="" disabled selected>Auswählen...</option>
+                            </select>
+<!--                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>-->
                         </div>
                     </div>
 
@@ -919,13 +922,13 @@ if (!isset($_GET['id'])) {
                     <div class="form-group row formTask">
                         <label for="editProjectInfo-desc" class="col-lg-4 form-control-label">Projektbeschreibung:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="editProjectInfo-desc" id="editProjectInfo-desc" placeholder="Projektbeschreibung"/>
+                            <textarea rows="3" class="form-control" name="editProjectInfo-desc" id="editProjectInfo-desc" placeholder="Projektbeschreibung"></textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal-footer text-center">
-                    <input type="submit" value="Senden" class="btn btn-submit-blue" />
+                    <input type="submit" value="Speichern" class="btn btn-submit-blue" />
                 </div>
             </form>
 
@@ -943,7 +946,7 @@ if (!isset($_GET['id'])) {
 <script>
     var pageId = '<?php echo $user_id ?>';
 
-    $( function loadInput() {
+    $( function loadInputUT() {
         $.ajax({
             type: 'get',
             data: 'id='+pageId,
@@ -953,12 +956,47 @@ if (!isset($_GET['id'])) {
                 $("#project-heading").text(response.name);
                 $("#project-auftraggeber").text(response.auftraggeber);
                 $("#project-status").text(response.status);
+                if(response.beschreibung !== null) {
+                    $("#project-desc").text(response.beschreibung);
+                } else {
+                    $("#project-desc").html("<span class='text-muted'>Keine Beschreibung vorhanden</span>")
+                }
                 $("#editProjectInfo-title").val(response.name);
                 $("#editProjectInfo-ag").val(response.auftraggeber);
                 $("#editProjectInfo-desc").val(response.beschreibung);
             }
         });
     });
+
+
+
+
+</script>
+
+<script>
+    $( function loadInputTalkTo() {
+        $.ajax({
+            url: '../logic/selectProjectInfoTalkTo.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                if(response.name && response.vorname !== '') {
+                    $("#project-ansprechpartner").text(response.name + ", " + response.vorname);
+                } else {
+                    $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
+                }
+            }
+        })
+    });
+
+    $( function loadInputTalkToAuswahlliste() {
+        $.ajax({
+            url: '../logic/selectProjectInfoTalkToAuswahlliste.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#editProjectInfo-talkto").append(response);
+            }
+        })
+    });
+
+
 
 </script>
 
@@ -969,19 +1007,21 @@ if (!isset($_GET['id'])) {
     $("#editProjectInfoForm").submit(function(event){
         // cancels the form submission
         event.preventDefault();
+
         editProjectInfo();
         $("#editprojectinfo").modal('toggle');
     });
 
     function editProjectInfo() {
-        var projectSerialize = $("#createProjectForm").serialize();
+        var projectSerialize = $("#editProjectInfoForm").serialize();
 
         $.ajax({
             type: 'post',
+            dataType: 'json',
             url: '../logic/editProjectInfo.php',
-            data: projectSerialize,
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                projectsContainer.prepend(response);
+            data: projectSerialize+'&utid='+pageId,
+            success: function (response) {
+                $("#editProjectInfo-title").val(HELLOOOOO);
             }
         });
 
@@ -990,7 +1030,7 @@ if (!isset($_GET['id'])) {
 
 
 
-<!-- Rubriken erstellen -->
+<!-- Rubriken erstellen ALINA -->
 <script>
     var agreementContainer = $(".agreement-container");
     var protocolContainer = $(".protocol-container");
@@ -1279,7 +1319,7 @@ if (!isset($_GET['id'])) {
 
 </script>
 
-<!-- Edits verknüpfen -->
+<!-- TESTAUFGABEN UND DOKUMENTE BILDSCHIRM ÖFFNEN -->
 <script>
     var contentAufgaben = $("#content-aufgaben");
     var contentUnterlagen = $("#content-unterlagen");
@@ -1320,13 +1360,248 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
-<script src="../js/testaufgabenLaden.js"></script>
 
-<script src="../js/testaufgabenErstellen.js"></script>
+
+<!--LOAD FUNCTIONS -->
+<script>
+
+    $( function loadTaskOnlys() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskOnlys.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadScenarios() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadScenario.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadConclusion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadConclusion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                conclusionContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadPostSession() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadPostSession.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                postSessionContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadTasks() {
+
+
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadTasks.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                var scenarioId = response.szenarioid;
+
+                for(i in scenarioId) {
+                    var scenario = $(".scenario[data-id='" +scenarioId[i] + "']");
+                    var taskContainer = scenario.find(".task-container");
+                    taskContainer.append(response.echo[i]);
+                }
+
+
+            }
+        });
+    });
+
+    $( function loadPostSessionQuestion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadPostSessionQuestion.php',
+            success: function (response) {
+                var psId = response.postsessionid;
+
+                for(i in psId) {
+                    var psq = $(".postSessionRubrik");
+                    var psqContainer = psq.find(".ps-question-container");
+                    psqContainer.append(response.echo[i]);
+                }
+            }
+        });
+    });
+
+    $( function loadConclusionQuestion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadConclusionQuestion.php',
+            success: function (response) {
+                var conId = response.conclusionid;
+
+                for(i in conId) {
+                    var con = $(".conclusionRubrik");
+                    var conContainer = con.find(".cc-question-container");
+                    conContainer.append(response.echo[i]);
+                }
+            }
+        });
+    });
+
+</script>
+
+<!-- CREATE FUNCTIONS -->
+<script>
+
+    var scenarioContainer = $(".scenario-container");
+    var postSessionContainer = $(".postSession-container");
+    var conclusionContainer = $(".conclusion-container");
+
+
+    function createTask(event) {
+
+        var parentScenario = $(event).closest(".scenario");
+        var taskContainer = parentScenario.find(".task-container");
+
+        var scenarioId = parentScenario.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&scenarioid='+scenarioId,
+            type: 'post',
+            url: '../logic/insertTask.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                taskContainer.append(response);
+            }
+        });
+
+
+
+    }
+
+    function createTaskOnly() {
+
+        $.ajax({
+            data: 'utid='+pageId,
+            type: 'post',
+            url: '../logic/insertTaskOnly.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        })
+
+    }
+
+
+
+    function createConclusionQuestion(event) {
+
+        var parentCon = $(event).closest(".conclusionRubrik");
+        var conContainer = parentCon.find(".cc-question-container");
+
+
+        var conId = parentCon.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&conid='+conId,
+            type: 'post',
+            url: '../logic/insertConclusionQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                conContainer.append(response);
+            }
+        })
+
+    }
+
+    function createScenario() {
+        $.ajax({
+            data: 'utid='+pageId,
+            type: 'post',
+            url: '../logic/insertScenario.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        });
+
+    }
+
+
+
+    function createConclusion() {
+
+        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
+            $.ajax({
+                data: 'utid='+pageId,
+                type: 'post',
+                url: '../logic/insertConclusion.php',
+                success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                    conclusionContainer.append(response);
+                }
+            })
+        } else {
+            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
+        }
+    }
+
+    function createPostSession() {
+
+        if(!(postSessionContainer.find('.postSessionRubrik').length !== 0)) {
+            $.ajax({
+                data: 'utid='+pageId,
+                type: 'post',
+                url: '../logic/insertPostSession.php',
+                success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                    postSessionContainer.append(response);
+                }
+            })
+
+        } else {
+            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.");
+        }
+
+    }
+
+    function createPostSessionQuestion(event) {
+
+        var parentPSQ = $(event).closest(".postSessionRubrik");
+        var psqContainer = parentPSQ.find(".ps-question-container");
+
+        var psqId = parentPSQ.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&psqid='+psqId,
+            type: 'post',
+            url: '../logic/insertPostSessionQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                psqContainer.append(response);
+            }
+        })
+
+    }
+
+</script>
 
 <script src="../js/projektfensterSetStyle.js"></script>
 
-<script src="../js/testaufgabenSortieren.js"></script>
+<!--<script src="../js/testaufgabenSortieren.js"></script>-->
 
 
 </body>

@@ -39,10 +39,9 @@
 
         <div class="row p-3 mx-3 font-weight-bold">
             <div class="col-1">Status</div>
-            <div class="col-4">Projektname</div>
-            <div class="col-3">Auftraggeber</div>
+            <div class="col-5">Projektname</div>
+            <div class="col-4">Auftraggeber</div>
             <div class="col-2 text-right">Erstellt am</div>
-            <div class="col-2 text-right">Zuletzt geändert</div>
         </div>
 
 
