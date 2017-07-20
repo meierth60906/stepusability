@@ -23,12 +23,12 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <ul id="switch" class="nav" role="tablist">
+                <ul id="TestfensterSwitch" class="nav" role="tablist">
                     <li class="nav-item">
-                        <a id="buttonlinks" class="nav-link active" href="#moderator" role="tab" data-toggle="tab">Moderator</a>
+                        <a id="buttonTestfensterLinks" class="nav-link active" href="#moderator" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="#protokollant" role="tab" data-toggle="tab">Protokollant</a>
+                        <a id="buttonTestfensterRechts" class="nav-link" href="#protokollant" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
                 </ul>
             </div>
@@ -262,7 +262,7 @@
                         </div>
 
                         <div class="tab-pane" id="postsession" role="tabpanel">
-                            <div class="row inner-body">
+                            <div class="row inner-body pt-0">
                                 <div id="content-postsession" class="col-9 py-3 ">
                                     <div class="row">
 
@@ -349,13 +349,15 @@
 
             <div class="tab-pane" id="protokollant" role="tabpanel">
                 <div class="container-fluid">
-                    <div class="inner-boa2 text-right p-5">
+                    <div class="inner-body row c-grey-bg">
+                        <div class="col-2 text-right p-5">
                             <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
                         </div>
                         <div class="col-8 p-5">
                             <p class="font-weight-bold text-center">Aufgabe 1</p>
                             <p class="text-center">
-                                Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?
+                                Sie haben einen neuen Projektauftrag XYZ bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg.
+
                             </p>
                         </div>
                         <div class="col-2 p-5">
@@ -384,10 +386,12 @@
 
                             <div class="form-group col-12 py-2">
                                 <ul>
-                                    <li>Ort über Suchfeld eingeben</li>
-                                    <li>„morgen“ auswählen (3 Möglichkeiten) </li>
-                                    <li>Leiste „Mittag“ finden und aufklappen</li>
-                                    <li>Temperatur für 12.00 Uhr nennen"></li></ul>
+                                    <li>"Projekte" in der linken Menüleiste auswählen</li>
+                                    <li>Auf "+ Erstellen" - Button klicken</li>
+                                    <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                                    <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                                    <li>Auf "Senden" klicken</li>
+                                </ul>
                             </div>
 
                             <form action="/logic/insertTestfensterProt.php">

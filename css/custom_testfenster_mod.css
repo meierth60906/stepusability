@@ -258,24 +258,6 @@
 }
 
 
-.testfensterswitch .btn-primary {
-    background-color: white;
-    border-color:#133E5C;
-}
-
-.testfensterswitch .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
-    background-color: #133E5C;
-    border-color: #133E5C;
-}
-
-.testfensterswitch .switchlink {
-    color: #133E5C;
-}
-
-.testfensterswitch .active .switchlink {
-    color: #FFFFFF;
-}
-
 
 #buttonlinks{
     border-top-left-radius: 0.75rem;
