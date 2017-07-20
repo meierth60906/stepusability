@@ -80,7 +80,7 @@
                                 <h5>Briefing:</h5>
                                 <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.<br>
                                     Einleitung und Beschreibung des Testgegenstands.<br>
-                                    Wir möchten Sie bitten,die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                    Wir möchten Sie bitten, die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
                                 <h5>Technische Vorbereitung</h5>
                                 <p>Herzlichen Dank, dass Sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
@@ -89,7 +89,7 @@
                                     Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
                                 </p>
                                 <h5>Augencheck</h5>
-                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.
+                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.<br>
                                     Kalibration
                                 </p>
                                 <h5>Anweisung vor den Aufgaben</h5>
@@ -201,7 +201,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen und möchten nun<br>ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
+                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
                                 <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
@@ -262,7 +262,7 @@
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
                                     Zunächst bitte ich Sie um Ihre Bemerkungen zu den Testaufgaben.<br></p>
                                 <ul>
-                                    <li>Waren die Testaufgaben realistisch? </li>
+                                   <li>Waren die Testaufgaben realistisch? </li>
                                     <li>Sind es Aufgaben, die Sie im echten Leben durchführen würden? </li>
                                     <li>Welche Aufgaben haben gefehlt? </li>
                                 </ul>
