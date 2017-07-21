@@ -23,20 +23,14 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <span class="col-4 align-self-center">
-                    <a class="buttonTestfensterLinks" href="testfenster_mod.php">
-                        <span class="hidden-sm-down">Moderator</span></a>
-                    <a class="buttonTestfensterRechts" href="testfenster_prot.php">
-                        <span class="hidden-sm-down">Protokollant</span></a>
-                </span>
-                <!--<ul id="switch" class="nav" role="tablist">
+                <ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
                         <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
                         <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
-                </ul>-->
+                </ul>
             </div>
 
             <div class="col-4 text-right align-self-center ">
@@ -84,25 +78,15 @@
                                 <p>Browsercache löschen</p>
 
                                 <h5>Briefing:</h5>
-                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.<br>
-                                    Einleitung und Beschreibung des Testgegenstands.<br>
+                                <p>Einleitung und Beschreibung des Testgegenstands.<br>
                                     Wir möchten Sie bitten, die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
-                                <h5>Technische Vorbereitung</h5>
-                                <p>Herzlichen Dank, dass Sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
-                                    <br>
-                                    Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung ihrer Daten machen.
-                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
-                                </p>
-                                <h5>Augencheck</h5>
-                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.<br>
-                                    Kalibration
-                                </p>
+
                                 <h5>Anweisung vor den Aufgaben</h5>
                                 <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
                                     Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
-                                    Zusätzlich bekommen sie von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
+                                    Zusätzlich bekommen sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
                                 </p>
 
                                 <h5>Anweisung Think-Aloud</h5>
@@ -112,7 +96,6 @@
                                     <br>
                                     Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
-                                <h5>Start der Eyetracking-Aufzeichnung</h5>
                             </div>
                         </div>
                     </div>
@@ -207,31 +190,30 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Sie haben einen neuen Evalutierungsprojektauftrag vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist die "TH-Nürnberg"!</td>
+                                <td>Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".</td>
                                 <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
                                         <li>"Projekte" in der linken Menüleiste auswählen</li>
                                         <li>Auf "+ Erstellen" - Button klicken</li>
-                                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
-                                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
-                                        <li>Auf "Senden" klicken</li>
+                                        <li>Bei "Titel" den Namen "Demo" eingeben</li>
+                                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                                        <li>Auf "Erstellen" klicken</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Suchen Sie bitte das Projekt ABC und finden Sie den jeweiligen Ansprechpartner sowie alle Projektbeteiligten heraus!</td>
-                                <td>Projekte</td>
+                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie zwei der Projektbeteiligten heraus!</td>
+                                <td>Projektübersicht</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Projekt "ABC" in der Liste auswählen</li>
+                                        <li>Projekt "Social App" in der Liste auswählen</li>
                                         <li>Ansprechpartner ist step</li>
-                                        <li>Play-Button drücken</li>
-                                        <li>Beteiligten sind Maura Maier, Thomas Meier,<br>Alina Schark, Isabel Eichner und <br>Nathalie Steinbinder</li>
+                                        <li>Beteiligten sind Anna Apfel, Bernd Bogner</li>
                                     </ul></td>
                             </tr>
                             <tr>
                                 <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                    für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe an.</td>
+                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
@@ -240,6 +222,7 @@
                                         <li>Im Dropdown - Menü "Szenario" aufwählen</li>
                                         <li>Das "+" bei Szenario anwählen </li>
                                         <li>Auf "Testaufgabe" klicken</li>
+                                        <li>In "Aufgabenbeschreibung" ... eingeben</li>
 
                                     </ul></td>
                             </tr>
@@ -270,10 +253,8 @@
                                 <h5>Post-Session Interview Fragen</h5>
                                 <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
                                 <ul>
-                                    <li>Gab es etwas was Ihnen besonders gut oder weniger gut gefallen hat?</li>
+                                    <li>Gab es etwas das Ihnen besonders gut oder weniger gut gefallen hat?</li>
                                 </ul>
-                                <h5>UEQ-Fragebogen:</h5>
-                                <p>Ich bitte Sie nun, außen Platz zu nehmen und für uns diesen Fragebogen auszufüllen.</p>
                             </div>
                         </div>
                     </div>

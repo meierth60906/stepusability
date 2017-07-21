@@ -57,7 +57,7 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
-                    Sie haben einen neuen Projektauftrag XYZ bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg.
+                    Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
             </div>
@@ -89,9 +89,9 @@
                     <ul>
                         <li>"Projekte" in der linken Menüleiste auswählen</li>
                         <li>Auf "+ Erstellen" - Button klicken</li>
-                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
-                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
-                        <li>Auf "Senden" klicken</li>
+                        <li>Bei "Titel" den Namen "Demo" eingeben</li>
+                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                        <li>Auf "Erstellen" klicken</li>
                     </ul>
                 </div>
 
