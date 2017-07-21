@@ -767,7 +767,6 @@ if (!isset($_GET['id'])) {
                     <div class="tab-content">
                         <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
                             <div class="row">
-                                <div class="aufgabenfeld inner-body row c-grey-bg">
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-2 text-right p-3">
@@ -785,7 +784,7 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+
                                 <div class="loesungsfeld">
                                     <div class="col-10 p-3">
                                         <table class="table table-bordered">
@@ -818,7 +817,6 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="tab-pane row" id="testaufgabe2tn1" role="tabpanel">
                             <div class="row">
-                                <div class="aufgabenfeld inner-body row c-grey-bg">
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-2 text-right p-3">
@@ -835,7 +833,6 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 <div class="loesungsfeld">
                                     <div class="col-10 p-3">
                                         <table class="table table-bordered">
@@ -869,7 +866,6 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="tab-pane row" id="testaufgabe3tn1" role="tabpanel">
                             <div class="row">
-                                <div class="aufgabenfeld inner-body row c-grey-bg">
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-2 text-right p-3">
@@ -888,7 +884,6 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 <div class="loesungsfeld">
                                     <div class="col-10 p-3">
                                         <table class="table table-bordered">
