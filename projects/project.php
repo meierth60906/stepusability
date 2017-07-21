@@ -767,26 +767,27 @@ if (!isset($_GET['id'])) {
                     <div class="tab-content">
                         <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
                             <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-2 text-right p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                            </div>
-                                            <div class="col-8 p-3">
-                                                <p class="font-weight-bold text-center">Testaufgabe 1</p>
-                                                <p class="text-center">
-                                                    Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
-                                                    Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
-                                                </p>
-                                            </div>
-                                            <div class="col-2 p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                            </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 text-right p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                        </div>
+                                        <div class="col-8 p-3">
+                                            <p class="font-weight-bold text-center">Testaufgabe 1</p>
+                                            <p class="text-center">
+                                                Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
+                                                Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
+                                            </p>
+                                        </div>
+                                        <div class="col-2 p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
                                         </div>
                                     </div>
+                                </div>
 
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                <div class="col-12 p-3">
+                                    <div class="loesungsfeld">
+
                                         <table class="table table-bordered">
                                             <tr>
                                                 <td>
@@ -817,24 +818,25 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="tab-pane row" id="testaufgabe2tn1" role="tabpanel">
                             <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-2 text-right p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                            </div>
-                                            <div class="col-8 p-3">
-                                                <p class="font-weight-bold text-center">Testaufgabe 2</p>
-                                                <p class="text-center">
-                                                    Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten
-                                                </p>
-                                            </div>
-                                            <div class="col-2 p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                            </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 text-right p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                        </div>
+                                        <div class="col-8 p-3">
+                                            <p class="font-weight-bold text-center">Testaufgabe 2</p>
+                                            <p class="text-center">
+                                                Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten
+                                            </p>
+                                        </div>
+                                        <div class="col-2 p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                </div>
+                                <div class="col-12 p-3">
+                                    <div class="loesungsfeld">
+
                                         <table class="table table-bordered">
 
                                             <tr>
@@ -866,26 +868,27 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="tab-pane row" id="testaufgabe3tn1" role="tabpanel">
                             <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-2 text-right p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                            </div>
-                                            <div class="col-8 p-3">
-                                                <p class="font-weight-bold text-center">Testaufgabe 3</p>
-                                                <p class="text-center">
-                                                    Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
-                                                    für ein Szenario erstellen.
-                                                    Legen Sie bitte eine neue Testaufgabe an.
-                                                </p>
-                                            </div>
-                                            <div class="col-2 p-3">
-                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                            </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2 text-right p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                        </div>
+                                        <div class="col-8 p-3">
+                                            <p class="font-weight-bold text-center">Testaufgabe 3</p>
+                                            <p class="text-center">
+                                                Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
+                                                für ein Szenario erstellen.
+                                                Legen Sie bitte eine neue Testaufgabe an.
+                                            </p>
+                                        </div>
+                                        <div class="col-2 p-3">
+                                            <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                </div>
+                                <div class="col-12 p-3">
+                                    <div class="loesungsfeld">
+
                                         <table class="table table-bordered">
 
                                             <tr>
