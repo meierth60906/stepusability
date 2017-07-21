@@ -355,7 +355,7 @@ ol.loesweg-container li{
 }
 
 /**Evaluation **/
-#evaluation .panel-heading a {
+#singleproject .panel-heading a {
     font-size: 1rem;
     line-height: 1.5;
     color: black;
@@ -363,7 +363,7 @@ ol.loesweg-container li{
     padding-left: 20px;
 }
 
-#evaluation a.on {
+#singleproject a.on {
     font-weight: bold;
 
 }
