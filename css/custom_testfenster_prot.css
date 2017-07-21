@@ -132,3 +132,29 @@
 #switch .nav-item{
     border: none !important;
 }
+
+
+#testfenster .buttonTestfensterLinks{
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius:  0.75rem;
+    border-right: 1px solid #133E5C;
+    border-bottom: 1px solid #133E5C;
+    border-top: 1px solid #133E5C;
+    text-align: center;
+
+    /**border-color: #133E5C;**/
+    color: #133E5C;
+    background-color: white;
+}
+
+#testfenster .buttonTestfensterRechts{
+    border-top-right-radius:  0.75rem;
+    border-bottom-right-radius:  0.75rem;
+    text-align: center;
+
+    color: #FFFFFF;
+    border-color: #ffffff;
+    background-color:#133E5C ;
+
+
+}

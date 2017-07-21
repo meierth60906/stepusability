@@ -1,4 +1,10 @@
+#templates{
+    background-color: #f5f5f5 !important;
+}
 
+#templates.page-top {
+    margin-left: 0px;
+}
 
 
 
