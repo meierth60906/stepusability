@@ -16,15 +16,27 @@ $desc = $_POST['editProjectInfo-desc'];
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
-//$stid = oci_parse($conn, "INSERT INTO USABILITYTEST(NAME, AUFTRAGGEBER, BESCHREIBUNG, ZULETZT_GEAENDERT) VALUES('".$title."', '".$ag."', '".$desc."', CURRENT_TIMESTAMP)");
+
 $stid = oci_parse($conn, "update USABILITYTEST SET NAME='".$title."', AUFTRAGGEBER='".$ag."', BESCHREIBUNG='".$desc."' WHERE ID='".$ut_id."'");
-//$stid = oci_parse($conn, "update P_BETEILIGT_UT SET PERSON_ID='".$talkto."', AUFTRAGGEBER='".$title."', BESCHREIBUNG='".$title."' WHERE ID='".$projectId."'");
-
-
-// The OCI_NO_AUTO_COMMIT flag tells Oracle not to commit the INSERT immediately
-// Use OCI_DEFAULT as the flag for PHP <= 5.3.1.  The two flags are equivalent
 
 $r = oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
+
+
+
+$stid_talkto_condition = oci_parse($conn, "SELECT * FROM P_BETEILIGT_UT WHERE UT_ID = '".$ut_id."'");
+oci_execute($stid_talkto_condition);
+
+$has_ansprechpartner = oci_fetch_row($stid_talkto_condition);
+
+if($has_ansprechpartner) {
+    $stid_talkto = oci_parse($conn, "UPDATE P_BETEILIGT_UT SET PERSON_ID='".$talkto."', ROLLE_ID='29' WHERE UT_ID='".$ut_id."'");
+} else {
+    $stid_talkto = oci_parse($conn, "INSERT into P_BETEILIGT_UT (UT_ID, PERSON_ID, ROLLE_ID) values ('".$ut_id."', '".$talkto."', '29')");
+
+}
+
+
+$r_talkto = oci_execute($stid_talkto, OCI_COMMIT_ON_SUCCESS);
 
 //$print = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID='".$ut_id."'");
 //
@@ -42,10 +54,18 @@ $r = oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
 //echo"</div>";
 //echo"</a>";
 
-$stid2 = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$projectId'");
-oci_execute($stid2);
+$stid_allgemein_output = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$ut_id'");
+oci_execute($stid_allgemein_output);
 
-$fetchRow = oci_fetch_array($stid2);
+$fetchRow = oci_fetch_array($stid_allgemein_output);
+
+
+$stid_talkto_output = oci_parse($conn, "SELECT p.ID, p.VORNAME, p.NAME FROM P_BETEILIGT_UT b, PERSON p WHERE b.PERSON_ID = p.ID AND b.UT_ID = '$ut_id'");
+oci_execute($stid_talkto_output);
+
+$fetchRow_talkto = oci_fetch_array($stid_talkto_output);
+
+
 
 //echo json_encode($fetchRow);
 echo json_encode(array(
@@ -55,7 +75,10 @@ echo json_encode(array(
     "auftraggeber" => $fetchRow[3],
     "erstellt" => $fetchRow[4],
     "geaendert" => $fetchRow[5],
-    "beschreibung" => $fetchRow[6]));
+    "beschreibung" => $fetchRow[6],
+    "talkid" => $fetchRow_talkto[0],
+    "talkvorname" => $fetchRow_talkto[1],
+    "talkname" => $fetchRow_talkto[2]));
 
 ?>
 

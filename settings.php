@@ -30,7 +30,7 @@
             <div class="col-lg-3 p-0" id="secondSidebar">
                 <ul class="flex-column nav">
                     <li class="nav-item">
-                        <a class="p-3 nav-link active" href="#profile" role="tab" data-toggle="tab">Profil
+                        <a class="p-3 nav-link active focus" href="#profile" role="tab" data-toggle="tab">Profil
                             bearbeiten</a></li>
                     <li class="nav-item">
                         <a class="p-3 nav-link" href="#password" role="tab" data-toggle="tab">Passwort ändern</a></li>
@@ -47,7 +47,7 @@
 
             <!--            Profil bearbeiten Seite -->
 
-            <div class="tab-pane active" id="profile" role="tabpanel">
+            <div class="tab-pane active focus" id="profile" role="tabpanel">
                 <div class="row">
                     <div class="form-group pt-5 col-lg-8 offset-lg-4">
                         <form>

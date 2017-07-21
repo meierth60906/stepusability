@@ -61,7 +61,7 @@
                         <div id="einverstaendniserklaerung" class="panel-collapse collapse active">
                             <ul class="flex-column nav">
                                 <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link active" href="#einverstaendniserklaerung1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                    <a class="icon-file-text-o p-3 nav-link active" href="#einverstaendniserklaerung1" role="tab" data-toggle="tab" aria-expanded="true"> Vorlage 1</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +78,7 @@
                         <div id="protokollleitfaden" class="panel-collapse collapse">
                             <ul class="flex-column nav">
                                 <li class="nav-item" >
-                                  <a class="icon-file-text-o p-3 nav-link" href="#protokollleitfaden1" role="tab" data-toggle="tab"> Vorlage 1</a>
+                                  <a class="icon-file-text-o p-3 nav-link active" href="#protokollleitfaden1" role="tab" data-toggle="tab"> Vorlage 1</a>
                                 </li>
                             </ul>
                         </div>

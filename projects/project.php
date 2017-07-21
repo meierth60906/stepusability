@@ -79,7 +79,7 @@ if (!isset($_GET['id'])) {
             <!--            Allgemein -->
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="content-allgemein" class="col-lg-8 py-3 offset-lg-2">
+                    <div id="content-allgemein" class="col-lg-12 py-3">
 
 
                         <!--                        Projektinfo + Beteiligte -->
@@ -976,10 +976,13 @@ if (!isset($_GET['id'])) {
 <script>
     $( function loadInputTalkTo() {
         $.ajax({
+            type: 'post',
+            dataType: 'json',
             url: '../logic/selectProjectInfoTalkTo.php',
+            data: 'utid='+pageId,
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                if(response.name && response.vorname !== '') {
-                    $("#project-ansprechpartner").text(response.name + ", " + response.vorname);
+                if(response.name && response.vorname !== null) {
+                    $("#project-ansprechpartner").html("<a href='../view_contact.php?id=" + response.id + "'>" + response.name + ", " + response.vorname + "</a>");
                 } else {
                     $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
                 }
@@ -989,7 +992,9 @@ if (!isset($_GET['id'])) {
 
     $( function loadInputTalkToAuswahlliste() {
         $.ajax({
+            type: 'post',
             url: '../logic/selectProjectInfoTalkToAuswahlliste.php',
+            data: 'utid='+pageId,
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $("#editProjectInfo-talkto").append(response);
             }
@@ -1021,7 +1026,23 @@ if (!isset($_GET['id'])) {
             url: '../logic/editProjectInfo.php',
             data: projectSerialize+'&utid='+pageId,
             success: function (response) {
-                $("#editProjectInfo-title").val(HELLOOOOO);
+                $("#project-heading").text(response.name);
+                $("#project-auftraggeber").text(response.auftraggeber);
+                $("#project-status").text(response.status);
+                if(response.beschreibung !== null) {
+                    $("#project-desc").text(response.beschreibung);
+                } else {
+                    $("#project-desc").html("<span class='text-muted'>Keine Beschreibung vorhanden</span>")
+                }
+                $("#editProjectInfo-title").val(response.name);
+                $("#editProjectInfo-ag").val(response.auftraggeber);
+                $("#editProjectInfo-desc").val(response.beschreibung);
+                if(response.talkname && response.talkvorname !== null) {
+                    $("#project-ansprechpartner").html("<a href='../view_contact.php?id=" + response.talkid + "'>" + response.talkname + ", " + response.talkvorname + "</a>");
+                } else {
+                    $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
+                }
+                loadInputTalkTo();
             }
         });
 
@@ -1601,7 +1622,7 @@ if (!isset($_GET['id'])) {
 
 <script src="../js/projektfensterSetStyle.js"></script>
 
-<!--<script src="../js/testaufgabenSortieren.js"></script>-->
+<script src="../js/testaufgabenSortieren.js"></script>
 
 
 </body>
