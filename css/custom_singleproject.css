@@ -407,8 +407,8 @@ ol.loesweg-container li{
 }
 
 /*Farbe der Tabs, wenn Seite offen*/
-#singleproject .nav-item a:focus,
-#singleproject .nav-item a:active{
+#evaluation .nav-item a:focus,
+#evaluation .nav-item a:active{
     font-weight: bold !important;
     background-color: #185077;
     color: white;
