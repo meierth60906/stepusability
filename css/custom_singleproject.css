@@ -405,7 +405,7 @@ ol.loesweg-container li{
 #singleproject a.on{
     font-weight: bold;
 }
-#evaluation .table-bordered{
+#singleproject .table-bordered{
     border: 2px solid black;
 }
 /*Farbe der Tabs, wenn Seite offen*/
