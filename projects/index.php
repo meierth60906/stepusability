@@ -10,6 +10,7 @@
 <html lang="de">
 <head>
     <title>Projekte | step</title>
+    <meta charset="UTF-8" />
 
     <?php include ('head.html');
 
