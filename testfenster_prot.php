@@ -106,12 +106,12 @@
                     <div class="form-group col-12 text-center py-2">
                         <textarea class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
-                    <input type="hidden" name="Protokollant" value="1">
+                  <!--  <input type="hidden" name="Protokollant" value="1">
                     <input type="hidden" name="Termin" value="1">
                     <input type="hidden" name="TerminUt" value="1">
                     <input type="hidden" name="Textbaustein" value="1">
                     <input type="hidden" name="TextbausteinAbschnitt" value="2">
-                    <input type="hidden" name="TextbausteinAbschnittUt" value="1">
+                    <input type="hidden" name="TextbausteinAbschnittUt" value="1">-->
 
 
                     <input type="submit" value="Speichern">
