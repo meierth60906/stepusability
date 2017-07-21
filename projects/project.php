@@ -785,8 +785,7 @@ if (!isset($_GET['id'])) {
                                         </div>
                                     </div>
 
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                <div id=loesungsfeld class="col-12 p-3">
                                         <table class="table table-bordered">
                                             <tr>
                                                 <td>
@@ -833,8 +832,7 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                <div id=loesungsfeld class="col-12 p-3">
                                         <table class="table table-bordered">
 
                                             <tr>
@@ -884,8 +882,7 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                <div class="loesungsfeld">
-                                    <div class="col-12 p-3">
+                                    <div id=loesungsfeld class="col-12 p-3">
                                         <table class="table table-bordered">
 
                                             <tr>
