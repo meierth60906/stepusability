@@ -1622,7 +1622,7 @@ if (!isset($_GET['id'])) {
 
 <script src="../js/projektfensterSetStyle.js"></script>
 
-<!--<script src="../js/testaufgabenSortieren.js"></script>-->
+<script src="../js/testaufgabenSortieren.js"></script>
 
 
 </body>
