@@ -23,14 +23,20 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <ul id="switch" class="nav" role="tablist">
+                <span class="col-4 align-self-center">
+                    <a class="buttonTestfensterLinks" href="testfenster_mod.php">
+                        <span class="hidden-sm-down">Moderator</span></a>
+                    <a class="buttonTestfensterRechts" href="testfenster_prot.php">
+                        <span class="hidden-sm-down">Protokollant</span></a>
+                </span>
+                <!--<ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
                         <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
                         <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
 
             <div class="col-4 text-right align-self-center ">
@@ -225,7 +231,7 @@
                             </tr>
                             <tr>
                                 <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe an.</td>
+                                    für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
