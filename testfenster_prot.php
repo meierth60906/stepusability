@@ -51,9 +51,9 @@
     </div>
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
-          <!--  <div class="col-2 text-right p-5">
+           <div class="col-2 text-right p-5">
                 <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
-            </div>-->
+            </div>
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
