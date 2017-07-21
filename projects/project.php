@@ -708,352 +708,351 @@ if (!isset($_GET['id'])) {
                             <div class="col-6 headline">
                                 Protokollliste
                             </div>
-                            <div class="panel-group">
-                                <div class="panel panel-default">
-
-
-
-
-                                    <!--                        Testaufgabe 1-->
-                                    <div class="panel-heading">
-
-                                        <h4 class="panel-title">
-                                            <a class="icon-angle-right active" href="#testaufgabe1" data-toggle="collapse" >Testaufgabe 1</a>
-                                        </h4>
-
-                                    </div>
-
-                                    <div id="testaufgabe1" class="panel-collapse collapse active">
-                                        <ul class="flex-column nav">
-                                            <li class="nav-item" >
-                                                <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe1tn1" role="tab" data-toggle="tab" aria-expanded="true"> Proband A</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                    <!--                            Testaufgabe 2-->
-
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a class="icon-angle-right" href="#testaufgabe2" data-toggle="collapse">Testaufgabe 2</a>
-                                        </h4>
-                                    </div>
-
-                                    <div id="testaufgabe2" class="panel-collapse collapse">
-                                        <ul class="flex-column nav">
-                                            <li class="nav-item" >
-                                                <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe2tn1" role="tab" data-toggle="tab"> Proband A</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                    <!--Testaufgabe 3-->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a class="icon-angle-right" data-toggle="collapse" href="#testaufgabe3" >Testaufgabe 3</a>
-                                        </h4>
-                                    </div>
-                                    <div id="testaufgabe3" class="panel-collapse collapse">
-                                        <ul class="flex-column nav">
-                                            <li class="nav-item" >
-                                                <a class="icon-file-text-o p-3 nav-link" href="#testaufgabe3tn1" role="tab" data-toggle="tab"> Proband A</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12"><hr class="mb-3"></div>
-                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
-
-
                         </div>
-                    </div>
-
-                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
-
-                        <div class="tab-content">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
 
 
-                            <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
-                                <div class="row">
-                                    <div class="aufgabenfeld inner-body row c-grey-bg">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-2 text-right p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                                </div>
-                                                <div class="col-8 p-3">
-                                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                                    <p class="text-center">
-                                                        Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
-                                                        Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
-                                                    </p>
-                                                </div>
-                                                <div class="col-2 p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loesungsfeld">
-                                        <div class="col-10">
-                                            <table class="table table-bordered">
-                                                <tr>
-                                                    <td>
-                                                        <p>Erwartete Lösungsschritte</p>
-                                                        <ul><li>"Projekte" in der linken Menüleiste auswählen</li>
-                                                            <li>Auf "+ Erstellen" - Button klicken</li>
-                                                            <li>Bei "Titel" den Namen "XYZ" eingeben</li>
-                                                            <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
-                                                            <li>Auf "Senden" klicken</li></ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>Geschafft / Nicht geschafft</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p> Tatsächliche Lösungsschritte</p>
-
-                                                    </td>
-                                                </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane row" id="testaufgabe2tn1" role="tabpanel">
-                                <div class="row">
-                                    <div class="aufgabenfeld inner-body row c-grey-bg">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-2 text-right p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                                </div>
-                                                <div class="col-8 p-3">
-                                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                                    <p class="text-center">
-                                                        Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten
-                                                    </p>
-                                                </div>
-                                                <div class="col-2 p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loesungsfeld">
-                                        <div class="col-10">
-                                            <table class="table table-bordered">
-
-                                                <tr>
-                                                    <td>
-                                                        <p>Erwartete Lösungsschritte</p>
-                                                        <ul>
-                                                            <li>Projekt "Social App" in der Liste auswählen</li>
-                                                            <li>Ansprechpartner ist step</li>
-                                                            <li>Play-Button drücken</li>
-                                                            <li>2 Beteiligten sind Maura Maier, Thomas Meier,
-                                                                Alina Schark, Isabel Eichner und
-                                                                Nathalie Steinbinder</li></ul>
-                                                    </td>
 
 
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>Geschafft / Nicht geschafft</p>
-                                                </tr>
-                                                <tr>
-                                                    <th>
-                                                        Tatsächliche Lösungsschritte
-                                                    </th>
-                                                </tr>
+                                <!--                        Testaufgabe 1-->
+                                <div class="panel-heading">
 
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right active" href="#testaufgabe1" data-toggle="collapse" >Testaufgabe 1</a>
+                                    </h4>
 
                                 </div>
-                            </div>
-                            <div class="tab-pane row" id="testaufgabe3tn1" role="tabpanel">
-                                <div class="row">
-                                    <div class="aufgabenfeld inner-body row c-grey-bg">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-2 text-right p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                                                </div>
-                                                <div class="col-8 p-3">
-                                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                                    <p class="text-center">
-                                                        Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
-                                                        für ein Szenario erstellen.
-                                                        Legen Sie bitte eine neue Testaufgabe an.
-                                                    </p>
-                                                </div>
-                                                <div class="col-2 p-3">
-                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="loesungsfeld">
-                                        <div class="col-10">
-                                    <table class="table table-bordered">
 
-                                        <tr>
-                                            <td>
-                                                <p>Erwartete Lösungsschritte</p>
-                                                <ul>
-                                                    <li>Den Reiter "Testaufgaben" auswählen</li>
-                                                    <li> Auf das "+" bei "Aufgabenliste" klicken</li>
-                                                    <li>Im Dropdown - Menü "Szenario" aufwählen</li>
-                                                    <li>Das "+" bei Szenario </li>
-                                                    <li>Auf "Testaufgabe" klicken</li>
-                                                    <li>Angaben reinschreiben</li></ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>Geschafft / Nicht geschafft</p>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                Tatsächliche Lösungsschritte
-                                            </th>
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
+                                <div id="testaufgabe1" class="panel-collapse collapse active">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item" >
+                                            <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe1tn1" role="tab" data-toggle="tab" aria-expanded="true"> Proband A</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
 
 
-                            <!--hier Ende content-->
-                        </div>
-                    </div>
+                                <!--                            Testaufgabe 2-->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right" href="#testaufgabe2" data-toggle="collapse">Testaufgabe 2</a>
+                                    </h4>
+                                </div>
+
+                                <div id="testaufgabe2" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item" >
+                                            <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe2tn1" role="tab" data-toggle="tab"> Proband A</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-
-
-                    <!--<div class="row">
-                      <div class="protokollant-container col-md-6">
-                          <div class="protokollant-card m-5">
-                              <div class="row px-4 p-4">
-                                  <div class="col-md-12">
-                                      <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                          <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
-                                          <hr>
-                                  </div>
-                              </div>
-                              <div class="row px-4">
-                                  <div class="col-lg-4">Lösungsschritte:</div>
-                                  <div class="col-lg-8 font-weight-bold">
-                                      Lorem ipsum dolor sit amet, consetetur
-                                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                      magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                      dolores et ea rebum.
-                                  </div>
-                              </div>
-                              <div class="row px-4 p-4">
-                                  <div class="col-lg-4">Anmerkungen:</div>
-                                  <div class="col-lg-8 font-weight-bold">
-                                      Lorem ipsum dolor sit amet, consetetur
-                                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                      magna aliquyam erat, sed diam voluptua.
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="protokollant-card m-5">
-                              <div class="row px-4 p-4">
-                                  <div class="col-md-12">
-                                      <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
-                                          <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
-                                          <hr>
-                                  </div>
-                              </div>
-                              <div class="row px-4">
-                                  <div class="col-lg-4">Lösungsschritte:</div>
-                                  <div class="col-lg-8 font-weight-bold">
-                                      Lorem ipsum dolor sit amet, consetetur
-                                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                      magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                      dolores et ea rebum.
-                                  </div>
-                              </div>
-                              <div class="row px-4 p-4">
-                                 <div class="col-lg-4">Anmerkungen:</div>
-                                  <div class="col-lg-8 font-weight-bold">
-                                      Lorem ipsum dolor sit amet, consetetur
-                                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                      magna aliquyam erat, sed diam voluptua.
-                                  </div>
-                              </div>
-                          </div>
-                     </div>
-                     <div class="col-md-6">
-                      Editor
-                     </div>
-                  </div>-->
-
-
-                    <!--<div id="aufgabe-eval" class="row m-0 p-3">
-                        <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
-                        <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
-                    </div>
-
-
-                    <div class="row">
-
-                        <!--                            Projektinfo -->
-                    <!--
-                    <div class="col-lg-12 p-3">
-                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                            <div class="col-lg-12 element-allgemein p-3">
-                                <div class="row">
-                                    <div class="col-10 col-sm-6 headline">
-                                        Projektinformationen
-                                    </div>
-                                    <div class="col-2 col-sm-6 text-right">
-                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                    </div>
-                                    <div class="col-12"><hr class="pb-3"></div>
+                                <!--Testaufgabe 3-->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right" data-toggle="collapse" href="#testaufgabe3" >Testaufgabe 3</a>
+                                    </h4>
+                                </div>
+                                <div id="testaufgabe3" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item" >
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testaufgabe3tn1" role="tab" data-toggle="tab"> Proband A</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-12"><hr class="mb-3"></div>
+                        <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+                        <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+                        <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+
+
                     </div>
-                </div>-->
-
-                    <div id="protokollanten-eval" class="col-lg-6">
-
-                    </div>
-
-                    <div id="editor-eval" class="col-lg-6">
-                        EDITOR
-                    </div>
-
                 </div>
+
+                <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
+
+                    <div class="tab-content">
+
+
+                        <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
+                            <div class="row">
+                                <div class="aufgabenfeld inner-body row c-grey-bg">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 text-right p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                            </div>
+                                            <div class="col-8 p-3">
+                                                <p class="font-weight-bold text-center">Testaufgabe 1</p>
+                                                <p class="text-center">
+                                                    Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
+                                                    Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
+                                                </p>
+                                            </div>
+                                            <div class="col-2 p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loesungsfeld">
+                                    <div class="col-10 p-3">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    <p>Erwartete Lösungsschritte</p>
+                                                    <ul><li>"Projekte" in der linken Menüleiste auswählen</li>
+                                                        <li>Auf "+ Erstellen" - Button klicken</li>
+                                                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                                                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                                                        <li>Auf "Senden" klicken</li></ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Geschafft / Nicht geschafft</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p> Tatsächliche Lösungsschritte</p>
+
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane row" id="testaufgabe2tn1" role="tabpanel">
+                            <div class="row">
+                                <div class="aufgabenfeld inner-body row c-grey-bg">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 text-right p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                            </div>
+                                            <div class="col-8 p-3">
+                                                <p class="font-weight-bold text-center">Testaufgabe 2</p>
+                                                <p class="text-center">
+                                                    Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten
+                                                </p>
+                                            </div>
+                                            <div class="col-2 p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loesungsfeld">
+                                    <div class="col-10 p-3">
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <td>
+                                                    <p>Erwartete Lösungsschritte</p>
+                                                    <ul>
+                                                        <li>Projekt "Social App" in der Liste auswählen</li>
+                                                        <li>Ansprechpartner ist step</li>
+                                                        <li>Play-Button drücken</li>
+                                                        <li>2 Beteiligten sind Maura Maier, Thomas Meier,
+                                                            Alina Schark, Isabel Eichner und
+                                                            Nathalie Steinbinder</li></ul>
+                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Geschafft / Nicht geschafft</p>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Tatsächliche Lösungsschritte
+                                                </th>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane row" id="testaufgabe3tn1" role="tabpanel">
+                            <div class="row">
+                                <div class="aufgabenfeld inner-body row c-grey-bg">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-2 text-right p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                            </div>
+                                            <div class="col-8 p-3">
+                                                <p class="font-weight-bold text-center">Testaufgabe 3</p>
+                                                <p class="text-center">
+                                                    Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
+                                                    für ein Szenario erstellen.
+                                                    Legen Sie bitte eine neue Testaufgabe an.
+                                                </p>
+                                            </div>
+                                            <div class="col-2 p-3">
+                                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loesungsfeld">
+                                    <div class="col-10 p-3">
+                                        <table class="table table-bordered">
+
+                                            <tr>
+                                                <td>
+                                                    <p>Erwartete Lösungsschritte</p>
+                                                    <ul>
+                                                        <li>Den Reiter "Testaufgaben" auswählen</li>
+                                                        <li> Auf das "+" bei "Aufgabenliste" klicken</li>
+                                                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                                                        <li>Das "+" bei Szenario </li>
+                                                        <li>Auf "Testaufgabe" klicken</li>
+                                                        <li>Angaben reinschreiben</li></ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Geschafft / Nicht geschafft</p>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Tatsächliche Lösungsschritte
+                                                </th>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                                <!--hier Ende content-->
+                            </div>
+                        </div>
+
+
+
+
+                        <!--<div class="row">
+                          <div class="protokollant-container col-md-6">
+                              <div class="protokollant-card m-5">
+                                  <div class="row px-4 p-4">
+                                      <div class="col-md-12">
+                                          <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                              <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                              <hr>
+                                      </div>
+                                  </div>
+                                  <div class="row px-4">
+                                      <div class="col-lg-4">Lösungsschritte:</div>
+                                      <div class="col-lg-8 font-weight-bold">
+                                          Lorem ipsum dolor sit amet, consetetur
+                                          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                          dolores et ea rebum.
+                                      </div>
+                                  </div>
+                                  <div class="row px-4 p-4">
+                                      <div class="col-lg-4">Anmerkungen:</div>
+                                      <div class="col-lg-8 font-weight-bold">
+                                          Lorem ipsum dolor sit amet, consetetur
+                                          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                          magna aliquyam erat, sed diam voluptua.
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="protokollant-card m-5">
+                                  <div class="row px-4 p-4">
+                                      <div class="col-md-12">
+                                          <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                              <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                              <hr>
+                                      </div>
+                                  </div>
+                                  <div class="row px-4">
+                                      <div class="col-lg-4">Lösungsschritte:</div>
+                                      <div class="col-lg-8 font-weight-bold">
+                                          Lorem ipsum dolor sit amet, consetetur
+                                          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                          dolores et ea rebum.
+                                      </div>
+                                  </div>
+                                  <div class="row px-4 p-4">
+                                     <div class="col-lg-4">Anmerkungen:</div>
+                                      <div class="col-lg-8 font-weight-bold">
+                                          Lorem ipsum dolor sit amet, consetetur
+                                          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                          magna aliquyam erat, sed diam voluptua.
+                                      </div>
+                                  </div>
+                              </div>
+                         </div>
+                         <div class="col-md-6">
+                          Editor
+                         </div>
+                      </div>-->
+
+
+                        <!--<div id="aufgabe-eval" class="row m-0 p-3">
+                            <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+                            <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <!--                            Projektinfo -->
+                        <!--
+                        <div class="col-lg-12 p-3">
+                            <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                <div class="col-lg-12 element-allgemein p-3">
+                                    <div class="row">
+                                        <div class="col-10 col-sm-6 headline">
+                                            Projektinformationen
+                                        </div>
+                                        <div class="col-2 col-sm-6 text-right">
+                                            <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                        </div>
+                                        <div class="col-12"><hr class="pb-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                        <div id="protokollanten-eval" class="col-lg-6">
+
+                        </div>
+
+                        <div id="editor-eval" class="col-lg-6">
+                            EDITOR
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
+
+
+
+
+
         </div>
-
-
-
-
-
-
-    </div>
     </div>
 
 </section>
