@@ -1519,7 +1519,31 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
+<!-- Evaluation Function -->
 
+<script>
+    $(document).ready(function () {
+
+
+        $(function () {
+//        changes the active collapse class to 'on' for changing the text to bold
+            $('.panel-heading a').click(function () {
+                $(this).toggleClass('on');
+            });
+
+        });
+
+        $(function () {
+            $('.nav-item').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+    });
+
+
+</script>
 
 <!--LOAD FUNCTIONS -->
 <script>
