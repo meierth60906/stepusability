@@ -1,10 +1,10 @@
 <?php
-//session_start();
-//if (!$_SESSION['login_user']){
-//    $_SESSION['login_user'] = '';
-//    header("Location:index.php");
-//    die();
-//}
+/**
+ * Created by PhpStorm.
+ * User: Nathalie Steinbinder
+ * Date: 21.07.2017
+ * Time: 19:02
+ */
 ?>
 <!DOCTYPE html>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -51,19 +51,19 @@
     </div>
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
-          <!--  <div class="col-2 text-right p-5">
-                <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
-            </div>-->
+             <div class="col-2 text-right p-5">
+                  <a class="c-orange" href="testfenster_prot2.php"><i class="question-angles icon-angle-left"></i></a>
+              </div>
             <div class="col-8 p-5">
-                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                <p class="font-weight-bold text-center">Aufgabe 3</p>
                 <p class="text-center">
-                    Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
+                    Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe für ein bestimmtes Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt …. an.
 
                 </p>
             </div>
-            <div class="col-2 p-5">
+            <!--<div class="col-2 p-5">
                 <a class="c-orange" href="testfenster_prot2.php"><i class="question-angles icon-angle-right"></i></a>
-            </div>
+            </div>-->
         </div>
 
         <div class="row px-5 py-2">
@@ -87,11 +87,12 @@
 
                 <div class="form-group col-12 py-2">
                     <ul>
-                        <li>"Projekte" in der linken Menüleiste auswählen</li>
-                        <li>Auf "+ Erstellen" - Button klicken</li>
-                        <li>Bei "Titel" den Namen "Demo" eingeben</li>
-                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
-                        <li>Auf "Erstellen" klicken</li>
+                        <li>Den Reiter "Testaufgaben" auswählen</li>
+                        <li>Auf das "+" bei "Aufgabenliste" klicken</li>
+                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                        <li>Das "+" bei Szenario anwählen </li>
+                        <li>Auf "Testaufgabe" klicken</li>
+                        <li>In "Aufgabenbeschreibung" ... eingeben</li>
                     </ul>
                 </div>
 
@@ -102,11 +103,11 @@
                         <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
 
-                   <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
-                    <div class="form-group col-12 text-center py-2">
-                        <textarea class="form-control" id="message-text" placeholder=""></textarea>
-                    </div>-->
-                   <input type="hidden" name="Protokollant" value="1">
+                    <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
+                     <div class="form-group col-12 text-center py-2">
+                         <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                     </div>-->
+                    <input type="hidden" name="Protokollant" value="1">
                     <input type="hidden" name="Termin" value="1">
                     <input type="hidden" name="TerminUt" value="1">
                     <input type="hidden" name="Textbaustein" value="1">
