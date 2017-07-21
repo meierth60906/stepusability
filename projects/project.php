@@ -917,7 +917,7 @@ if (!isset($_GET['id'])) {
                     </div>
 
 
-                    <!--
+
                   <div class="aufgabenfeld inner-body row c-grey-bg">
                     <div class="col-12">
                         <div class="row">
@@ -1032,7 +1032,7 @@ if (!isset($_GET['id'])) {
                     </div>
 
                     <div id="editor-eval" class="col-lg-6">
-
+EDITOR
                     </div>
 
                 </div>
