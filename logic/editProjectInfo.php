@@ -54,10 +54,18 @@ $r_talkto = oci_execute($stid_talkto, OCI_COMMIT_ON_SUCCESS);
 //echo"</div>";
 //echo"</a>";
 
-$stid2 = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$ut_id'");
-oci_execute($stid2);
+$stid_allgemein_output = oci_parse($conn, "SELECT * FROM USABILITYTEST WHERE ID = '$ut_id'");
+oci_execute($stid_allgemein_output);
 
-$fetchRow = oci_fetch_array($stid2);
+$fetchRow = oci_fetch_array($stid_allgemein_output);
+
+
+$stid_talkto_output = oci_parse($conn, "SELECT p.ID, p.VORNAME, p.NAME FROM P_BETEILIGT_UT b, PERSON p WHERE b.PERSON_ID = p.ID AND b.UT_ID = '$ut_id'");
+oci_execute($stid_talkto_output);
+
+$fetchRow_talkto = oci_fetch_array($stid_talkto_output);
+
+
 
 //echo json_encode($fetchRow);
 echo json_encode(array(
@@ -67,7 +75,10 @@ echo json_encode(array(
     "auftraggeber" => $fetchRow[3],
     "erstellt" => $fetchRow[4],
     "geaendert" => $fetchRow[5],
-    "beschreibung" => $fetchRow[6]));
+    "beschreibung" => $fetchRow[6],
+    "talkid" => $fetchRow_talkto[0],
+    "talkvorname" => $fetchRow_talkto[1],
+    "talkname" => $fetchRow_talkto[2]));
 
 ?>
 

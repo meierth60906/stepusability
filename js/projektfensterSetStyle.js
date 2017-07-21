@@ -39,7 +39,7 @@ $(function() {
         conEval.height(h-header_h - 32);
 
         //Set Content Width
-        conAllg.width(w - sidAllg.width() - 60 - nav_w);
+        conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
@@ -68,7 +68,7 @@ $(window).on('resize', function(){
         conEval.height(h - header_h - 32);
 
         //Set Content Width
-        conAllg.width(w - sidAllg.width() - 60 - nav_w);
+        conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
@@ -99,7 +99,7 @@ $('.nav-tabs a').on('shown.bs.tab', function (e) {
         conEval.height(h - header_h - 32);
 
         //Set Content Width
-        conAllg.width(w - sidAllg.width() - 60 - nav_w);
+        conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
