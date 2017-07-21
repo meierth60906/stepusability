@@ -708,7 +708,62 @@ if (!isset($_GET['id'])) {
                             <div class="col-6 headline">
                                 Protokollliste
                             </div>
+                            <div class="panel-group">
+                                <div class="panel panel-default">
 
+
+
+
+                                    <!--                        Testaufgabe 1-->
+                                    <div class="panel-heading">
+
+                                        <h4 class="panel-title">
+                                            <a class="icon-angle-right active" href="#testaufgabe1" data-toggle="collapse" >Testaufgabe 1</a>
+                                        </h4>
+
+                                    </div>
+
+                                    <div id="testaufgabe1" class="panel-collapse collapse active">
+                                        <ul class="flex-column nav">
+                                            <li class="nav-item" >
+                                                <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe1tn1" role="tab" data-toggle="tab" aria-expanded="true"> Proband A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!--                            Testaufgabe 2-->
+
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="icon-angle-right" href="#testaufgabe2" data-toggle="collapse">Testaufgabe 2</a>
+                                        </h4>
+                                    </div>
+
+                                    <div id="testaufgabe2" class="panel-collapse collapse">
+                                        <ul class="flex-column nav">
+                                            <li class="nav-item" >
+                                                <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe2tn1" role="tab" data-toggle="tab"> Proband A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!--Testaufgabe 3-->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="icon-angle-right" data-toggle="collapse" href="#testaufgabe3" >Testaufgabe 3</a>
+                                        </h4>
+                                    </div>
+                                    <div id="testaufgabe3" class="panel-collapse collapse">
+                                        <ul class="flex-column nav">
+                                            <li class="nav-item" >
+                                                <a class="icon-file-text-o p-3 nav-link" href="#testaufgabe3tn1" role="tab" data-toggle="tab"> Proband A</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-lg-12"><hr class="mb-3"></div>
                             <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
                             <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
@@ -914,7 +969,7 @@ if (!isset($_GET['id'])) {
                             <select class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto">
                                 <option value="" disabled selected>Auswählen...</option>
                             </select>
-<!--                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>-->
+                            <!--                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>-->
                         </div>
                     </div>
 
