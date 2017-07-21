@@ -789,9 +789,8 @@ if (!isset($_GET['id'])) {
                                                 <div class="col-8 p-3">
                                                     <p class="font-weight-bold text-center">Aufgabe 1</p>
                                                     <p class="text-center">
-                                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                                        accusam et justo duo dolores et ea rebum.
+                                                        Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
+                                                        Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
                                                     </p>
                                                 </div>
                                                 <div class="col-2 p-3">
@@ -800,7 +799,7 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 offset-lg-4">
+                                    <div class="col-10 offset-lg-4">
                                         <table class="table table-bordered">
                                             <tr>
                                                 <td>
