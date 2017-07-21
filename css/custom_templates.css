@@ -1,4 +1,18 @@
+#templates{
+    background: white;
+    height:100%;
+    min-height: 100%;
+}
 
+#templates.titlebar {
+    background: none;
+    border: none;
+}
+
+#templates.page-top {
+    background-color: white;
+    margin-left: 0px;
+}
 
 
 
