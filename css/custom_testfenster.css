@@ -18,13 +18,6 @@
     margin-left: 0px;
 }
 
-#testfenster.tab-content.row.inner-body{
-    padding-top: -157px;
-}
-.element.style{
-    padding-top:-157px;
-}
-
 #testfenster .inner-sidebar {
     overflow: auto;
     position:fixed;
@@ -318,6 +311,7 @@
 
 .testfensterswitch .active .switchlink {
     color: #FFFFFF;
+    border-color: #133E5C ;
 }
 
 #buttonTestfensterLinks{
@@ -365,4 +359,8 @@
     background-color: white;
     /*border: 0.75px solid black;*/
 
+}
+
+#body-testfenster_mod .modal-backdrop {
+    display:none !important;
 }

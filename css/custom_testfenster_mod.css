@@ -293,9 +293,29 @@
     size: 20px;
 }
 
-/*
-#switch .nav-link{
-    display: none; !important;
-}
-*/
 
+#testfenster_mod .buttonTestfensterLinks{
+    border-top-left-radius:  0.75rem;
+    border-bottom-left-radius:  0.75rem;
+    /**border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;**/
+
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    background-color:#133E5C;
+}
+
+#testfenster_mod .buttonTestfensterRechts{
+    border-top-right-radius:  0.75rem;
+    border-bottom-right-radius:  0.75rem;
+    text-align: center;
+    border-right: 1px solid #133E5C;
+    border-bottom: 1px solid #133E5C;
+    border-top: 1px solid #133E5C;
+    color: #133E5C;
+    background-color: white;
+
+
+}
