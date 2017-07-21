@@ -8,14 +8,22 @@
     /*border: 0.75px solid black;*/
 
 }
-
 #library th, #templates th{
     width:30%;
+    background-color: white;
 }
+#library td, #templates td{
+    width:30%;
+    background-color: white;
+}
+
 
 #switch .nav-item{
     width:100px;
+}
 
+body {
+    background-color: #f5f5f5;
 }
 
 #switch .nav-item:hover{
@@ -53,3 +61,4 @@
 #switch .nav-item{
     border: none !important;
 }
+
