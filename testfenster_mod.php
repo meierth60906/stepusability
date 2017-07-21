@@ -190,7 +190,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist die "Technische Hochschule".</td>
+                                <td>Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".</td>
                                 <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
