@@ -64,7 +64,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a class="icon-angle-right" data-toggle="collapse"
-                                           href="#wetter">wetter.com</a>
+                                           href="#wetter">Social App</a>
                                     </h4>
                                 </div>
                                 <div id="wetter" class="panel-collapse collapse">
@@ -104,7 +104,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" href="#step"
-                                           class="icon-angle-right">step</a>
+                                           class="icon-angle-right">Demo</a>
                                     </h4>
                                 </div>
                                 <div id="step" class="panel-collapse collapse">
