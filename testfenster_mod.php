@@ -129,7 +129,7 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Briefing</label>
                                         </div></div>
-                                    <div class="col-md-8">
+                                   <!-- <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" value="">
@@ -142,7 +142,7 @@
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Augencheck</label>
-                                        </div></div>
+                                        </div></div>-->
                                     <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
@@ -157,13 +157,13 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Anweisungen Think-Aloud</label>
                                         </div></div>
-                                    <div class="col-md-8">
+                                  <!--  <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Eyetracking aktiviert</label>
-                                        </div></div>
+                                        </div></div>-->
 
 
 
