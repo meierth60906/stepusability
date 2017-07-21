@@ -26,9 +26,9 @@
             </div>
             <div class="col-4">
                 <span class="col-4 align-self-center">
-                    <a class="buttonTestfensterLinks" href="../testfenster_mod.php">
+                    <a class="buttonTestfensterLinks" href="testfenster_mod.php">
                         <span class="hidden-sm-down">Moderator</span></a>
-                    <a class="buttonTestfensterRechts" href="../testfenster_prot.php">
+                    <a class="buttonTestfensterRechts" href="testfenster_prot.php">
                         <span class="hidden-sm-down">Protokollant</span></a>
                 </span>
                 <!--<ul id="switch" class="nav" role="tablist">
