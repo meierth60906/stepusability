@@ -17,7 +17,7 @@ if (!isset($_GET['id'])) {
 <html lang="de">
 <head>
     <title>Projekt 1 | step</title>
-
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <?php include ('head.html'); ?>
 </head>
 <body id="body-singleproject">
