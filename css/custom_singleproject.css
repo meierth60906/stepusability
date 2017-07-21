@@ -353,3 +353,17 @@ ol.loesweg-container li{
 .link-orangehover:hover .link-orangehover-child {
     color: #e84a29;
 }
+
+/**Evaluation **/
+#evaluation .panel-heading a {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
+}
+
+#evaluation a.on {
+    font-weight: bold;
+
+}
