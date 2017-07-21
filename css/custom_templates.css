@@ -1,16 +1,8 @@
 #templates{
-    background: white;
-    height:100%;
-    min-height: 100%;
-}
-
-#templates.titlebar {
-    background: none;
-    border: none;
+    background-color: #f5f5f5 !important;
 }
 
 #templates.page-top {
-    background-color: white;
     margin-left: 0px;
 }
 
