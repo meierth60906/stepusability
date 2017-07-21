@@ -60,6 +60,24 @@
 
                                 <!--Projekt 1-->
 
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#step"
+                                           class="icon-angle-right">Demo</a>
+                                    </h4>
+                                </div>
+                                <div id="step" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#einverstaendniserklaerungstep" role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a></li>
+                                    </ul>
+                                </div>
+
+
+
+                                <!--Projekt 2-->
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -99,22 +117,8 @@
                                     </ul>
                                 </div>
 
-                                <!--Projekt 2-->
 
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#step"
-                                           class="icon-angle-right">Demo</a>
-                                    </h4>
-                                </div>
-                                <div id="step" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link"
-                                               href="#einverstaendniserklaerungstep" role="tab"
-                                               data-toggle="tab"> Einverständniserklärung</a></li>
-                                    </ul>
-                                </div>
+
 
                             </div>
                         </div>
