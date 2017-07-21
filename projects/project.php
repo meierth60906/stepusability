@@ -711,10 +711,6 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="panel-group">
                             <div class="panel panel-default">
-
-
-
-
                                 <!--                        Testaufgabe 1-->
                                 <div class="panel-heading">
 
@@ -723,7 +719,6 @@ if (!isset($_GET['id'])) {
                                     </h4>
 
                                 </div>
-
                                 <div id="testaufgabe1" class="panel-collapse collapse active">
                                     <ul class="flex-column nav">
                                         <li class="nav-item" >
@@ -731,8 +726,6 @@ if (!isset($_GET['id'])) {
                                         </li>
                                     </ul>
                                 </div>
-
-
                                 <!--                            Testaufgabe 2-->
 
                                 <div class="panel-heading">
@@ -748,8 +741,6 @@ if (!isset($_GET['id'])) {
                                         </li>
                                     </ul>
                                 </div>
-
-
                                 <!--Testaufgabe 3-->
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -769,16 +760,11 @@ if (!isset($_GET['id'])) {
                         <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
                         <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
                         <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
-
-
                     </div>
                 </div>
 
                 <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
-
                     <div class="tab-content">
-
-
                         <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
                             <div class="row">
                                 <div class="aufgabenfeld inner-body row c-grey-bg">
@@ -865,8 +851,6 @@ if (!isset($_GET['id'])) {
                                                             Alina Schark, Isabel Eichner und
                                                             Nathalie Steinbinder</li></ul>
                                                 </td>
-
-
                                             </tr>
                                             <tr>
                                                 <td>
@@ -877,8 +861,6 @@ if (!isset($_GET['id'])) {
                                                     Tatsächliche Lösungsschritte
                                                 </th>
                                             </tr>
-
-
                                         </table>
                                     </div>
                                 </div>
@@ -936,24 +918,16 @@ if (!isset($_GET['id'])) {
                                         </table>
                                     </div>
                                 </div>
-
-
                                 <!--hier Ende content-->
                             </div>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div id="editorEval" class="offset-lg-7 col-lg-4">
 
                     EDITOR
                 </div>
-
             </div>
 
 
