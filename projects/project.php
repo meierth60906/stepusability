@@ -703,7 +703,7 @@ if (!isset($_GET['id'])) {
 <!--            Evaluation -->
             <div class="tab-pane" id="evaluation" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
+                    <div id="sidebar-eval" class="col-lg-2 c-grey-bg">
                         <div class="spc-container row pt-3 mt-3">
                             <div class="col-6 headline">
                                 Protokollliste
@@ -763,7 +763,7 @@ if (!isset($_GET['id'])) {
                     </div>
                 </div>
 
-                <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
+                <div id="content-eval" class="offset-lg-2 col-lg-3 p-0">
                     <div class="tab-content">
                         <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
                             <div class="row">
@@ -924,7 +924,7 @@ if (!isset($_GET['id'])) {
                     </div>
                 </div>
 
-                <div id="editorEval" class="offset-lg-7 col-lg-4">
+                <div id="editorEval" class="offset-lg-6 col-lg-6">
 
                     EDITOR
                 </div>
