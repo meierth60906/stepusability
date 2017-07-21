@@ -791,19 +791,29 @@ if (!isset($_GET['id'])) {
                                             <tr>
                                                 <td>
                                                     <p>Aufgabenstellung</p>
+                                                    <p>Sie haben einen neuen Evaluierungsprojektauftrag vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist die "TH-Nürnberg"!</p>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <p>Erwartete Lösungsschritte</p>
+                                                    <ul><li>"Projekte" in der linken Menüleiste auswählen</li>
+                                                        <li>Auf "+ Erstellen" - Button klicken</li>
+                                                        <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                                                        <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                                                        <li>Auf "Senden" klicken</li></ul>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <p>Geschafft / Nicht geschafft</p>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    Tatsächliche Lösungsschritte
-                                                </th>
+                                                <td>
+                                                    <p> Tatsächliche Lösungsschritte</p>
+
+                                                </td>
                                             </tr>
 
                                             </tbody>
@@ -824,10 +834,22 @@ if (!isset($_GET['id'])) {
                                         <tr>
                                             <td>
                                                 <p>Aufgabenstellung</p>
+                                                <p>Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten</p>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Erwartete Lösungsschritte</p>
+                                                <ul>
+                                                    <li>Projekt "Social App" in der Liste auswählen</li>
+                                                    <li>Ansprechpartner ist step</li>
+                                                    <li>Play-Button drücken</li>
+                                                    <li>2 Beteiligten sind Maura Maier, Thomas Meier,
+                                                        Alina Schark, Isabel Eichner und
+                                                        Nathalie Steinbinder</li></ul>
+                                            </td>
+
+
                                         </tr>
                                         <tr>
                                             <td>
@@ -857,10 +879,22 @@ if (!isset($_GET['id'])) {
                                         <tr>
                                             <td>
                                                 <p>Aufgabenstellung</p>
+                                            <p>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
+                                                für ein Szenario erstellen.
+                                                Legen Sie bitte eine neue Testaufgabe an.</p>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Erwartete Lösungsschritte</p>
+                                                <ul>
+                                                    <li>Den Reiter "Testaufgaben" auswählen</li>
+                                                    <li> Auf das "+" bei "Aufgabenliste" klicken</li>
+                                                    <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                                                    <li>Das "+" bei Szenario </li>
+                                                    <li>Auf "Testaufgabe" klicken</li>
+                                                    <li>Angaben reinschreiben</li></ul>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>

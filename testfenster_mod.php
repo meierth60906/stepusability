@@ -207,7 +207,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Sie haben einen neuen Projektauftrag XYZ vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es XYZ, der Auftraggeber ist TH-Nürnberg!</td>
+                                <td>Sie haben einen neuen Evalutierungsprojektauftrag vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist die "TH-Nürnberg"!</td>
                                 <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
