@@ -780,20 +780,28 @@ if (!isset($_GET['id'])) {
 
                             <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-8 offset-lg-4">
+                                    <div class="aufgabenfeld inner-body row c-grey-bg">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-2 text-right p-3">
+                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                                                </div>
+                                                <div class="col-8 p-3">
+                                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                                    <p class="text-center">
+                                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                                        accusam et justo duo dolores et ea rebum.
+                                                    </p>
+                                                </div>
+                                                <div class="col-2 p-3">
+                                                    <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 offset-lg-4">
                                         <table class="table table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <th>Testaufgabe 1</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <p>Aufgabenstellung</p>
-                                                    <p>Sie haben einen neuen Evaluierungsprojektauftrag vom Auftraggeber TH-Nürnberg bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist die "TH-Nürnberg"!</p>
-                                                </td>
-                                            </tr>
                                             <tr>
                                                 <td>
                                                     <p>Erwartete Lösungsschritte</p>
@@ -918,27 +926,8 @@ if (!isset($_GET['id'])) {
 
 
 
-                  <div class="aufgabenfeld inner-body row c-grey-bg">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-2 text-right p-3">
-                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
-                            </div>
-                            <div class="col-8 p-3">
-                                <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                <p class="text-center">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum.
-                                </p>
-                            </div>
-                            <div class="col-2 p-3">
-                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row">
+
+                  <!--<div class="row">
                     <div class="protokollant-container col-md-6">
                         <div class="protokollant-card m-5">
                             <div class="row px-4 p-4">
