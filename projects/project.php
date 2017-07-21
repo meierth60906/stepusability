@@ -917,7 +917,7 @@ if (!isset($_GET['id'])) {
                     </div>
 
 
-                    <!--
+
                   <div class="aufgabenfeld inner-body row c-grey-bg">
                     <div class="col-12">
                         <div class="row">
