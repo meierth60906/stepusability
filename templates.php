@@ -153,7 +153,7 @@
                                 $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Testskript'");
                                 oci_execute($stid);
                                 while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
-                                    echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                     echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
                                 }
                                 ?>
                             </ul>

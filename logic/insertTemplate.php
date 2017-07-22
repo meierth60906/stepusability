@@ -14,7 +14,7 @@ if (!$conn) {
 
 
 //Insert Abfrage für Vorlagen Tabelle
-$vorlagenInsert="insert into Vorlage (Vorlage_art, vorlage_name, vorlage_text) values('Einverständniserklärung', 'Vorlage1', '".$templateContent."' )";
+$vorlagenInsert="insert into Vorlage  (Vorlage_art, vorlage_name, vorlage_text) values('Einverständniserklärung', 'Vorlage1', '".$templateContent."' )";
 $stid = oci_parse($conn, $vorlagenInsert);
 if (!oci_execute($stid, OCI_COMMIT_ON_SUCCESS)) {
     $e = oci_error();
