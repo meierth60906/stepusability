@@ -133,9 +133,9 @@
     box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
 }
 
-#singleproject .protokollant-container {
+/**#singleproject .protokollant-container {
     overflow-y: scroll;
-}
+}*/
 
 
 .aufgabenfeld {
@@ -375,7 +375,7 @@ ol.loesweg-container li{
     height:100%;
     width: 25%;
     position: fixed;
-    margin-left: -15px;
+    margin-left: 0px;!important;
     border-right: solid 1px lightgrey;
 }
 
@@ -405,9 +405,7 @@ ol.loesweg-container li{
 #singleproject a.on{
     font-weight: bold;
 }
-#singleproject .table-bordered{
-    border: 2px solid black;
-}
+
 /*Farbe der Tabs, wenn Seite offen*/
 #evaluation .nav-item a:focus,
 #evaluation .nav-item a:active{
@@ -448,9 +446,7 @@ ol.loesweg-container li{
 /*table */
 
 #singleproject table {
-    margin-top: 6rem;
-    margin-left: -2rem;
-    border: solid 1px lightgrey;
+       border: solid 1px lightgrey;
 }
 
 #singleproject th{
