@@ -702,7 +702,7 @@ if (!isset($_GET['id'])) {
 
 <!--            Evaluation -->
 
-            <!--
+            <!-- TOMMYs LÖSUNG
               <div class="aufgabenfeld inner-body row c-grey-bg">
                 <div class="col-12">
                     <div class="row">
@@ -786,8 +786,7 @@ if (!isset($_GET['id'])) {
 
 
 
-
-
+            <!--
 
 
             <div class="row inner-body">
@@ -828,12 +827,15 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!--<div id="aufgabe-eval" class="row m-0 p-3">
                     <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
                     <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
                 </div>
-        <!-- ALINAS VERSION 22.07.2107----
+
+
+                -->
+        <!-- ALINAS VERSION 22.07.2107---->
         <div class="tab-pane" id="evaluation" role="tabpanel">
             <div class="row inner-body">
                 <div id="sidebar-eval" class="col-lg-2 c-grey-bg">
