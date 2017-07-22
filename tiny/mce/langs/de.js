@@ -1,4 +1,4 @@
-tinymce.addI18n ('de',{
+tinymce.addI18n('de',{
     "Cut": "Ausschneiden",
     "Heading 5": "\u00dcberschrift 5",
     "Header 2": "\u00dcberschrift 2",
