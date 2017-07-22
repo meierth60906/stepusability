@@ -29,7 +29,7 @@
             toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
             image_advtab: true,            content_css: 'https://tinymce.com/css/codepen.min.css',
             branding: false,
-            language_url : '/tiny/mce/langs/de.js',
+            language_url : '/step/tiny/mce/langs/de.js',
             save_enablewhendirty: true
         });
     </script>
