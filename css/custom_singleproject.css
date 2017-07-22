@@ -375,7 +375,6 @@ ol.loesweg-container li{
     height:100%;
     width: 25%;
     position: fixed;
-    margin-left: -15px;
     border-right: solid 1px lightgrey;
 }
 
