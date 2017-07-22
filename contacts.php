@@ -262,7 +262,7 @@
             data: 'cid=' + contactId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/contacts_loadData.php',
+            url: 'logic/contacts_loadData.php',
             success: function (response) {
 //                $('#contact-edit-button').attr('data-id',response.id);
 
@@ -299,7 +299,7 @@
                 data: contactSerialize + '&cid=' + contactId,
                 type: 'post',
                 dataType: 'json',
-                url: '../logic/contacts_updateData.php',
+                url: 'logic/contacts_updateData.php',
                 success: function (response) {
 //                $('#contact-edit-button').attr('data-id',response.id);
 
