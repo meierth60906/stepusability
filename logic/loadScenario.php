@@ -24,7 +24,7 @@ oci_execute($stid);
 
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-        echo "<li class='scenario element-allgemein mb-3'>";
+        echo "<li class='scenario element-allgemein mb-3' data-id='" . $row['ID'] . "' >";
         echo "<div class='row p-3'>";
         echo "<div class='col-10'>";
         echo "<a href='#testaufgaben' onclick='editScenario(this)' data-id='" . $row['ID'] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $row['NAME_AB'] . "</a>";

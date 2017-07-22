@@ -46,7 +46,7 @@ oci_execute($stid_tb, OCI_COMMIT_ON_SUCCESS);
 echo "<li class='scenario element-allgemein mb-3' data-id='" . $fetchRowCount[0] . "'>";
 echo "<div class='row p-3'>";
 echo "<div class='col-10'>";
-echo "<a href='#testaufgaben' onclick='editScenario()' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $fetchRowCount[3] . "</a>";
+echo "<a href='#testaufgaben' onclick='editScenario(this)' data-id='" . $fetchRowCount[0] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='link-noblue font-weight-bold'>" . $fetchRowCount[3] . "</a>";
 echo "</div>";
 echo "<div class='col-2 text-right'>";
 echo "<a href='#testaufgaben' onclick='createTask(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";

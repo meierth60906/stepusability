@@ -4,12 +4,15 @@
     <div class="col-lg-12 pl-0 pl-md-3 pr-0 pr-md-3">
         <div class="row my-3 ml-2 ml-lg-3 mr-2 mr-lg-3">
             <div class="col-12 px-0">
+                <form id="psqForm">
                 <div class="row">
                     <div id="headline-aufgaben" class="col-6 headline">
                         <span class='icon-align icon-comment pr-2'></span>Post-Session-Interview-Frage
                     </div>
                     <div class="col-6 text-right">
-                        <a href="#"><span class="icon-check-1"></span><span class="hidden-md-down"> Speichern</span></a>
+                        <button type="submit" id="updatePSQSaveButton" class="btn btn-submit-blue">
+                            <span class="icon-check-1"></span><span class="hidden-md-down"> Speichern</span>
+                        </button>
                     </div>
                 </div>
 
@@ -17,26 +20,26 @@
 
                 <div class="row">
                     <div class="col-xl-8 offset-xl-2 col-lg-12">
-                        <form id="taskForm">
+
                             <div class="form-group row formPostSession formConclusion">
-                                <label for="inputQuestion" class="col-lg-4 form-control-label">Frage:</label>
+                                <label for="inputPSQuestion" class="col-lg-4 form-control-label">Frage:</label>
                                 <div class="col-lg-8">
-                                    <textarea class="form-control" id="inputQuestion" placeholder="Frage" rows="6"></textarea>
+                                    <textarea class="form-control" id="inputPSQuestion" name="inputPSQuestion" placeholder="Frage" rows="6"></textarea>
                                 </div>
                             </div>
 
                             <div class="form-group row formPostSession formConclusion">
-                                <label for="inputDeleteQ" class="col-lg-4 form-control-label">Frage löschen:</label>
+                                <label for="inputDeletePSQ" class="col-lg-4 form-control-label">Frage löschen:</label>
                                 <div class="col-lg-8">
-                                    <a id="inputDeleteQ" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                    <a id="inputDeletePSQ" name="inputDeletePSQ" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
                                 </div>
                             </div>
 
 
-                        </form>
+
                     </div>
                 </div>
-
+                </form>
             </div>
         </div>
 
@@ -44,3 +47,30 @@
 
 
 </div>
+
+<script>
+
+    $("#updatePSQSaveButton").click( function() {
+        $("#psqForm").submit(function(event){
+            // cancels the form submission
+            event.preventDefault();
+            updateTask();
+        });
+    });
+
+
+    function updateTask() {
+        var formSerialize = $("#psqForm").serialize();
+
+        $.ajax({
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/editPSQ.php',
+            data: formSerialize + '&utid=' + pageId + '&tid=' + taskId,
+            success: function (response) {
+                $('#inputPSQuestion').val(response.name);
+                $('a[data-id=' + taskId + ']').html('<span class="pr-2 icon-comment icon-align text-muted"></span>' + response.name);
+            }
+        });
+    }
+</script>

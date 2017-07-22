@@ -1790,17 +1790,16 @@ if (!isset($_GET['id'])) {
     function editTask(elem) {
         contentAufgaben.load("taskForm.html");
         taskId = $(elem).data('id');
-        loadTaskOnlyInput(taskId);
+        loadTaskInput(taskId);
     }
 
-    function loadTaskOnlyInput(taskId) {
+    function loadTaskInput(taskId) {
         var taskSwitch = $('#inputTaskInTestSwitch');
-
         $.ajax({
             data: 'tid='+taskId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/loadTaskOnlyInput.php',
+            url: '../logic/loadTaskInput.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $('#inputTaskDescription').val(response.name);
                 $('#inputPrecondition').val(response.vorbedingung);
@@ -1819,19 +1818,63 @@ if (!isset($_GET['id'])) {
         });
     }
 
-    function editPsQuestion() {
+    function editPsQuestion(elem) {
         contentAufgaben.load("psQuestionForm.html");
+        taskId = $(elem).data('id');
+        loadPSQInput(taskId);
     }
 
-    function editCcQuestion() {
+    function loadPSQInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputPSQuestion').val(response.name);
+
+            }
+        });
+    }
+
+    function editCcQuestion(elem) {
         contentAufgaben.load("ccQuestionForm.html");
+        taskId = $(elem).data('id');
+        loadCCInput(taskId);
+    }
+
+    function loadCCInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputCCQuestion').val(response.name);
+            }
+        });
     }
 
     function editScenario(elem) {
         contentAufgaben.load("scenarioForm.html");
         taskId = $(elem).data('id');
-        loadTaskOnlyInput(taskId);
+        loadScenarioInput(taskId);
     }
+
+    function loadScenarioInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadScenarioInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputScenarioName').val(response.name);
+                $('#inputScenarioDescription').val(response.anmerkung);
+
+            }
+        });
+    }
+
     function editAgreement() {
         contentUnterlagen.load("agreementForm.html");
     }
