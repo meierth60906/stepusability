@@ -935,7 +935,7 @@ if (!isset($_GET['id'])) {
                         </div>
                     </div>
 
-                    <div id="editor" class="offset-lg-5 col-lg-5 p-0">
+                    <div id="editor" class="offset-lg-8 col-lg-5 p-0">
                         EDITOR
                     </div>
                 </div>
