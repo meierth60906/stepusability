@@ -869,7 +869,8 @@ if (!isset($_GET['id'])) {
 
                         <div class="col-12">
                             <div class="row">
-                                <div class="col-8 p-3">
+
+                                <div class="col-12 p-3">
                                     <p class="font-weight-bold text-center">Aufgabe 1</p>
                                     <p class="text-center">
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -877,6 +878,7 @@ if (!isset($_GET['id'])) {
                                         accusam et justo duo dolores et ea rebum.
                                     </p>
                                 </div>
+
                             </div>
 
                             <div class="row">
