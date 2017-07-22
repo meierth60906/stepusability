@@ -1475,13 +1475,6 @@ if (!isset($_GET['id'])) {
                 "</a>" +
                 "</div>" +
                 "</div>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #2" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
                 "</li>";
         }
 
