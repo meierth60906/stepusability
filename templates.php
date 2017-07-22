@@ -6,12 +6,33 @@
 //    die();
 //}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Vorlagen | step</title>
     <?php include('head.html') ?>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            height: 500,
+            theme: 'modern',
+            plugins: [
+                'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                'searchreplace wordcount visualblocks visualchars code fullscreen',
+                'insertdatetime media nonbreaking save table contextmenu directionality',
+                'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+            ],
+            toolbar1: 'save | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+            toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+            image_advtab: true,            content_css: 'https://tinymce.com/css/codepen.min.css',
+            branding: false,
+            language_url : '/step/tiny/mce/langs/de.js',
+            save_enablewhendirty: true
+        });
+    </script>
 
 </head>
 <body>
@@ -25,14 +46,19 @@
             <h1>Vorlagen</h1>
 
             <div class="offset-8 text-right align-self-center ">
-                <a class="titlebar-link" href="templates.php">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
-                </a>
                 <a class="titlebar-link" href="">
                     <div class=" d-inline-block px-2"></div>
                     <span class="hidden-sm-down icon-plus"> Erstellen</span>
                 </a>
+                <a class="titlebar-link" href="templates.php">
+                    <div class=" d-inline-block px-2"></div>
+                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
+                </a>
+
+<!--                <a class="titlebar-link" href="">
+                    <div class=" d-inline-block px-2"></div>
+                    <span class="hidden-sm-down icon-check"> <input type="submit" value="Speichern" class="btn btn-submit-blue" /></span>
+                </a>-->
             </div>
         </div>
 
@@ -60,9 +86,22 @@
 
                         <div id="einverstaendniserklaerung" class="panel-collapse collapse active">
                             <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link active" href="#einverstaendniserklaerung1" role="tab" data-toggle="tab" aria-expanded="true"> Vorlage 1</a>
-                                </li>
+
+                                <?php
+
+                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                if (!$conn) {
+                                    $e = oci_error();
+                                    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+                                }
+
+                                $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Einverstaendniserklaerung'");
+                                oci_execute($stid);
+                                while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                                    echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                }
+                                ?>
+
                             </ul>
                         </div>
 
@@ -77,9 +116,20 @@
 
                         <div id="protokollleitfaden" class="panel-collapse collapse">
                             <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                  <a class="icon-file-text-o p-3 nav-link active" href="#protokollleitfaden1" role="tab" data-toggle="tab"> Vorlage 1</a>
-                                </li>
+                                <?php
+
+                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                if (!$conn) {
+                                    $e = oci_error();
+                                    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+                                }
+
+                                $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Protokollleitfaden'");
+                                oci_execute($stid);
+                                while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                                    echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                }
+                                ?>
                             </ul>
                         </div>
 
@@ -92,9 +142,20 @@
                         </div>
                         <div id="testskript" class="panel-collapse collapse">
                             <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#testskript1" role="tab" data-toggle="tab"> Vorlage 1</a>
-                                </li>
+                                <?php
+
+                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                if (!$conn) {
+                                    $e = oci_error();
+                                    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+                                }
+
+                                $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Testskript'");
+                                oci_execute($stid);
+                                while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                                     echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                }
+                                ?>
                             </ul>
                         </div>
                         <!--                    Testplan-->
@@ -106,9 +167,20 @@
                         </div>
                         <div id="testplan" class="panel-collapse collapse">
                             <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#testplan1" role="tab" data-toggle="tab"> Vorlage 1</a>
-                                </li>
+                                <?php
+
+                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                if (!$conn) {
+                                    $e = oci_error();
+                                    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+                                }
+
+                                $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Testplan'");
+                                oci_execute($stid);
+                                while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                                    echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                }
+                                ?>
                             </ul>
                         </div>
 
@@ -122,9 +194,20 @@
                         </div>
                         <div id="testbericht" class="panel-collapse collapse">
                             <ul class="flex-column nav">
-                                <li class="nav-item" >
-                                    <a class="icon-file-text-o p-3 nav-link" href="#testbericht1" role="tab" data-toggle="tab"> Vorlage 1</a>
-                                </li>
+                                <?php
+
+                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                if (!$conn) {
+                                    $e = oci_error();
+                                    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+                                }
+
+                                $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Testbericht'");
+                                oci_execute($stid);
+                                while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                                    echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."');\">".$row['VORLAGE_NAME']."</a></li>";
+                                }
+                                ?>
                             </ul>
                         </div>
 
@@ -143,7 +226,10 @@
 
             <div class="tab-pane active" id="einverstaendniserklaerung1" role="tabpanel">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-4">
+                    <div class="col-lg-8 offset-lg-4 editor">
+                        <form id="templateForm" class="form" action="logic/insertTemplate.php" method="post">
+                            <button name="submitbtn">
+                        <textarea name="templateContent" class="editor">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
@@ -187,6 +273,8 @@
                             </tr>
                             </tbody>
                         </table>
+                        </textarea>
+                            </button></form>
                     </div>
                 </div>
             </div>
