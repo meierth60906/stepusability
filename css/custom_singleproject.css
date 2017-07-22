@@ -133,9 +133,9 @@
     box-shadow: 0 0 30px -15px rgba(0,0,0,0.5);
 }
 
-#singleproject .protokollant-container {
+/**#singleproject .protokollant-container {
     overflow-y: scroll;
-}
+}*/
 
 
 .aufgabenfeld {
