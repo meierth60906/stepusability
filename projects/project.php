@@ -855,7 +855,7 @@ if (!isset($_GET['id'])) {
                         </div>
                     </div>
 
-                    <div id="content-eval" class="offset-lg-3 col-lg-5 p-0">
+                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
 
 
                         <div class="col-12">
@@ -877,7 +877,7 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="protokollant-container col-md-6">
+                            <div class="protokollant-container col-12">
                                 <div class="protokollant-card m-5">
                                     <div class="row px-4 p-4">
                                         <div class="col-md-12">
