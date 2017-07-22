@@ -23,14 +23,20 @@
                 <h1>Testfenster</h1>
             </div>
             <div class="col-4">
-                <ul id="switch" class="nav" role="tablist">
+                <span class="col-4 align-self-center">
+                    <a class="buttonTestfensterLinks" href="testfenster_mod.php">
+                        <span class="hidden-sm-down">Moderator</span></a>
+                    <a class="buttonTestfensterRechts" href="testfenster_prot.php">
+                        <span class="hidden-sm-down">Protokollant</span></a>
+                </span>
+                <!--<ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
                         <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
                     </li>
                     <li class="nav-item">
                         <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
 
             <div class="col-4 text-right align-self-center ">
@@ -78,25 +84,15 @@
                                 <p>Browsercache löschen</p>
 
                                 <h5>Briefing:</h5>
-                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung unterschreiben lassen.
-                                    Einleitung und Beschreibung des Testgegenstands.<br>
-                                    Wir möchten Sie bitten, www.wetter.com für uns zu testen. Sie helfen uns damit, die Webseite hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                <p>Einleitung und Beschreibung des Testgegenstands.<br>
+                                    Wir möchten Sie bitten, die Webanwendung step für uns zu testen. Sie helfen uns damit, die Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
                                 </p>
-                                <h5>Technische Vorbereitung</h5>
-                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung gespeichert.
-                                    <br>
-                                    Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung ihrer Daten machen.
-                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat, werden wir das Gerät zunächst gemäß ihrem  Augenabstand kalibrieren. Ich führe das jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am Computer arbeiten können.
-                                </p>
-                                <h5>Augencheck</h5>
-                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen mit den Augen zu verfolgen.
-                                    Kalibration
-                                </p>
+
                                 <h5>Anweisung vor den Aufgaben</h5>
-                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com. <br>
-                                    Damit helfen Sie uns wetter.com zu verbessern.
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
+                                    Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
-                                    Zusätzlich bekommen sie von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
+                                    Zusätzlich bekommen sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
                                 </p>
 
                                 <h5>Anweisung Think-Aloud</h5>
@@ -104,9 +100,8 @@
                                     Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar frustriert. <br>
                                     Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie uns bitte, was Sie denken.
                                     <br>
-                                    Sie können jederzeit Fragen stellen, haben Sie im Moment Fragen?
+                                    Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
-                                <h5>Start der Eyetracking-Aufzeichnung</h5>
                             </div>
                         </div>
                     </div>
@@ -140,7 +135,7 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Briefing</label>
                                         </div></div>
-                                    <div class="col-md-8">
+                                   <!-- <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" value="">
@@ -153,7 +148,7 @@
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Augencheck</label>
-                                        </div></div>
+                                        </div></div>-->
                                     <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
@@ -168,13 +163,13 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Anweisungen Think-Aloud</label>
                                         </div></div>
-                                    <div class="col-md-8">
+                                  <!--  <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Eyetracking aktiviert</label>
-                                        </div></div>
+                                        </div></div>-->
 
 
 
@@ -201,49 +196,39 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Welches Wetter ist morgen bei Ihnen Zuhause gemeldet?<br> Was ist die Temperatur um 12 Uhr?</td>
-                                <td>Startseite</td>
+                                <td>Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br>Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".</td>
+                                <td>Dashboard</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Ort über Suchfeld eingeben</li>
-                                        <li>„morgen“ auswählen (3 Möglichkeiten)</li>
-                                        <li>Leiste „Mittag“ finden und aufklappen</li>
-                                        <li>Temperatur für 12.00 Uhr nennen</li>
+                                        <li>"Projekte" in der linken Menüleiste auswählen</li>
+                                        <li>Auf "+ Erstellen" - Button klicken</li>
+                                        <li>Bei "Titel" den Namen "Demo" eingeben</li>
+                                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                                        <li>Auf "Erstellen" klicken</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Wie wandern die Wolken über Bayern? <br>Ab wann ist Nürnberg morgen stark bewölkt?</td>
-                                <td></td>
+                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie zwei der Projektbeteiligten heraus!</td>
+                                <td>Projektübersicht</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Auswählen „Niederschlagsradar“ (rechte Spalte)</li>
-                                        <li>Auswahlmenü („Niederschlagsradar“) nutzen und „Bewölkung“  auswählen</li>
-                                        <li>Play-Button drücken</li>
-                                        <li>(Ergebnis: 6:00 – 8:00 Uhr)</li>
-
-                                        <li><u>Alternative: 1</u></li>
-                                        <li>Menü „Wetterkarten“ > Untermenü „Bewölkung“</li>
-                                        <li>...</li>
-                                        <li><u>Alternative 2:</u></li>
-                                        <li>Menü „Wetterkarten“</li>
-                                        <li>Auf Seite auswählen Kachel „Bewölkung“</li>
-                                        <li>...</li>
+                                        <li>Projekt "Social App" in der Liste auswählen</li>
+                                        <li>Ansprechpartner ist step</li>
+                                        <li>Beteiligten sind Anna Apfel, Bernd Bogner</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Finden Sie ein Sommerurlaubsziel in Südamerika, <br>
-                                    welches im Juli eine Durchschnittstemperatur von 18 bis 30 Grad Celsius hat.</td>
-                                <td>Startseite</td>
+                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
+                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
+                                <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
-                                        <li>Menü: „Reise und Freizeit“ > Untermenü „Urlaubswetter“  auswählen</li>
-                                        <li>Parameter einstellen und unzutreffende abwählen</li>
-                                        <li>18-30 Grad</li>
-                                        <li>Juli (Januar streichen)</li>
-
-                                        <li>Südamerika (Europa streichen)</li>
-                                        <li>Button „Ergebnisse anzeigen “ auswählen</li>
-                                        <li>Stadt angeben (bel.)</li>
+                                        <li>Den Reiter "Testaufgaben" auswählen</li>
+                                        <li>Auf das "+" bei "Aufgabenliste" klicken</li>
+                                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                                        <li>Das "+" bei Szenario anwählen </li>
+                                        <li>Auf "Testaufgabe" klicken</li>
+                                        <li>In "Aufgabenbeschreibung" ... eingeben</li>
 
                                     </ul></td>
                             </tr>
@@ -270,22 +255,12 @@
                             <div class="col-md-12">
                                 <h3>Vielen Dank!</h3>
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
-                                    Zunächst bitte ich Sie um Ihre Bemerkungen zu den Testaufgaben.<br></p>
-                                <ul>
-                                    <li>Waren die Testaufgaben realistisch? </li>
-                                    <li>Sind es Aufgaben, die Sie im echten Leben durchführen würden? </li>
-                                    <li>Welche Aufgaben haben gefehlt? </li>
-                                </ul>
-
 
                                 <h5>Post-Session Interview Fragen</h5>
                                 <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
                                 <ul>
-                                    <li>Welche zwei bis drei Dinge haben Ihnen besonders gefallen?</li>
-                                    <li>Welche zwei bis drei Dinge haben Ihnen am wenigsten gefallen?</li>
+                                    <li>Gab es etwas das Ihnen besonders gut oder weniger gut gefallen hat?</li>
                                 </ul>
-                                <h5>UEQ-Fragebogen:</h5>
-                                <p>Ich bitte Sie nun, außen Platz zu nehmen und für uns diesen Fragebogen auszufüllen.</p>
                             </div>
                         </div>
                     </div>

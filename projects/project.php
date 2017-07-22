@@ -17,7 +17,7 @@ if (!isset($_GET['id'])) {
 <html lang="de">
 <head>
     <title>Projekt 1 | step</title>
-
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <?php include ('head.html'); ?>
 </head>
 <body id="body-singleproject">
@@ -79,157 +79,161 @@ if (!isset($_GET['id'])) {
             <!--            Allgemein -->
             <div class="tab-pane active" id="allgemein" role="tabpanel">
                 <div class="row inner-body">
-                    <div id="content-allgemein" class="col-lg-8 py-3 offset-lg-2">
+                    <div id="content-allgemein" class="col-lg-12 py-3">
+
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <!--                        Projektinfo + Beteiligte -->
+                                <div class="row pr-3">
+
+                                    <!--                            Projektinfo -->
+                                    <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
+                                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-sm-6 headline">
+                                                        Projektinformationen
+                                                    </div>
+                                                    <div class="col-2 col-sm-6 text-right">
+                                                        <a id="projectinfo-edit" href="#editprojectinfo" data-target="#editprojectinfo" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                    </div>
+                                                    <div class="col-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="row pb-2">
+                                                    <div class="col-xl-4 font-weight-bold">Status:</div>
+                                                    <div id="project-status" class="col-xl-8"></div>
+                                                </div>
+                                                <div class="row pb-2">
+                                                    <div class="col-xl-4 font-weight-bold">Auftraggeber:</div>
+                                                    <div id="project-auftraggeber" class="col-xl-8"></div>
+                                                </div>
+                                                <div class="row pb-2 row-optional">
+                                                    <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                                    <div id="project-ansprechpartner" class="col-xl-8"></div>
+                                                </div>
+
+                                                <div class="row pb-2 row-optional">
+                                                    <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                                    <div id="project-desc" class="col-xl-8"></div>
+                                                </div>
+
+                                                <div class="row pb-2">
+                                                    <div class="col-lg-12 text-right">
+                                                        <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                                    </div>
+                                                </div>
 
 
-                        <!--                        Projektinfo + Beteiligte -->
-                        <div class="row pr-3">
-
-                            <!--                            Projektinfo -->
-                            <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 headline">
-                                                Projektinformationen
                                             </div>
-                                            <div class="col-2 col-sm-6 text-right">
-                                                <a id="projectinfo-edit" href="#editprojectinfo" data-target="#editprojectinfo" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
                                         </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Status:</div>
-                                            <div id="project-status" class="col-xl-8"></div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Auftraggeber:</div>
-                                            <div id="project-auftraggeber" class="col-xl-8"></div>
-                                        </div>
-                                        <div class="row pb-2 row-optional">
-                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
-                                            <div id="project-ansprechpartner" class="col-xl-8"></div>
-                                        </div>
-
-                                        <div class="row pb-2 row-optional">
-                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
-                                            <div id="project-desc" class="col-xl-8"></div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-lg-12 text-right">
-                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-lg-12 headline">
+                                                        Meilensteine
+                                                    </div>
+                                                    <div class="col-lg-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div id="goals" class="col-lg-12 p-3">
+                                                        <?php include("goals.html") ?>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
 
                                     </div>
-                                </div>
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-lg-12 headline">
-                                                Meilensteine
-                                            </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="goals" class="col-lg-12 p-3">
-                                                <?php include("goals.html") ?>
+                                    <!--                            Beteiligte -->
+                                    <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
+                                        <div class="row my-3 ml-2 mr-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-sm-6 col-lg-4 headline">
+                                                        Beteiligte
+                                                    </div>
+                                                    <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                    </div>
+                                                    <div class="col-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Anna Apfel
+                                                        <div class="text-muted small">Protokollant</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
+
+                                </div>
                             </div>
-                            <!--                            Beteiligte -->
-                            <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
-                                <div class="row my-3 ml-2 mr-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 col-lg-4 headline">
-                                                Beteiligte
-                                            </div>
-                                            <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Anna Apfel
-                                                <div class="text-muted small">Protokollant</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
+
 
 
                     </div>
@@ -701,51 +705,8 @@ if (!isset($_GET['id'])) {
 
 
 <!--            Evaluation -->
-            <div class="tab-pane" id="evaluation" role="tabpanel">
-                <div class="row inner-body">
-                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
-                        <div class="spc-container row pt-3 mt-3">
-                            <div class="col-6 headline">
-                                Protokollliste
-                            </div>
 
-                            <div class="col-lg-12"><hr class="mb-3"></div>
-                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
-
-
-                        </div>
-                    </div>
-
-                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
-
-
-                        <div class="col-5 p-3">
-                            <div class="row">
-                                <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                <p class="text-center">
-                                    Antwort / Beobachtungen Proband 1
-                                </p>
-                            </div>
-                            <div class="row">
-                                <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                <p class="text-center">
-                                    Antwort / Beobachtungen Proband 2
-                                </p>
-                            </div>
-                            <div class="row">
-                                <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                <p class="text-center">
-                                    Antwort / Beobachtungen Proband 3
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--
+            <!-- TOMMYs LÖSUNG
               <div class="aufgabenfeld inner-body row c-grey-bg">
                 <div class="col-12">
                     <div class="row">
@@ -828,46 +789,531 @@ if (!isset($_GET['id'])) {
             </div>-->
 
 
-                <!--<div id="aufgabe-eval" class="row m-0 p-3">
-                    <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
-                    <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+
+            <!--
+
+
+            <div class="row inner-body">
+                <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
+                    <div class="spc-container row pt-3 mt-3">
+                        <div class="col-6 headline">
+                            Aufgabenliste
+                        </div>
+
+                        <div class="col-lg-12"><hr class="mb-3"></div>
+
+                        <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+                        <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+                        <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+
+
+                    </div>
                 </div>
 
+                <div id="content-eval" class="offset-lg-3 col-lg-9 p-0">
 
-                <div class="row">
 
-                    <!--                            Projektinfo -->
-                <!--
-                <div class="col-lg-12 p-3">
-                    <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                        <div class="col-lg-12 element-allgemein p-3">
-                            <div class="row">
-                                <div class="col-10 col-sm-6 headline">
-                                    Projektinformationen
-                                </div>
-                                <div class="col-2 col-sm-6 text-right">
-                                    <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                </div>
-                                <div class="col-12"><hr class="pb-3"></div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 text-right p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                            </div>
+                            <div class="col-8 p-3">
+                                <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                <p class="text-center">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                    accusam et justo duo dolores et ea rebum.
+                                </p>
+                            </div>
+                            <div class="col-2 p-3">
+                                <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
+                </div>-->
+            <!--<div id="aufgabe-eval" class="row m-0 p-3">
+                <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+                <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+            </div>
+
+
+            -->
+            <!-- ALINAS VERSION 22.07.2107---->
+            <div class="tab-pane" id="evaluation" role="tabpanel">
+
+                <div class="row inner-body">
+                    <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
+                        <div class="spc-container row pt-3 mt-3">
+                            <div class="col-6 headline">
+                                Aufgabenliste
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Proband
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Proband #A</a></li>
+                                    <li><a href="#">Proband #B</a></li>
+                                    <li><a href="#">Proband #C</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-12"><hr class="mb-3"></div>
+
+                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+
+
+                        </div>
+                    </div>
+
+                    <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
+
+
+                        <div class="col-12">
+                            <div class="row">
+
+                                <div class="col-12 p-3">
+                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
+                                    <p class="text-center">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                        accusam et justo duo dolores et ea rebum.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="protokollant-container col-12">
+                                    <div class="protokollant-card">
+                                        <div class="row px-4 p-4">
+                                            <div class="col-md-12">
+                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                                <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row px-4">
+                                            <div class="col-lg-4">Lösungsschritte:</div>
+                                            <div class="col-lg-8 font-weight-bold">
+                                                Lorem ipsum dolor sit amet, consetetur
+                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                                dolores et ea rebum.
+                                            </div>
+                                        </div>
+                                        <div class="row px-4 p-4">
+                                            <div class="col-lg-4">Anmerkungen:</div>
+                                            <div class="col-lg-8 font-weight-bold">
+                                                Lorem ipsum dolor sit amet, consetetur
+                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="protokollant-card">
+                                        <div class="row px-4 p-4">
+                                            <div class="col-md-12">
+                                                <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                                <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row px-4">
+                                            <div class="col-lg-4">Lösungsschritte:</div>
+                                            <div class="col-lg-8 font-weight-bold">
+                                                Lorem ipsum dolor sit amet, consetetur
+                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                                dolores et ea rebum.
+                                            </div>
+                                        </div>
+                                        <div class="row px-4 p-4">
+                                            <div class="col-lg-4">Anmerkungen:</div>
+                                            <div class="col-lg-8 font-weight-bold">
+                                                Lorem ipsum dolor sit amet, consetetur
+                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="editor" class="offset-lg-8 col-lg-5 p-0">
+                        EDITOR
+                    </div>
                 </div>
-            </div>-->
+                <!--<div class="row inner-body">
+                    <div id="sidebar-eval" class="col-lg-2 c-grey-bg">
+                        <div class="spc-container row pt-3 mt-3">
+                            <div class="col-6 headline">
+                                Protokollliste
+                            </div>
+                        </div>
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <!--                        Testaufgabe 1-->
+                <!--   <div class="panel-heading">
 
-                <div id="protokollanten-eval" class="col-lg-6">
+                       <h4 class="panel-title">
+                           <a class="icon-angle-right active" href="#testaufgabe1" data-toggle="collapse" >Testaufgabe 1</a>
+                       </h4>
 
+                   </div>
+                   <div id="testaufgabe1" class="panel-collapse collapse active">
+                       <ul class="flex-column nav">
+                           <li class="nav-item" >
+                               <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe1tn1" role="tab" data-toggle="tab" aria-expanded="true"> Proband A</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <!--                            Testaufgabe 2-->
+
+                <!-- <div class="panel-heading">
+                     <h4 class="panel-title">
+                         <a class="icon-angle-right" href="#testaufgabe2" data-toggle="collapse">Testaufgabe 2</a>
+                     </h4>
+                 </div>
+
+                 <div id="testaufgabe2" class="panel-collapse collapse">
+                     <ul class="flex-column nav">
+                         <li class="nav-item" >
+                             <a class="icon-file-text-o p-3 nav-link active" href="#testaufgabe2tn1" role="tab" data-toggle="tab"> Proband A</a>
+                         </li>
+                     </ul>
+                 </div>
+                 <!--Testaufgabe 3-->
+                <!--<div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="icon-angle-right" data-toggle="collapse" href="#testaufgabe3" >Testaufgabe 3</a>
+                    </h4>
+                </div>
+                <div id="testaufgabe3" class="panel-collapse collapse">
+                    <ul class="flex-column nav">
+                        <li class="nav-item" >
+                            <a class="icon-file-text-o p-3 nav-link" href="#testaufgabe3tn1" role="tab" data-toggle="tab"> Proband A</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12"><hr class="mb-3"></div>
+        <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
+        <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
+        <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+    </div>
+    </div>
+
+    <div id="content-eval" class="offset-2 col-lg-5 p-3">
+    <div class="tab-content">
+        <div class="tab-pane active" id="testaufgabe1tn1" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-2 text-right p-3">
+                            <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                        </div>
+                        <div class="col-8 p-3">
+                            <p class="font-weight-bold text-center">Testaufgabe 1</p>
+                            <p class="text-center">
+                                Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.
+                                Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
+                            </p>
+                        </div>
+                        <div class="col-2 p-3">
+                            <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="editor-eval" class="col-lg-6">
+                <!--<div class="col-12 pl-4 p-3">-->
+                <!-- <div class="row">
+                     <div class="protokollant-container col-md-12">
+                         <div class="protokollant-card">
+                             <div class="row px-4 p-4">
+                                 <div class="col-md-12">
+                                     <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                     <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                     <hr>
+                                 </div>
+                             </div>
+                             <div class="row px-4">
+                                 <div class="col-lg-4">Lösungsschritte:</div>
+                                 <div class="col-lg-8 font-weight-bold">
+                                     Lorem ipsum dolor sit amet, consetetur
+                                     sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                     dolores et ea rebum.
+                                 </div>
+                             </div>
+                             <div class="row px-4 p-4">
+                                 <div class="col-lg-4">Anmerkungen:</div>
+                                 <div class="col-lg-8 font-weight-bold">
+                                     Lorem ipsum dolor sit amet, consetetur
+                                     sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                     magna aliquyam erat, sed diam voluptua.
+                                 </div>
+                             </div>
+                         </div>
 
-                </div>
+                         <div class="protokollant-card">
+                             <div class="row px-4 p-4">
+                                 <div class="col-md-12">
+                                     <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                     <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                     <hr>
+                                 </div>
+                             </div>
+                             <div class="row px-4">
+                                 <div class="col-lg-4">Lösungsschritte:</div>
+                                 <div class="col-lg-8 font-weight-bold">
+                                     Lorem ipsum dolor sit amet, consetetur
+                                     sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                     dolores et ea rebum.
+                                 </div>
+                             </div>
+                             <div class="row px-4 p-4">
+                                 <div class="col-lg-4">Anmerkungen:</div>
+                                 <div class="col-lg-8 font-weight-bold">
+                                     Lorem ipsum dolor sit amet, consetetur
+                                     sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                     magna aliquyam erat, sed diam voluptua.
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!--<div class="loesungsfeld">
 
+                     <table class="table table-bordered">
+                         <tr>
+                             <td>
+                                 <p>Erwartete Lösungsschritte</p>
+                                 <ul><li>"Projekte" in der linken Menüleiste auswählen</li>
+                                     <li>Auf "+ Erstellen" - Button klicken</li>
+                                     <li>Bei "Titel" den Namen "XYZ" eingeben</li>
+                                     <li>Bei "Auftraggeber" "TH-Nürnberg eingeben</li>
+                                     <li>Auf "Senden" klicken</li></ul>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p>Geschafft / Nicht geschafft</p>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <p> Tatsächliche Lösungsschritte</p>
+
+                             </td>
+                         </tr>
+
+                     </table>
+                 </div>-->
+
+                <!-- </div>
+             </div>
+             <div class="tab-pane row" id="testaufgabe2tn1" role="tabpanel">
+                 <div class="row">
+                     <div class="col-12">
+                         <div class="row">
+                             <div class="col-2 text-right p-3">
+                                 <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                             </div>
+                             <div class="col-8 p-3">
+                                 <p class="font-weight-bold text-center">Testaufgabe 2</p>
+                                 <p class="text-center">
+                                     Suchen Sie bitte das Projekt "Social App" und finden Sie den jeweiligen Ansprechpartner und nennen Sie 2 der Projektbeteiligten
+                                 </p>
+                             </div>
+                             <div class="col-2 p-3">
+                                 <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-12 pl-4 p-3">
+                         <div class="loesungsfeld">
+
+                             <table class="table table-bordered">
+
+                                 <tr>
+                                     <td>
+                                         <p>Erwartete Lösungsschritte</p>
+                                         <ul>
+                                             <li>Projekt "Social App" in der Liste auswählen</li>
+                                             <li>Ansprechpartner ist step</li>
+                                             <li>Play-Button drücken</li>
+                                             <li>2 Beteiligten sind Maura Maier, Thomas Meier,
+                                                 Alina Schark, Isabel Eichner und
+                                                 Nathalie Steinbinder</li></ul>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>
+                                         <p>Geschafft / Nicht geschafft</p>
+                                 </tr>
+                                 <tr>
+                                     <th>
+                                         Tatsächliche Lösungsschritte
+                                     </th>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+
+                 </div>
+             </div>
+             <div class="tab-pane row" id="testaufgabe3tn1" role="tabpanel">
+                 <div class="row">
+                     <div class="col-12">
+                         <div class="row">
+                             <div class="col-2 text-right p-3">
+                                 <a class="c-orange" href="#"><i class="question-angles icon-angle-left"></i></a>
+                             </div>
+                             <div class="col-8 p-3">
+                                 <p class="font-weight-bold text-center">Testaufgabe 3</p>
+                                 <p class="text-center">
+                                     Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe
+                                     für ein Szenario erstellen.
+                                     Legen Sie bitte eine neue Testaufgabe an.
+                                 </p>
+                             </div>
+                             <div class="col-2 p-3">
+                                 <a class="c-orange" href="#"><i class="question-angles icon-angle-right"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-12 pl-4 p-3">
+                         <div class="loesungsfeld">
+
+                             <table class="table table-bordered">
+
+                                 <tr>
+                                     <td>
+                                         <p>Erwartete Lösungsschritte</p>
+                                         <ul>
+                                             <li>Den Reiter "Testaufgaben" auswählen</li>
+                                             <li> Auf das "+" bei "Aufgabenliste" klicken</li>
+                                             <li>Im Dropdown - Menü "Szenario" aufwählen</li>
+                                             <li>Das "+" bei Szenario </li>
+                                             <li>Auf "Testaufgabe" klicken</li>
+                                             <li>Angaben reinschreiben</li></ul>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>
+                                         <p>Geschafft / Nicht geschafft</p>
+                                 </tr>
+                                 <tr>
+                                     <th>
+                                         Tatsächliche Lösungsschritte
+                                     </th>
+                                 </tr>
+
+                             </table>
+                         </div>
+                     </div>
+                     <!--hier Ende content-->
             </div>
         </div>
 
-    </div>
 
+        <!--
+                    <div class="row">
+                        <div class="protokollant-container col-md-6">
+                            <div class="protokollant-card m-5">
+                                <div class="row px-4 p-4">
+                                    <div class="col-md-12">
+                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row px-4">
+                                    <div class="col-lg-4">Lösungsschritte:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                        dolores et ea rebum.
+                                    </div>
+                                </div>
+                                <div class="row px-4 p-4">
+                                    <div class="col-lg-4">Anmerkungen:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="protokollant-card m-5">
+                                <div class="row px-4 p-4">
+                                    <div class="col-md-12">
+                                        <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                        <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row px-4">
+                                    <div class="col-lg-4">Lösungsschritte:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                        dolores et ea rebum.
+                                    </div>
+                                </div>
+                                <div class="row px-4 p-4">
+                                    <div class="col-lg-4">Anmerkungen:</div>
+                                    <div class="col-lg-8 font-weight-bold">
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                        magna aliquyam erat, sed diam voluptua.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            Editor
+                        </div>
+                    </div>-->
+
+
+        <!--<div id="aufgabe-eval" class="row m-0 p-3">
+            <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+            <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+        </div>
+
+
+        <div class="row">
+
+            <!--                            Projektinfo -->
+        <!--
+        <div class="col-lg-12 p-3">
+            <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                <div class="col-lg-12 element-allgemein p-3">
+                    <div class="row">
+                        <div class="col-10 col-sm-6 headline">
+                            Projektinformationen
+                        </div>
+                        <div class="col-2 col-sm-6 text-right">
+                            <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                        </div>
+                        <div class="col-12"><hr class="pb-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
 
 
 
@@ -911,7 +1357,10 @@ if (!isset($_GET['id'])) {
                     <div class="form-group row formTask">
                         <label for="editProjectInfo-talkto" class="col-lg-4 form-control-label">Ansprechpartner:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>
+                            <select class="form-control custom-select" name="editProjectInfo-talkto" id="editProjectInfo-talkto">
+                                <option value="" disabled selected>Auswählen...</option>
+                            </select>
+                            <!--                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>-->
                         </div>
                     </div>
 
@@ -919,13 +1368,13 @@ if (!isset($_GET['id'])) {
                     <div class="form-group row formTask">
                         <label for="editProjectInfo-desc" class="col-lg-4 form-control-label">Projektbeschreibung:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" name="editProjectInfo-desc" id="editProjectInfo-desc" placeholder="Projektbeschreibung"/>
+                            <textarea rows="3" class="form-control" name="editProjectInfo-desc" id="editProjectInfo-desc" placeholder="Projektbeschreibung"></textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal-footer text-center">
-                    <input type="submit" value="Senden" class="btn btn-submit-blue" />
+                    <input type="submit" value="Speichern" class="btn btn-submit-blue" />
                 </div>
             </form>
 
@@ -943,7 +1392,8 @@ if (!isset($_GET['id'])) {
 <script>
     var pageId = '<?php echo $user_id ?>';
 
-    $( function loadInput() {
+
+    $( function loadInputUT() {
         $.ajax({
             type: 'get',
             data: 'id='+pageId,
@@ -953,12 +1403,52 @@ if (!isset($_GET['id'])) {
                 $("#project-heading").text(response.name);
                 $("#project-auftraggeber").text(response.auftraggeber);
                 $("#project-status").text(response.status);
+                if(response.beschreibung !== null) {
+                    $("#project-desc").text(response.beschreibung);
+                } else {
+                    $("#project-desc").html("<span class='text-muted'>Keine Beschreibung vorhanden</span>")
+                }
                 $("#editProjectInfo-title").val(response.name);
                 $("#editProjectInfo-ag").val(response.auftraggeber);
                 $("#editProjectInfo-desc").val(response.beschreibung);
             }
         });
     });
+
+
+
+
+</script>
+
+<script>
+    $( function loadInputTalkTo() {
+        $.ajax({
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/selectProjectInfoTalkTo.php',
+            data: 'utid='+pageId,
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                if(response.name && response.vorname !== null) {
+                    $("#project-ansprechpartner").html("<a href='../view_contact.php?id=" + response.id + "'>" + response.name + ", " + response.vorname + "</a>");
+                } else {
+                    $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
+                }
+            }
+        })
+    });
+
+    $( function loadInputTalkToAuswahlliste() {
+        $.ajax({
+            type: 'post',
+            url: '../logic/selectProjectInfoTalkToAuswahlliste.php',
+            data: 'utid='+pageId,
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#editProjectInfo-talkto").append(response);
+            }
+        })
+    });
+
+
 
 </script>
 
@@ -969,19 +1459,37 @@ if (!isset($_GET['id'])) {
     $("#editProjectInfoForm").submit(function(event){
         // cancels the form submission
         event.preventDefault();
+
         editProjectInfo();
         $("#editprojectinfo").modal('toggle');
     });
 
     function editProjectInfo() {
-        var projectSerialize = $("#createProjectForm").serialize();
+        var projectSerialize = $("#editProjectInfoForm").serialize();
 
         $.ajax({
             type: 'post',
+            dataType: 'json',
             url: '../logic/editProjectInfo.php',
-            data: projectSerialize,
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                projectsContainer.prepend(response);
+            data: projectSerialize+'&utid='+pageId,
+            success: function (response) {
+                $("#project-heading").text(response.name);
+                $("#project-auftraggeber").text(response.auftraggeber);
+                $("#project-status").text(response.status);
+                if(response.beschreibung !== null) {
+                    $("#project-desc").text(response.beschreibung);
+                } else {
+                    $("#project-desc").html("<span class='text-muted'>Keine Beschreibung vorhanden</span>")
+                }
+                $("#editProjectInfo-title").val(response.name);
+                $("#editProjectInfo-ag").val(response.auftraggeber);
+                $("#editProjectInfo-desc").val(response.beschreibung);
+                if(response.talkname && response.talkvorname !== null) {
+                    $("#project-ansprechpartner").html("<a href='../view_contact.php?id=" + response.talkid + "'>" + response.talkname + ", " + response.talkvorname + "</a>");
+                } else {
+                    $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
+                }
+//                loadInputTalkTo();
             }
         });
 
@@ -990,7 +1498,7 @@ if (!isset($_GET['id'])) {
 
 
 
-<!-- Rubriken erstellen -->
+<!-- Rubriken erstellen ALINA -->
 <script>
     var agreementContainer = $(".agreement-container");
     var protocolContainer = $(".protocol-container");
@@ -1035,13 +1543,6 @@ if (!isset($_GET['id'])) {
                 "<div class='col-lg-12'>" +
                 "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
                 "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
-                "</a>" +
-                "</div>" +
-                "</div>" +
-                "<div class='row p-3'>" +
-                "<div class='col-lg-12'>" +
-                "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-                "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #2" +
                 "</a>" +
                 "</div>" +
                 "</div>" +
@@ -1279,26 +1780,101 @@ if (!isset($_GET['id'])) {
 
 </script>
 
-<!-- Edits verknüpfen -->
+<!-- TESTAUFGABEN UND DOKUMENTE BILDSCHIRM ÖFFNEN -->
 <script>
     var contentAufgaben = $("#content-aufgaben");
     var contentUnterlagen = $("#content-unterlagen");
 
-    function editTask() {
+    var taskId = 0;
+
+    function editTask(elem) {
         contentAufgaben.load("taskForm.html");
+        taskId = $(elem).data('id');
+        loadTaskInput(taskId);
     }
 
-    function editPsQuestion() {
+    function loadTaskInput(taskId) {
+        var taskSwitch = $('#inputTaskInTestSwitch');
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputTaskDescription').val(response.name);
+                $('#inputPrecondition').val(response.vorbedingung);
+                $('#inputProvidedData').val(response.bereitgestellt);
+//                if(response.ausgewaehlt === 0) {
+//                    taskSwitch.$('#inputTaskInTestSwitchNo').attr("selected","selected");
+//                } else {
+//                    taskSwitch.$('#inputTaskInTestSwitchYes').attr("selected","selected");
+//                }
+//                $('#inputChoosenWhy').val(response.ausgewaehltweil);
+                $('#inputPassedCondition').val(response.bestandenwenn);
+                $('#inputCancelCondition').val(response.abbruchwenn);
+                $('#inputSolutionSteps').val(response.loesungsschritt);
+
+            }
+        });
+    }
+
+    function editPsQuestion(elem) {
         contentAufgaben.load("psQuestionForm.html");
+        taskId = $(elem).data('id');
+        loadPSQInput(taskId);
     }
 
-    function editCcQuestion() {
+    function loadPSQInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputPSQuestion').val(response.name);
+
+            }
+        });
+    }
+
+    function editCcQuestion(elem) {
         contentAufgaben.load("ccQuestionForm.html");
+        taskId = $(elem).data('id');
+        loadCCInput(taskId);
     }
 
-    function editScenario() {
-        contentAufgaben.load("scenarioForm.html");
+    function loadCCInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputCCQuestion').val(response.name);
+            }
+        });
     }
+
+    function editScenario(elem) {
+        contentAufgaben.load("scenarioForm.html");
+        taskId = $(elem).data('id');
+        loadScenarioInput(taskId);
+    }
+
+    function loadScenarioInput(taskId) {
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadScenarioInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputScenarioName').val(response.name);
+                $('#inputScenarioDescription').val(response.anmerkung);
+
+            }
+        });
+    }
+
     function editAgreement() {
         contentUnterlagen.load("agreementForm.html");
     }
@@ -1320,9 +1896,269 @@ if (!isset($_GET['id'])) {
     }
 </script>
 
-<script src="../js/testaufgabenLaden.js"></script>
+<!-- Evaluation Function -->
 
-<script src="../js/testaufgabenErstellen.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+        $(function () {
+//        changes the active collapse class to 'on' for changing the text to bold
+            $('.panel-heading a').click(function () {
+                $(this).toggleClass('on');
+            });
+
+        });
+
+        $(function () {
+            $('.nav-item').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+    });
+
+
+</script>
+
+<!--LOAD FUNCTIONS -->
+<script>
+
+    $( function loadTaskOnlys() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskOnlys.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+
+            }
+        });
+    });
+
+    $( function loadScenarios() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadScenario.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadConclusion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadConclusion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                conclusionContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadPostSession() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadPostSession.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                postSessionContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadTasks() {
+
+
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadTasks.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                var scenarioId = response.szenarioid;
+
+                for(i in scenarioId) {
+                    var scenario = $(".scenario[data-id='" +scenarioId[i] + "']");
+                    var taskContainer = scenario.find(".task-container");
+                    taskContainer.append(response.echo[i]);
+                }
+
+
+            }
+        });
+    });
+
+    $( function loadPostSessionQuestion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadPostSessionQuestion.php',
+            success: function (response) {
+                var psId = response.postsessionid;
+
+                for(i in psId) {
+                    var psq = $(".postSessionRubrik");
+                    var psqContainer = psq.find(".ps-question-container");
+                    psqContainer.append(response.echo[i]);
+                }
+            }
+        });
+    });
+
+    $( function loadConclusionQuestion() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadConclusionQuestion.php',
+            success: function (response) {
+                var conId = response.conclusionid;
+
+                for(i in conId) {
+                    var con = $(".conclusionRubrik");
+                    var conContainer = con.find(".cc-question-container");
+                    conContainer.append(response.echo[i]);
+                }
+            }
+        });
+    });
+
+</script>
+
+<!-- CREATE FUNCTIONS -->
+<script>
+
+    var scenarioContainer = $(".scenario-container");
+    var postSessionContainer = $(".postSession-container");
+    var conclusionContainer = $(".conclusion-container");
+
+
+    function createTask(event) {
+
+        var parentScenario = $(event).closest(".scenario");
+        var taskContainer = parentScenario.find(".task-container");
+
+        var scenarioId = parentScenario.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&scenarioid='+scenarioId,
+            type: 'post',
+            url: '../logic/insertTask.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                taskContainer.append(response);
+            }
+        });
+
+
+
+    }
+
+    function createTaskOnly() {
+
+        $.ajax({
+            data: 'utid='+pageId,
+            type: 'post',
+            url: '../logic/insertTaskOnly.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        })
+
+    }
+
+
+
+    function createConclusionQuestion(event) {
+
+        var parentCon = $(event).closest(".conclusionRubrik");
+        var conContainer = parentCon.find(".cc-question-container");
+
+
+        var conId = parentCon.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&conid='+conId,
+            type: 'post',
+            url: '../logic/insertConclusionQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                conContainer.append(response);
+            }
+        })
+
+    }
+
+    function createScenario() {
+        $.ajax({
+            data: 'utid='+pageId,
+            type: 'post',
+            url: '../logic/insertScenario.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+            }
+        });
+
+    }
+
+
+
+    function createConclusion() {
+
+        if (!(conclusionContainer.find('.conclusionRubrik').length !== 0)) {
+            $.ajax({
+                data: 'utid='+pageId,
+                type: 'post',
+                url: '../logic/insertConclusion.php',
+                success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                    conclusionContainer.append(response);
+                }
+            })
+        } else {
+            alert("Sie haben bereits eine Abschlussfragen-Rubrik erstellt.")
+        }
+    }
+
+    function createPostSession() {
+
+        if(!(postSessionContainer.find('.postSessionRubrik').length !== 0)) {
+            $.ajax({
+                data: 'utid='+pageId,
+                type: 'post',
+                url: '../logic/insertPostSession.php',
+                success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                    postSessionContainer.append(response);
+                }
+            })
+
+        } else {
+            alert("Sie haben bereits eine Post-Session-Interview-Rubrik erstellt.");
+        }
+
+    }
+
+    function createPostSessionQuestion(event) {
+
+        var parentPSQ = $(event).closest(".postSessionRubrik");
+        var psqContainer = parentPSQ.find(".ps-question-container");
+
+        var psqId = parentPSQ.data('id');
+
+        $.ajax({
+            data: 'utid='+pageId+'&psqid='+psqId,
+            type: 'post',
+            url: '../logic/insertPostSessionQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                psqContainer.append(response);
+            }
+        })
+
+    }
+
+</script>
 
 <script src="../js/projektfensterSetStyle.js"></script>
 

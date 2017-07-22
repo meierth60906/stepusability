@@ -10,7 +10,7 @@
 }
 #secondSidebarContacts ul {
     padding-left: 0px;
-    border-color: #4b5257;
+    /*border-color: #4b5257;*/
 
 }
 #secondSidebarContacts li {
@@ -66,17 +66,28 @@
 /***** SUCHLEISTE *****/
 /*  Filter by und Such Button */
 .input-group-btn .btn-default {
-    background-color: #c9c8c8;
-    border-color: #4b5257;
+    background-color: #efefef;
+    border-color: #ddd;
+    border-radius: 0;
 }
+
+.input-group-btn .btn-default:hover {
+    background-color: #fefefe;
+}
+
 .input-group-btn .form-control{
-    border-color: #4b5257;
+    border-color: #ddd;
 }
 
 /* Dropdown Menu Suchleiste Links */
 .input-group-btn ul li a {
     color: #4b5257;
     text-decoration: none;
+    border-color: #ddd;
+    -webkit-box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
+    border-radius: 0;
 }
 
 .input-group-btn ul li:hover{
@@ -86,7 +97,24 @@
 .dropdown-menu{
     background-color: #EFEFEF;
     text-decoration: dotted;
-    border-color: #4b5257;
+    border-color: #ddd;
+}
+
+.filter-contacts {
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+}
+
+.filter-contacts:hover {
+    transition: all .1s ease-in; /* explorer 10 */
+    -webkit-transition: all .1s ease-in; /* chrome & safari */
+    -moz-transition: all .1s ease-in; /* firefox */
+    -o-transition: all .1s ease-in; /* opera */
+    -webkit-box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 38px -16px rgba(0,0,0,0.75);
 }
 /* Add Button */
 #contacts .btn-success{

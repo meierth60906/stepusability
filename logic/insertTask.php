@@ -41,16 +41,17 @@ oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);
 
+$stid_tb = oci_parse($conn, "INSERT INTO TEXTBAUSTEIN(AB_ID, AB_UT_ID) VALUES('".$fetchRowCount[0]."', '".$ut_id."')");
+oci_execute($stid_tb, OCI_COMMIT_ON_SUCCESS);
 
-
- echo "<li class='task item-hover' data-id='". $fetchRowCount[0] ."'>";
- echo    "<div class='row p-3'>";
- echo    "<div class='col-lg-12'>";
- echo    "<a href='#testaufgaben' onclick='editTask()' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>";
- echo    "<span class='pr-2 icon-list icon-align text-muted'></span>" . $fetchRowCount[3];
- echo    "</a>";
- echo    "</div>";
- echo    "</div>";
- echo    "</li>";
+ echo "<li class='task item-hover'>
+        <div class='row p-3'>
+        <div class='col-lg-12'>
+        <a href='#testaufgaben' data-id='". $fetchRowCount[0] ."' onclick='editTask(this)' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>
+        <span class='pr-2 icon-list icon-align text-muted'></span>" . $fetchRowCount[3] . "
+        </a>
+        </div>
+        </div>
+        </li>";
 ?>
     

@@ -11,6 +11,7 @@
 }
 
 .btn-submit-blue{
+    cursor:pointer;
     color: #fff;
     background-color: #133E5C !important;
     border-color: #113650 !important;

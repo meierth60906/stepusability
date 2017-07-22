@@ -21,10 +21,10 @@ oci_execute($stid);
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     $psId[] = $row['IN_SZENARIO'];
-    $data[] = "<li class='task item-hover' data-id='". $row['ID'] ."' data-order='". $row['AB_ORDER'] ."'>
+    $data[] = "<li class='task item-hover' data-id='". $row['ID'] ."'>
             <div class='row p-3'>
                 <div class='col-lg-12'>
-                    <a href='#testaufgaben' onclick='editPsQuestion()' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>
+                    <a href='#testaufgaben' data-id='". $row['ID'] ."' onclick='editPsQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='button-addTask link-noblue'>
                         <span class='pr-2 icon-comment icon-align text-muted'></span>" . $row['NAME_AB'] . "
                     </a>
                 </div>
