@@ -17,7 +17,7 @@
 <body id="body-contacts">
 
 <?php include ('navigation.html'); ?>
-<form id="contactForm" class="form" action="logic/insertContact.php" method="post">
+<form id="contactForm" class="form" action="logic/contacts_updateData.php" method="post">
     <section id="contacts" class="page-content">
         <div class="page-top fixed-top container-fluid">
             <div class="row titlebar px-3 py-3">
@@ -210,6 +210,7 @@
     var sidebarContactsList = $('.sidebar-contacts-list');
     var contactId = 0;
     var contentContacts = $('#content-contacts');
+    var contactForm = $('#contactForm');
 
     $(function loadContactList() {
         $.ajax({
@@ -279,10 +280,49 @@
                 $('.contact-mobile').val(response.mobil);
                 $('.contact-private').val(response.privat);
                 $('.contact-adress').val(response.adresse);
+                $('#contact-save-button').attr('data-id',response.id);
                 //$('.contact-skill-container').attr("data-id", taskId);
                 //$('.contact-mail').attr("data-id", response.taskid);
             } 
         });
+    }
+
+    function saveContact(elem) {
+        contactForm.submit(function(event) {
+            event.preventDefault();
+            contentContacts.load("contact_view.html");
+            contactId = $(elem).data('id');
+
+            var contactSerialize = contactForm.serialize();
+
+            $.ajax({
+                data: contactSerialize + '&cid=' + contactId,
+                type: 'post',
+                dataType: 'json',
+                url: '../logic/contacts_updateData.php',
+                success: function (response) {
+//                $('#contact-edit-button').attr('data-id',response.id);
+
+//                $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
+//                if($.trim(response.favorit) == 1) {
+//                    $('.contact-name').html("<span style='font-size: 18pt; color: #e84a29' class='icon-star icon-align'></span> " + response.name + ", " + response.vorname);
+//                } else {
+//
+//                }
+                    $('.contact-name').val(response.name);
+                    $('.contact-vorname').val(response.vorname);
+                    $('.contact-company').val(response.firma);
+                    $('.contact-mail').val(response.email);
+                    $('.contact-birth').val(response.geburtsdatum);
+                    $('.contact-mobile').val(response.mobil);
+                    $('.contact-private').val(response.privat);
+                    $('.contact-adress').val(response.adresse);
+                    $('#contact-save-button').attr('data-id', response.id);
+                    //$('.contact-skill-container').attr("data-id", taskId);
+                    //$('.contact-mail').attr("data-id", response.taskid);
+                }
+            });
+        })
     }
 </script>
 
