@@ -855,7 +855,7 @@ if (!isset($_GET['id'])) {
                         </div>
                     </div>
 
-                    <div id="content-eval" class="offset-lg-3 col-lg-9 p-0">
+                    <div id="content-eval" class="offset-lg-3 col-lg-5 p-0">
 
 
                         <div class="col-12">
@@ -876,6 +876,62 @@ if (!isset($_GET['id'])) {
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="protokollant-container col-md-6">
+                                <div class="protokollant-card m-5">
+                                    <div class="row px-4 p-4">
+                                        <div class="col-md-12">
+                                            <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                            <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row px-4">
+                                        <div class="col-lg-4">Lösungsschritte:</div>
+                                        <div class="col-lg-8 font-weight-bold">
+                                            Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum.
+                                        </div>
+                                    </div>
+                                    <div class="row px-4 p-4">
+                                        <div class="col-lg-4">Anmerkungen:</div>
+                                        <div class="col-lg-8 font-weight-bold">
+                                            Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="protokollant-card m-5">
+                                    <div class="row px-4 p-4">
+                                        <div class="col-md-12">
+                                            <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
+                                            <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row px-4">
+                                        <div class="col-lg-4">Lösungsschritte:</div>
+                                        <div class="col-lg-8 font-weight-bold">
+                                            Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum.
+                                        </div>
+                                    </div>
+                                    <div class="row px-4 p-4">
+                                        <div class="col-lg-4">Anmerkungen:</div>
+                                        <div class="col-lg-8 font-weight-bold">
+                                            Lorem ipsum dolor sit amet, consetetur
+                                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
