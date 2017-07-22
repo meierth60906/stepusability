@@ -215,7 +215,7 @@
     $(function loadContactList() {
         $.ajax({
             type: 'post',
-            url: 'logic/contacts_loadList.php',
+            url: 'logic/contactsLoadList.php',
             success: function (response) {
                 sidebarContactsList.append(response);
 
