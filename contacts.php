@@ -17,7 +17,7 @@
 <body id="body-contacts">
 
 <?php include ('navigation.html'); ?>
-<form id="contactForm" class="form" action="logic/contacts_updateData.php" method="post">
+<form id="contactForm" class="form" action="logic/contactsUpdateData.php" method="post">
     <section id="contacts" class="page-content">
         <div class="page-top fixed-top container-fluid">
             <div class="row titlebar px-3 py-3">
@@ -231,7 +231,7 @@
             data: 'cid=' + contactId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/contacts_loadData.php',
+            url: 'logic/contactsLoadData.php',
             success: function (response) {
                 $('#contact-edit-button').attr('data-id',response.id);
 
@@ -262,7 +262,7 @@
             data: 'cid=' + contactId,
             type: 'post',
             dataType: 'json',
-            url: 'logic/contacts_loadData.php',
+            url: 'logic/contactsLoadData.php',
             success: function (response) {
 //                $('#contact-edit-button').attr('data-id',response.id);
 
@@ -299,7 +299,7 @@
                 data: contactSerialize + '&cid=' + contactId,
                 type: 'post',
                 dataType: 'json',
-                url: 'logic/contacts_updateData.php',
+                url: 'logic/contactsUpdateData.php',
                 success: function (response) {
 //                $('#contact-edit-button').attr('data-id',response.id);
 
