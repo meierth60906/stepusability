@@ -34,6 +34,7 @@ oci_execute($stid_adresse);
 
 $fetchRowAdresse = oci_fetch_array($stid_adresse);
 
+
 $nameinitial = substr($fetchRow[1], 0,1);
 $vornameinitial = substr($fetchRow[2],0,1);
 
