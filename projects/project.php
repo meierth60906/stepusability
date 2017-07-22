@@ -81,155 +81,159 @@ if (!isset($_GET['id'])) {
                 <div class="row inner-body">
                     <div id="content-allgemein" class="col-lg-12 py-3">
 
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <!--                        Projektinfo + Beteiligte -->
+                                <div class="row pr-3">
 
-                        <!--                        Projektinfo + Beteiligte -->
-                        <div class="row pr-3">
+                                    <!--                            Projektinfo -->
+                                    <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
+                                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-sm-6 headline">
+                                                        Projektinformationen
+                                                    </div>
+                                                    <div class="col-2 col-sm-6 text-right">
+                                                        <a id="projectinfo-edit" href="#editprojectinfo" data-target="#editprojectinfo" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                                                    </div>
+                                                    <div class="col-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="row pb-2">
+                                                    <div class="col-xl-4 font-weight-bold">Status:</div>
+                                                    <div id="project-status" class="col-xl-8"></div>
+                                                </div>
+                                                <div class="row pb-2">
+                                                    <div class="col-xl-4 font-weight-bold">Auftraggeber:</div>
+                                                    <div id="project-auftraggeber" class="col-xl-8"></div>
+                                                </div>
+                                                <div class="row pb-2 row-optional">
+                                                    <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
+                                                    <div id="project-ansprechpartner" class="col-xl-8"></div>
+                                                </div>
 
-                            <!--                            Projektinfo -->
-                            <div class="col-lg-8 pl-0 pl-md-3 pr-0 pr-md-3 pr-lg-0">
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 headline">
-                                                Projektinformationen
+                                                <div class="row pb-2 row-optional">
+                                                    <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
+                                                    <div id="project-desc" class="col-xl-8"></div>
+                                                </div>
+
+                                                <div class="row pb-2">
+                                                    <div class="col-lg-12 text-right">
+                                                        <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
-                                            <div class="col-2 col-sm-6 text-right">
-                                                <a id="projectinfo-edit" href="#editprojectinfo" data-target="#editprojectinfo" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
                                         </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Status:</div>
-                                            <div id="project-status" class="col-xl-8"></div>
-                                        </div>
-                                        <div class="row pb-2">
-                                            <div class="col-xl-4 font-weight-bold">Auftraggeber:</div>
-                                            <div id="project-auftraggeber" class="col-xl-8"></div>
-                                        </div>
-                                        <div class="row pb-2 row-optional">
-                                            <div class="col-xl-4 font-weight-bold">Ansprechpartner:</div>
-                                            <div id="project-ansprechpartner" class="col-xl-8"></div>
-                                        </div>
-
-                                        <div class="row pb-2 row-optional">
-                                            <div class="col-xl-4 font-weight-bold">Projektbeschreibung:</div>
-                                            <div id="project-desc" class="col-xl-8"></div>
-                                        </div>
-
-                                        <div class="row pb-2">
-                                            <div class="col-lg-12 text-right">
-                                                <a href="#" class="btn btn-submit-grey"><i class="icon-check-1"></i> Projekt abschließen</a>
+                                        <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-lg-12 headline">
+                                                        Meilensteine
+                                                    </div>
+                                                    <div class="col-lg-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div id="goals" class="col-lg-12 p-3">
+                                                        <?php include("goals.html") ?>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
 
                                     </div>
-                                </div>
-                                <div class="row my-3 ml-2 ml-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-lg-12 headline">
-                                                Meilensteine
-                                            </div>
-                                            <div class="col-lg-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div id="goals" class="col-lg-12 p-3">
-                                                <?php include("goals.html") ?>
+                                    <!--                            Beteiligte -->
+                                    <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
+                                        <div class="row my-3 ml-2 mr-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-sm-6 col-lg-4 headline">
+                                                        Beteiligte
+                                                    </div>
+                                                    <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                    </div>
+                                                    <div class="col-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Anna Apfel
+                                                        <div class="text-muted small">Protokollant</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="teammember row">
+                                                    <div class="pl-0 col-2 hidden-lg-down">
+                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
+                                                    </div>
+                                                    <div class="pl-0 col-10 pl-xl-2">
+                                                        Bernd Bogner
+                                                        <div class="text-muted small">Moderator</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
+
+                                </div>
                             </div>
-                            <!--                            Beteiligte -->
-                            <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
-                                <div class="row my-3 ml-2 mr-lg-3 mr-2">
-                                    <div class="col-lg-12 element-allgemein p-3">
-                                        <div class="row">
-                                            <div class="col-10 col-sm-6 col-lg-4 headline">
-                                                Beteiligte
-                                            </div>
-                                            <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
-                                            </div>
-                                            <div class="col-12"><hr class="pb-3"></div>
-                                        </div>
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Anna Apfel
-                                                <div class="text-muted small">Protokollant</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="teammember row">
-                                            <div class="pl-0 col-2 hidden-lg-down">
-                                                <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                            </div>
-                                            <div class="pl-0 col-10 pl-xl-2">
-                                                Bernd Bogner
-                                                <div class="text-muted small">Moderator</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
+
 
 
                     </div>
@@ -1060,7 +1064,7 @@ if (!isset($_GET['id'])) {
                     <div class="form-group row formTask">
                         <label for="editProjectInfo-talkto" class="col-lg-4 form-control-label">Ansprechpartner:</label>
                         <div class="col-lg-8">
-                            <select class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto">
+                            <select class="form-control custom-select" name="editProjectInfo-talkto" id="editProjectInfo-talkto">
                                 <option value="" disabled selected>Auswählen...</option>
                             </select>
                             <!--                            <input class="form-control" name="editProjectInfo-talkto" id="editProjectInfo-talkto" placeholder="Ansprechpartner"/>-->
@@ -1094,6 +1098,7 @@ if (!isset($_GET['id'])) {
 <!--Projektinfos laden-->
 <script>
     var pageId = '<?php echo $user_id ?>';
+
 
     $( function loadInputUT() {
         $.ajax({
@@ -1191,7 +1196,7 @@ if (!isset($_GET['id'])) {
                 } else {
                     $("#project-ansprechpartner").html("<span class='text-muted'>Kein Ansprechpartner vorhanden</span>")
                 }
-                loadInputTalkTo();
+//                loadInputTalkTo();
             }
         });
 
@@ -1494,8 +1499,38 @@ if (!isset($_GET['id'])) {
     var contentAufgaben = $("#content-aufgaben");
     var contentUnterlagen = $("#content-unterlagen");
 
-    function editTask() {
+    var taskId = 0;
+
+    function editTask(elem) {
         contentAufgaben.load("taskForm.html");
+        taskId = $(elem).data('id');
+        loadTaskOnlyInput(taskId);
+    }
+
+    function loadTaskOnlyInput(taskId) {
+        var taskSwitch = $('#inputTaskInTestSwitch');
+
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskOnlyInput.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $('#inputTaskDescription').val(response.name);
+                $('#inputPrecondition').val(response.vorbedingung);
+                $('#inputProvidedData').val(response.bereitgestellt);
+//                if(response.ausgewaehlt === 0) {
+//                    taskSwitch.$('#inputTaskInTestSwitchNo').attr("selected","selected");
+//                } else {
+//                    taskSwitch.$('#inputTaskInTestSwitchYes').attr("selected","selected");
+//                }
+//                $('#inputChoosenWhy').val(response.ausgewaehltweil);
+                $('#inputPassedCondition').val(response.bestandenwenn);
+                $('#inputCancelCondition').val(response.abbruchwenn);
+                $('#inputSolutionSteps').val(response.loesungsschritt);
+
+            }
+        });
     }
 
     function editPsQuestion() {
@@ -1506,8 +1541,10 @@ if (!isset($_GET['id'])) {
         contentAufgaben.load("ccQuestionForm.html");
     }
 
-    function editScenario() {
+    function editScenario(elem) {
         contentAufgaben.load("scenarioForm.html");
+        taskId = $(elem).data('id');
+        loadTaskOnlyInput(taskId);
     }
     function editAgreement() {
         contentUnterlagen.load("agreementForm.html");
@@ -1566,6 +1603,7 @@ if (!isset($_GET['id'])) {
             url: '../logic/loadTaskOnlys.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
+
             }
         });
     });

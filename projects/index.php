@@ -11,7 +11,6 @@
 <html lang="de">
 <head>
     <title>Projekte | step</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <?php include ('head.html');
 
