@@ -147,7 +147,7 @@
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
-                                    <div class="doc-date text-muted">07.04.2017</div>
+                                    <div class="doc-date text-muted">22.07.2017</div>
                                 </div>
                             </div>
                         </a>
