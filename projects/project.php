@@ -142,9 +142,46 @@ if (!isset($_GET['id'])) {
                                             </div>
                                         </div>
 
+<!--                                        TERMIN -->
+                                        <!--<div class="row my-3 ml-2 ml-lg-3 mr-2">
+                                            <div class="col-lg-12 element-allgemein p-3">
+                                                <div class="row">
+                                                    <div class="col-10 col-sm-6 col-lg-4 headline">
+                                                        Termine
+                                                    </div>
+                                                    <div class="col-2 col-sm-6 col-lg-8 text-right">
+                                                        <a href="#edittermine" data-target="#edittermine" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                    </div>
+                                                    <div class="col-lg-12"><hr class="pb-3"></div>
+                                                </div>
+                                                <div class="termin row">
+                                                    <div class="pl-0 col-6">
+                                                        <div class="terminname">Testdurchlauf</div>
+                                                    </div>
+
+                                                    <div class="pl-0 col-6 text-right">
+                                                        <div class="termintag text-muted small">Do, 27.07.17</div>
+                                                        <div class="terminzeit text-muted small">12:00 - 12:30</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="termin row">
+                                                    <div class="pl-0 col-6">
+                                                        <div class="terminname">Testdurchlauf</div>
+                                                    </div>
+
+                                                    <div class="pl-0 col-6 text-right">
+                                                        <div class="termintag text-muted small">Do, 27.07.17</div>
+                                                        <div class="terminzeit text-muted small">12:00 - 12:30</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+
                                     </div>
-                                    <!--                            Beteiligte -->
+                                    <!--                            Spalte 2 -->
                                     <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
+                                        <!--                            Beteiligte -->
                                         <div class="row my-3 ml-2 mr-lg-3 mr-2">
                                             <div class="col-lg-12 element-allgemein p-3">
                                                 <div class="row">
@@ -227,6 +264,7 @@ if (!isset($_GET['id'])) {
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
 
 
@@ -1426,6 +1464,35 @@ if (!isset($_GET['id'])) {
                 <button href="#testaufgaben" id="btn-deletescenario" type="button" value="Löschen" onclick="deleteScenario(this)" class=" btn btn-submit-blue">Löschen</button>
                 <button type="button" value="Abbrechen" class="btn btn-submit-grey cursor-pointer" data-dismiss="modal" aria-label="Close">Abbrechen</button>
             </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="edittermine" tabindex="-1" role="dialog" aria-labelledby="editterminemodal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="edittermineTitle">Termine bearbeiten</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                    <button href="#allgemein" id="btn-edittermine" type="button" value="Löschen" onclick="editTermine()" class=" btn btn-submit-blue">Speichern</button>
+                </div>
+            </form>
 
         </div>
     </div>

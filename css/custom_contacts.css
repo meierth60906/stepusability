@@ -199,3 +199,73 @@
 .checkbox label input[type="checkbox"]:disabled + .cr{
     opacity: .5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    #sidebar-contacts,
+    #content-contacts {
+        position: fixed !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+}
+
+.contact {
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.contact:hover {
+    background-color: #F6F6F6;
+    cursor:pointer;
+    transition: background-color .1s ease-in; /* explorer 10 */
+    -webkit-transition: background-color .1s ease-in; /* chrome & safari */
+    -moz-transition: background-color .1s ease-in; /* firefox */
+    -o-transition: background-color .1s ease-in; /* opera */
+}
+
+.contact-link {
+    color: black;
+    text-decoration: none !important;
+}
+
+.contact-link:hover .contactname {
+    color: #e84a29;
+    text-decoration: none !important;
+}
+
+.img-placeholder-big {
+    display:inline-block;
+    font-size:3em;
+    width:2.5em;
+    height:2.5em;
+    line-height:2.5em;
+    text-align:center;
+    border-radius:50%;
+    vertical-align:middle;
+    color:white;
+    box-shadow: 0 0 50px -25px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 50px -25px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 50px -25px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 0 50px -25px rgba(0,0,0,0.5);
+}
