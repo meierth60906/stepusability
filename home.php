@@ -179,8 +179,8 @@
                                     <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted animated infinite flash">Morgen</div>
-                                    <div class="text-muted small">14:00 - 17:00</div>
+                                    <div class="text-muted animated infinite flash">Heute</div>
+                                    <div class="text-muted small">12:00 - 12:30</div>
                                 </div>
                             </div>
                         </a>
@@ -195,7 +195,7 @@
                                     <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Sa, 08.04.17</div>
+                                    <div class="text-muted">Do, 27.07.17</div>
                                     <div class="text-muted small">14:00 - 17:00</div>
                                 </div>
                             </div>
@@ -211,8 +211,8 @@
                                     <div class="text-muted small">Hochschulwebsite</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Sa, 15.04.17</div>
-                                    <div class="text-muted small">14:00 - 17:00</div>
+                                    <div class="text-muted">Sa, 29.07.17</div>
+                                    <div class="text-muted small">14:00 - 16:00</div>
                                 </div>
                             </div>
                         </a>
