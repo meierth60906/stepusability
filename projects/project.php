@@ -844,6 +844,15 @@ if (!isset($_GET['id'])) {
                             <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Proband
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Proband #A</a></li>
+                                    <li><a href="#">Proband #B</a></li>
+                                    <li><a href="#">Proband #C</a></li>
+                                </ul>
+                            </div>
 
                             <div class="col-lg-12"><hr class="mb-3"></div>
 
