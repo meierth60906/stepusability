@@ -878,7 +878,7 @@ if (!isset($_GET['id'])) {
                         </div>
                         <div class="row">
                             <div class="protokollant-container col-12">
-                                <div class="protokollant-card m-5">
+                                <div class="protokollant-card">
                                     <div class="row px-4 p-4">
                                         <div class="col-md-12">
                                             <div class="img-placeholder c-darkgrey-bg">AA</div>
@@ -905,7 +905,7 @@ if (!isset($_GET['id'])) {
                                     </div>
                                 </div>
 
-                                <div class="protokollant-card m-5">
+                                <div class="protokollant-card">
                                     <div class="row px-4 p-4">
                                         <div class="col-md-12">
                                             <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
