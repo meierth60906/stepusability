@@ -31,7 +31,7 @@
                             <div class="form-group row formPostSession formConclusion">
                                 <label for="inputDeletePSQ" class="col-lg-4 form-control-label">Frage löschen:</label>
                                 <div class="col-lg-8">
-                                    <a id="inputDeletePSQ" name="inputDeletePSQ" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                    <a id="inputDeletePSQ" name="inputDeletePSQ" href="#testaufgaben" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
                                 </div>
                             </div>
 
@@ -69,7 +69,8 @@
             data: formSerialize + '&utid=' + pageId + '&tid=' + taskId,
             success: function (response) {
                 $('#inputPSQuestion').val(response.name);
-                $('a[data-id=' + taskId + ']').html('<span class="pr-2 icon-comment icon-align text-muted"></span>' + response.name);
+                $('#inputDeletePSQ').attr("data-id", response.taskid);
+                $('.aufgabenliste-task-a[data-id=' + taskId + ']').html('<span class="pr-2 icon-comment icon-align text-muted"></span>' + response.name);
             }
         });
     }

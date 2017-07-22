@@ -116,7 +116,7 @@
                             <div class="form-group row formTask">
                                 <label for="inputDelete" class="col-lg-4 form-control-label">Aufgabe löschen:</label>
                                 <div class="col-lg-8">
-                                    <a id="inputDelete" name="inputDelete" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                    <a id="inputDelete" name="inputDelete" href="#testaufgaben" data-target="#deletetask" data-toggle="modal"><span class="icon-trash icon-align"></span> Löschen</a>
                                 </div>
                             </div>
 
@@ -164,8 +164,10 @@
                 $('#inputPassedCondition').val(response.bestandenwenn);
                 $('#inputCancelCondition').val(response.abbruchwenn);
                 $('#inputSolutionSteps').val(response.loesungsschritt);
+                $('#inputDelete').attr("data-id", taskId);
+                $('#btn-deletetask').attr("data-id", taskId);
 
-                $('a[data-id=' + taskId + ']').html('<span class="pr-2 icon-list icon-align text-muted"></span>' + response.name);
+                $('.aufgabenliste-task-a[data-id=' + taskId + ']').html('<span class="pr-2 icon-list icon-align text-muted"></span>' + response.name);
             }
         });
     }

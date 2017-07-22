@@ -1382,6 +1382,55 @@ if (!isset($_GET['id'])) {
     </div>
 </div>
 
+
+<div class="modal fade" id="deletetask" tabindex="-1" role="dialog" aria-labelledby="deletetaskmodal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deletetaskmodalTitle">Aufgabe löschen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>Sind Sie sicher, dass Sie die Aufgabe löschen möchten?</p>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button href="#testaufgaben" id="btn-deletetask" type="button" value="Löschen" onclick="deleteTask(this)" class=" btn btn-submit-blue">Löschen</button>
+                <button type="button" value="Abbrechen" class="btn btn-submit-grey cursor-pointer" data-dismiss="modal" aria-label="Close">Abbrechen</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deletescenario" tabindex="-1" role="dialog" aria-labelledby="deletescenariomodal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deletescenariomodalTitle">Szenario löschen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>Sind Sie sicher, dass Sie das Szenario löschen möchten?</p>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button href="#testaufgaben" id="btn-deletescenario" type="button" value="Löschen" onclick="deleteScenario(this)" class=" btn btn-submit-blue">Löschen</button>
+                <button type="button" value="Abbrechen" class="btn btn-submit-grey cursor-pointer" data-dismiss="modal" aria-label="Close">Abbrechen</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <?php include ('scripts.html'); ?>
 
 <script src="../js/jquery-sortable-min.js"></script>
@@ -1389,6 +1438,39 @@ if (!isset($_GET['id'])) {
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
+<script>
+    function deleteTask(elem) {
+        taskId = $(elem).data('id');
+        $("#deletetask").modal('toggle');
+
+        $('.aufgabenliste-task-a[data-id="' + taskId +'"]').closest(".aufgabenliste-task").remove();
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/deleteTask.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+            }
+        });
+        contentAufgaben.html('');
+    }
+
+    function deleteScenario(elem) {
+        taskId = $(elem).data('id');
+        $("#deletescenario").modal('toggle');
+        $('.aufgabenliste-task-a[data-id="' + taskId +'"]').closest(".aufgabenliste-task").remove();
+        $.ajax({
+            data: 'tid='+taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/deleteScenario.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+
+            }
+        });
+        contentAufgaben.html('');
+    }
+</script>
 <script>
     var pageId = '<?php echo $user_id ?>';
 
@@ -1801,6 +1883,7 @@ if (!isset($_GET['id'])) {
             dataType: 'json',
             url: '../logic/loadTaskInput.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
+
                 $('#inputTaskDescription').val(response.name);
                 $('#inputPrecondition').val(response.vorbedingung);
                 $('#inputProvidedData').val(response.bereitgestellt);
@@ -1813,6 +1896,8 @@ if (!isset($_GET['id'])) {
                 $('#inputPassedCondition').val(response.bestandenwenn);
                 $('#inputCancelCondition').val(response.abbruchwenn);
                 $('#inputSolutionSteps').val(response.loesungsschritt);
+                $('#inputDelete').attr("data-id", taskId);
+                $('#btn-deletetask').attr("data-id", response.taskid);
 
             }
         });
@@ -1832,7 +1917,7 @@ if (!isset($_GET['id'])) {
             url: '../logic/loadTaskInput.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $('#inputPSQuestion').val(response.name);
-
+                $('#btn-deletetask').attr("data-id", response.taskid);
             }
         });
     }
@@ -1851,6 +1936,7 @@ if (!isset($_GET['id'])) {
             url: '../logic/loadTaskInput.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $('#inputCCQuestion').val(response.name);
+                $('#btn-deletetask').attr("data-id", response.taskid);
             }
         });
     }
@@ -1870,7 +1956,7 @@ if (!isset($_GET['id'])) {
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $('#inputScenarioName').val(response.name);
                 $('#inputScenarioDescription').val(response.anmerkung);
-
+                $('#btn-deletescenario').attr("data-id", response.taskid);
             }
         });
     }

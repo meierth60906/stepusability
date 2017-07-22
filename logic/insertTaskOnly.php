@@ -44,10 +44,10 @@ $stid_tb = oci_parse($conn, "INSERT INTO TEXTBAUSTEIN(AB_ID, AB_UT_ID) VALUES('"
 oci_execute($stid_tb, OCI_COMMIT_ON_SUCCESS);
 
 
-echo "<li class='element-allgemein mb-3 task item-hover'>
+echo "<li class='element-allgemein mb-3 task item-hover aufgabenliste-task'>
             <div class='row p-3'>
             <div class='col-lg-12'>
-            <a href='#testaufgaben' data-id='". $fetchRowCount[0] ."' onclick='editTask(this)' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='button-addTask link-noblue'>
+            <a href='#testaufgaben' data-id='". $fetchRowCount[0] ."' onclick='editTask(this)' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='aufgabenliste-task-a button-addTask link-noblue'>
             <span class='pr-2 icon-list icon-align text-muted'></span>" . $fetchRowCount[3] . "
             </a>
             </div>

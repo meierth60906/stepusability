@@ -39,7 +39,7 @@
                             <div class="form-group row formPostSession formConclusion">
                                 <label for="inputDeleteScenario" class="col-lg-4 form-control-label">Szenario löschen:</label>
                                 <div class="col-lg-8">
-                                    <a id="inputDeleteScenario" name="inputDeleteScenario" href="#" onclick="deleteScenario(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                    <a id="inputDeleteScenario" name="inputDeleteScenario" href="#testaufgaben" data-target="#deletescenario" data-toggle="modal"><span class="icon-trash icon-align"></span> Löschen</a>
                                 </div>
                             </div>
 
@@ -76,8 +76,8 @@
             success: function (response) {
                 $('#inputScenarioName').val(response.name);
                 $('#inputScenarioDescription').val(response.anmerkung);
-
-                $('a[data-id=' + taskId + ']').html(response.name);
+                $('#inputDeleteScenario').attr("data-id", response.taskid);
+                $('.aufgabenliste-task-a[data-id=' + taskId + ']').html(response.name);
             }
         });
     }

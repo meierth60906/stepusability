@@ -31,7 +31,7 @@
                             <div class="form-group row formPostSession formConclusion">
                                 <label for="inputDeleteCCQ" class="col-lg-4 form-control-label">Frage löschen:</label>
                                 <div class="col-lg-8">
-                                    <a id="inputDeleteCCQ" name="inputDeleteCCQ" href="#" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
+                                    <a id="inputDeleteCCQ" name="inputDeleteCCQ" href="#testaufgaben" onclick="deleteTask(this)"><span class="icon-trash icon-align"></span> Löschen</a>
                                 </div>
                             </div>
 
@@ -68,8 +68,8 @@
             data: formSerialize + '&utid=' + pageId + '&tid=' + taskId,
             success: function (response) {
                 $('#inputCCQuestion').val(response.name);
-
-                $('a[data-id=' + taskId + ']').html('<span class="pr-2 icon-question icon-align text-muted"></span>' + response.name);
+                $('#inputDeleteCCQ').attr("data-id", response.taskid);
+                $('.aufgabenliste-task-a[data-id=' + taskId + ']').html('<span class="pr-2 icon-question icon-align text-muted"></span>' + response.name);
             }
         });
     }
