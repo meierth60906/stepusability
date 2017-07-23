@@ -2163,7 +2163,7 @@ if (!isset($_GET['id'])) {
     }
 
     function editAgreement() {
-        contentUnterlagen.load("agreementForm.html");
+        contentUnterlagen.load("agreementForm.php");
     }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
