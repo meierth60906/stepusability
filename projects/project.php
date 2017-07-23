@@ -856,7 +856,7 @@ if (!isset($_GET['id'])) {
 
                                 <div class="col-12 p-3">
                                     <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <p class="text-center" id="inputTaskDescription">
+                                    <p class="text-center" id="contentAufgabenBeschreibung">
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                         accusam et justo duo dolores et ea rebum.
