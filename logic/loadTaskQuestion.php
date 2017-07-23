@@ -11,12 +11,16 @@ if (!$conn) {
 $stid = oci_parse($conn, "SELECT * FROM ABSCHNITT a, TEXTBAUSTEIN t WHERE a.ID = t.AB_ID AND t.AB_ID = '".$t_id."'");
 oci_execute($stid);
 
-$fetchRow = oci_fetch_array($stid);
+$fetchRowCount = oci_fetch_row($stid);
+if($fetchRowCount) {
+    while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
 
-echo json_encode(array(
-    "taskid" => $fetchRow[0],
-    "art" => $fetchRow[1],
-    "name" => $fetchRow[3],
-    "inszenario" => $fetchRow[4]));
+
+        echo"<div class='col-2 text-right'>" . $row['NAME_AB'] ."</div>";
+
+    }
+} else {
+    echo "<h1 id=\"noprojects\" class=\"mt-5 pt-5 text-muted text-center\">Derzeit sind keine Projekte vorhanden.</h1>";
+}
 
 ?>
