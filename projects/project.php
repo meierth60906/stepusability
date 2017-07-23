@@ -1789,7 +1789,6 @@ function createAgreement() {
             "</ol>" +
             "</li>";
 
-
     }
 
     if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {

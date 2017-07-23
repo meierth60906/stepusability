@@ -28,7 +28,7 @@
             <div class="tab-pane active" id="einverstaendniserklaerung1" role="tabpanel">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-4 editor">
-                        <form id="templateForm" class="form" action="logic/insertTemplate.php" method="post">
+                        <form id="templateForm" class="form" action="logic/insertTemplatesProject.php" method="post">
                             <button class="visibility" name="submitbtn"></button>
                             <p class="visibility" name="Name_der_Vorlage" id="Name_der_Vorlage">Name der Vorlage:</p>
                             <input class="visibility" name="Vorlage_Name" type="text" id="Vorlage_Name" placeholder="Name der Vorlage">
