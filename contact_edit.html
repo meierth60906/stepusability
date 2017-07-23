@@ -1,16 +1,19 @@
 <div class="row">
     <div class="col-10 offset-1 text-right mt-4">
-        <a id="contact-save-button" href="#" onclick="saveContact(this)"><span class="icon-check-1"></span><span class="hidden-lg-down"> Speichern</span></a>
+        <button type="submit" id="contact-save-button" href="#" onclick="saveContact(this)" class="btn btn-submit-blue"><span class="icon-check-1"></span><span class="hidden-lg-down"> Speichern</span></button>
     </div>
     <div class="col-10 offset-1 text-center">
         <div class='img-placeholder-big c-darkgrey-bg'></div>
         <div class="row">
-            <div class="col-1 offset-1"><div style='font-size: 24pt;' class='icon-star-o icon-align my-4'></div></div>
-            <div class="col-4">
-                <input type="text" placeholder="Nachname" class="form-control contact-name my-4 h3" />
+            <div class="col-1 offset-1">
+                <div style='font-size: 24pt;' class='star icon-star-o icon-align my-4'></div>
+                <input type="hidden" id="contact-favorit" name="contact-favorit" value="1">
             </div>
             <div class="col-4">
-                <input type="text" placeholder="Vorname" class="form-control contact-vorname my-4 h3" />
+                <input id="contact-name" name="contact-name" type="text" placeholder="Nachname" class="form-control my-4 h3" />
+            </div>
+            <div class="col-4">
+                <input id="contact-vorname" name="contact-vorname" type="text" placeholder="Vorname" class="form-control my-4 h3" />
             </div>
         </div>
 
@@ -25,7 +28,7 @@
                 <div class="font-weight-bold">Firma:</div>
             </div>
             <div class="contact-company-container col-6 p-2">
-                <input type="text" class="form-control contact-company" />
+                <input id="contact-company" name="contact-company" type="text" class="form-control" />
             </div>
         </div>
 
@@ -36,7 +39,7 @@
                 <div class="font-weight-bold">Email:</div>
             </div>
             <div class="contact-mail-container col-6 p-2">
-                <input type="text" class="form-control contact-mail"/>
+                <input id="contact-mail" name="contact-mail" type="text" class="form-control "/>
             </div>
         </div>
 
@@ -46,7 +49,7 @@
                 <div class="font-weight-bold">Mobil:</div>
             </div>
             <div class="contact-mobile-container col-6 p-2">
-                <input type="text" class="form-control contact-mobile"/>
+                <input id="contact-mobile" name="contact-mobile" type="text" class="form-control "/>
             </div>
         </div>
 
@@ -56,7 +59,7 @@
                 <div class="font-weight-bold">Privat:</div>
             </div>
             <div class="contact-private-container col-6 p-2">
-                <input type="text" class="form-control contact-private"/>
+                <input id="contact-private" name="contact-private" type="text" class="form-control "/>
             </div>
         </div>
 
@@ -67,7 +70,7 @@
                 <div class="font-weight-bold">Anschrift:</div>
             </div>
             <div class="contact-adress-container col-6 p-2">
-                <input type="text" class="form-control contact-adress"/>
+                <input id="contact-adress" name="contact-adress" type="text" class="form-control "/>
             </div>
         </div>
 
@@ -77,7 +80,7 @@
                 <div class="font-weight-bold">Geburtsdatum:</div>
             </div>
             <div class="contact-birth-container col-6 p-2">
-                <input type="text" class="form-control contact-birth"/>
+                <input id="contact-birth" name="contact-birth" type="text" class="form-control "/>
             </div>
         </div>
 
@@ -88,7 +91,7 @@
                 <div class="font-weight-bold">Fähigkeiten:</div>
             </div>
             <div class="contact-skill-container col-6 p-2">
-                <input type="text" class="form-control contact-skill" />
+                <input id="contact-skill" name="contact-skill" type="text" class="form-control " />
             </div>
         </div>
 
@@ -96,13 +99,29 @@
             <div class="col-12"><hr></div>
 
             <div class="col-4 offset-1 p-2">
-                <div class="font-weight-bold">Rollen:</div>
+                <div class="font-weight-bold">Einsatzmöglichkeiten:</div>
             </div>
             <div class="contact-role-container col-6 p-2">
-                <input type="text" class="form-control contact-role" />
+                <input id="contact-role" name="contact-role" type="text" class="form-control " />
             </div>
         </div>
 
 
     </div>
 </div>
+
+
+<script>
+    contactFavorit = $('#contact-favorit');
+    contactStar = $('.star');
+
+    contactStar.click(function() {
+        $(this).toggleClass("icon-star icon-star-o");
+        var wert = contactFavorit.value;
+        if (wert === "0") {
+            contactFavorit.value = "1";
+        } else {
+            contactFavorit.value = "0";
+        }
+    });
+</script>

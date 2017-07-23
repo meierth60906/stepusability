@@ -1,6 +1,6 @@
 <?php
 
-$c_id = $_POST['cid'];
+$c_id = $_GET['id'];
 $komm = array();
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
@@ -29,7 +29,7 @@ oci_execute($stid_mobil);
 
 $fetchRowMobil = oci_fetch_array($stid_mobil);
 
-$stid_adresse = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Mobil'");
+$stid_adresse = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Adresse'");
 oci_execute($stid_adresse);
 
 $fetchRowAdresse = oci_fetch_array($stid_adresse);

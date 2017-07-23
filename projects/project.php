@@ -183,85 +183,17 @@ if (!isset($_GET['id'])) {
                                     <div class="col-lg-4 pr-0 pl-0 pl-md-3 pl-lg-0">
                                         <!--                            Beteiligte -->
                                         <div class="row my-3 ml-2 mr-lg-3 mr-2">
-                                            <div class="col-lg-12 element-allgemein p-3">
+                                            <div id="teamcontainer" class="col-lg-12 element-allgemein p-3">
                                                 <div class="row">
                                                     <div class="col-10 col-sm-6 col-lg-4 headline">
                                                         Beteiligte
                                                     </div>
                                                     <div class="col-2 col-sm-6 col-lg-8 text-right">
-                                                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
+                                                        <a id="projectmembers-edit" href="#editprojectmembers" data-target="#editprojectmembers" data-toggle="modal"><span class="icon-pencil"></span><span class="hidden-lg-down"> Bearbeiten</span></a>
                                                     </div>
                                                     <div class="col-12"><hr class="pb-3"></div>
                                                 </div>
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Anna Apfel
-                                                        <div class="text-muted small">Protokollant</div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="teammember row">
-                                                    <div class="pl-0 col-2 hidden-lg-down">
-                                                        <img class="img-placeholder rounded-circle" src="../img/user.jpg">
-                                                    </div>
-                                                    <div class="pl-0 col-10 pl-xl-2">
-                                                        Bernd Bogner
-                                                        <div class="text-muted small">Moderator</div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
 
@@ -1421,6 +1353,68 @@ if (!isset($_GET['id'])) {
 </div>
 
 
+<div class="modal fade" id="editprojectmembers" tabindex="-1" role="dialog" aria-labelledby="editProjectMembersModal" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProjectMembersModalTitle">Projektbeteiligte bearbeiten</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="editProjectMembersForm" class="form" action="../logic/editProjectMembers.php" method="post">
+                <div class="modal-body">
+
+                    <!--Ansprechpartner-->
+                    <div class="form-group row formTask pt-3">
+                        <div class="col-lg-9 pr-1">
+                            <select class="form-control custom-select" name="chooseProjectMember" id="chooseProjectMember">
+                                <option value="" disabled selected>Kontakt zum Hinzufügen auswählen...</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 pl-1">
+                            <select class="form-control custom-select" name="chooseProjectMemberRole" id="chooseProjectMemberRole">
+                                <option value="" disabled selected>Rolle...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row formTask pt-3">
+                        <div class="col-lg-12">Projektbeteiligte:<hr></div>
+                        <div id="chosenMembers" class="col-lg-12">
+                            <div class='teammember row'>
+                                <div class='pl-0 col-2 hidden-lg-down text-center'>
+                                    <div class='img-placeholder c-darkgrey-bg'>AA</div>
+                                </div>
+                                <div class='pl-0 col-5 pl-xl-2 alignmiddle'>
+                                    Bernd Bogner
+                                </div>
+                                <div class='pl-0 col-3 pl-xl-2'>
+                                    <select class="form-control custom-select" name="chooseProjectMemberRole" id="chooseProjectMemberRole">
+                                        <option value="" disabled selected>Rolle...</option>
+                                    </select>
+                                </div>
+                                <div class='pr-0 col-1 text-right'>
+                                    <div class='minus-placeholder c-orange-bg'>‒</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer text-center">
+                    <input type="submit" value="Speichern" class="btn btn-submit-blue" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
 <div class="modal fade" id="deletetask" tabindex="-1" role="dialog" aria-labelledby="deletetaskmodal" aria-hidden="true">
 
     <div class="modal-dialog" role="document">
@@ -1505,6 +1499,72 @@ if (!isset($_GET['id'])) {
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
+<script>
+    var teamContainer = $('#teamcontainer');
+
+    $(function loadBeteiligte() {
+
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/beteiligteLoad.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                teamContainer.append(response);
+            }
+        });
+    });
+
+    $( function loadTaskOnlys() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskOnlys.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+
+            }
+        });
+    });
+
+
+    $(function checkMilestones() {
+        $.ajax({
+            data: 'id='+pageId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/milestonesCheck.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                if(response.taskscreated > 0) {
+                    $('#goal-aufgaben').addClass('c-orange-bg');
+                    $('#goal-aufgabenerstellt').html("Test&shy;aufgaben erstellt <span class='icon-check icon-align'></span>");
+                }
+                if(response.einverstcreated > 0) {
+                    $('#goal-einverst').addClass('c-einverst-bg');
+                    $('#goal-einversterstellt').html("Ein&shy;ver&shy;ständnis&shy;erklärung erstellt <span class='icon-check icon-align'></span>");
+                }
+                if(response.skriptcreated > 0) {
+                    $('#goal-skript').addClass('c-skript-bg');
+                    $('#goal-skripterstellt').html("Test&shy;skript erstellt <span class='icon-check icon-align'></span>");
+                }
+                if(response.plancreated > 0) {
+                    $('#goal-plan').addClass('c-plan-bg');
+                    $('#goal-planerstellt').html("Test&shy;plan erstellt <span class='icon-check icon-align'></span>");
+                }
+                if(response.protokollcreated > 0) {
+                    $('#goal-protokoll').addClass('c-protokoll-bg');
+                    $('#goal-protokollerstellt').html("Proto&shy;koll erstellt <span class='icon-check icon-align'></span>");
+                }
+                if(response.termincreated > 0) {
+                    $('#goal-termin').addClass('c-orange-bg');
+                    $('#goal-terminerstellt').html("Test&shy;termin erstellt <span class='icon-check icon-align'></span>");
+                }
+
+            }
+        });
+    })
+</script>
+
+
 <script>
     function deleteTask(elem) {
         taskId = $(elem).data('id');
