@@ -19,25 +19,14 @@ if (!$conn) {
 //$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'Szenario' AND UT_ID = '$ut_id'");
 //oci_execute($stid);
 
-$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'Szenario' AND UT_ID = '$ut_id'");
+$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ID = '".$t_id."'");
 oci_execute($stid);
 
+$fetchRow = oci_fetch_array($stid);
 
-while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    echo "<li class='scenario element-allgemein mb-3 aufgabenliste-task' data-id='" . $row['ID'] . "' >";
-    echo "<div class='row p-3'>";
-    echo "<div class='col-10'>";
-    echo "<a href='#testaufgaben' onclick='loadScenarioQuestionEval(this)' data-id='" . $row['ID'] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='aufgabenliste-task-a link-noblue font-weight-bold'>" . $row['NAME_AB'] . "</a>";
-    echo "</div>";
-    echo "<div class='col-2 text-right'>";
-    echo "<a href='#testaufgaben' onclick='loadScenarioQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
-    echo "</div>";
-    echo "</div>";
-    echo "<ol class='task-container pl-0'>";
-    echo "<hr class='m-0'>";
-    echo "</ol>";
-    echo "</li>";
-}
-
+echo json_encode(array(
+    "id" => $fetchRow[0],
+    "art" => $fetchRow[1],
+    "utid" => $fetchRow[2],
+    "name" => $fetchRow[3]));
 ?>
-
