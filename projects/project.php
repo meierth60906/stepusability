@@ -886,7 +886,17 @@ if (!isset($_GET['id'])) {
                             <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
-                            <div class="dropdown">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    Proband <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Proband #A</a></li>
+                                    <li><a href="#">Proband #B</a></li>
+                                    <li><a href="#">Proband #C</a></li>
+                                </ul>
+                            </div>
+                            <!--<div class="dropdown">
                                 <button class="btn btn-primary-blue dropdown-toggle" type="button" data-toggle="dropdown">Proband
                                     <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
@@ -894,7 +904,7 @@ if (!isset($_GET['id'])) {
                                     <li><a href="#">Proband #B</a></li>
                                     <li><a href="#">Proband #C</a></li>
                                 </ul>
-                            </div>
+                            </div>-->
 
                             <div class="col-lg-12"><hr class="mb-3"></div>
 
