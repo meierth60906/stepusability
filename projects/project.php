@@ -929,8 +929,8 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                    <div id="editor" class="offset-lg-6 col-lg-5 p-0">Editor
-                    </div>
+                    <div id="editor" class="offset-lg-7 col-lg-5 p-0">Editor
+
 
                                         <textarea id="editor">
                       <p>
@@ -987,7 +987,7 @@ if (!isset($_GET['id'])) {
                       <p>
                         Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
                       </p>
-                    </textarea>
+                    </textarea> </div>
                 </div>
             </div>
             <!--<div class="row inner-body">
