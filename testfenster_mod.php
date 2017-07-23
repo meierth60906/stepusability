@@ -97,7 +97,7 @@
                                 <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder positiv.<br>
                                     Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar frustriert. <br>
                                     Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie uns bitte, was Sie denken.
-                                    <br>
+                                    <br><br>
                                     Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
 
