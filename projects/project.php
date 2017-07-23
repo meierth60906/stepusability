@@ -2337,6 +2337,23 @@ function createLoeswegNew(event) {
             }
         });
     }
+
+    var postConclusionQuestionContainerEval = $("#postConclusionQuestionContainerEval");
+
+    function loadConclusionQuestionEval(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadConclusionQuestionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                alert(response.name);
+                $("#postConclusionQuestionContainerEval").html(response.name);
+            }
+        });
+    }
 </script>
 
 
