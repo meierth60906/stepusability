@@ -1778,7 +1778,8 @@ if (!isset($_GET['id'])) {
                 "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
                 "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
                 "<a class='#unterlagen' onclick='createAgreementNew(this); return false;' href='#unterlagen'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-                "<div class='dropdown-divider m-0'></div>" +
+                "<div class='dropdown-divider m-0'>" +
+                "</div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='agreement-container pl-0'>" +
@@ -1788,6 +1789,23 @@ if (!isset($_GET['id'])) {
 
 
         }
+
+        <?php
+
+        $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+        if (!$conn) {
+            $e = oci_error();
+            trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+        }
+
+        $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Einverstaendniserklaerung'");
+        oci_execute($stid);
+        while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+            $content = $row['VORLAGE_TEXT']->load();
+            $content = htmlspecialchars($content);
+            echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."', '".$content."');\">".$row['VORLAGE_NAME']."</a></li>";
+        }
+        ?>
 
         if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {
 
