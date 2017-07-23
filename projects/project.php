@@ -929,7 +929,7 @@ if (!isset($_GET['id'])) {
                     </div>
 
 
-                    <textarea id="editor" class="offset-lg-8 col-lg-5 p-0">
+                    <textarea>
                     <p style="text-align: center;">
                         <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
                     </p>
@@ -2245,6 +2245,21 @@ function createLoeswegNew(event) {
 </script>
 
 <!-- Evaluation Function -->
+
+<script>tinymce.init({
+        selector: 'textarea',
+        height: 500,
+        menubar: false,
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table contextmenu paste code'
+        ],
+        toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        content_css: [
+            '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+            '//www.tinymce.com/css/codepen.min.css']
+    });</script>
 <script>
     var taskQuestionContainer = $(".taskQuestionContainer");
 
