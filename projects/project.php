@@ -2289,6 +2289,7 @@ function createLoeswegNew(event) {
 
 function loadTaskQuestion(elem) {
     taskId = $(elem).data('id');
+    alert("Hi!");
     $.ajax({
         data: 'tid=' + taskId,
         type: 'post',
