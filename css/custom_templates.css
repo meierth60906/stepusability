@@ -2,6 +2,15 @@
     padding-top: 120px;
 }
 
+.visibility {
+    visibility: hidden;
+}
+
+#Name_der_Vorlage {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
 
 
 
