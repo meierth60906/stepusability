@@ -277,7 +277,7 @@
 }
 
 .dropdown-menu {
-    color: black;
+    color: black; !important;
     background-color: white;
     border: 1px solid #ddd;
     padding-top: 0;
