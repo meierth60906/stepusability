@@ -16,14 +16,26 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ID = '".$t_id."'");
+$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'ConclusionQ' AND UT_ID = '$ut_id'");
 oci_execute($stid);
 
-$fetchRow = oci_fetch_array($stid);
+while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
+    $conId[] = $row['IN_SZENARIO'];
+    $data[] = "<li class='task item-hover aufgabenliste-task' data-id='". $row['ID'] ."' >
+    <div class='row p-3'>
+        <div class='col-lg-12'>
+        <a href='#testaufgaben' data-id='". $row['ID'] ."' onclick='loadConclusionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='aufgabenliste-task-a button-addTask link-noblue'>
+        <span class='pr-2 icon-question icon-align text-muted'></span>" . $row['NAME_AB'] . "
+        </a>
+        </div>
+        </div>
+        </li>";
+}
 
 echo json_encode(array(
-    "id" => $fetchRow[0],
-    "art" => $fetchRow[1],
-    "utid" => $fetchRow[2],
-    "name" => $fetchRow[3]));
+    "conclusionid" => $conId,
+    "echo" => $data
+));
+
 ?>
+
