@@ -2321,6 +2321,22 @@ function createLoeswegNew(event) {
             }
         });
     }
+
+    var postSessionQuestionContainerEval = $("#postSessionQuestionContainerEval");
+
+    function loadPostSessionQuestionEval(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadPostSessionQuestionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#postSessionQuestionContainerEval").html(response.name);
+            }
+        });
+    }
 </script>
 
 
@@ -2409,6 +2425,19 @@ function createLoeswegNew(event) {
         });
     });
 
+    var conclusionContainerEval = $(".conclusion-container-eval");
+    $( function loadConclusionEval() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadConclusionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                conclusionContainerEval.append(response);
+            }
+        });
+    });
+
+
     $( function loadPostSession() {
         $.ajax({
             type: 'post',
@@ -2416,6 +2445,20 @@ function createLoeswegNew(event) {
             url: '../logic/loadPostSession.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 postSessionContainer.append(response);
+            }
+        });
+    });
+
+    var postSessionContainerEval = $(".postsession-container-eval");
+
+    $( function loadPostSessionEval() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadPostSessionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                postSessionContainerEval.append(response);
+
             }
         });
     });
