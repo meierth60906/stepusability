@@ -861,9 +861,9 @@ if (!isset($_GET['id'])) {
                                     </div>
 
                                 </div>
-                                <div id="scenarioQuestion"class="col-12 p-3">
+                                <!--<div id="scenarioQuestion"class="col-12 p-3">
                                     <p id="scenarioQuestionId"class="font-weight-bold text-center">Aufgabe</p>
-                                    <div class="text-center" id="scenarioQuestionContainerEval">
+                                    <div class="text-center" id="scenarioQuestionContainerEval">-->
 
                                     </div>
 
