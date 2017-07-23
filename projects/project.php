@@ -919,7 +919,7 @@ if (!isset($_GET['id'])) {
                     <div id="content-eval" class="offset-lg-3 col-lg-4 p-0">
 
 
-                        <div class="col-12">ä
+                        <div class="col-12">
                             <div class="row">
 
                                 <div class="col-12 p-3">
