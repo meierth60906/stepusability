@@ -38,3 +38,9 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.btn-primary-blue {
+    color: #fff;
+    background-color:  #185077 !important;
+    border-color:  #185077 !important;
+}
