@@ -1502,6 +1502,26 @@ if (!isset($_GET['id'])) {
 
 <script src="../js/jquery-sortable-min.js"></script>
 
+<!--Editor-->
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        height: 500,
+        theme: 'modern',
+        plugins: [
+            'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            'searchreplace wordcount visualblocks visualchars code fullscreen',
+            'insertdatetime media nonbreaking save table contextmenu directionality',
+            'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+        ],
+        toolbar1: 'save | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+        image_advtab: true,            content_css: 'https://tinymce.com/css/codepen.min.css',
+        branding: false,
+        language_url : '/step/tiny/mce/langs/de.js',
+        save_enablewhendirty: true
+    });
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
@@ -1644,6 +1664,10 @@ if (!isset($_GET['id'])) {
 
     }
 </script>
+
+
+</script>
+
 
 
 
