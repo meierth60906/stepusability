@@ -2068,6 +2068,7 @@ function createLoeswegNew(event) {
 
 <!-- TESTAUFGABEN UND DOKUMENTE BILDSCHIRM ÖFFNEN -->
 <script>
+    var contentAufgabenBeschreibung= $("#contentAufgabenBeschreibung");
     var contentAufgaben = $("#content-aufgaben");
     var contentUnterlagen = $("#content-unterlagen");
 
@@ -2189,7 +2190,7 @@ function createLoeswegNew(event) {
 <!-- Evaluation Function -->
 <script>
     function loadTaskQuestion(taskId) {
-        var taskSwitch = $('#inputTaskDescription');
+        var taskSwitch = $('#contentAufgabenBeschreibung');
         $.ajax({
             data: 'tid='+taskId,
             type: 'post',
@@ -2197,7 +2198,7 @@ function createLoeswegNew(event) {
             url: '../logic/loadTaskQuestion.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
 
-                $('#inputTaskDescription').val(response.name);
+                $('#contentAufgabenBeschreibung').val(response.name);
             }
         });
     }
