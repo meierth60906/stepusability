@@ -14,6 +14,7 @@ oci_execute($stid);
 $fetchRow = oci_fetch_array($stid);
 
 echo json_encode(array(
+    "id" => $fetchRow[0],
     "art" => $fetchRow[1],
     "utid" => $fetchRow[2],
     "name" => $fetchRow[3]));
