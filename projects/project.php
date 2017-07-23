@@ -1780,7 +1780,7 @@ function createAgreement() {
             "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
             "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
             "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createAgreementNew(this); return false;' href='#unterlagen'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+            "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
             "<div class='dropdown-divider m-0'></div>" +
             "</div>" +
             "</div>" +
