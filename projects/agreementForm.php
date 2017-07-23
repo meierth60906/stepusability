@@ -16,7 +16,7 @@
                                 while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
                                     $content = $row['VORLAGE_TEXT']->load();
         $content = htmlspecialchars($content);
-        'VORLAGE_NAME']."', '".$content."');\">".$row['VORLAGE_NAME']."</a></li>";
+        echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."', '".$content."');\">".$row['VORLAGE_NAME']."</a></li>";
         }
         ?>
 </div>
