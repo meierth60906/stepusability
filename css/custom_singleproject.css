@@ -136,7 +136,11 @@
 /**#singleproject .protokollant-container {
     overflow-y: scroll;
 }*/
-
+#singleproject .dropdown{
+    font-weight: bold !important;
+    background-color: #185077 !important;
+    color: white;
+}
 
 .aufgabenfeld {
     height: 240px !important;
