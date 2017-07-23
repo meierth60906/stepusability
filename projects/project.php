@@ -927,8 +927,9 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-
-
+<div id="editor" class="offset-lg-6 col-lg-5 p-0">Editor
+</div>
+<!--
                     <textarea id="editor">
   <p>
     <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
@@ -984,7 +985,7 @@ if (!isset($_GET['id'])) {
   <p>
     Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
   </p>
-</textarea>
+</textarea>-->
                 </div>
             </div>
             <!--<div class="row inner-body">
@@ -2244,10 +2245,13 @@ function createLoeswegNew(event) {
 <!-- Evaluation Function -->
 
 <script>
+
     tinymce.init({
         selector: 'textarea',
         height: 500,
+        branding: false,
         plugins: 'table',
+        resize: 'both',
         content_css: [
             '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
             '//www.tinymce.com/css/codepen.min.css'],
