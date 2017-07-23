@@ -1690,13 +1690,19 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Einverständniserklärung</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createAgreementNew(this); return false;' href='#unterlagen'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='agreement-container pl-0'>" +
                 "<hr class='m-0'>" +
                 "</ol>" +
                 "</li>";
+
+
         }
 
         if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {
@@ -1734,7 +1740,11 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Protokoll</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Protokoll' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='protocol-container pl-0'>" +
@@ -1778,7 +1788,11 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Testskript</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Testskript' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='testskript-container pl-0'>" +
@@ -1823,7 +1837,11 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Testplan</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testplan' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='testplan-container pl-0'>" +
@@ -1868,7 +1886,11 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Testbericht</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='testbericht-container pl-0'>" +
@@ -1913,7 +1935,11 @@ if (!isset($_GET['id'])) {
                 "<div class='row p-3'>" +
                 "<div class='col-10'>Lösungswege</div>" +
                 "<div class='col-2 text-right'>" +
-                "<a href='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Lösungsweg' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
                 "</div>" +
                 "</div>" +
                 "<ol class='loesweg-container pl-0'>" +
