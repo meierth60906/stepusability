@@ -861,7 +861,13 @@ if (!isset($_GET['id'])) {
                                     </div>
 
                                 </div>
+                                <div id="taskQuestion"class="col-12 p-3">
+                                    <p id="questionId"class="font-weight-bold text-center">Aufgabe</p>
+                                    <div class="text-center" id="scenarioQuestionContainer">
 
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="row">
@@ -2300,7 +2306,21 @@ function createLoeswegNew(event) {
             }
         });
     }
+    var scenarioQuestionContainer = $("#scenarioQuestionContainer");
 
+    function loadScenarioQuestion(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadScenarioQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#scenarioQuestionContainer").html(response.name);
+            }
+        });
+    }
 </script>
 
 
