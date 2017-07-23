@@ -883,10 +883,8 @@ if (!isset($_GET['id'])) {
                                         <div class="row px-4">
                                             <div class="col-lg-4">Lösungsschritte:</div>
                                             <div class="col-lg-8 font-weight-bold">
-                                                Lorem ipsum dolor sit amet, consetetur
-                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                                dolores et ea rebum.
+                                                Navigationsleiste auf Projekte - Übersicht aller Projekte - erstellen - Namen eingeben
+
                                             </div>
                                         </div>
                                         <div class="row px-4 p-4">
