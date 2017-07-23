@@ -27,10 +27,10 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     echo "<li class='scenario element-allgemein mb-3 aufgabenliste-task' data-id='" . $row['ID'] . "' >";
     echo "<div class='row p-3'>";
     echo "<div class='col-10'>";
-    echo "<a href='#testaufgaben' onclick='editScenario(this)' data-id='" . $row['ID'] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='aufgabenliste-task-a link-noblue font-weight-bold'>" . $row['NAME_AB'] . "</a>";
+    echo "<a href='#testaufgaben' onclick='loadScenarioQuestionEval(this)' data-id='" . $row['ID'] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='aufgabenliste-task-a link-noblue font-weight-bold'>" . $row['NAME_AB'] . "</a>";
     echo "</div>";
     echo "<div class='col-2 text-right'>";
-    echo "<a href='#testaufgaben' onclick='loadScenarioQuestion(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
+    echo "<a href='#testaufgaben' onclick='loadScenarioQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Aufgabe' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>";
     echo "</div>";
     echo "</div>";
     echo "<ol class='task-container pl-0'>";
