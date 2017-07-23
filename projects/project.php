@@ -2276,9 +2276,9 @@ function createLoeswegNew(event) {
 
 <script>
 
-   /** var taskId = 0;
+    /** var taskId = 0;
 
-    function editTask(elem) {
+     function editTask(elem) {
         contentAufgaben.load("taskForm.html");
         taskId = $(elem).data('id');
         loadTaskInput(taskId);
@@ -2287,20 +2287,19 @@ function createLoeswegNew(event) {
 
     var taskQuestionContainer = $("#taskQuestionContainer");
 
-function loadTaskQuestion(elem) {
-    taskId = $(elem).data('id');
+    function loadTaskQuestion(elem) {
+        taskId = $(elem).data('id');
 
-    $.ajax({
-        data: 'tid=' + taskId,
-        type: 'post',
-        dataType: 'json',
-        url: '../logic/loadTaskQuestion.php',
-        success: function (response) {//response is value returned from php (for your example it's "bye bye"
-            alert(response.name);
-            $("#taskQuestionContainer").html(response.name);
-        }
-    });
-}
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskQuestion.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#taskQuestionContainer").html(response.name);
+            }
+        });
+    }
 
 </script>
 
@@ -2343,7 +2342,7 @@ function loadTaskQuestion(elem) {
             }
         });
     });
-var scenarioContainerEval = $(".scenario-container-eval");
+    var scenarioContainerEval = $(".scenario-container-eval");
 
     $( function loadTaskEval() {
         $.ajax({
