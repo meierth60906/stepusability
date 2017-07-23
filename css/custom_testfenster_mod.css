@@ -213,7 +213,7 @@
 .checkbox .cr {
     position: relative;
     display: inline-block;
-    border: 1px solid #a9a9a9;
+    border: 2px solid #a9a9a9;
     border-radius: .25em;
     width: 1.3em;
     height: 1.3em;
@@ -292,7 +292,10 @@
     border: none !important;
     size: 20px;
 }
-
+#buttonTestfensterLinks{
+    width: 100px;
+    height: 20px;
+}
 
 #testfenster_mod .buttonTestfensterLinks{
     border-top-left-radius:  0.75rem;
@@ -305,6 +308,7 @@
     white-space: nowrap;
     color: #FFFFFF;
     background-color:#133E5C;
+    size: 20px;
 }
 
 #testfenster_mod .buttonTestfensterRechts{
@@ -318,4 +322,11 @@
     background-color: white;
 
 
+}
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }

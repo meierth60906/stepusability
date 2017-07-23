@@ -24,8 +24,7 @@
             <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
-            <div class="col-4">
-                <span class="col-4 align-self-center">
+            <span class="col-4 align-self-center text-center">
                     <a class="buttonTestfensterLinks" href="testfenster_mod.php">
                         <span class="hidden-sm-down">Moderator</span></a>
                     <a class="buttonTestfensterRechts" href="testfenster_prot.php">
@@ -39,7 +38,6 @@
                         <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
                     </li>
                 </ul>-->
-            </div>
 
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">

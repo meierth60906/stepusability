@@ -24,22 +24,20 @@
             <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
-            <div class="col-4">
-                <span class="col-4 align-self-center">
+            <span class="col-4 align-self-center text-center">
                     <a class="buttonTestfensterLinks" href="testfenster_mod.php">
                         <span class="hidden-sm-down">Moderator</span></a>
                     <a class="buttonTestfensterRechts" href="testfenster_prot.php">
                         <span class="hidden-sm-down">Protokollant</span></a>
                 </span>
-                <!--<ul id="switch" class="nav" role="tablist">
-                    <li class="nav-item">
-                        <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
-                    </li>
-                </ul>-->
-            </div>
+            <!--<ul id="switch" class="nav" role="tablist">
+                <li class="nav-item">
+                    <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                </li>
+                <li class="nav-item">
+                    <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                </li>
+            </ul>-->
 
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
@@ -51,7 +49,7 @@
     </div>
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
-           <div class="col-2 text-right p-5">
+            <div class="col-2 text-right p-5">
                 <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
             </div>
             <div class="col-8 p-5">
@@ -102,11 +100,11 @@
                         <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
 
-                   <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
-                    <div class="form-group col-12 text-center py-2">
-                        <textarea class="form-control" id="message-text" placeholder=""></textarea>
-                    </div>-->
-                   <input type="hidden" name="Protokollant" value="1">
+                    <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
+                     <div class="form-group col-12 text-center py-2">
+                         <textarea class="form-control" id="message-text" placeholder=""></textarea>
+                     </div>-->
+                    <input type="hidden" name="Protokollant" value="1">
                     <input type="hidden" name="Termin" value="1">
                     <input type="hidden" name="TerminUt" value="1">
                     <input type="hidden" name="Textbaustein" value="1">
