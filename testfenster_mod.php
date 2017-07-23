@@ -71,9 +71,9 @@
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
-                            <div class="col-lg-12 pr-3 text-right">
+                           <!-- <div class="col-lg-12 pr-3 text-right">
                                 <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="row">
                             <!--  <div class="col-lg-8 font-weight-bold"><h1>Testskript:</h1></div>-->
@@ -244,9 +244,9 @@
                     <div id="content-postsession" class="col-9 py-3 ">
                         <div class="row">
 
-                            <div class="col-lg-12 pr-3 text-right">
+                          <!--  <div class="col-lg-12 pr-3 text-right">
                                 <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="row">
                             <!--  <div class="col-lg-8 font-weight-bold"><h1>Testskript:</h1></div>-->
