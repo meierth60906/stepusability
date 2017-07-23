@@ -929,10 +929,10 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                    <div id="editor" class="offset-lg-7 col-lg-5 p-0">Editor
+                    <div id="editor" class="offset-lg-8 col-lg-4 p-0">Editor
 
 
-                                        <textarea id="editor">
+                        <textarea id="editor">
                       <p>
                         <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
                       </p>
