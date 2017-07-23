@@ -2249,6 +2249,7 @@ function createLoeswegNew(event) {
 <script>tinymce.init({
         selector: 'textarea',
         height: 500,
+        width:300,
         menubar: false,
         plugins: [
             'advlist autolink lists link image charmap print preview anchor',
