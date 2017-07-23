@@ -100,6 +100,11 @@
                                     <br>
                                     Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
+
+                                <h5>Szenario</h5>
+                                <p>Stellen Sie sich vor Sie sind ein Usability Professional und haben es satt, sich ständig mit den ganzen Papierdokumenten auseinander zu setzten. <br>Vor kurzen sind Sie auf Step gestoßen und möchte nun schauen, was step zu bietet hat.
+                                </p>
+
                             </div>
                         </div>
                     </div>
@@ -216,8 +221,7 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                    für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
+                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
@@ -255,7 +259,7 @@
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
 
                                 <h5>Post-Session Interview Fragen</h5>
-                                <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
+                                <p>Ich bitte Sie nun um Ihre Bewertung der Webanwendung. </p>
                                 <ul>
                                     <li>Gab es etwas das Ihnen besonders gut oder weniger gut gefallen hat?</li>
                                 </ul>
