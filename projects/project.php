@@ -2487,6 +2487,28 @@ function createLoeswegNew(event) {
         });
     });
 
+    $( function loadTasksEval() {
+
+
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            dataType: 'json',
+            url: '../logic/loadTasksEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                var scenarioId = response.szenarioid;
+
+                for(i in scenarioId) {
+                    var scenario = $(".scenario[data-id='" +scenarioId[i] + "']");
+                    var taskContainerEval = scenario.find(".task-container-eval");
+                    taskContainerEval.append(response.echo[i]);
+                }
+
+
+            }
+        });
+    });
+
     $( function loadPostSessionQuestion() {
         $.ajax({
             type: 'post',
