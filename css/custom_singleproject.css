@@ -141,10 +141,16 @@
     background-color: #185077 !important;
     color: white;
 }
-#singleproject .btn-primary {
+#singleproject .btn-primary-blue {
     color: #fff;
     background-color: #0275d8;
     border-color: #0275d8;
+}
+
+#singleproject.btn-primary-blue {
+    color: #fff;
+    background-color:  #185077 !important;
+    border-color:  #185077 !important;
 }
 .aufgabenfeld {
     height: 240px !important;
@@ -271,6 +277,7 @@
 }
 
 .dropdown-menu {
+    color: black;
     background-color: white;
     border: 1px solid #ddd;
     padding-top: 0;
