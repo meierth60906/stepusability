@@ -929,7 +929,7 @@ if (!isset($_GET['id'])) {
                     </div>
 
 
-                    <textarea>
+                    <textarea id="editor">
   <p>
     <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
   </p>

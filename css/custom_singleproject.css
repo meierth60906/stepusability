@@ -141,7 +141,9 @@
     background-color: #185077 !important;
     color: white;
 }
-
+#singleproject .editor{
+    offset-before: 400px;
+}
 #singleproject.btn-primary-blue {
     color: #fff;
     background-color:  #185077 !important;
