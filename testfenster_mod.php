@@ -90,7 +90,7 @@
                                 <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
                                     Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
-                                    Zusätzlich bekommen sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
+                                    Zusätzlich bekommen Sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
                                 </p>
 
                                 <h5>Anweisung Think-Aloud</h5>
