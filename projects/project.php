@@ -2402,6 +2402,7 @@ function createLoeswegNew(event) {
             }
         });
     });
+
     var scenarioQuestionContainerEval = $(".scenario-question-container-eval");
 
     $( function loadScenariosEval() {
@@ -2414,6 +2415,7 @@ function createLoeswegNew(event) {
             }
         });
     });
+
     $( function loadConclusion() {
         $.ajax({
             type: 'post',
