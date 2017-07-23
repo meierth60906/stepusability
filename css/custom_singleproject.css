@@ -141,7 +141,11 @@
     background-color: #185077 !important;
     color: white;
 }
-
+#singleproject .btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
 .aufgabenfeld {
     height: 240px !important;
 }
