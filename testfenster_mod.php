@@ -22,22 +22,20 @@
             <div class="col-4">
                 <h1>Testfenster</h1>
             </div>
-            <div class="col-4">
-                <span class="col-4 align-self-center">
+            <span class="col-4 align-self-center text-center">
                     <a class="buttonTestfensterLinks" href="testfenster_mod.php">
                         <span class="hidden-sm-down">Moderator</span></a>
                     <a class="buttonTestfensterRechts" href="testfenster_prot.php">
                         <span class="hidden-sm-down">Protokollant</span></a>
                 </span>
-                <!--<ul id="switch" class="nav" role="tablist">
-                    <li class="nav-item">
-                        <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
-                    </li>
-                </ul>-->
-            </div>
+            <!--<ul id="switch" class="nav" role="tablist">
+                <li class="nav-item">
+                    <a id="buttonlinks" class="nav-link active" href="testfenster_mod.php" role="tab" data-toggle="tab">Moderator</a>
+                </li>
+                <li class="nav-item">
+                    <a id="buttonrechts" class="nav-link" href="testfenster_prot.php" role="tab" data-toggle="tab">Protokollant</a>
+                </li>
+            </ul>-->
 
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/index.php">
@@ -135,20 +133,20 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Briefing</label>
                                         </div></div>
-                                   <!-- <div class="col-md-8">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="">
-                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
-                                                Technische Vorbereitung</label>
-                                        </div></div>
-                                    <div class="col-md-8">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="">
-                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
-                                                Augencheck</label>
-                                        </div></div>-->
+                                    <!-- <div class="col-md-8">
+                                         <div class="checkbox">
+                                             <label>
+                                                 <input type="checkbox" value="">
+                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                 Technische Vorbereitung</label>
+                                         </div></div>
+                                     <div class="col-md-8">
+                                         <div class="checkbox">
+                                             <label>
+                                                 <input type="checkbox" value="">
+                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                 Augencheck</label>
+                                         </div></div>-->
                                     <div class="col-md-8">
                                         <div class="checkbox">
                                             <label>
@@ -163,13 +161,13 @@
                                                 <span class="cr"><i class="cr-icon icon-check"></i></span>
                                                 Anweisungen Think-Aloud</label>
                                         </div></div>
-                                  <!--  <div class="col-md-8">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="">
-                                                <span class="cr"><i class="cr-icon icon-check"></i></span>
-                                                Eyetracking aktiviert</label>
-                                        </div></div>-->
+                                    <!--  <div class="col-md-8">
+                                          <div class="checkbox">
+                                              <label>
+                                                  <input type="checkbox" value="">
+                                                  <span class="cr"><i class="cr-icon icon-check"></i></span>
+                                                  Eyetracking aktiviert</label>
+                                          </div></div>-->
 
 
 
@@ -219,7 +217,7 @@
                             </tr>
                             <tr>
                                 <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
+                                    für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>

@@ -292,7 +292,10 @@
     border: none !important;
     size: 20px;
 }
-
+#buttonTestfensterLinks{
+    width: 100px;
+    height: 20px;
+}
 
 #testfenster_mod .buttonTestfensterLinks{
     border-top-left-radius:  0.75rem;
@@ -319,4 +322,11 @@
     background-color: white;
 
 
+}
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
