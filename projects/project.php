@@ -814,7 +814,7 @@ if (!isset($_GET['id'])) {
 
                 <div class="row inner-body">
                     <div id="sidebar-eval" class="col-lg-3 c-grey-bg">
-                        <div class="spc-container row pt-3 mt-3">
+                        <div class="spc-container-eval row pt-3 mt-3">
                             <div class="col-6 headline">
                                 Aufgabenliste
                             </div>
@@ -840,9 +840,9 @@ if (!isset($_GET['id'])) {
 
                             <div class="col-lg-12"><hr class="mb-3"></div>
 
-                            <ol class="scenario-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="postSession-container col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="conclusion-container col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="scenario-container-eval col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="postSession-container-eval col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="conclusion-container-eval col-lg-12 links-noblue mb-0"></ol>
 
 
                         </div>
@@ -854,14 +854,14 @@ if (!isset($_GET['id'])) {
                         <div class="col-12">
                             <div class="row">
 
-                                <div class="col-12 p-3">
-                                    <p class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <!--<p class="text-center" id="contentAufgabenBeschreibung">
+                                <div id="taskQuestion"class="col-12 p-3">
+                                    <p id="questionId"class="font-weight-bold text-center">Aufgabe 1</p>
+                                    <p class="text-center" id="contentAufgabenBeschreibung">
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                         accusam et justo duo dolores et ea rebum.
                                     </p>-->
-                                    <ol class="taskQuestionContainer col-lg-12 links-noblue mb-0"></ol>
+                                    <div id="taskQuestion" class="taskQuestionContainer col-lg-12 links-noblue mb-0"></div>
 
 
                                 </div>
@@ -927,65 +927,65 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-<div id="editor" class="offset-lg-6 col-lg-5 p-0">Editor
-</div>
-<!--
-                    <textarea id="editor">
-  <p>
-    <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
-  </p>
+                    <div id="editor" class="offset-lg-6 col-lg-5 p-0">Editor
+                    </div>
+                    <!--
+                                        <textarea id="editor">
+                      <p>
+                        <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
+                      </p>
 
-  <h1>Welcome to the TinyMCE editor demo!</h1>
-  <p>
-    Please try out the features provided in this custom formats example.
-  </p>
-  <p>
-    Note that any <b>MoxieManager</b> file and image management functionality in this example is part of our commercial offering – the demo is to show the integration.
-  </p>
+                      <h1>Welcome to the TinyMCE editor demo!</h1>
+                      <p>
+                        Please try out the features provided in this custom formats example.
+                      </p>
+                      <p>
+                        Note that any <b>MoxieManager</b> file and image management functionality in this example is part of our commercial offering – the demo is to show the integration.
+                      </p>
 
-  <h2>Got questions or need help?</h2>
-  <ul>
-    <li>Our <a href="https://www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
-    <li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/">Community Forum</a>.</li>
-    <li>We also offer enterprise grade support as part of <a href="www.tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
-  </ul>
+                      <h2>Got questions or need help?</h2>
+                      <ul>
+                        <li>Our <a href="https://www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
+                        <li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/">Community Forum</a>.</li>
+                        <li>We also offer enterprise grade support as part of <a href="www.tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
+                      </ul>
 
-  <h2>A simple table to play with</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Cost</th>
-        <th>Really?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>TinyMCE</td>
-        <td>Free</td>
-        <td>YES!</td>
-      </tr>
-      <tr>
-        <td>Plupload</td>
-        <td>Free</td>
-        <td>YES!</td>
-      </tr>
-    </tbody>
-  </table>
+                      <h2>A simple table to play with</h2>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Product</th>
+                            <th>Cost</th>
+                            <th>Really?</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>TinyMCE</td>
+                            <td>Free</td>
+                            <td>YES!</td>
+                          </tr>
+                          <tr>
+                            <td>Plupload</td>
+                            <td>Free</td>
+                            <td>YES!</td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-  <h2>Found a bug?</h2>
-  <p>
-    If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
-  </p>
+                      <h2>Found a bug?</h2>
+                      <p>
+                        If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
+                      </p>
 
-  <h2>Finally ...</h2>
-  <p>
-    Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
-  </p>
-  <p>
-    Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
-  </p>
-</textarea>-->
+                      <h2>Finally ...</h2>
+                      <p>
+                        Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
+                      </p>
+                      <p>
+                        Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
+                      </p>
+                    </textarea>-->
                 </div>
             </div>
             <!--<div class="row inner-body">
@@ -2276,22 +2276,34 @@ function createLoeswegNew(event) {
         }
     });
 </script>
+
+
 <script>
+
+   /** var taskId = 0;
+
+    function editTask(elem) {
+        contentAufgaben.load("taskForm.html");
+        taskId = $(elem).data('id');
+        loadTaskInput(taskId);
+    }*/
+
+
     var taskQuestionContainer = $(".taskQuestionContainer");
 
+function loadTaskQuestion() {
+    $.ajax({
+        data: 'tid=' + taskId,
+        type: 'post',
+        dataType: 'json',
+        url: '../logic/loadTaskQuestion.php',
+        success: function (response) {//response is value returned from php (for your example it's "bye bye"
 
-    function loadTaskQuestion(taskId) {
-        $.ajax({
-            data: 'tid='+taskId,
-            type: 'post',
-            dataType: 'json',
-            url: '../logic/loadTaskQuestion.php',
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+            taskQuestionContainer.val(response.name);
+        }
+    });
+}
 
-                $('#inputTaskDescription').val(response.name);
-            }
-        });
-    }
 </script>
 
 
@@ -2329,6 +2341,19 @@ function createLoeswegNew(event) {
             url: '../logic/loadTaskOnlys.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 scenarioContainer.append(response);
+
+            }
+        });
+    });
+var scenarioContainerEval = $(".scenario-container-eval");
+
+    $( function loadTaskEval() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainerEval.append(response);
 
             }
         });
