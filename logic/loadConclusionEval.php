@@ -28,7 +28,7 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
             <a href='#testaufgaben' onclick='loadConclusionQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Abschlussfrage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>
             </div>
         </div>
-    <ol class='cc-question-container-eval pl-0'>
+    <ol class='cc-question-container pl-0'>
         <hr class='m-0'>
         </ol>
     </li>";

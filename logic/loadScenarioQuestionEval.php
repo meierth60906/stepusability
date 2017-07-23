@@ -8,16 +8,24 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ID = '".$t_id."'");
+$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT a, TEXTBAUSTEIN t WHERE a.ID = t.AB_ID AND t.AB_ID = '".$t_id."'");
 oci_execute($stid);
 
 $fetchRow = oci_fetch_array($stid);
 
 echo json_encode(array(
-    "id" => $fetchRow[0],
+    "taskid" => $fetchRow[0],
     "art" => $fetchRow[1],
-    "utid" => $fetchRow[2],
-    "name" => $fetchRow[3]));
-
+    "name" => $fetchRow[3],
+    "inszenario" => $fetchRow[4],
+    "id" => $fetchRow[5],
+    "bereitgestellt" => $fetchRow[6],
+    "vorbedingung" => $fetchRow[7],
+    "loesungsschritt" => $fetchRow[8],
+    "anmerkung" => $fetchRow[9],
+    "bestandenwenn" => $fetchRow[12],
+    "abbruchwenn" => $fetchRow[13],
+    "ausgewaehlt" => $fetchRow[14],
+    "ausgewaehltweil" => $fetchRow[15]));
 
 ?>

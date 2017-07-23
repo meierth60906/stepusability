@@ -16,26 +16,23 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'PostSessionQ' AND UT_ID = '$ut_id'");
+$stid = oci_parse($conn, "SELECT * FROM ABSCHNITT WHERE ART_AB = 'KatPostSession' AND UT_ID = '$ut_id'");
 oci_execute($stid);
 
-while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-    $psId[] = $row['IN_SZENARIO'];
-    $data[] = "<li class='task item-hover aufgabenliste-task' data-id='". $row['ID'] ."'>
-            <div class='row p-3'>
-                <div class='col-lg-12'>
-                    <a href='#testaufgaben' data-id='". $row['ID'] ."' onclick='loadTaskQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Frage bearbeiten' class='aufgabenliste-task-a button-addTask link-noblue'>
-                        <span class='pr-2 icon-comment icon-align text-muted'></span>" . $row['NAME_AB'] . "
-                    </a>
-                </div>
-            </div>
-          </li>";
-}
 
-echo json_encode(array(
-    "postsessionid" => $psId,
-    "echo" => $data
-));
+while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
+    echo "<li class='postSessionRubrik element-allgemein mb-3' data-id='" . $row['ID'] . "'>
+<div class='row p-3'>
+<div class='col-10'>" . $row['NAME_AB'] . "</div>
+<div class='col-2 text-right'>
+<a href='#testaufgaben' onclick='loadPostSessionQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Interview-Frage' class='link-noblue'><span class='icon-align icon-plus-1'></span></a>
+</div>
+</div>
+<ol class='pl-0 ps-question-container'>
+<hr class='m-0'>
+</ol>
+</li>";
+}
 
 ?>
 

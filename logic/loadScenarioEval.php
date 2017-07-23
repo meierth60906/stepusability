@@ -30,7 +30,7 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     echo "<a href='#testaufgaben' onclick='loadScenarioQuestionEval(this)' data-id='" . $row['ID'] . "' data-toggle='tooltip' data-placement='bottom' title='Szenario bearbeiten' class='aufgabenliste-task-a link-noblue font-weight-bold'>" . $row['NAME_AB'] . "</a>";
     echo "</div>";
     echo "</div>";
-    echo "<ol class='task-container-eval pl-0'>";
+    echo "<ol class='task-container pl-0'>";
     echo "<hr class='m-0'>";
     echo "</ol>";
     echo "</li>";
