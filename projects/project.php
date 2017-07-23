@@ -929,56 +929,21 @@ if (!isset($_GET['id'])) {
                         <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
                       </p>
 
-                      <h1>Welcome to the TinyMCE editor demo!</h1>
-                      <p>
-                        Please try out the features provided in this custom formats example.
-                      </p>
-                      <p>
-                        Note that any <b>MoxieManager</b> file and image management functionality in this example is part of our commercial offering – the demo is to show the integration.
-                      </p>
+                      <h1>Testbericht</h1>
 
-                      <h2>Got questions or need help?</h2>
+                            <h2>Inhalt</h2>
+                            <h3>Zusammenfassung</h3>
                       <ul>
-                        <li>Our <a href="https://www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
-                        <li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/">Community Forum</a>.</li>
-                        <li>We also offer enterprise grade support as part of <a href="www.tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
+                          <li>Zusammenfassung</li>
+                          <li>Testergebnisse</li>
+                          <li>Einstufung der Testergebnisse</li>
+                          <li>Tauglichkeit</li>
+                          <li>Gestaltung</li>
+                          <li>Beschreibung des Testgegenstandes</li>
+                          <li>Zweck der Evaluierung</li>
+
                       </ul>
 
-                      <h2>A simple table to play with</h2>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Product</th>
-                            <th>Cost</th>
-                            <th>Really?</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>TinyMCE</td>
-                            <td>Free</td>
-                            <td>YES!</td>
-                          </tr>
-                          <tr>
-                            <td>Plupload</td>
-                            <td>Free</td>
-                            <td>YES!</td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <h2>Found a bug?</h2>
-                      <p>
-                        If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
-                      </p>
-
-                      <h2>Finally ...</h2>
-                      <p>
-                        Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
-                      </p>
-                      <p>
-                        Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
-                      </p>
                     </textarea> </div>
                 </div>
             </div>
