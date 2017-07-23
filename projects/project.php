@@ -855,14 +855,10 @@ if (!isset($_GET['id'])) {
                             <div class="row">
 
                                 <div id="taskQuestion"class="col-12 p-3">
-                                    <p id="questionId"class="font-weight-bold text-center">Aufgabe 1</p>
-                                    <p class="text-center" id="contentAufgabenBeschreibung">
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam et justo duo dolores et ea rebum.
-                                    </p>-->
-                                    <div id="taskQuestion" class="taskQuestionContainer col-lg-12 links-noblue mb-0"></div>
+                                    <p id="questionId"class="font-weight-bold text-center">Aufgabe</p>
+                                    <p class="text-center" id="taskQuestionContainer">
 
+                                    </p>
 
                                 </div>
 
@@ -2289,9 +2285,10 @@ function createLoeswegNew(event) {
     }*/
 
 
-    var taskQuestionContainer = $(".taskQuestionContainer");
+    var taskQuestionContainer = $("#taskQuestionContainer");
 
-function loadTaskQuestion() {
+function loadTaskQuestion(elem) {
+    taskId = $(elem).data('id');
     $.ajax({
         data: 'tid=' + taskId,
         type: 'post',
@@ -2299,7 +2296,7 @@ function loadTaskQuestion() {
         url: '../logic/loadTaskQuestion.php',
         success: function (response) {//response is value returned from php (for your example it's "bye bye"
 
-            taskQuestionContainer.val(response.name);
+            taskQuestionContainer.html(response.name);
         }
     });
 }
