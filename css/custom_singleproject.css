@@ -136,8 +136,19 @@
 /**#singleproject .protokollant-container {
     overflow-y: scroll;
 }*/
-
-
+#singleproject .dropdown{
+    font-weight: bold !important;
+    background-color: #185077 !important;
+    color: white;
+}
+#singleproject #editor{
+    position: relative;
+}
+#singleproject.btn-primary-blue {
+    color: #fff;
+    background-color:  #185077 !important;
+    border-color:  #185077 !important;
+}
 .aufgabenfeld {
     height: 240px !important;
 }
@@ -263,6 +274,7 @@
 }
 
 .dropdown-menu {
+    color: black; !important;
     background-color: white;
     border: 1px solid #ddd;
     padding-top: 0;
