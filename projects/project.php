@@ -861,8 +861,8 @@ if (!isset($_GET['id'])) {
                                     </div>
 
                                 </div>
-                                <div id="taskQuestion"class="col-12 p-3">
-                                    <p id="questionId"class="font-weight-bold text-center">Aufgabe</p>
+                                <div id="scenarioQuestion"class="col-12 p-3">
+                                    <p id="scenarioQuestionId"class="font-weight-bold text-center">Aufgabe</p>
                                     <div class="text-center" id="scenarioQuestionContainer">
 
                                     </div>
@@ -2386,7 +2386,18 @@ function createLoeswegNew(event) {
             }
         });
     });
+    var scenarioQuestionContainerEval = $(".scenario-question-container-eval");
 
+    $( function loadScenariosEval() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadScenarioEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioQuestionContainerEval.append(response);
+            }
+        });
+    });
     $( function loadConclusion() {
         $.ajax({
             type: 'post',
