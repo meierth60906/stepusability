@@ -2288,6 +2288,7 @@ function createLoeswegNew(event) {
             dataType: 'json',
             url: '../logic/loadPostSessionQuestionEval.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                alert(response.name);
                 $("#postSessionQuestionContainerEval").html(response.name);
             }
         });
