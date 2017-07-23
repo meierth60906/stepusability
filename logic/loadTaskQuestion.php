@@ -1,7 +1,6 @@
 <?php
 
 $t_id = $_POST['tid'];
-$name = $_POST['inputTaskDescription'];
 
 $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {

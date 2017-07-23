@@ -2296,8 +2296,8 @@ function loadTaskQuestion(elem) {
         dataType: 'json',
         url: '../logic/loadTaskQuestion.php',
         success: function (response) {//response is value returned from php (for your example it's "bye bye"
-            alert("Hi!");
-            taskQuestionContainer.html(response.name);
+            alert(response);
+            //*taskQuestionContainer.html(response.name);*/
         }
     });
 }
