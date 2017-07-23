@@ -856,9 +856,9 @@ if (!isset($_GET['id'])) {
 
                                 <div id="taskQuestion"class="col-12 p-3">
                                     <p id="questionId"class="font-weight-bold text-center">Aufgabe</p>
-                                    <p class="text-center" id="taskQuestionContainer">
+                                    <div class="text-center" id="taskQuestionContainer">
 
-                                    </p>
+                                    </div>
 
                                 </div>
 
@@ -2297,7 +2297,7 @@ function loadTaskQuestion(elem) {
         url: '../logic/loadTaskQuestion.php',
         success: function (response) {//response is value returned from php (for your example it's "bye bye"
             alert(response.name);
-            //*taskQuestionContainer.html(response.name);*/
+            $("#taskQuestionContainer").html(response.name);
         }
     });
 }
