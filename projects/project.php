@@ -931,7 +931,7 @@ if (!isset($_GET['id'])) {
                     </div>
                     <div id="editor" class="offset-lg-6 col-lg-5 p-0">Editor
                     </div>
-                    <!--
+
                                         <textarea id="editor">
                       <p>
                         <img title="TinyMCE Logo" src="//www.tinymce.com/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
@@ -987,7 +987,7 @@ if (!isset($_GET['id'])) {
                       <p>
                         Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.
                       </p>
-                    </textarea>-->
+                    </textarea>
                 </div>
             </div>
             <!--<div class="row inner-body">
