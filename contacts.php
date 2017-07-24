@@ -278,10 +278,18 @@
                 $('#contact-company').html(response.firma);
                 $('#contact-mail').html(response.email);
                 $('#contact-birth').html(response.geburtsdatum);
-                $('#contact-mobile').html(response.mobil);
-                $('#contact-private').html(response.privat);
-                $('#contact-adress').html(response.adresse);
 
+                for(i in response.komm) {
+                    $('#contact-komm' + i).html(response.komm[i]);
+                    $('#contact-komm' + i).attr('data-id', response.kommId[i]);
+                }
+
+                for(i in response.skill) {
+                    $('#contact-skill-container').append(
+                        "<span id='contact-skill-" + i +"' data-id='" + response.skillId[i] + "' class='badge badge-pill btn-submit-orange contact-information'>" + response.skill[i] + "</span>"
+                    );
+                }
+                
                 contentContacts.css('display', 'inline');
                 //$('.contact-skill-container').attr("data-id", taskId);
                 //$('.contact-mail').attr("data-id", response.taskid);
@@ -311,10 +319,12 @@
                 $('#contact-name').val(response.name);
                 $('#contact-vorname').val(response.vorname);
                 $('#contact-company').val(response.firma);
-                $('#contact-mail').val(response.email);
+                for(i in response.komm) {
+                    $('#contact-komm' + i).val(response.komm[i]);
+                    $('#contact-komm' + i).attr('data-id', response.kommId[i]);
+                }
+
                 $('#contact-birth').val(response.geburtsdatum);
-                $('#contact-mobile').val(response.mobil);
-                $('#contact-private').val(response.privat);
                 $('#contact-adress').val(response.adresse);
                 $('#contact-save-button').attr('data-id',response.id);
 
@@ -326,34 +336,40 @@
     }
 
     function saveContact(elem) {
+
+        var kommId0 = $("#contact-komm0").attr("data-id");
+        var kommId1 = $("#contact-komm1").attr("data-id");
+        var kommId2 = $("#contact-komm2").attr("data-id");
+
         contactForm.submit(function(event) {
             event.preventDefault();
             contentContacts.load("contact_view.html").css('display', 'none');
             contactId = $(elem).data('id');
             var contactSerialize = contactForm.serialize();
             $.ajax({
-                data: contactSerialize + '&cid=' + contactId,
+                data: contactSerialize + '&cid=' + contactId + '&kid0=' + kommId0 + '&kid1=' + kommId1 + '&kid2=' + kommId2,
                 type: 'post',
                 dataType: 'json',
                 url: 'logic/contactsUpdateData.php',
                 success: function (response) {
-
-                    $('#contact-edit-button').attr('data-id',response.id);
-
-                    $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
-                    if($.trim(response.favorit) == 1) {
-                        $('#contact-name').html("<span style='font-size: 18pt; color: #e84a29' class='icon-star icon-align'></span> " + response.name + ", " + response.vorname);
-                    } else {
-                        $('#contact-name').html(response.name + ", " + response.vorname);
-                    }
-
-                    $('#contact-company').html(response.firma);
-                    $('#contact-mail').html(response.email);
-                    $('#contact-birth').html(response.geburtsdatum);
-                    $('#contact-mobile').html(response.mobil);
-                    $('#contact-private').html(response.privat);
-                    $('#contact-adress').html(response.adresse);
-                    contentContacts.css('display', 'inline');
+                        alert(response);
+//                    $('#contact-edit-button').attr('data-id',response.id);
+//
+//                    $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
+//                    if($.trim(response.favorit) == 1) {
+//                        $('#contact-name').html("<span style='font-size: 18pt; color: #e84a29' class='icon-star icon-align'></span> " + response.name + ", " + response.vorname);
+//                    } else {
+//                        $('#contact-name').html(response.name + ", " + response.vorname);
+//                    }
+//                    $('#contact-company').html(response.firma);
+//                    $('#contact-birth').html(response.geburtsdatum);
+//                    for(i in response.komm) {
+//
+//                        $('#contact-komm' + i).val(response.komm[i]);
+//                        $('#contact-komm' + i).data('id', response.kommId[i]);
+//                    }
+//                    $('#contact-adress').html(response.adresse);
+//                    contentContacts.css('display', 'inline');
                 }
             });
 

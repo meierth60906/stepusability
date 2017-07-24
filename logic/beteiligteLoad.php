@@ -18,8 +18,8 @@ $fetchRowCount = oci_fetch_row($stid_if);
 
 if($fetchRowCount) {
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-        $nameinitial = substr($fetchRowCount[1], 0, 1);
-        $vornameinitial = substr($fetchRowCount[2], 0, 1);
+        $nameinitial = substr($row['NAME'], 0, 1);
+        $vornameinitial = substr($row['VORNAME'], 0, 1);
 
         echo "<a style='text-decoration: none; color: black;' href='../contacts.php?id=" . $row['ID'] . "'><div class='teammember row'>
              <div class='pl-0 col-2 hidden-lg-down'>
