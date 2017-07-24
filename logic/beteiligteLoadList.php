@@ -32,11 +32,7 @@ $fetchRowCount = oci_fetch_row($stid2);
 
 if($fetchRowCount) {
     while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
-        if($fetch_talkto['ID'] === $row['ID']) {
-            echo"<option value='" . $row['ID'] . "' selected>" . $row['NAME'] . ", " . $row['VORNAME'] . "</option>";
-        } else {
             echo"<option value='" . $row['ID'] . "'>" . $row['NAME'] . ", " . $row['VORNAME'] . "</option>";
-        }
     }
 } else {
     echo "<option disabled>Keine Kontakte vorhanden</option>";

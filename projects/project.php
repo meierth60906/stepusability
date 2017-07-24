@@ -1373,42 +1373,36 @@ if (!isset($_GET['id'])) {
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="editProjectMembersForm" class="form" action="../logic/editProjectMembers.php" method="post">
+
                 <div class="modal-body">
+                    <form id="addProjectMembersForm" class="form" action="../logic/beteiligteSaveNew.php" method="post">
 
                     <!--Ansprechpartner-->
                     <div class="form-group row formTask pt-3">
-                        <div class="col-lg-9 pr-1">
+                        <div class="col-lg-7 pr-1">
                             <select class="form-control custom-select" name="chooseProjectMember" id="chooseProjectMember">
-                                <option value="" disabled selected>Kontakt zum Hinzufügen auswählen...</option>
+                                <option value="" disabled selected="selected">Kontakt zum Hinzufügen auswählen...</option>
                             </select>
                         </div>
-                        <div class="col-lg-3 pl-1">
+                        <div class="col-lg-5 pl-1">
                             <select class="form-control custom-select" name="chooseProjectMemberRole" id="chooseProjectMemberRole">
                                 <option value="" disabled selected>Rolle...</option>
                             </select>
                         </div>
+
                     </div>
 
+
+                    <div class="row">
+                        <div class="offset-8 col-lg-2 pr-1">
+                            <button type="submit" class="btn btn-submit-grey"><span class="icon-plus"></span> Hinzufügen</button>
+                        </div>
+                    </div>
+                    </form>
                     <div class="form-group row formTask pt-3">
                         <div class="col-lg-12">Projektbeteiligte:<hr></div>
                         <div id="chosenMembers" class="col-lg-12">
-                            <div class='teammember row'>
-                                <div class='pl-0 col-2 hidden-lg-down text-center'>
-                                    <div class='img-placeholder c-darkgrey-bg'>AA</div>
-                                </div>
-                                <div class='pl-0 col-5 pl-xl-2 alignmiddle'>
-                                    Bernd Bogner
-                                </div>
-                                <div class='pl-0 col-3 pl-xl-2'>
-                                    <select class="form-control custom-select" name="chooseProjectMemberRole" id="chooseProjectMemberRole">
-                                        <option value="" disabled selected>Rolle...</option>
-                                    </select>
-                                </div>
-                                <div class='pr-0 col-1 text-right'>
-                                    <div class='minus-placeholder c-orange-bg'>‒</div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
@@ -1418,7 +1412,7 @@ if (!isset($_GET['id'])) {
                 <div class="modal-footer text-center">
                     <input type="submit" value="Speichern" class="btn btn-submit-blue" />
                 </div>
-            </form>
+
 
         </div>
     </div>
@@ -1529,8 +1523,10 @@ if (!isset($_GET['id'])) {
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
-<script>
+
     var teamContainer = $('#teamcontainer');
+    var chosenMembers = $('#chosenMembers');
+
 
     $(function loadBeteiligte() {
 
@@ -1544,17 +1540,31 @@ if (!isset($_GET['id'])) {
         });
     });
 
-    $( function loadTaskOnlys() {
+    $(function loadBeteiligteModal() {
+
         $.ajax({
             type: 'post',
             data: 'utid='+pageId,
-            url: '../logic/loadTaskOnlys.php',
+            url: '../logic/beteiligteModalLoad.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                scenarioContainer.append(response);
-
+                chosenMembers.append(response);
             }
         });
     });
+
+//    $(function loadBeteiligteModalRoles() {
+//
+//        var personId = $('#chooseProjectMemberRole').parent('.teammember').data('id');
+//
+//        $.ajax({
+//            type: 'post',
+//            data: 'utid='+pageId+'&pid='+,
+//            url: '../logic/beteiligteLoadRolesEdit.php',
+//            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+//                chosenMembers.append(response);
+//            }
+//        });
+//    });
 
 
     $(function checkMilestones() {
@@ -1687,6 +1697,48 @@ if (!isset($_GET['id'])) {
         })
     });
 
+    $( function loadProjectMemberList() {
+        $.ajax({
+            type: 'post',
+            url: '../logic/beteiligteLoadList.php',
+            data: 'utid='+pageId,
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#chooseProjectMember").append(response);
+            }
+        })
+    });
+
+    $( function loadRoles() {
+        $.ajax({
+            type: 'post',
+            url: '../logic/beteiligteLoadRoles.php',
+            data: 'utid='+pageId,
+            success: function (response) {
+                $("#chooseProjectMemberRole").append(response);
+            }
+        })
+    });
+
+    $("#addProjectMembersForm").submit(function(event){
+        // cancels the form submission
+        event.preventDefault();
+
+        saveNewMember();
+    });
+
+    function saveNewMember() {
+        var addMembersForm = $('#addProjectMembersForm').serialize();
+        alert(addMembersForm);
+        $.ajax({
+            type: 'post',
+            url: '../logic/beteiligteSaveNew.php',
+            data: addMembersForm + '&utid=' + pageId,
+            success: function (response) {
+                chosenMembers.append(response);
+            }
+        });
+    }
+
 
 
 </script>
@@ -1734,12 +1786,6 @@ if (!isset($_GET['id'])) {
 
     }
 </script>
-
-
-</script>
-
-
-
 
 <!-- Rubriken erstellen ALINA -->
 <script>
