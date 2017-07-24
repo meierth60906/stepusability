@@ -16,11 +16,66 @@
                             <p class="visibility" name="Name_der_Vorlage" id="Name_der_Vorlage">Dateiname:</p>
                             <input class="visibility" name="Vorlage_Name" type="text" id="Vorlage_Name" placeholder="Name der Vorlage">
                             <input type="hidden" name="Vorlage_Art" id="Vorlage_Art">
-                            <textarea class="visibility" name="Vorlage_Text" class="editor" id="Vorlage_Text">
-                            </textarea>
+                            <!--<textarea class="visibility" name="Vorlage_Text" class="editor" id="Vorlage_Text">
+                            </textarea>-->
+
+                            <textarea class="unterlageneditor">
+
+                            <h1>Testbericht</h1>
+
+                            <h2>Inhalt</h2>
+                            <h3>Zusammenfassung</h3>
+                            <ul>
+                                <li>Zusammenfassung</li>
+                                <li>Testergebnisse</li>
+                                <li>Einstufung der Testergebnisse</li>
+                                <li>Tauglichkeit</li>
+                                <li>Gestaltung</li>
+                                <li>Beschreibung des Testgegenstandes</li>
+                                <li>Zweck der Evaluierung</li>
+
+                            </ul>
+                        </textarea>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
+
+        <script>
+
+            tinymce.init({
+                selector: '.evaleditor',
+                height: 500,
+                branding: false,
+                plugins: 'table',
+                resize: 'both',
+                body_id: 'editor',
+                content_css: [
+                    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+                    '//www.tinymce.com/css/codepen.min.css'],
+
+                style_formats: [
+                    { title: 'Bold text', inline: 'strong' },
+                    { title: 'Red text', inline: 'span', styles: { color: '#ff0000' } },
+                    { title: 'Red header', block: 'h1', styles: { color: '#ff0000' } },
+                    { title: 'Badge', inline: 'span', styles: { display: 'inline-block', border: '1px solid #2276d2', 'border-radius': '5px', padding: '2px 5px', margin: '0 2px', color: '#2276d2' } },
+                    { title: 'Table row 1', selector: 'tr', classes: 'tablerow1' }
+                ],
+                formats: {
+                    alignleft: { selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'left' },
+                    aligncenter: { selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'center' },
+                    alignright: { selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'right' },
+                    alignfull: { selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img', classes: 'full' },
+                    bold: { inline: 'span', 'classes': 'bold' },
+                    italic: { inline: 'span', 'classes': 'italic' },
+                    underline: { inline: 'span', 'classes': 'underline', exact: true },
+                    strikethrough: { inline: 'del' },
+                    customformat: { inline: 'span', styles: { color: '#00ff00', fontSize: '20px' }, attributes: { title: 'My custom format' }, classes: 'example1' },
+                }
+            });
+        </script>
