@@ -874,48 +874,37 @@ if (!isset($_GET['id'])) {
 
                             <div class="row">
                                 <div class="protokollant-container col-12">
+
+
                                     <div class="protokollant-card">
                                         <div class="row px-4 p-4">
                                             <div class="col-md-12">
-                                                <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                                <p class="font-weight-bold middle-two-line d-inline pl-3">Anna Apfel</p>
+                                                <img class="img-fluid img-placeholder rounded-circle" src="../img/alina.jpg">
+                                                <p class="font-weight-bold middle-two-line d-inline pl-3">Alina Schark</p>
                                                 <hr>
                                             </div>
                                         </div>
                                         <div class="row px-4">
                                             <div class="col-lg-4">Lösungsschritte:</div>
                                             <div class="col-lg-8 font-weight-bold">
-                                                Navigationsleiste auf Projekte - Übersicht aller Projekte - erstellen - Namen eingeben
+                                                <ul>
+                                                    <li>Zitat: "Auf dem Dashboard direkt kann ich kein neues Projekt anlegen."</li>
+                                                    <li>"Projekte" in der linken Menüleiste auswählen</li>
+                                                    <li>Auf "+ Erstellen" - Button klicken</li>
+                                                    <li>Bei "Titel" den Namen "Demo" eingeben</li>
+                                                    <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                                                    <li>Auf "Erstellen" klicken</li>
+                                                </ul>
 
                                             </div>
                                         </div>
                                         <div class="row px-4 p-4">
                                             <div class="col-lg-4">Anmerkungen:</div>
                                             <div class="col-lg-8 font-weight-bold">
-                                                keine
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="protokollant-card">
-                                        <div class="row px-4 p-4">
-                                            <div class="col-md-12">
-                                                <img class="img-fluid img-placeholder rounded-circle" src="../img/user.jpg">
-                                                <p class="font-weight-bold middle-two-line d-inline pl-3">Bernd Bogner</p>
-                                                <hr>
-                                            </div>
-                                        </div>
-                                        <div class="row px-4">
-                                            <div class="col-lg-4">Lösungsschritte:</div>
-                                            <div class="col-lg-8 font-weight-bold">
-                                                Auf Dashboard geht es nicht > Navigationsleiste auf Projekte - Übersicht aller Projekte - erstellen - Namen eingeben
-
-                                            </div>
-                                        </div>
-                                        <div class="row px-4 p-4">
-                                            <div class="col-lg-4">Anmerkungen:</div>
-                                            <div class="col-lg-8 font-weight-bold">
-
+                                                <ul>
+                                                    <li>positive Anmerkung über Design und Übersichtlichkeit</li>
+                                                    <li>schnell gefunden</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
