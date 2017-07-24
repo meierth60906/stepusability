@@ -1505,7 +1505,7 @@ if (!isset($_GET['id'])) {
 <?php include ('scripts.html'); ?>
 
 <script src="../js/jquery-sortable-min.js"></script>
-
+<script>
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
 
@@ -2197,9 +2197,9 @@ function createLoeswegNew(event) {
     function editAgreement() {
         contentUnterlagen.load("agreementForm.php");
     }
-    function openEditor() {
-        contentUnterlagen.load("editor.js");
-    }
+//    function openEditor() {
+//        contentUnterlagen.load("editor.js");
+//    }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
     }
