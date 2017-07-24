@@ -1505,12 +1505,10 @@ if (!isset($_GET['id'])) {
 <?php include ('scripts.html'); ?>
 
 <script src="../js/jquery-sortable-min.js"></script>
-<script>
 
     <!--Editor-->
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
-<script>
-</script>
+
 <script>
     function ShowTemplate(Art, Name, Text) {
         for (var i = tinymce.editors.length - 1; i > -1; i--) {
