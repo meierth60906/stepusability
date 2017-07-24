@@ -1,7 +1,6 @@
 <?php
 
 $c_id = $_GET['id'];
-$komm = array();
 
 $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
@@ -11,7 +10,6 @@ if (!$conn) {
 
 $stid = oci_parse($conn, "SELECT * FROM PERSON WHERE ID = '".$c_id."'");
 oci_execute($stid);
-
 $fetchRow = oci_fetch_array($stid);
 
 $stid_email = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Email'");
@@ -45,7 +43,6 @@ echo json_encode(array(
     "name" => $fetchRow[1],
     "vorname" => $fetchRow[2],
     "geburtsdatum" => $fetchRow[3],
-    "anrede" => $fetchRow[4],
     "firma" => $fetchRow[5],
     "favorit" => $fetchRow[6],
     "team" => $fetchRow[7],
