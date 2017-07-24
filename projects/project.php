@@ -1516,41 +1516,6 @@ if (!isset($_GET['id'])) {
 <?php include ('scripts.html'); ?>
 
 <script src="../js/jquery-sortable-min.js"></script>
-<!--Editor-->
-<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
-<script>
-</script>
-<script>
-    function ShowTemplate(Art, Name, Text) {
-        for (var i = tinymce.editors.length - 1; i > -1; i--) {
-            var ed_id = tinymce.editors[i].id;
-            tinyMCE.execCommand("mceRemoveEditor", true, ed_id);
-        }
-
-        document.getElementById("Vorlage_Name").value = Name;
-        document.getElementById("Name_der_Vorlage").style.visibility = 'visible';
-        document.getElementById("Vorlage_Name").style.visibility = 'visible';
-        document.getElementById("Vorlage_Art").value = Art;
-        document.getElementById("Vorlage_Text").value = Text;
-        tinymce.init({
-            selector: 'textarea',
-            height: 500,
-            theme: 'modern',
-            plugins: [
-                'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-                'searchreplace wordcount visualblocks visualchars code fullscreen',
-                'insertdatetime media nonbreaking save table contextmenu directionality',
-                'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
-            ],
-            toolbar1: 'save | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-            toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
-            image_advtab: true, content_css: 'https://tinymce.com/css/codepen.min.css',
-            branding: false,
-            language_url: '/step/tiny/mce/langs/de.js',
-            save_enablewhendirty: true
-        });
-    }
-
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
@@ -1850,8 +1815,7 @@ function createAgreement() {
             "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
             "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
             "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<a class='#unterlagen' onclick='editAgreement(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage 1</li></a>" +
+            "<a class='#unterlagen' onclick='editAgreement(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
             "<div class='dropdown-divider m-0'></div>" +
             "</div>" +
             "</div>" +
@@ -2243,6 +2207,9 @@ function createLoeswegNew(event) {
 
     function editAgreement() {
         contentUnterlagen.load("agreementForm.php");
+    }
+    function openEditor() {
+        contentUnterlagen.load("projectEditor.php");
     }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
