@@ -2317,7 +2317,7 @@ function createLoeswegNew(event) {
             data: 'tid=' + taskId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/loadScenarioQuestion.php',
+            url: '../logic/loadScenarioQuestionEval.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 $("#scenarioQuestionContainer").html(response.name);
             }
