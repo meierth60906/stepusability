@@ -1888,7 +1888,7 @@ if (!isset($_GET['id'])) {
             return "<li class='task item-hover'>" +
                 "<div class='row p-3'>" +
                 "<div class='col-lg-12'>" +
-                "<a href='#unterlagen' onclick='openEditor()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
                 "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #2" +
                 "</a>" +
                 "</div>" +
@@ -2255,7 +2255,7 @@ if (!isset($_GET['id'])) {
         contentUnterlagen.load("agreementForm.php");
     }
     function openEditor() {
-        contentUnterlagen.load("editor.php");
+        contentUnterlagen.load("editor.html");
     }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
