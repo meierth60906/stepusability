@@ -60,6 +60,7 @@
                 </p>
                 <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
                 <div class="text-center" id="taskQuestionContainerTF"></div>
+                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
             </div>
             <div class="col-2 p-5">
@@ -143,32 +144,7 @@
             }
         });
     }
-    var scenarioQuestionContainerTF = $("#scenarioQuestionContainerTF");
 
-    function loadScenarioQuestion(elem) {
-        taskId = $(elem).data('id');
-
-        $.ajax({
-            data: 'tid=' + taskId,
-            type: 'post',
-            dataType: 'json',
-            url: '../logic/loadScenarioQuestionTF.php',
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                $("#scenarioQuestionContainerTF").html(response.name);
-            }
-        });
-    }
-    $( function loadTaskOnlys() {
-        $.ajax({
-            type: 'post',
-            data: 'utid='+pageId,
-            url: '../logic/loadTaskOnlys.php',
-            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                scenarioContainer.append(response);
-
-            }
-        });
-    });
     var scenarioContainerTF= $(".scenario-container-tf");
 
     $( function loadTaskTestfenster() {
@@ -182,6 +158,8 @@
             }
         });
     });
+
+
 </script>
 </body>
 
