@@ -86,6 +86,7 @@
                 </div>
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Lösungsschritte</label>
+                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
                 <div class="form-group col-12 py-2">
                     <ul>
