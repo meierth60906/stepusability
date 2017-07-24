@@ -901,7 +901,10 @@ if (!isset($_GET['id'])) {
                                         <div class="row px-4 p-4">
                                             <div class="col-lg-4">Anmerkungen:</div>
                                             <div class="col-lg-8 font-weight-bold">
-
+                                                <ul>
+                                                    <li>posotive Anmerkung über Design und Übersichtlichkeit</li>
+                                                    <li>schnell gefunden</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
