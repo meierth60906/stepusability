@@ -55,6 +55,9 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
+
+                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
+                <div class="text-center" id="taskQuestionContainer">
                     Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
@@ -119,8 +122,53 @@
         </div>
     </div>
 </section>
-<?php include ('scripts.html'); ?>
 
+
+<?php include ('scripts.html'); ?>
+<script>
+
+
+    var taskQuestionContainer = $("#taskQuestionContainer");
+
+    function loadTaskQuestionEval(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskQuestionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#taskQuestionContainer").html(response.name);
+            }
+        });
+    }
+
+    $( function loadTaskOnlys() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskOnlys.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainer.append(response);
+
+            }
+        });
+    });
+    var scenarioContainerEval = $(".scenario-container-eval");
+
+    $( function loadTaskEval() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainerEval.append(response);
+
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
