@@ -1838,8 +1838,8 @@ function createAgreement() {
             "<div class='col-2 text-right'>" +
             "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
             "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='openEditor(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+            "<a class='#unterlagen' onclick='createAgreementEditor(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+            "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
             "<div class='dropdown-divider m-0'></div>" +
             "</div>" +
             "</div>" +
@@ -1882,6 +1882,28 @@ function createAgreementNew(event) {
 
     }
 
+function createAgreementEditor(event) {
+
+    function insideAgreementNew() {
+        return "<li class='task item-hover'>" +
+            "<div class='row p-3'>" +
+            "<div class='col-lg-12'>" +
+            "<a href='#unterlagen' onclick='openEditor()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+            "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
+            "</a>" +
+            "</div>" +
+            "</div>" +
+            "</li>";
+    }
+
+    var parentAgreementNew= $(event).closest(".agreementRubrik");
+    var agmtContainer = parentAgreementNew.find(".agreement-container");
+    agmtContainer.append(insideAgreementNew);
+}
+
+function loadAgreements(event) {
+
+}
 
 function createProtocol() {
 
