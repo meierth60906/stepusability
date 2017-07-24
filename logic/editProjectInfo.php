@@ -14,7 +14,7 @@ $desc = $_POST['editProjectInfo-desc'];
 
 // Insert into several tables, rolling back the changes if an error occurs
 
-$conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+$conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
 
 $stid = oci_parse($conn, "update USABILITYTEST SET NAME='".$title."', AUFTRAGGEBER='".$ag."', BESCHREIBUNG='".$desc."' WHERE ID='".$ut_id."'");

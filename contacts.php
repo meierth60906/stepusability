@@ -330,7 +330,6 @@
             event.preventDefault();
             contentContacts.load("contact_view.html").css('display', 'none');
             contactId = $(elem).data('id');
-
             var contactSerialize = contactForm.serialize();
             $.ajax({
                 data: contactSerialize + '&cid=' + contactId,
@@ -338,6 +337,7 @@
                 dataType: 'json',
                 url: 'logic/contactsUpdateData.php',
                 success: function (response) {
+
                     $('#contact-edit-button').attr('data-id',response.id);
 
                     $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
@@ -356,6 +356,7 @@
                     contentContacts.css('display', 'inline');
                 }
             });
+
         })
     }
 </script>
