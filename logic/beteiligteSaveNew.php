@@ -11,7 +11,7 @@ $person = $_POST['chooseProjectMember'];
 $role = $_POST['chooseProjectMemberRole'];
 
 
-$conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+$conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
 $stid = oci_parse($conn, "INSERT into P_BETEILIGT_UT (UT_ID, PERSON_ID, ROLLE_ID) values (".$ut_id.", ".$person.", ".$role.")");
 
