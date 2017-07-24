@@ -8,7 +8,7 @@ if (!$conn) {
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT COUNT(*) AS COUNT FROM USABILITYTEST WHERE STATUS = 'Laufend'");
+$stid = oci_parse($conn, "SELECT COUNT(*) AS COUNT FROM PERSON WHERE FAVORIT = 1");
 oci_execute($stid);
 
 $fetchRowCount = oci_fetch_row($stid);

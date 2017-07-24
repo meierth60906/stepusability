@@ -352,26 +352,26 @@
                 dataType: 'json',
                 url: 'logic/contactsUpdateData.php',
                 success: function (response) {
-                        alert(response);
-//                    $('#contact-edit-button').attr('data-id',response.id);
-//
-//                    $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
-//                    if($.trim(response.favorit) == 1) {
-//                        $('#contact-name').html("<span style='font-size: 18pt; color: #e84a29' class='icon-star icon-align'></span> " + response.name + ", " + response.vorname);
-//                    } else {
-//                        $('#contact-name').html(response.name + ", " + response.vorname);
-//                    }
-//                    $('#contact-company').html(response.firma);
-//                    $('#contact-birth').html(response.geburtsdatum);
-//                    for(i in response.komm) {
-//
-//                        $('#contact-komm' + i).val(response.komm[i]);
-//                        $('#contact-komm' + i).data('id', response.kommId[i]);
-//                    }
-//                    $('#contact-adress').html(response.adresse);
-//                    contentContacts.css('display', 'inline');
+                    $('#contact-edit-button').attr('data-id',response.id);
+
+                    $('.img-placeholder-big').html(response.nameinitial + response.vornameinitial);
+                    if($.trim(response.favorit) == 1) {
+                        $('#contact-name').html("<span style='font-size: 18pt; color: #e84a29' class='icon-star icon-align'></span> " + response.name + ", " + response.vorname);
+                    } else {
+                        $('#contact-name').html(response.name + ", " + response.vorname);
+                    }
+                    $('#contact-company').html(response.firma);
+                    $('#contact-birth').html(response.geburtsdatum);
+                    for(i in response.komm) {
+
+                        $('#contact-komm' + i).val(response.komm[i]);
+                        $('#contact-komm' + i).data('id', response.kommId[i]);
+                    }
+                    $('#contact-adress').html(response.adresse);
+
                 }
             });
+            contentContacts.css('display', 'inline');
 
         })
     }
