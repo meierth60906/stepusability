@@ -2198,7 +2198,7 @@ function createLoeswegNew(event) {
         contentUnterlagen.load("agreementForm.php");
     }
     function openEditor() {
-        contentUnterlagen.load("projectEditor.php");
+        contentUnterlagen.load("editor.js");
     }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
