@@ -40,7 +40,7 @@
             </ul>-->
 
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="projects/index.php">
+                <a class="titlebar-link" href="projects/project.php?id=161#evaluation.php">
                     <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
             </div>
@@ -50,7 +50,7 @@
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
             <div class="col-2 text-right p-5">
-                <a class="c-orange" href="#testaufgabenladen"><i class="question-angles icon-angle-left"></i></a>
+                <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
             </div>
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
