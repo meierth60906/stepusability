@@ -55,12 +55,12 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
                 <p class="text-center">
-
-                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
-                <div class="text-center" id="taskQuestionContainer">
                     Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
+                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
+                <div class="text-center" id="taskQuestionContainer"></div>
+
             </div>
             <div class="col-2 p-5">
                 <a class="c-orange" href="testfenster_prot2.php"><i class="question-angles icon-angle-right"></i></a>
