@@ -59,7 +59,7 @@
 
                 </p>
                 <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
-                <div class="text-center" id="taskQuestionContainer"></div>
+                <div class="text-center" id="taskQuestionContainerTF"></div>
 
             </div>
             <div class="col-2 p-5">
