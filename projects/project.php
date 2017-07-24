@@ -2261,7 +2261,7 @@ function createLoeswegNew(event) {
 <script>
 
     tinymce.init({
-        selector: 'editor',
+        selector: 'div',
         height: 500,
         branding: false,
         plugins: 'table',
