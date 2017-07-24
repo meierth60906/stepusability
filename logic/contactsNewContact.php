@@ -9,6 +9,7 @@ $plz = $_POST['contact-plz'];
 $ort = $_POST['contact-ort'];
 $geburtsdatum = $_POST['contact-geburtsdatum'];
 $favorit = $_POST['contact-favourite'];
+
 if (isset($_POST['contact-team'])) {
     $team = $_POST['contact-team'];
 } else {

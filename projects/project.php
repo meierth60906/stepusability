@@ -1217,7 +1217,7 @@ if (!isset($_GET['id'])) {
                          </table>
                      </div>
                  </div>
-                 <!--hier Ende content-->
+
         </div>
     </div>
 
@@ -1522,7 +1522,7 @@ if (!isset($_GET['id'])) {
 </script>
 <script>
     function ShowTemplate(Art, Name, Text) {
-        for (var i = tinymce.editors.length - 1 ; i > -1 ; i--) {
+        for (var i = tinymce.editors.length - 1; i > -1; i--) {
             var ed_id = tinymce.editors[i].id;
             tinyMCE.execCommand("mceRemoveEditor", true, ed_id);
         }
@@ -1544,18 +1544,19 @@ if (!isset($_GET['id'])) {
             ],
             toolbar1: 'save | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
             toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
-            image_advtab: true,            content_css: 'https://tinymce.com/css/codepen.min.css',
+            image_advtab: true, content_css: 'https://tinymce.com/css/codepen.min.css',
             branding: false,
-            language_url : '/step/tiny/mce/langs/de.js',
+            language_url: '/step/tiny/mce/langs/de.js',
             save_enablewhendirty: true
         });
+    }
 
 
 <!--ALLGEMEIN-->
 <!--Projektinfos laden-->
 
-    var teamContainer = $('#teamcontainer');
-    var chosenMembers = $('#chosenMembers');
+    teamContainer = $('#teamcontainer');
+    chosenMembers = $('#chosenMembers');
 
 
     $(function loadBeteiligte() {
@@ -1631,7 +1632,8 @@ if (!isset($_GET['id'])) {
 
             }
         });
-    })
+    });
+
 </script>
 
 

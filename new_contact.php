@@ -16,7 +16,7 @@
 <body id="body-contacts">
 
 <?php include ('navigation.html'); ?>
-<form id="contactForm" class="form" action="logic/insertContact.php" method="post">
+<form id="contactForm" class="form" action="logic/contactsNewContact.php" method="post">
 <section id="contacts" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
