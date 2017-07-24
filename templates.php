@@ -14,8 +14,6 @@
     <title>Vorlagen | step</title>
     <?php include('head.html') ?>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
-    <script>
-     </script>
 
     <script>
         function ShowTemplate(Art, Name, Text) {
