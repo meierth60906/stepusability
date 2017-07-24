@@ -915,24 +915,25 @@ if (!isset($_GET['id'])) {
                     <div id="editor" class="offset-lg-8 col-lg-4 p-0">Editor
 
 
-                        <textarea>
+                        <textarea class="editor">
 
-                      <h1>Testbericht</h1>
+                            <h1>Testbericht</h1>
 
                             <h2>Inhalt</h2>
                             <h3>Zusammenfassung</h3>
-                      <ul>
-                          <li>Zusammenfassung</li>
-                          <li>Testergebnisse</li>
-                          <li>Einstufung der Testergebnisse</li>
-                          <li>Tauglichkeit</li>
-                          <li>Gestaltung</li>
-                          <li>Beschreibung des Testgegenstandes</li>
-                          <li>Zweck der Evaluierung</li>
+                            <ul>
+                                <li>Zusammenfassung</li>
+                                <li>Testergebnisse</li>
+                                <li>Einstufung der Testergebnisse</li>
+                                <li>Tauglichkeit</li>
+                                <li>Gestaltung</li>
+                                <li>Beschreibung des Testgegenstandes</li>
+                                <li>Zweck der Evaluierung</li>
 
-                      </ul>
+                            </ul>
 
-                    </textarea> </div>
+                        </textarea>
+                    </div>
                 </div>
             </div>
             <!--<div class="row inner-body">
@@ -1274,38 +1275,38 @@ if (!isset($_GET['id'])) {
                 </div>-->
 
 
-    <!--<div id="aufgabe-eval" class="row m-0 p-3">
-        <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
-        <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
-    </div>
+            <!--<div id="aufgabe-eval" class="row m-0 p-3">
+                <div class="col-lg-8 aufgabe-middle">Aufgabe Und hier noch ein Bisschen Fülltext. Das ist die Frage, die dem Probanden gestellt wird.</div>
+                <div class="col-lg-4 text-right"><span class="img-placeholder c-darkgrey-bg mr-2">PN</span>Proband Name</div>
+            </div>
 
 
-    <div class="row">
+            <div class="row">
 
-        <!--                            Projektinfo -->
-    <!--
-    <div class="col-lg-12 p-3">
-        <div class="row my-3 ml-2 ml-lg-3 mr-2">
-            <div class="col-lg-12 element-allgemein p-3">
-                <div class="row">
-                    <div class="col-10 col-sm-6 headline">
-                        Projektinformationen
+                <!--                            Projektinfo -->
+            <!--
+            <div class="col-lg-12 p-3">
+                <div class="row my-3 ml-2 ml-lg-3 mr-2">
+                    <div class="col-lg-12 element-allgemein p-3">
+                        <div class="row">
+                            <div class="col-10 col-sm-6 headline">
+                                Projektinformationen
+                            </div>
+                            <div class="col-2 col-sm-6 text-right">
+                                <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
+                            </div>
+                            <div class="col-12"><hr class="pb-3"></div>
+                        </div>
                     </div>
-                    <div class="col-2 col-sm-6 text-right">
-                        <a href="project.php"><span class="icon-pencil"></span><span class="hidden-md-down"> Bearbeiten</span></a>
-                    </div>
-                    <div class="col-12"><hr class="pb-3"></div>
                 </div>
             </div>
+        </div>-->
+
+
+
+
+
         </div>
-    </div>
-</div>-->
-
-
-
-
-
-    </div>
     </div>
 
 </section>
@@ -1380,8 +1381,8 @@ if (!isset($_GET['id'])) {
                 </button>
             </div>
 
-                <div class="modal-body">
-                    <form id="addProjectMembersForm" class="form" action="../logic/beteiligteSaveNew.php" method="post">
+            <div class="modal-body">
+                <form id="addProjectMembersForm" class="form" action="../logic/beteiligteSaveNew.php" method="post">
 
                     <!--Ansprechpartner-->
                     <div class="form-group row formTask pt-3">
@@ -1404,20 +1405,20 @@ if (!isset($_GET['id'])) {
                             <button type="submit" class="btn btn-submit-grey"><span class="icon-plus"></span> Hinzufügen</button>
                         </div>
                     </div>
-                    </form>
-                    <div class="form-group row formTask pt-3">
-                        <div class="col-lg-12">Projektbeteiligte:<hr></div>
-                        <div id="chosenMembers" class="col-lg-12">
+                </form>
+                <div class="form-group row formTask pt-3">
+                    <div class="col-lg-12">Projektbeteiligte:<hr></div>
+                    <div id="chosenMembers" class="col-lg-12">
 
-                        </div>
                     </div>
-
-
                 </div>
 
-                <div class="modal-footer text-center">
-                    <input type="submit" value="Speichern" class="btn btn-submit-blue" />
-                </div>
+
+            </div>
+
+            <div class="modal-footer text-center">
+                <input type="submit" value="Speichern" class="btn btn-submit-blue" />
+            </div>
 
 
         </div>
@@ -1506,8 +1507,8 @@ if (!isset($_GET['id'])) {
 
 <script src="../js/jquery-sortable-min.js"></script>
 
-    <!--Editor-->
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
+<!--Editor-->
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
 
 <script>
     function ShowTemplate(Art, Name, Text) {
@@ -1542,7 +1543,7 @@ if (!isset($_GET['id'])) {
 
 
     <!--ALLGEMEIN-->
-<!--Projektinfos laden-->
+    <!--Projektinfos laden-->
 
     teamContainer = $('#teamcontainer');
     chosenMembers = $('#chosenMembers');
@@ -1572,19 +1573,19 @@ if (!isset($_GET['id'])) {
         });
     });
 
-//    $(function loadBeteiligteModalRoles() {
-//
-//        var personId = $('#chooseProjectMemberRole').parent('.teammember').data('id');
-//
-//        $.ajax({
-//            type: 'post',
-//            data: 'utid='+pageId+'&pid='+,
-//            url: '../logic/beteiligteLoadRolesEdit.php',
-//            success: function (response) {//response is value returned from php (for your example it's "bye bye"
-//                chosenMembers.append(response);
-//            }
-//        });
-//    });
+    //    $(function loadBeteiligteModalRoles() {
+    //
+    //        var personId = $('#chooseProjectMemberRole').parent('.teammember').data('id');
+    //
+    //        $.ajax({
+    //            type: 'post',
+    //            data: 'utid='+pageId+'&pid='+,
+    //            url: '../logic/beteiligteLoadRolesEdit.php',
+    //            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+    //                chosenMembers.append(response);
+    //            }
+    //        });
+    //    });
 
 
     $(function checkMilestones() {
@@ -1810,19 +1811,19 @@ if (!isset($_GET['id'])) {
 
 <!-- Rubriken erstellen Projektunterlagen -->
 <script>
-var agreementContainer = $(".agreement-container");
-var protocolContainer = $(".protocol-container");
-var testskriptContainer = $(".testskript-container");
-var testplanContainer = $(".testplan-container");
-var testberichtContainer = $(".testbericht-container");
-var loeswegContainer = $(".loesweg-container");
+    var agreementContainer = $(".agreement-container");
+    var protocolContainer = $(".protocol-container");
+    var testskriptContainer = $(".testskript-container");
+    var testplanContainer = $(".testplan-container");
+    var testberichtContainer = $(".testbericht-container");
+    var loeswegContainer = $(".loesweg-container");
 
 
 
 
-function createAgreement() {
+    function createAgreement() {
 
-    function insideAgreement() {
+        function insideAgreement() {
 //        var vorlagen;
 //
 //        $.ajax(function(){
@@ -1832,322 +1833,322 @@ function createAgreement() {
 //           }
 //        });
 
-        return "<li class='agreementRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Einverständniserklärung</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createAgreementEditor(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='agreement-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
+            return "<li class='agreementRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Einverständniserklärung</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createAgreementEditor(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='agreement-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+
+        }
+
+        if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {
+
+            agreementContainer.append(insideAgreement());
+
+        } else {
+            alert("Sie haben bereits eine Einverständniserklärungs-Rubrik erstellt.");
+        }
 
     }
+    function createAgreementNew(event) {
 
-    if(!(agreementContainer.find('.agreementRubrik').length !== 0)) {
+        function insideAgreementNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
 
-        agreementContainer.append(insideAgreement());
-
-    } else {
-        alert("Sie haben bereits eine Einverständniserklärungs-Rubrik erstellt.");
+        var parentAgreementNew= $(event).closest(".agreementRubrik");
+        var agmtContainer = parentAgreementNew.find(".agreement-container");
+        agmtContainer.append(insideAgreementNew);
     }
-
-}
-function createAgreementNew(event) {
-
-    function insideAgreementNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editAgreement()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
-    var parentAgreementNew= $(event).closest(".agreementRubrik");
-    var agmtContainer = parentAgreementNew.find(".agreement-container");
-    agmtContainer.append(insideAgreementNew);
-}
 
     function loadAgreements(event) {
 
     }
 
-function createAgreementEditor(event) {
+    function createAgreementEditor(event) {
 
-    function insideAgreementNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='openEditor()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
+        function insideAgreementNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='openEditor()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Proband #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentAgreementNew= $(event).closest(".agreementRubrik");
+        var agmtContainer = parentAgreementNew.find(".agreement-container");
+        agmtContainer.append(insideAgreementNew);
     }
 
-    var parentAgreementNew= $(event).closest(".agreementRubrik");
-    var agmtContainer = parentAgreementNew.find(".agreement-container");
-    agmtContainer.append(insideAgreementNew);
-}
+    function loadAgreements(event) {
 
-function loadAgreements(event) {
-
-}
-
-function createProtocol() {
-
-    function insideProtocol() {
-        return "<li class='protocolRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Protokoll</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Protokoll' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='protocol-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
     }
 
-    if(!(protocolContainer.find('.protocolRubrik').length !== 0)) {
+    function createProtocol() {
 
-        protocolContainer.append(insideProtocol());
+        function insideProtocol() {
+            return "<li class='protocolRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Protokoll</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Protokoll' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createProtocolNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='protocol-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
 
-    } else {
-        alert("Sie haben bereits eine Protokoll-Rubrik erstellt.");
+        if(!(protocolContainer.find('.protocolRubrik').length !== 0)) {
+
+            protocolContainer.append(insideProtocol());
+
+        } else {
+            alert("Sie haben bereits eine Protokoll-Rubrik erstellt.");
+        }
+
+    }
+    function createProtocolNew(event) {
+
+        function insideProtocolNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editProtocol()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Protokollant #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentProtocolNew= $(event).closest(".protocolRubrik");
+        var protContainer = parentProtocolNew.find(".protocol-container");
+        protContainer.append(insideProtocolNew);
+
+    }
+    function createTestskript() {
+
+        function insideTestskript() {
+            return "<li class='testskriptRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testskript</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Testskript' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testskript-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(testskriptContainer.find('.testskriptRubrik').length !== 0)) {
+
+            testskriptContainer.append(insideTestskript());
+
+        } else {
+            alert("Sie haben bereits eine Testskript-Rubrik erstellt.");
+        }
+
+    }
+    function createTestskriptNew(event) {
+
+        function insideTestskriptNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestskript()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestskriptNew= $(event).closest(".testskriptRubrik");
+        var tskriptContainer = parentTestskriptNew.find(".testskript-container");
+        tskriptContainer.append(insideTestskriptNew);
+
     }
 
-}
-function createProtocolNew(event) {
+    function createTestplan() {
 
-    function insideProtocolNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editProtocol()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Protokollant #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
+        function insideTestplan() {
+            return "<li class='testplanRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testplan</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testplan' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testplan-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
+
+        if(!(testplanContainer.find('.testplanRubrik').length !== 0)) {
+
+            testplanContainer.append(insideTestplan());
+
+        } else {
+            alert("Sie haben bereits eine Testplan-Rubrik erstellt.");
+        }
+
+    }
+    function createTestplanNew(event) {
+
+        function insideTestplanNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestplan()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestplanNew= $(event).closest(".testplanRubrik");
+        var tplanContainer = parentTestplanNew.find(".testplan-container");
+        tplanContainer.append(insideTestplanNew);
+
     }
 
-    var parentProtocolNew= $(event).closest(".protocolRubrik");
-    var protContainer = parentProtocolNew.find(".protocol-container");
-    protContainer.append(insideProtocolNew);
+    function createTestbericht() {
 
-}
-function createTestskript() {
+        function insideTestbericht() {
+            return "<li class='testberichtRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Testbericht</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='testbericht-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
 
-    function insideTestskript() {
-        return "<li class='testskriptRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Testskript</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neues Testskript' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createTestskriptNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='testskript-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
+        if(!(testberichtContainer.find('.testberichtRubrik').length !== 0)) {
+
+            testberichtContainer.append(insideTestbericht());
+
+        } else {
+            alert("Sie haben bereits eine Testbericht-Rubrik erstellt.");
+        }
+
+    }
+    function createTestberichtNew(event) {
+
+        function insideTestberichtNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editTestbericht()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
+
+        var parentTestberichtNew= $(event).closest(".testberichtRubrik");
+        var tberichtContainer = parentTestberichtNew.find(".testbericht-container");
+        tberichtContainer.append(insideTestberichtNew);
+
     }
 
-    if(!(testskriptContainer.find('.testskriptRubrik').length !== 0)) {
+    function createLoesweg() {
 
-        testskriptContainer.append(insideTestskript());
+        function insideLoesweg() {
+            return "<li class='loeswegRubrik element-allgemein mb-3'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-10'>Lösungswege</div>" +
+                "<div class='col-2 text-right'>" +
+                "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
+                "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
+                "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Lösungsweg' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
+                "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+                "<div class='dropdown-divider m-0'></div>" +
+                "</div>" +
+                "</div>" +
+                "<ol class='loesweg-container pl-0'>" +
+                "<hr class='m-0'>" +
+                "</ol>" +
+                "</li>";
+        }
 
-    } else {
-        alert("Sie haben bereits eine Testskript-Rubrik erstellt.");
+        if(!(loeswegContainer.find('.loeswegRubrik').length !== 0)) {
+
+            loeswegContainer.append(insideLoesweg());
+
+        } else {
+            alert("Sie haben bereits eine Lösungsweg-Rubrik erstellt.");
+        }
+
     }
+    function createLoeswegNew(event) {
 
-}
-function createTestskriptNew(event) {
+        function insideLoeswegNew() {
+            return "<li class='task item-hover'>" +
+                "<div class='row p-3'>" +
+                "<div class='col-lg-12'>" +
+                "<a href='#unterlagen' onclick='editLoesweg()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
+                "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
+                "</a>" +
+                "</div>" +
+                "</div>" +
+                "</li>";
+        }
 
-    function insideTestskriptNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editTestskript()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
+        var parentLoeswegNew= $(event).closest(".loeswegRubrik");
+        var loeswegContainer = parentLoeswegNew.find(".loesweg-container");
+        loeswegContainer.append(insideLoeswegNew);
+
     }
-
-    var parentTestskriptNew= $(event).closest(".testskriptRubrik");
-    var tskriptContainer = parentTestskriptNew.find(".testskript-container");
-    tskriptContainer.append(insideTestskriptNew);
-
-}
-
-function createTestplan() {
-
-    function insideTestplan() {
-        return "<li class='testplanRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Testplan</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testplan' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createTestplanNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='testplan-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
-    }
-
-    if(!(testplanContainer.find('.testplanRubrik').length !== 0)) {
-
-        testplanContainer.append(insideTestplan());
-
-    } else {
-        alert("Sie haben bereits eine Testplan-Rubrik erstellt.");
-    }
-
-}
-function createTestplanNew(event) {
-
-    function insideTestplanNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editTestplan()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
-    var parentTestplanNew= $(event).closest(".testplanRubrik");
-    var tplanContainer = parentTestplanNew.find(".testplan-container");
-    tplanContainer.append(insideTestplanNew);
-
-}
-
-function createTestbericht() {
-
-    function insideTestbericht() {
-        return "<li class='testberichtRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Testbericht</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Testbericht' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createTestberichtNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='testbericht-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
-    }
-
-    if(!(testberichtContainer.find('.testberichtRubrik').length !== 0)) {
-
-        testberichtContainer.append(insideTestbericht());
-
-    } else {
-        alert("Sie haben bereits eine Testbericht-Rubrik erstellt.");
-    }
-
-}
-function createTestberichtNew(event) {
-
-    function insideTestberichtNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editTestbericht()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
-    var parentTestberichtNew= $(event).closest(".testberichtRubrik");
-    var tberichtContainer = parentTestberichtNew.find(".testbericht-container");
-    tberichtContainer.append(insideTestberichtNew);
-
-}
-
-function createLoesweg() {
-
-    function insideLoesweg() {
-        return "<li class='loeswegRubrik element-allgemein mb-3'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-10'>Lösungswege</div>" +
-            "<div class='col-2 text-right'>" +
-            "<a href='#' data-toggle='dropdown' class='link-noblue'><span class='icon-list icon-align'></span></a>" +
-            "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
-            "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neuer Lösungsweg' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
-            "<a class='#unterlagen' onclick='createLoeswegNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
-            "<div class='dropdown-divider m-0'></div>" +
-            "</div>" +
-            "</div>" +
-            "<ol class='loesweg-container pl-0'>" +
-            "<hr class='m-0'>" +
-            "</ol>" +
-            "</li>";
-    }
-
-    if(!(loeswegContainer.find('.loeswegRubrik').length !== 0)) {
-
-        loeswegContainer.append(insideLoesweg());
-
-    } else {
-        alert("Sie haben bereits eine Lösungsweg-Rubrik erstellt.");
-    }
-
-}
-function createLoeswegNew(event) {
-
-    function insideLoeswegNew() {
-        return "<li class='task item-hover'>" +
-            "<div class='row p-3'>" +
-            "<div class='col-lg-12'>" +
-            "<a href='#unterlagen' onclick='editLoesweg()' data-toggle='tooltip' data-placement='bottom' title='Dokument bearbeiten' class='button-addTask link-noblue'>" +
-            "<span class='pr-2 icon-comment icon-align text-muted'></span>Version #1" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</li>";
-    }
-
-    var parentLoeswegNew= $(event).closest(".loeswegRubrik");
-    var loeswegContainer = parentLoeswegNew.find(".loesweg-container");
-    loeswegContainer.append(insideLoeswegNew);
-
-}
 
 </script>
 
@@ -2294,6 +2295,7 @@ function createLoeswegNew(event) {
 </script>
 
 <!-- Evaluation Function -->
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=sargs3skr0vrsmifbb4jq3uf92y0ao5xwkmhwezoz94kklpz"></script>
 
 <script>
 
