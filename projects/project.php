@@ -1842,6 +1842,25 @@ function createAgreement() {
             "<ul class='dropdown-menu dropdown-menu-right links-noblue'>" +
             "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Neue Einverständniserklärung' class='link-noblue'><li class='icon-plus-1 icon-align'>Neu anlegen</li></a>" +
             "<a class='#unterlagen' onclick='createAgreementNew(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+            "<a class='#unterlagen' onclick='loadAgreements(this)' data-toggle='tooltip' data-placement='bottom' title='Vorlage wählen' class='link-noblue'><li class='icon-file-text icon-align'>Vorlage wählen</li></a>" +
+
+            <?php
+
+            $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+            if (!$conn) {
+                $e = oci_error();
+                trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+            }
+
+            $stid = oci_parse($conn, "SELECT * FROM VORLAGE WHERE VORLAGE_ART='Testbericht'");
+            oci_execute($stid);
+            while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)){
+                $content = $row['VORLAGE_TEXT']->load();
+                $content = htmlspecialchars($content);
+                echo "<li><a class=\"icon-file-text-o p-3 nav-link active\" href=\"javascript:ShowTemplate('".$row['VORLAGE_ART']."', '".$row['VORLAGE_NAME']."', '".$content."');\">".$row['VORLAGE_NAME']."</a></li>";
+            }
+            ?>
+
             "<div class='dropdown-divider m-0'></div>" +
             "</div>" +
             "</div>" +
@@ -1878,8 +1897,13 @@ function createAgreementNew(event) {
     var parentAgreementNew= $(event).closest(".agreementRubrik");
     var agmtContainer = parentAgreementNew.find(".agreement-container");
     agmtContainer.append(insideAgreementNew);
-
 }
+
+    function loadAgreements(event) {
+
+    }
+
+
 function createProtocol() {
 
     function insideProtocol() {
