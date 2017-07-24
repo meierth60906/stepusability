@@ -2255,7 +2255,7 @@ if (!isset($_GET['id'])) {
         contentUnterlagen.load("agreementForm.php");
     }
     function openEditor() {
-        contentUnterlagen.load("editor.html");
+        contentUnterlagen.load("editor.php");
     }
     function editProtocol() {
         contentUnterlagen.load("protocolForm.html");
