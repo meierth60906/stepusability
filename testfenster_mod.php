@@ -71,9 +71,9 @@
                         <!--                        Projektinfo + Beteiligte -->
                         <div class="row">
 
-                            <div class="col-lg-12 pr-3 text-right">
+                           <!-- <div class="col-lg-12 pr-3 text-right">
                                 <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="row">
                             <!--  <div class="col-lg-8 font-weight-bold"><h1>Testskript:</h1></div>-->
@@ -90,16 +90,21 @@
                                 <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns step.<br>
                                     Damit helfen Sie uns die Webanwendung step zu verbessern.
                                     Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. <br>
-                                    Zusätzlich bekommen sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
+                                    Zusätzlich bekommen Sie von mir die Aufgabenformulierung am Tablet, damit Sie diese jederzeit nachlesen können.
                                 </p>
 
                                 <h5>Anweisung Think-Aloud</h5>
                                 <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder positiv.<br>
                                     Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar frustriert. <br>
                                     Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie uns bitte, was Sie denken.
-                                    <br>
+                                    <br><br>
                                     Falls es sonst von Ihrer Seite keine weiteren Fragen gibt, dann können wir jetzt mit dem Test beginnen.
                                 </p>
+
+                                <h5>Szenario</h5>
+                                <p>Stellen Sie sich vor Sie sind ein Usability Professional und haben es satt, sich ständig mit den ganzen Papierdokumenten auseinander zu setzten. <br>Vor kurzen sind Sie auf Step gestoßen und möchte nun schauen, was step zu bietet hat.
+                                </p>
+
                             </div>
                         </div>
                     </div>
@@ -216,8 +221,7 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe <br>
-                                    für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
+                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
@@ -244,9 +248,9 @@
                     <div id="content-postsession" class="col-9 py-3 ">
                         <div class="row">
 
-                            <div class="col-lg-12 pr-3 text-right">
+                          <!--  <div class="col-lg-12 pr-3 text-right">
                                 <a href="projects/project.php"><span class="icon-pencil"></span> Bearbeiten</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="row">
                             <!--  <div class="col-lg-8 font-weight-bold"><h1>Testskript:</h1></div>-->
@@ -255,7 +259,7 @@
                                 <p>Wir sind jetzt mit den Aufgaben fertig. Abschließend habe ich noch ein paar Fragen an Sie.<br>
 
                                 <h5>Post-Session Interview Fragen</h5>
-                                <p>Ich bitte Sie nun um Ihre Bewertung der Webseite. </p>
+                                <p>Ich bitte Sie nun um Ihre Bewertung der Webanwendung. </p>
                                 <ul>
                                     <li>Gab es etwas das Ihnen besonders gut oder weniger gut gefallen hat?</li>
                                 </ul>
