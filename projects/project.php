@@ -915,7 +915,7 @@ if (!isset($_GET['id'])) {
                     <div id="editor" class="offset-lg-8 col-lg-4 p-0">Editor
 
 
-                        <div class="editor">
+                        <textarea class="editor">
 
                             <h1>Testbericht</h1>
 
@@ -932,7 +932,7 @@ if (!isset($_GET['id'])) {
 
                             </ul>
 
-                        </div>
+                        </textarea>
                     </div>
                 </div>
             </div>
@@ -2298,8 +2298,7 @@ if (!isset($_GET['id'])) {
 <script>
 
     tinymce.init({
-        selector: 'div',
-        auto_focus: 'editor',
+        selector: 'editor',
         height: 500,
         branding: false,
         plugins: 'table',
