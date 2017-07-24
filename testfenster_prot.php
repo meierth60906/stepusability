@@ -50,7 +50,7 @@
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
             <div class="col-2 text-right p-5">
-                <a class="c-orange" href=""><i class="question-angles icon-angle-left"></i></a>
+                <a class="c-orange" href="#testaufgaben"><i class="question-angles icon-angle-left"></i></a>
             </div>
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
@@ -143,7 +143,21 @@
             }
         });
     }
+    var scenarioQuestionContainer = $("#scenarioQuestionContainer");
 
+    function loadScenarioQuestion(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadScenarioQuestionEval.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#scenarioQuestionContainer").html(response.name);
+            }
+        });
+    }
     $( function loadTaskOnlys() {
         $.ajax({
             type: 'post',
