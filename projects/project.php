@@ -840,9 +840,9 @@ if (!isset($_GET['id'])) {
 
                             <div class="col-lg-12"><hr class="mb-3"></div>
 
-                            <ol class="scenario-container-eval col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="postSession-container-eval col-lg-12 links-noblue mb-0"></ol>
-                            <ol class="conclusion-container-eval col-lg-12 links-noblue mb-0"></ol>
+                            <ol class="scenario-container-eval col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
+                            <ol class="postSession-container-eval col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
+                            <ol class="conclusion-container-eval col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
 
                         </div>
