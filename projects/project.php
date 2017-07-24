@@ -2298,7 +2298,7 @@ if (!isset($_GET['id'])) {
 <script>
 
     tinymce.init({
-        selector: 'textarea',
+        selector: 'editor',
         height: 500,
         branding: false,
         plugins: 'table',
