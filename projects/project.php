@@ -2223,7 +2223,7 @@ function createLoeswegNew(event) {
 <script>
 
     tinymce.init({
-        selector: 'textarea',
+        selector: 'editor',
         height: 500,
         branding: false,
         plugins: 'table',
