@@ -50,7 +50,7 @@
     <div class="container-fluid">
         <div class="inner-body row c-grey-bg">
             <div class="col-2 text-right p-5">
-                <a class="c-orange" href="#testaufgaben"><i class="question-angles icon-angle-left"></i></a>
+                <a class="c-orange" href="#testaufgabenladen"><i class="question-angles icon-angle-left"></i></a>
             </div>
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 1</p>
@@ -128,22 +128,22 @@
 <script>
 
 
-    var taskQuestionContainer = $("#taskQuestionContainer");
+    var taskQuestionContainerTF = $("#taskQuestionContainerTF");
 
-    function loadTaskQuestionEval(elem) {
+    function loadTaskQuestionTF(elem) {
         taskId = $(elem).data('id');
 
         $.ajax({
             data: 'tid=' + taskId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/loadTaskQuestionEval.php',
+            url: '../logic/loadTaskQuestionTF.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                $("#taskQuestionContainer").html(response.name);
+                $("#taskQuestionContainerTF").html(response.name);
             }
         });
     }
-    var scenarioQuestionContainer = $("#scenarioQuestionContainer");
+    var scenarioQuestionContainerTF = $("#scenarioQuestionContainerTF");
 
     function loadScenarioQuestion(elem) {
         taskId = $(elem).data('id');
@@ -152,9 +152,9 @@
             data: 'tid=' + taskId,
             type: 'post',
             dataType: 'json',
-            url: '../logic/loadScenarioQuestionEval.php',
+            url: '../logic/loadScenarioQuestionTF.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                $("#scenarioQuestionContainer").html(response.name);
+                $("#scenarioQuestionContainerTF").html(response.name);
             }
         });
     }
@@ -169,15 +169,15 @@
             }
         });
     });
-    var scenarioContainerEval = $(".scenario-container-eval");
+    var scenarioContainerTF= $(".scenario-container-tf");
 
-    $( function loadTaskEval() {
+    $( function loadTaskTestfenster() {
         $.ajax({
             type: 'post',
             data: 'utid='+pageId,
-            url: '../logic/loadTaskEval.php',
+            url: '../logic/loadTaskTestfenster.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                scenarioContainerEval.append(response);
+                scenarioContainerTF.append(response);
 
             }
         });
