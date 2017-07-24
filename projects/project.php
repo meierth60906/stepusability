@@ -1760,7 +1760,6 @@ if (!isset($_GET['id'])) {
 
     function saveNewMember() {
         var addMembersForm = $('#addProjectMembersForm').serialize();
-        alert(addMembersForm);
         $.ajax({
             type: 'post',
             url: '../logic/beteiligteSaveNew.php',

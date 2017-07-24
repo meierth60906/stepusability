@@ -28,7 +28,7 @@ oci_execute($stid_if);
 $fetchRowCount = oci_fetch_row($stid_if);
 
 if($fetchRowCount) {
-        echo "<div class='teammember row' data-id='" . $row['ID'] . "'>
+        echo "<div class='teammember row' data-id='" . $person . "'>
                                 <div class='px-0 col-6 alignmiddle'>
                                     " . $fetchRowCount[1] . ", " . $fetchRowCount[2] . "
                                 </div>

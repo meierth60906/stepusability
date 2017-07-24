@@ -1,6 +1,11 @@
 <?php
 
 $c_id = $_GET['id'];
+$komm[] = array();
+$kommId[] = array();
+
+$skill[] = array();
+$skillId[] = array();
 
 $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
@@ -12,25 +17,21 @@ $stid = oci_parse($conn, "SELECT * FROM PERSON WHERE ID = '".$c_id."'");
 oci_execute($stid);
 $fetchRow = oci_fetch_array($stid);
 
-$stid_email = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Email'");
-oci_execute($stid_email);
+$stid_komm = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."'");
+oci_execute($stid_komm);
 
-$fetchRowEmail = oci_fetch_array($stid_email);
+while ($fetchRowKomms = oci_fetch_array($stid_komm, OCI_ASSOC+OCI_RETURN_NULLS)) {
+    $komm[] = $fetchRowKomms['BEZEICHNUNG'];
+    $kommId[] = $fetchRowKomms['ID'];
+}
 
-$stid_privat = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Privat'");
-oci_execute($stid_privat);
+$stid_skill = oci_parse($conn, "SELECT f.ID, f.BEZEICHNUNG FROM STUDI132.FAEHIGKEIT f JOIN STUDI132.P_HAT_F p on p.FAEHIGKEIT_ID = f.ID WHERE PERSON_ID = '".$c_id."'");
+oci_execute($stid_skill);
 
-$fetchRowPrivat = oci_fetch_array($stid_privat);
-
-$stid_mobil = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Mobil'");
-oci_execute($stid_mobil);
-
-$fetchRowMobil = oci_fetch_array($stid_mobil);
-
-$stid_adresse = oci_parse($conn, "SELECT * FROM KOMMUNIKATIONSANSCHLUSS WHERE PERSON_ID = '".$c_id."' AND KTYP = 'Adresse'");
-oci_execute($stid_adresse);
-
-$fetchRowAdresse = oci_fetch_array($stid_adresse);
+while ($fetchRowSkills = oci_fetch_array($stid_skill, OCI_ASSOC+OCI_RETURN_NULLS)) {
+    $skill[] = $fetchRowSkills['BEZEICHNUNG'];
+    $skillId[] = $fetchRowSkills['ID'];
+}
 
 
 $nameinitial = substr($fetchRow[1], 0,1);
@@ -50,10 +51,10 @@ echo json_encode(array(
     "kunde" => $fetchRow[9],
     "nameinitial" => $nameinitial,
     "vornameinitial" => $vornameinitial,
-    "email" => $fetchRowEmail[2],
-    "privat" => $fetchRowPrivat[2],
-    "mobil" => $fetchRowMobil[2],
-    "adresse" => $fetchRowAdresse[2]
+    "komm" => $komm,
+    "kommId" => $kommId,
+    "skill" => $skill,
+    "skillId" => $skillId
     ));
 
 ?>
