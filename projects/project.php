@@ -915,7 +915,7 @@ if (!isset($_GET['id'])) {
                     <div id="editor" class="offset-lg-8 col-lg-4 p-0">Editor
 
 
-                        <textarea id="editor">
+                        <div class="editor">
 
                       <h1>Testbericht</h1>
 
@@ -932,7 +932,7 @@ if (!isset($_GET['id'])) {
 
                       </ul>
 
-                    </textarea> </div>
+                    </div> </div>
                 </div>
             </div>
             <!--<div class="row inner-body">
