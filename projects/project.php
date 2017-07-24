@@ -1898,7 +1898,7 @@ if (!isset($_GET['id'])) {
 
         var parentAgreementNew= $(event).closest(".agreementRubrik");
         var agmtContainer = parentAgreementNew.find(".agreement-container");
-        agmtContainer.append(insideAgreementNew);
+        agmtContainer.append(insideAgreementEditor);
     }
 
     function loadAgreements(event) {
