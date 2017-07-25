@@ -58,66 +58,62 @@
                         <div class="panel-group">
                             <div class="panel panel-default">
 
-                                <!--Projekt 1-->
+                                <!--Demo-->
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#step"
+                                        <a data-toggle="collapse" href="#demo"
                                            class="icon-angle-right">Demo</a>
                                     </h4>
                                 </div>
-                                <div id="step" class="panel-collapse collapse">
+                                <div id="demo" class="panel-collapse collapse">
                                     <ul class="flex-column nav">
                                         <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link"
-                                               href="#einverstaendniserklaerungstep" role="tab"
-                                               data-toggle="tab"> Einverständniserklärung</a></li>
+                                            <a class="p-3 nav-link"
+                                               href="#einverstaendniserklaerungdemo" role="tab"
+                                               data-toggle="tab">Keine Dokumente vorhanden</a></li>
                                     </ul>
                                 </div>
 
-
-
-                                <!--Projekt 2-->
+                                <!--step projekt-->
 
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="icon-angle-right" data-toggle="collapse"
-                                           href="#socialapp">Social App</a>
-                                    </h4>
-                                </div>
-                                <div id="socialapp" class="panel-collapse collapse">
-                                    <ul class="flex-column nav">
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link"
-                                               href="#einverstaendniserklaerungsocialapp"
-                                               role="tab"
-                                               data-toggle="tab"> Einverständniserklärung</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link"
-                                               href="#protokollleitfadensocialapp"
-                                               role="tab"
-                                               data-toggle="tab"> Protokollleitfaden</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#testskriptsocialapp"
-                                               role="tab"
-                                               data-toggle="tab"> Testskript</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#testplansocialapp"
-                                               role="tab"
-                                               data-toggle="tab"> Testplan</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="icon-file-text-o p-3 nav-link" href="#testberichtsocialapp"
-                                               role="tab"
-                                               data-toggle="tab"> Testbericht</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <h4 class="panel-title">
+                                    <a class="icon-angle-right" data-toggle="collapse"
+                                       href="#step">step Projekt</a>
+                                </h4>
+                            </div>
+                            <div id="step" class="panel-collapse collapse">
+                                <ul class="flex-column nav">
+                                    <li class="nav-item">
+                                        <a class="icon-file-text-o p-3 nav-link"
+                                           href="#einverstaendniserklaerungstep"
+                                           role="tab"
+                                           data-toggle="tab"> Einverständniserklärung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-file-text-o p-3 nav-link"
+                                           href="#protokollleitfadenstep"
+                                           role="tab"
+                                           data-toggle="tab"> Protokollleitfaden</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-file-text-o p-3 nav-link" href="#testskriptstep"
+                                           role="tab"
+                                           data-toggle="tab"> Testskript</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="icon-file-text-o p-3 nav-link" href="#testplanstep"
+                                           role="tab"
+                                           data-toggle="tab"> Testplan</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-<!--Projekt 3 -->
+
+
+                                <!--wetter.com-->
+
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a class="icon-angle-right" data-toggle="collapse"
@@ -156,6 +152,70 @@
                                     </ul>
                                 </div>
 
+                                <!--Social App-->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right" data-toggle="collapse"
+                                           href="#socialapp">Social App</a>
+                                    </h4>
+                                </div>
+                                <div id="socialapp" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#einverstaendniserklaerungsocialapp"
+                                               role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testskriptsocialapp"
+                                               role="tab"
+                                               data-toggle="tab"> Testskript</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!--Hochschulwebsite -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="icon-angle-right" data-toggle="collapse"
+                                           href="#hochschule">Hochschulwebsite</a>
+                                    </h4>
+                                </div>
+                                <div id="hochschule" class="panel-collapse collapse">
+                                    <ul class="flex-column nav">
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#einverstaendniserklaerunghochschule"
+                                               role="tab"
+                                               data-toggle="tab"> Einverständniserklärung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link"
+                                               href="#protokollleitfadenhochschule"
+                                               role="tab"
+                                               data-toggle="tab"> Protokollleitfaden</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testskripthochschule"
+                                               role="tab"
+                                               data-toggle="tab"> Testskript</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testplanhochschule"
+                                               role="tab"
+                                               data-toggle="tab"> Testplan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="icon-file-text-o p-3 nav-link" href="#testberichthochschule"
+                                               role="tab"
+                                               data-toggle="tab"> Testbericht</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -167,7 +227,7 @@
                             <div class="panel panel-default">
 
 
-                                <!--Projekt 1-->
+                                <!--amazon-->
 
 
                                 <div class="panel-heading">
@@ -186,7 +246,7 @@
                                     </ul>
                                 </div>
 
-                                <!--Projekt 2-->
+                                <!--TH-->
 
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -459,6 +519,207 @@
                     </table>
                 </div>
             </div>
+
+            <!--            Step Projekt-->
+
+            <div class="tab-pane row" id="einverstaendniserklaerungstep" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Einverständniserklärung</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
+                                    verbessern. </p>
+                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
+                                    Sie können jederzeit abbrechen.<br>
+                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
+                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
+                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
+                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
+                                    wird nicht veröffentlicht.<br></p>
+                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
+                                    <br>Vielen Dank!</p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
+                                    während
+                                    ich an dem Test teilnehme.</p>
+                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
+                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
+                                    verwenden.</p>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Datum, Ort, Unterschrift:</p>
+                                <br>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="tab-pane row" id="protokollleitfadenstep" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Aufgabenanweisung</th>
+                            <th>Einstiegsseite</th>
+                            <th>Lösungsschritte</th>
+                            <th>Beobachtungen</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </td>
+
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <ul>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="tab-pane row" id="testskriptstep" role="tabpanel">
+                <div class="col-lg-8 offset-lg-4">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Testskript</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <p><b>Technische Vorbereitung</b></p>
+                                <p>Browsercache löschen
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Briefing</b></p>
+                                <p>Geheimhaltungsvereinbarung und Einverständniserklärung zur Video-Aufzeichnung
+                                    unterschreiben lassen.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Einleitung und Beschreibung des Testgegenstands</b></p>
+                                <p>Wir möchten Sie bitten, die Webanwendung step für uns zu testen. Sie helfen uns damit, die
+                                    Webanwendung hinsichtlich ihrer Gebrauchstauglichkeit zu verbessern.
+                                </p>
+                                <p>Herzlichen Dank, dass sie sich mit der Aufzeichnung des Tests einverstanden erklärt
+                                    haben. Alle Eingaben werden nur für die Dauer des Tests und seiner Auswertung
+                                    gespeichert. Sie müssen sich daher keine Sorgen um die unrechtmäßige Verwendung
+                                    ihrer Daten machen.
+                                    Vor Ihnen befindet sich eine Technologie mit der wir registrieren können, wo auf den
+                                    Bildschirm Sie gerade blicken. Da jeder Mensch einen anderen Augenabstand hat,
+                                    werden wir das Gerät zunächst gemäß ihrem Augenabstand kalibrieren. Ich führe das
+                                    jetzt gemeinsam mit Ihnen durch. Bitte setzen Sie sich so hin, wie Sie bequem am
+                                    Computer arbeiten können.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Augencheck</b></p>
+                                <p>Auf dem Bildschirm vor Ihnen erscheint gleich ein roter Punkt, ich bitte Sie, diesen
+                                    mit den Augen zu verfolgen.
+                                </p>
+                                <p><b>Kalibration</b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Anweisung vor den Aufgaben</b></p>
+                                <p>Ganz wichtig ist, wir evaluieren nicht Sie sondern Sie evaluieren für uns wetter.com.
+                                    Damit helfen Sie uns wetter.com zu verbessern.
+                                    Dazu erhalten Sie jetzt Aufgaben. Diese lese ich Ihnen vor. Zusätzlich bekommen sie
+                                    von mir ein Blatt mit der Aufgabenformulierung, damit Sie jederzeit nachlesen
+                                    können.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Anweisung Think-Aloud</b></p>
+                                <p>Während Sie das System bedienen bitte ich Sie, laut zu denken und Ihren Eindruck vom
+                                    System zu schildern, dabei ist jede Bemerkung gleich wertvoll, egal ob negativ oder
+                                    positiv.
+                                    Wir möchten wissen, was Sie überrascht, was Sie freut, was Sie irritiert oder sogar
+                                    frustriert. Wenn Sie an einen Punkt kommen, an dem Sie nicht sicher sind was Sie tun
+                                    sollen oder Sie versuchen herauszufinden, was Sie hier tun sollen, dann sagen Sie
+                                    uns bitte, was Sie denken.
+                                </p>
+                                <p>Sie können jederzeit Fragen stellen, haben Sie im Moment Fragen?
+                                </p>
+                                <p><b>Start der Eyetracking-Aufzeichnung
+                                    </b></p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
 <!--Social App-->
 
             <div class="tab-pane row" id="einverstaendniserklaerungsocialapp" role="tabpanel">
@@ -686,7 +947,7 @@
                 </div>
             </div>
 
-            <div class="tab-pane row" id="testberichtwetter" role="tabpanel">
+            <div class="tab-pane row" id="testberichtsocialapp" role="tabpanel">
                 <div class="col-lg-8 offset-lg-4">
                     <table class="table table-bordered">
                         <thead>
@@ -697,56 +958,6 @@
                         <tbody>
                         <tr>
                             <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!--            step-->
-
-            <div class="tab-pane row" id="einverstaendniserklaerungstep" role="tabpanel">
-                <div class="col-lg-8 offset-lg-4">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>Einverständniserklärung</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <p>Vielen Dank, dass Sie uns helfen, die Anwendung, die wir gerade entwickeln zu
-                                    verbessern. </p>
-                                <p>Wir bewerten nicht Sie. Wir bewerten das Produkt.<br>
-                                    Sie können jederzeit abbrechen.<br>
-                                    Wenn Sie eine Pause benötigen, können Sie das einfach sagen.</p>
-                                <p>Um uns die Arbeit zu erleichtern, werden wir die Testsitzung auf Video und Audio
-                                    aufzeichnen. Die Aufzeichnung wird nur intern und für unseren Auftraggeber
-                                    zugänglich gemacht, um die Testergebnisse zu demonstrieren. Die Aufzeichnung
-                                    wird nicht veröffentlicht.<br></p>
-                                <p>Bitte lesen Sie die folgende Erklärung und unterschreiben Sie darunter.
-                                    <br>Vielen Dank!</p>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Ich bin damit einverstanden. dass ich in Ton und Bild aufgezeichnet werde,
-                                    während
-                                    ich an dem Test teilnehme.</p>
-                                <p>Ich gestatte es ausdrücklich, diese Aufzeichnung zu Zwecken der Untersuchung
-                                    und Demonstration der Testergebnisse intern und dem Auftraggeber gegenüber zu
-                                    verwenden.</p>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Name, Vorname (Bitte in Druckbuchstaben ausfüllen):</p><br>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Datum, Ort, Unterschrift:</p>
-                                <br>
-                            </th>
                         </tr>
                         </tbody>
                     </table>
