@@ -55,7 +55,7 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 3</p>
                 <p class="text-center">
-                    Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe für ein bestimmtes Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt …. an.
+                    Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt "Senden Sie eine Nachricht an: Thomas" an.
 
                 </p>
             </div>
@@ -87,10 +87,9 @@
                     <ul>
                         <li>Den Reiter "Testaufgaben" auswählen</li>
                         <li>Auf das "+" bei "Aufgabenliste" klicken</li>
-                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
-                        <li>Das "+" bei Szenario anwählen </li>
+                        <li>Im Dropdown - Menü "Testaugabe" auswählen</li>
                         <li>Auf "Testaufgabe" klicken</li>
-                        <li>In "Aufgabenbeschreibung" ... eingeben</li>
+                        <li>In "Aufgabenbeschreibung" "Senden Sie eine Nachricht an: Thomas" eingeben</li>
                     </ul>
                 </div>
 

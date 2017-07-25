@@ -211,26 +211,25 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie zwei der Projektbeteiligten heraus!</td>
+                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie alle Projektbeteiligten heraus!</td>
                                 <td>Projektübersicht</td>
                                 <td></td>
                                 <td><ul>
                                         <li>Projekt "Social App" in der Liste auswählen</li>
-                                        <li>Ansprechpartner ist step</li>
-                                        <li>Beteiligten sind Anna Apfel, Bernd Bogner</li>
+                                        <li>Ansprechpartner ist Meier Thomas</li>
+                                        <li>Beteiligten sind Meier Thomas, Schark Alina, Steinbinder Nathalie</li>
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe für ein Szenario erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt .... an.</td>
+                                <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe erstellen.<br> Legen Sie bitte eine neue Testaufgabe mit dem Inhalt "Senden Sie eine Nachricht an: Thomas" an.</td>
                                 <td>Projektseite</td>
                                 <td></td>
                                 <td><ul>
                                         <li>Den Reiter "Testaufgaben" auswählen</li>
                                         <li>Auf das "+" bei "Aufgabenliste" klicken</li>
-                                        <li>Im Dropdown - Menü "Szenario" aufwählen</li>
-                                        <li>Das "+" bei Szenario anwählen </li>
+                                        <li>Im Dropdown - Menü "Testaufgabe" auswählen</li>
                                         <li>Auf "Testaufgabe" klicken</li>
-                                        <li>In "Aufgabenbeschreibung" ... eingeben</li>
+                                        <li>In "Aufgabenbeschreibung" "Senden Sie eine Nachricht an: Thomas" eingeben</li>
 
                                     </ul></td>
                             </tr>
