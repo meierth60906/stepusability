@@ -87,7 +87,7 @@
                     <ul>
                         <li>Projekt "Social App" in der Liste auswählen</li>
                         <li>Ansprechpartner ist step</li>
-                        <li>Beteiligten sind Anna Apfel, Bernd Bogner</li>
+                        <li>Beteiligten sind Thomas Meier, Nathalie Steinbinder und Alina Schark</li>
                     </ul>
                 </div>
 
