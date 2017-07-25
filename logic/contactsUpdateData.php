@@ -30,18 +30,18 @@ $role = $_POST['contact-role'];
 $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 
 
-//$stid = oci_parse($conn, "UPDATE PERSON SET NAME = '". $name ."', VORNAME = '". $vorname ."', FIRMA = '". $company ."', GEBURTSDATUM = '". $birth ."'  WHERE ID='".$c_id."'");
-//oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
-//
-//$stid2 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm0 ."' WHERE ID='".$kommId0."'");
-//oci_execute($stid2, OCI_COMMIT_ON_SUCCESS);
-//
-//$stid3 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm1 ."' WHERE ID='".$kommId1."'");
-//oci_execute($stid3, OCI_COMMIT_ON_SUCCESS);
-//
-//$stid4 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm2 ."' WHERE ID='".$kommId2."'");
-//oci_execute($stid4, OCI_COMMIT_ON_SUCCESS);
-//
+$stid = oci_parse($conn, "UPDATE PERSON SET NAME = '". $name ."', VORNAME = '". $vorname ."', FIRMA = '". $company ."', GEBURTSDATUM = '". $birth ."'  WHERE ID='".$c_id."'");
+oci_execute($stid, OCI_COMMIT_ON_SUCCESS);
+
+$stid2 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm0 ."' WHERE ID='".$kommId0."'");
+oci_execute($stid2, OCI_COMMIT_ON_SUCCESS);
+
+$stid3 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm1 ."' WHERE ID='".$kommId1."'");
+oci_execute($stid3, OCI_COMMIT_ON_SUCCESS);
+
+$stid4 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $komm2 ."' WHERE ID='".$kommId2."'");
+oci_execute($stid4, OCI_COMMIT_ON_SUCCESS);
+
 //foreach ($skillEinzeln as $x) {
 //    $stid5 = oci_parse($conn, "SELECT ID FROM FAEHIGKEIT WHERE BEZEICHNUNG = '". $x ."'");
 //    oci_execute($stid5);
@@ -51,16 +51,15 @@ $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:15
 //    }
 //}
 
-echo $skill;
 
 //
 //$stid6 = oci_parse($conn, "UPDATE P_HAT_F SET FAEHIGKEIT_ID = '". $komm2 ."' WHERE ID='".$kommId2."'");
 //oci_execute($stid6, OCI_COMMIT_ON_SUCCESS);
-//
-//$stid5 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $adress ."' WHERE PERSON_ID='".$c_id."'");
-//oci_execute($stid5, OCI_COMMIT_ON_SUCCESS);
 
-//
+$stid5 = oci_parse($conn, "UPDATE KOMMUNIKATIONSANSCHLUSS SET BEZEICHNUNG = '". $adress ."' WHERE PERSON_ID='".$c_id."'");
+oci_execute($stid5, OCI_COMMIT_ON_SUCCESS);
+
+
 //$stid_output = oci_parse($conn, "SELECT * FROM PERSON WHERE ID = '$c_id'");
 //oci_execute($stid_output);
 //$fetchRow = oci_fetch_array($stid_output);
