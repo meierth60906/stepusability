@@ -1,5 +1,5 @@
 .editor {
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .visibility {
@@ -10,6 +10,10 @@
     display: inline-block;
     width: 140px;
     text-align: right;
+}
+
+#templateForm {
+    padding-right: 65px;
 }
 
 
