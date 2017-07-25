@@ -59,16 +59,6 @@
         <div class="row titlebar px-3 py-3">
             <h1>Vorlagen</h1>
 
-            <div class="offset-8 text-right align-self-center ">
-                <a class="titlebar-link" href="">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-plus"> Erstellen</span>
-                </a>
-                <a class="titlebar-link" href="templates.php">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
-                </a>
-            </div>
         </div>
 
 
