@@ -39,6 +39,7 @@
                 </li>
             </ul>-->
 
+
             <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/project.php?id=161#evaluation.php">
                     <div class="icon-stop d-inline-block px-2"></div>
@@ -58,9 +59,6 @@
                     Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
-                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
-                <div class="text-center" id="taskQuestionContainerTF"></div>
-                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
             </div>
             <div class="col-2 p-5">
@@ -93,7 +91,7 @@
                         <li>"Projekte" in der linken Menüleiste auswählen</li>
                         <li>Auf "+ Erstellen" - Button klicken</li>
                         <li>Bei "Titel" den Namen "Demo" eingeben</li>
-                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                        <li>Bei "Auftraggeber": "Technische Hochschule" eingeben</li>
                         <li>Auf "Erstellen" klicken</li>
                     </ul>
                 </div>
@@ -102,7 +100,7 @@
 
                     <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                     <div class="form-group col-12 text-center py-2">
-                        <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
+                        <textarea cols="35" rows="5" name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
 
                     <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>

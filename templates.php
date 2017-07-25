@@ -59,17 +59,9 @@
         <div class="row titlebar px-3 py-3">
             <h1>Vorlagen</h1>
 
-            <div class="offset-8 text-right align-self-center ">
-                <a class="titlebar-link" href="">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-plus"> Erstellen</span>
-                </a>
-                <a class="titlebar-link" href="templates.php">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-pencil"> Bearbeiten</span>
-                </a>
-            </div>
         </div>
+
+
 
 
         <!--innere Navigationsleiste-->
@@ -98,7 +90,7 @@
 
                                 <?php
 
-                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
                                 if (!$conn) {
                                     $e = oci_error();
                                     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -129,7 +121,7 @@
                             <ul class="flex-column nav">
                                 <?php
 
-                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
                                 if (!$conn) {
                                     $e = oci_error();
                                     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -157,7 +149,7 @@
                             <ul class="flex-column nav">
                                 <?php
 
-                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
                                 if (!$conn) {
                                     $e = oci_error();
                                     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -184,7 +176,7 @@
                             <ul class="flex-column nav">
                                 <?php
 
-                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
                                 if (!$conn) {
                                     $e = oci_error();
                                     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -213,7 +205,7 @@
                             <ul class="flex-column nav">
                                 <?php
 
-                                $conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+                                $conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
                                 if (!$conn) {
                                     $e = oci_error();
                                     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
