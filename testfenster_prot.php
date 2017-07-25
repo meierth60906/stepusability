@@ -58,9 +58,6 @@
                     Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
-                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
-                <div class="text-center" id="taskQuestionContainerTF"></div>
-                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
             </div>
             <div class="col-2 p-5">
