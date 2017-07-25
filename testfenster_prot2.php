@@ -56,7 +56,7 @@
             <div class="col-8 p-5">
                 <p class="font-weight-bold text-center">Aufgabe 2</p>
                 <p class="text-center">
-                    Suchen Sie  bitte das Projekt „Social App“ und finden Sie den Ansprechpartner sowie zwei der Projektbeteiligten heraus.
+                    Suchen Sie  bitte das Projekt „Social App“ und finden Sie den Ansprechpartner sowie die Projektbeteiligten heraus.
                 </p>
             </div>
             <div class="col-2 p-5">
@@ -86,8 +86,8 @@
                 <div class="form-group col-12 py-2">
                     <ul>
                         <li>Projekt "Social App" in der Liste auswählen</li>
-                        <li>Ansprechpartner ist step</li>
-                        <li>Beteiligten sind Anna Apfel, Bernd Bogner</li>
+                        <li>Ansprechpartner ist Meier Thomas</li>
+                        <li>Beteiligten sind Meier Thomas, Schark Alina und Steinbinder Nathalie</li>
                     </ul>
                 </div>
 

@@ -35,7 +35,7 @@ if ($numrows == 0) {
         echo $vorlagenInsert;
         echo $e['message'];
     } else {
-        header("Location: /templates.php");
+        header("Location: ../templates.php");
         //echo $vorlagenInsert;
     }
 } else {
@@ -46,7 +46,7 @@ if ($numrows == 0) {
         echo $vorlagenUpdate;
         echo $e['message'];
     } else {
-        header("Location: /templates.php");
+        header("Location: ../templates.php");
         //echo $vorlagenUpdate;
     }
 
