@@ -95,7 +95,7 @@
 
                     <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                     <div class="form-group col-12 text-center py-2">
-                        <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
+                        <textarea cols="35" rows="5" name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
 
                   <!--  <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>
