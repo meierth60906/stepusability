@@ -39,11 +39,7 @@
                 </li>
             </ul>-->
 
-            <div class="col-2 text-right align-self-center ">
-                <a class="titlebar-link" href="">
-                    <div class="icon-folder d-inline-block px-2"></div>
-                    <span class="hidden-sm-down">Speichern</span></a>
-            </div>
+
             <div class="col-2 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/project.php?id=161#evaluation.php">
                     <div class="icon-stop d-inline-block px-2"></div>
