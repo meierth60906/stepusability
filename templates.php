@@ -29,8 +29,8 @@
             document.getElementById("Vorlage_Text").value = Text;
             tinymce.init({
                 selector: 'textarea',
-                height: 500,
                 theme: 'modern',
+                height: 600,
                 plugins: [
                     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
                     'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -57,7 +57,10 @@
 <section id="templates" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <h1>Vorlagen</h1>
+            <div class="col-lg-12">
+                <h1>Vorlagen</h1>
+            </div>
+
 
         </div>
 
@@ -231,14 +234,14 @@
     <!--page content -->
 
 
-    <div class="container-fluid">
+    <div class="container-fluid pr-0">
         <div class="tab-content">
 
 
             <div class="tab-pane active" id="einverstaendniserklaerung1" role="tabpanel">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-4 editor">
-                        <form id="templateForm" class="form" action="logic/insertTemplate.php" method="post">
+                    <div class="col-lg-12 editor pr-0">
+                        <form id="templateForm" class="form pr-0" action="logic/insertTemplate.php" method="post">
                             <button class="visibility" name="submitbtn"></button>
                             <p class="visibility" name="Name_der_Vorlage" id="Name_der_Vorlage">Name der Vorlage:</p>
                             <input class="visibility" name="Vorlage_Name" type="text" id="Vorlage_Name" placeholder="Name der Vorlage">
@@ -255,6 +258,7 @@
 
 </section>
 <?php include('scripts.html'); ?>
+<script src="js/projektfensterSetStyle.js"></script>
 <script>
     $(document).ready(function () {
 

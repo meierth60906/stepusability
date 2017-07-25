@@ -19,6 +19,34 @@ if (!isset($_GET['id'])) {
     <title>Projekt 1 | step</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <?php include ('head.html'); ?>
+    <style type="text/css">
+        /*Container, container body, iframe*/
+        .mce-tinymce, .mce-container-body, #code_ifr {
+            min-height: 100% !important;
+        }
+        /*Container body*/
+        .mce-container-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        /*Editing area*/
+        .mce-container-body .mce-edit-area {
+            position: absolute;
+            top: 69px;
+            bottom: 37px;
+            left: 0;
+            right: 0;
+        }
+        /*Footer*/
+        .mce-tinymce .mce-statusbar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
 </head>
 <body id="body-singleproject">
 
@@ -912,7 +940,8 @@ if (!isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                    <div id="editor" class="offset-lg-8 col-lg-4 p-0">Editor
+                    <div id="editor" class="offset-lg-7 col-lg-5 p-0" style="position:fixed;">
+<!--                        Editor-->
 
 
                         <textarea class="evaleditor">

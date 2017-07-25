@@ -137,14 +137,11 @@
 #testfenster .buttonTestfensterLinks{
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius:  0.75rem;
-    border-right: 1px solid #133E5C;
-    border-bottom: 1px solid #133E5C;
-    border-top: 1px solid #133E5C;
+    border: 1px solid #133E5C;
     text-align: center;
 
     /**border-color: #133E5C;**/
     color: #133E5C;
-    background-color: white;
     width:100px;!important;
     height: 20px;!important;
     size: 100px;

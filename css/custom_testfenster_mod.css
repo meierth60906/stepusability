@@ -309,18 +309,20 @@
     color: #FFFFFF;
     background-color:#133E5C;
     size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #testfenster_mod .buttonTestfensterRechts{
     border-top-right-radius:  0.75rem;
     border-bottom-right-radius:  0.75rem;
     text-align: center;
-    border-right: 1px solid #133E5C;
-    border-bottom: 1px solid #133E5C;
-    border-top: 1px solid #133E5C;
+    border: 1px solid #133E5C;
     color: #133E5C;
     background-color: white;
 
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 a {
