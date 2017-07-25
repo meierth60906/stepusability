@@ -211,7 +211,7 @@
                                     </ul></td>
                             </tr>
                             <tr>
-                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie alle der Projektbeteiligten heraus!</td>
+                                <td>Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie alle Projektbeteiligten heraus!</td>
                                 <td>Projektübersicht</td>
                                 <td></td>
                                 <td><ul>
