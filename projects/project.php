@@ -1594,7 +1594,6 @@ if (!isset($_GET['id'])) {
             dataType: 'json',
             url: '../logic/milestonesCheck.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                alert(response.protokollcreated);
                 if(response.taskscreated > 0) {
                     $('#goal-aufgaben').addClass('c-orange-bg');
                     $('#goal-aufgabenerstellt').html("Test&shy;aufgaben erstellt <span class='icon-check icon-align'></span>");
