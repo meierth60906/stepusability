@@ -93,7 +93,7 @@
                         <li>"Projekte" in der linken Menüleiste auswählen</li>
                         <li>Auf "+ Erstellen" - Button klicken</li>
                         <li>Bei "Titel" den Namen "Demo" eingeben</li>
-                        <li>Bei "Auftraggeber" "Technische Hochschule" eingeben</li>
+                        <li>Bei "Auftraggeber": "Technische Hochschule" eingeben</li>
                         <li>Auf "Erstellen" klicken</li>
                     </ul>
                 </div>
