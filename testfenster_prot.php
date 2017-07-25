@@ -40,7 +40,7 @@
             </ul>-->
 
 
-            <div class="col-2 text-right align-self-center ">
+            <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="projects/project.php?id=161#evaluation.php">
                     <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
