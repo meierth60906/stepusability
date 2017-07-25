@@ -9,7 +9,7 @@ echo $templateName;
 echo $templateArt;
 
 //Verbindung aufbauen
-$conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+$conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
@@ -35,7 +35,7 @@ if ($numrows == 0) {
         echo $vorlagenInsert;
         echo $e['message'];
     } else {
-        header("Location: /templates.php");
+        header("Location: ../templates.php");
         //echo $vorlagenInsert;
     }
 } else {
@@ -46,7 +46,7 @@ if ($numrows == 0) {
         echo $vorlagenUpdate;
         echo $e['message'];
     } else {
-        header("Location: /templates.php");
+        header("Location: ../templates.php");
         //echo $vorlagenUpdate;
     }
 

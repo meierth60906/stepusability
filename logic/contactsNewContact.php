@@ -9,6 +9,7 @@ $plz = $_POST['contact-plz'];
 $ort = $_POST['contact-ort'];
 $geburtsdatum = $_POST['contact-geburtsdatum'];
 $favorit = $_POST['contact-favourite'];
+
 if (isset($_POST['contact-team'])) {
     $team = $_POST['contact-team'];
 } else {
@@ -34,7 +35,7 @@ echo $_POST['com_type'][1];
 echo $_POST['com_value'][1];*/
 
 //Verbindung aufbauen
-$conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+$conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);

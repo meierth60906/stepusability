@@ -504,4 +504,9 @@ ol.loesweg-container li{
 
 }
 
+#chosenMembers {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
 

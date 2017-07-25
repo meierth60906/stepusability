@@ -24,7 +24,7 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
     echo "<li class='element-allgemein mb-3 task item-hover aufgabenliste-task' >
             <div class='row p-3'>
             <div class='col-lg-12'>
-            <a href='#testaufgaben' data-id='". $row['ID'] ."' onclick='loadTaskQuestionEval(this)' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='aufgabenliste-task-a button-addTask link-noblue'>
+            <a href='#testaufgabenladen' data-id='". $row['ID'] ."' onclick='loadTaskQuestionTF(this)' data-toggle='tooltip' data-placement='bottom' title='Aufgabe bearbeiten' class='aufgabenliste-task-a button-addTask link-noblue'>
             <span class='pr-2 icon-list icon-align text-muted'></span>" . $row['NAME_AB'] . "
             </a>
             </div>

@@ -261,42 +261,12 @@
                         <div class="row">
                             <div class="col-8">Favoriten</div>
                             <div class="col-4 text-right">
-                                <span class="badge c-orange-bg">2</span>
+                                <span class="favs-count badge c-orange-bg"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="view_contact.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-star d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Anna Apfel
-                                    <div class="text-muted small">Firma AG</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right middle-two-line">
-                                    <div class="img-placeholder c-darkgrey-bg">AA</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-star d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Bernd Bogner
-                                    <div class="text-muted small">Muster GmbH</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right middle-two-line">
-                                    <!--<div class="img-placeholder darkgrey-bg">BB</div>-->
-                                    <img class="img-fluid img-placeholder rounded-circle" src="img/user.jpg">
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
+                    <div class="card-block pre-scrollable pt-0 favs-dashboard-content">
+
                     </div>
 
                 </div>
@@ -319,15 +289,37 @@
             }
         })
     })
+
+    var favsDashboardContainer = $(".favs-dashboard-content");
+
+    $( function loadFavs() {
+        $.ajax({
+            url: 'logic/selectFavsDashboard.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                favsDashboardContainer.append(response);
+            }
+        })
+    })
 </script>
 <script>
     var projectsDashboardCountContainer = $(".project-count");
 
-    $( function loadProjects() {
+    $( function loadProjectsCount() {
         $.ajax({
             url: 'logic/selectProjectlistDashboardCount.php',
             success: function (response) {//response is value returned from php (for your example it's "bye bye"
                 projectsDashboardCountContainer.html(response);
+            }
+        })
+    })
+
+    var favsDashboardCountContainer = $(".favs-count");
+
+    $( function loadFavsCount() {
+        $.ajax({
+            url: 'logic/selectFavsDashboardCount.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                favsDashboardCountContainer.html(response);
             }
         })
     })

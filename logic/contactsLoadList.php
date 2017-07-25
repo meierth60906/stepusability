@@ -1,12 +1,12 @@
 <?php
 
-$conn = oci_connect('studi131', 'studi131', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
+$conn = oci_connect('studi132', 'studi132', '//dbcluster.cs.ohm-hochschule.de:1521/oracle.ohmhs.de');
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, "SELECT * FROM PERSON p, KOMMUNIKATIONSANSCHLUSS k WHERE p.ID = k.PERSON_ID order by NAME");
+$stid = oci_parse($conn, "SELECT * FROM PERSON order by NAME");
 oci_execute($stid);
 
 while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)) {
@@ -15,8 +15,7 @@ while($row=oci_fetch_array($stid,OCI_ASSOC+OCI_RETURN_NULLS)) {
                                 <div class='img-placeholder c-darkgrey-bg'>" . substr($row['NAME'], 0,1) . substr($row['VORNAME'], 0,1) . "</div>
                             </div>
                             <div class='pl-3 col-9 pl-xl-2'>
-                                <div class='contactname'>" . $row['NAME'] . ", " . $row['VORNAME'] . "</div>
-                                <div class='contactmail text-muted small'>" . $row['BEZEICHNUNG'] . "</div>
+                                <div class='contactname alignmiddle'>" . $row['NAME'] . ", " . $row['VORNAME'] . "</div>
                             </div>
                         </div>
                         <hr class='m-0'></a>";

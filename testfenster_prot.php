@@ -40,7 +40,7 @@
             </ul>-->
 
             <div class="col-4 text-right align-self-center ">
-                <a class="titlebar-link" href="projects/index.php">
+                <a class="titlebar-link" href="projects/project.php?id=161#evaluation.php">
                     <div class="icon-stop d-inline-block px-2"></div>
                     <span class="hidden-sm-down">Test beenden</span></a>
             </div>
@@ -58,6 +58,10 @@
                     Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br> Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo", der Auftraggeber ist "Technische Hochschule".
 
                 </p>
+                <p id="questionId" class="font-weight-bold text-center">Aufgabe</p>
+                <div class="text-center" id="taskQuestionContainerTF"></div>
+                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
+
             </div>
             <div class="col-2 p-5">
                 <a class="c-orange" href="testfenster_prot2.php"><i class="question-angles icon-angle-right"></i></a>
@@ -82,6 +86,7 @@
                 </div>
 
                 <label for="inputRole" class="col-lg-3 form-control-label">Lösungsschritte</label>
+                <ol class="scenario-container-tf col-lg-12 links-noblue mb-0" style="list-style: none;"></ol>
 
                 <div class="form-group col-12 py-2">
                     <ul>
@@ -119,8 +124,44 @@
         </div>
     </div>
 </section>
-<?php include ('scripts.html'); ?>
 
+
+<?php include ('scripts.html'); ?>
+<script>
+
+
+    var taskQuestionContainerTF = $("#taskQuestionContainerTF");
+
+    function loadTaskQuestionTF(elem) {
+        taskId = $(elem).data('id');
+
+        $.ajax({
+            data: 'tid=' + taskId,
+            type: 'post',
+            dataType: 'json',
+            url: '../logic/loadTaskQuestionTF.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                $("#taskQuestionContainerTF").html(response.name);
+            }
+        });
+    }
+
+    var scenarioContainerTF= $(".scenario-container-tf");
+
+    $( function loadTaskTestfenster() {
+        $.ajax({
+            type: 'post',
+            data: 'utid='+pageId,
+            url: '../logic/loadTaskTestfenster.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                scenarioContainerTF.append(response);
+
+            }
+        });
+    });
+
+
+</script>
 </body>
 
 </html>
