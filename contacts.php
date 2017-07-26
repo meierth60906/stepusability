@@ -286,9 +286,24 @@
 
                 for(i in response.skill) {
                     $('#contact-skill-container').append(
-                        "<span id='contact-skill-" + i +"' data-id='" + response.skillId[i] + "' class='badge badge-pill btn-submit-orange contact-information'>" + response.skill[i] + "</span>"
+                        "<span id='contact-skill-" + i +"' data-id='" + response.skillId[i] + "' class='badge badge-pill btn-submit-orange contact-information mr-1'>" + response.skill[i] + "</span>"
                     );
                 }
+
+                if($.trim(response.isTeam) == 1) {
+                    $('#contact-role-container').append("<span id='contact-role' class='badge badge-pill btn-submit-blue contact-information mr-1'>Team</span>");
+                }
+
+                if($.trim(response.isProband) == 1) {
+                    $('#contact-role-container').append("<span id='contact-role' class='badge badge-pill btn-submit-blue contact-information mr-1'>Testteilnehmer</span>");
+                }
+
+                if($.trim(response.isKunde) == 1) {
+                    $('#contact-role-container').append("<span id='contact-role' class='badge badge-pill btn-submit-blue contact-information mr-1'>Kunde</span>");
+                }
+
+                $('#contact-adress').html(response.strasse + ", " + response.plz + " " + response.ort);
+
                 
                 contentContacts.css('display', 'inline');
                 //$('.contact-skill-container').attr("data-id", taskId);
@@ -362,6 +377,7 @@
                     }
                     $('#contact-company').html(response.firma);
                     $('#contact-birth').html(response.geburtsdatum);
+                    alert(response.komm);
                     for(i in response.komm) {
 
                         $('#contact-komm' + i).val(response.komm[i]);
@@ -372,6 +388,7 @@
                 }
             });
             contentContacts.css('display', 'inline');
+            viewContact(contactId);
 
         })
     }

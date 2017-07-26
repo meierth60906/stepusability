@@ -13,7 +13,7 @@
     <title>Bibliothek | step</title>
     <?php include('head.html') ?>
 </head>
-<body>
+<body id="library-body">
 <!-- Sidebar und Header-->
 
 <?php include('navigation.html'); ?>
@@ -21,14 +21,17 @@
 <section id="library" class="page-content">
     <div class="page-top fixed-top container-fluid">
         <div class="row titlebar px-3 py-3">
-            <h1>Bibliothek</h1>
-
-            <div class="offset-9 text-right align-self-center ">
+            <div class="col-8">
+                <h1>Bibliothek</h1>
+            </div>
+            <div class="col-4 text-right align-self-center ">
                 <a class="titlebar-link" href="#">
-                    <div class=" d-inline-block px-2"></div>
-                    <span class="hidden-sm-down icon-print"> Drucken</span>
+                    <div class=" icon-print d-inline-block px-2 icon-align"></div>
+                    <span class="hidden-sm-down"> Drucken</span>
                 </a>
             </div>
+
+
         </div>
 
 
@@ -36,15 +39,18 @@
         <div class="container row">
             <div class="col-lg-3 p-0" id="sidebarLibrary">
 
-                <!-- Switch Button-->
-                <ul id="switch" class="nav" role="tablist">
-                    <li class="nav-item">
-                        <a id="buttonlinks" class="nav-link active" href="#projects" role="tab" data-toggle="tab">Projekte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="buttonrechts" class="nav-link" href="#archiv" role="tab" data-toggle="tab">Archiv</a>
-                    </li>
-                </ul>
+                <div class="text-center">
+                    <!-- Switch Button-->
+                    <ul id="switch" class="nav" role="tablist">
+                        <li class="nav-item">
+                            <a id="buttonlinks" class="nav-link active" href="#projects" role="tab" data-toggle="tab">Projekte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="buttonrechts" class="nav-link" href="#archiv" role="tab" data-toggle="tab">Archiv</a>
+                        </li>
+                    </ul>
+                </div>
+
 
 
                 <!--                Seitenleisten-Inhalt -->

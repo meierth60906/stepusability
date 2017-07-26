@@ -15,12 +15,19 @@ var sidAllg = $("#sidebar-allgemein");
 var sidAufg = $("#sidebar-aufgaben");
 var sidUnt = $("#sidebar-unterlagen");
 var sidEval = $("#sidebar-eval");
+var sidTempl = $("#sidebarTemplates");
 
 //Contents
 var conAllg = $("#content-allgemein");
 var conAufg = $("#content-aufgaben");
 var conUnt = $("#content-unterlagen");
 var conEval = $("#content-eval");
+
+var evalEdit = $("#editor");
+var evalEditClass = $(".mce-container");
+var evalEditArea = $("#mceu_11");
+
+var editorTemplates = $('#einverstaendniserklaerung1');
 
 
 
@@ -36,13 +43,20 @@ $(function() {
         conAllg.height(h-header_h - 32);
         conAufg.height(h-header_h - 32);
         conUnt.height(h-header_h - 32);
-        conEval.height(h-header_h - 32);
+        conEval.height(h-header_h);
+        evalEdit.height(h-header_h);
+        evalEditArea.height(h-header_h);
+        editorTemplates.height(h-header_h);
+        evalEditClass.height(h-header_h);
 
         //Set Content Width
         conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
+        editorTemplates.width(w - sidTempl.width() - 16 - nav_w);
+
+        editorTemplates.css("margin-left", sidTempl.width() - 16);
     }
 });
 
@@ -65,13 +79,20 @@ $(window).on('resize', function(){
         conAllg.height(h - header_h - 32);
         conAufg.height(h - header_h - 32);
         conUnt.height(h - header_h - 32);
-        conEval.height(h - header_h - 32);
+        conEval.height(h - header_h);
+        evalEdit.height(h - header_h);
+        evalEditArea.height(h - header_h);
+        editorTemplates.height(h - header_h);
+        evalEditClass.height(h - header_h);
 
         //Set Content Width
         conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
+        editorTemplates.width(w - sidTempl.width() - 16 - nav_w);
+
+        editorTemplates.css("margin-left", sidTempl.width() - 16);
     }
 });
 
@@ -96,12 +117,18 @@ $('.nav-tabs a').on('shown.bs.tab', function (e) {
         conAllg.height(h - header_h - 32);
         conAufg.height(h - header_h - 32);
         conUnt.height(h - header_h - 32);
-        conEval.height(h - header_h - 32);
+        conEval.height(h - header_h);
+        evalEdit.height(h - header_h);
+        evalEditArea.height(h - header_h);
+        editorTemplates.height(h - header_h);
+        evalEditClass.height(h - header_h);
 
         //Set Content Width
         conAllg.width(w - nav_w - 30);
         conAufg.width(w - sidAufg.width() - 60 - nav_w);
         conUnt.width(w - sidUnt.width() - 60 - nav_w);
         conEval.width(w - sidEval.width() - 30 - nav_w);
+        editorTemplates.width(w - sidTempl.width() - 16 - nav_w);
+        editorTemplates.css("margin-left", sidTempl.width() - 16);
     }
 });

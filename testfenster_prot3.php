@@ -25,10 +25,10 @@
                 <h1>Testfenster</h1>
             </div>
             <span class="col-4 align-self-center text-center">
-                    <a class="buttonTestfensterLinks" href="testfenster_mod.php">
-                        <span class="hidden-sm-down">Moderator</span></a>
-                    <a class="buttonTestfensterRechts" href="testfenster_prot.php">
-                        <span class="hidden-sm-down">Protokollant</span></a>
+                    <a class="buttonTestfensterLinks py-2" href="testfenster_mod.php">
+                        <span class="hidden-sm-down px-2">Moderator</span></a>
+                    <a class="buttonTestfensterRechts py-2" href="testfenster_prot.php">
+                        <span class="hidden-sm-down px-2">Protokollant</span></a>
                 </span>
                 <!--<ul id="switch" class="nav" role="tablist">
                     <li class="nav-item">
@@ -97,7 +97,7 @@
 
                     <label for="inputRole" class="col-lg-3 form-control-label">Beobachtung</label>
                     <div class="form-group col-12 text-center py-2">
-                        <textarea name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
+                        <textarea cols="35" rows="5" name="Beobachtung" class="form-control" id="message-text" placeholder=""></textarea>
                     </div>
 
                     <!-- <label for="inputRole" class="col-lg-3 form-control-label">Shortcuts</label>

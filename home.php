@@ -164,90 +164,12 @@
                         <div class="row">
                             <div class="col-8">Bevorstehende Termine</div>
                             <div class="col-4 text-right">
-                                <span class="badge c-orange-bg">5</span>
+                                <span class="badge c-orange-bg termin-count"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-block pre-scrollable pt-0">
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-calendar-1 d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Social App</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted animated infinite flash">Heute</div>
-                                    <div class="text-muted small">12:00 - 12:30</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-calendar-1 d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Kundenmeeting
-                                    <div class="text-muted small">Social App</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Do, 27.07.17</div>
-                                    <div class="text-muted small">14:00 - 17:00</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-calendar-1 d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Hochschulwebsite</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Sa, 29.07.17</div>
-                                    <div class="text-muted small">14:00 - 16:00</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-calendar-1 d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Projekt 1</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Di, 18.04.17</div>
-                                    <div class="text-muted small">14:00 - 17:00</div>
-                                </div>
-                            </div>
-                        </a>
-                        <hr>
-                        <a class="card-item-link" href="home.php">
-                            <div class="row card-item p-3">
-                                <div class="card-item-icon col-1 middle-two-line">
-                                    <div class="icon-calendar-1 d-inline text-muted"></div>
-                                </div>
-                                <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
-                                    Testdurchlauf
-                                    <div class="text-muted small">Projekt 1</div>
-                                </div>
-                                <div class="col-4 hidden-xs-down text-right">
-                                    <div class="text-muted">Do, 20.04.17</div>
-                                    <div class="text-muted small">14:00 - 17:00</div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="card-block pre-scrollable pt-0 termin-dashboard-content">
+
 
                     </div>
 
@@ -288,7 +210,7 @@
                 projectsDashboardContainer.append(response);
             }
         })
-    })
+    });
 
     var favsDashboardContainer = $(".favs-dashboard-content");
 
@@ -299,7 +221,18 @@
                 favsDashboardContainer.append(response);
             }
         })
-    })
+    });
+
+    var terminDashboardContainer = $(".termin-dashboard-content");
+
+    $( function loadTermine() {
+        $.ajax({
+            url: 'logic/selectTermineDashboard.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                terminDashboardContainer.append(response);
+            }
+        })
+    });
 </script>
 <script>
     var projectsDashboardCountContainer = $(".project-count");
@@ -311,7 +244,7 @@
                 projectsDashboardCountContainer.html(response);
             }
         })
-    })
+    });
 
     var favsDashboardCountContainer = $(".favs-count");
 
@@ -322,7 +255,18 @@
                 favsDashboardCountContainer.html(response);
             }
         })
-    })
+    });
+
+    var terminDashboardCountContainer = $(".termin-count");
+
+    $( function loadTermineCount() {
+        $.ajax({
+            url: 'logic/selectTermineDashboardCount.php',
+            success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                terminDashboardCountContainer.html(response);
+            }
+        })
+    });
 </script>
 </body>
 
