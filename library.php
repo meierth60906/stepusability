@@ -588,49 +588,52 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>
-
+                            <td>Sie haben einen neuen Evaluierungsprojektauftrag bekommen und möchten nun ein neues Projekt anlegen.<br>
+                                Bitte erstellen Sie ein neues Projekt und nennen Sie es "Demo". Der Auftraggeber ist "Technische Hochschule".
                             </td>
                             <td>
-
+                            Dashboard
                             </td>
                             <td>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>"Projekte" in der linken Menüleiste auswählen</li>
+                                    <li>auf "+ Erstellen" - Button klicken</li>
+                                    <li>bei "Titel" den Namen "Demo" eingeben</li>
+                                    <li>auf "Erstellen" klicken</li>
                                 </ul>
                             </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
-
+                            Suchen Sie bitte das Projekt "Social App" und finden Sie den Ansprechpartner sowie alle Projektbeteiligten heraus.
                             </td>
                             <td>
+                                Projektübersicht
                             </td>
                             <td>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Projekt "Social App" in der Liste auswählen</li>
+                                    <li>Ansprechpartner ist Meier Thomas</li>
+                                    <li>Beteiligten sind Meier Thomas, Schark Alina, Steinbinder Nathalie</li>
                                 </ul>
                             </td>
-
                             <td></td>
+
                         </tr>
                         <tr>
-                            <td>
+                            <td>Sie wollen für Ihren anstehenden Usability Test eine neue Testaufgabe erstellen<br>
+                                Legen Sie bitte eine neue Testaufgabe mit dem Inhalt "Senden Sie eine Nachricht an: Thomas" an.
                             </td>
-                            <td>
+                            <td>Projektseite
                             </td>
                             <td>
                                 <ul>
+                                    <li>Den Reiter "Testaufgaben" auswählen</li>
+                                    <li>Auf das "+" bei "Aufgabenliste" klicken</li>
+                                   <li>Im Dropdown - Menü "Testaufgabe" auswählen</li>
+                                    <li>Auf "Testaufgabe" klicken</li>
+                                    <li>in "Aufgabenbeschreibung" "Senden Sie eine Nachricht an: Thomas" eingeben</li>
                                 </ul>
                             </td>
                             <td></td>
