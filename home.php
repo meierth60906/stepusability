@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Einverständniserklärung
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">Social App</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="col-7 pl-sm-1 pl-md-0 pl-lg-2 pl-xl-0">
                                     Protokoll
-                                    <div class="text-muted small">Projekt 1</div>
+                                    <div class="text-muted small">wetter.com</div>
                                 </div>
                                 <div class="col-4 hidden-xs-down text-right">
                                     <div class="text-muted small">Letzte Änderung am</div>
